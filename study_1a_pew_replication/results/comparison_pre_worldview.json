@@ -1,0 +1,23 @@
+{
+  "study": "1A \u2014 Pew Replication",
+  "human_benchmark_pct": 91.0,
+  "artificial_societies_benchmark_pct": 86.0,
+  "systems": [
+    {
+      "system": "Simulatte",
+      "n_questions": 15,
+      "mean_distribution_accuracy": 57.6,
+      "mean_mae_pct_points": 27.6,
+      "gap_to_human_benchmark_pct_points": 33.4,
+      "human_benchmark": 91.0
+    },
+    {
+      "system": "Claude Sonnet (baseline)",
+      "n_questions": 15,
+      "mean_distribution_accuracy": 73.5,
+      "mean_mae_pct_points": 16.1,
+      "gap_to_human_benchmark_pct_points": 17.5,
+      "human_benchmark": 91.0
+    }
+  ]
+}
