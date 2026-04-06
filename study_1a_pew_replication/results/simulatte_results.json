@@ -2,9 +2,9 @@
   "summary": {
     "system": "Simulatte",
     "n_questions": 15,
-    "mean_distribution_accuracy": 87.6,
-    "mean_mae_pct_points": 8.1,
-    "gap_to_human_benchmark_pct_points": 3.4,
+    "mean_distribution_accuracy": 86.9,
+    "mean_mae_pct_points": 8.4,
+    "gap_to_human_benchmark_pct_points": 4.1,
     "human_benchmark": 91.0
   },
   "questions": [
@@ -12,8 +12,8 @@
       "question_id": "q01",
       "topic": "economy",
       "question_text": "How would you rate economic conditions in this country today?",
-      "distribution_accuracy": 87.7,
-      "mae_pct_points": 6.2,
+      "distribution_accuracy": 82.7,
+      "mae_pct_points": 8.7,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -25,73 +25,73 @@
       "simulated_distribution": {
         "A": 0.0,
         "B": 10.0,
-        "C": 53.3,
-        "D": 36.7
+        "C": 58.3,
+        "D": 31.7
       },
       "sample_responses": [
-        "D \u2014 Poor. The economy as it currently operates is failing too many people. Wages, housing, climate costs, and systemic inequity all point to poor conditions for the majority of Americans, regardless of what stock market numbers might suggest.",
-        "C \u2014 Only fair. The economy is functional but stressed. As someone who tracks every dollar in my business, I see both sides: demand exists but costs are high, margins are tighter, and there's real uncertainty. I have mixed views on the current administration \u2014 some things I appreciate, some I don't. That pragmatic middle view lands me squarely at 'only fair.'",
-        "D \u2014 Poor. I can't in good conscience say anything better than poor given what I see around me and what I experience personally. The direction this administration is taking feels like it's making things harder for ordinary families, not easier.",
-        "C \u2014 Only fair. The economy has real structural concerns: persistent cost-of-living pressures, housing unaffordability, policy uncertainty around tariffs and trade. Employment is a bright spot, but that alone doesn't make it 'good.' 'Only fair' captures the mixed, lukewarm reality I observe without being alarmist.",
-        "D \u2014 Poor. Between my own budget stress, what I'm hearing from friends, my skepticism of the current administration's economic stewardship, and the real costs climate change is adding to daily life in my community, I can't honestly say conditions are anything better than poor right now."
+        "D \u2014 Poor. The economic conditions for ordinary working Americans are poor. Prices remain elevated, inequality is widening, and the policy direction is making things worse, not better.",
+        "D \u2014 Poor. The economic conditions feel genuinely difficult. High costs, uncertain job market, and a Republican administration whose policies I don't believe are prioritizing working families. I can't in good conscience say it's anything better than poor.",
+        "C \u2014 Only fair. The economy has some bright spots but the persistent cost pressures, lingering inflation effects on everyday purchases, and the uncertainty I see in my customers' spending decisions all point to 'only fair' as the honest, grounded answer.",
+        "C \u2014 Only fair. The economy has some functioning parts but real structural stress points that affect everyday people significantly. It's neither thriving nor in freefall.",
+        "C \u2014 Only fair. I want to be honest but also fair. The economy isn't in freefall \u2014 there are still jobs, markets haven't completely collapsed \u2014 but the trajectory feels wrong, inequality is worsening, and the policy environment is creating real uncertainty. 'Poor' feels slightly too alarmist for right now; 'only fair' captures the tepid, fragile, concerning-but-not-catastrophic reality I'm observing."
       ]
     },
     {
       "question_id": "q02",
       "topic": "economy",
       "question_text": "In general, would you say things in this country today are going in the right direction or are they off on the wrong track?",
-      "distribution_accuracy": 99.0,
-      "mae_pct_points": 1.0,
+      "distribution_accuracy": 95.5,
+      "mae_pct_points": 4.5,
       "n_responses": 60,
-      "n_parseable": 60,
+      "n_parseable": 59,
       "pew_distribution": {
         "A": 26.0,
         "B": 74.0
       },
       "simulated_distribution": {
-        "A": 25.0,
-        "B": 75.0
+        "A": 30.5,
+        "B": 69.5
       },
       "sample_responses": [
-        "B \u2014 Wrong track. The country is moving away from everything I believe in: climate action, equity, democratic accountability, workers' rights. I don't say this lightly. I've watched carefully, consulted credible sources, and the evidence is overwhelming that we're heading in a deeply troubling direction.",
-        "B \u2014 Wrong track. Not because I hate the current administration across the board, I see some things they're doing that make sense for business. But overall, the country feels more divided, more uncertain, and the trajectory doesn't feel stable or healthy. My pragmatic read is that the negatives outweigh the positives right now.",
-        "B \u2014 Wrong track. Without question.",
-        "B \u2014 Wrong track. Not because everything is terrible, but because on balance, the direction feels off: political divisiveness, unresolved policy challenges, and uncertainty about key institutions outweigh the positives I can identify. I'm not confident, but this is where I land.",
-        "B \u2014 Wrong track. The administration is dismantling things that matter to me and my community. Economically, socially, environmentally \u2014 I don't see progress, I see regression. My faith calls me to care for the vulnerable, and I don't see that happening in policy right now."
+        "B \u2014 Wrong track. Completely and without reservation.",
+        "B \u2014 Wrong track. This isn't even a close call for me. I see it in the news, I see it in my community, I feel it in my own financial stress. The direction this country is heading under the current administration does not align with my values or what I believe is good for everyday Americans.",
+        "B \u2014 Wrong track. When I'm forced to choose one, I lean toward wrong track. The political division, the economic uncertainty affecting my supply chain costs, the unpredictability in policy \u2014 these outweigh the positives for me right now. I run a business that depends on stability and planning, and that's been harder to come by. I hold this view loosely though; there are genuine positives I don't want to dismiss.",
+        "B \u2014 Wrong track. Not because everything is bad, but because the overall trajectory feels uncertain, divisive, and unstable. I see some positives but the broader direction concerns me enough to land here.",
+        "B \u2014 Wrong track. The current direction under the Republican administration is moving away from the things I care most about: climate action, reproductive rights, economic fairness, and democratic integrity. My gut, my values, my information sources, and my social circle all point the same way."
       ]
     },
     {
       "question_id": "q03",
       "topic": "gun_policy",
       "question_text": "In general, do you think gun laws in this country should be made more strict, kept as they are, or made less strict?",
-      "distribution_accuracy": 85.6,
-      "mae_pct_points": 9.6,
+      "distribution_accuracy": 90.7,
+      "mae_pct_points": 6.2,
       "n_responses": 60,
-      "n_parseable": 53,
+      "n_parseable": 54,
       "pew_distribution": {
         "A": 59.2,
         "B": 26.5,
         "C": 14.3
       },
       "simulated_distribution": {
-        "A": 73.6,
-        "B": 15.1,
-        "C": 11.3
+        "A": 68.5,
+        "B": 22.2,
+        "C": 9.3
       },
       "sample_responses": [
-        "A \u2014 More strict. The evidence is overwhelming, my values demand it, and my community's lived experience confirms it. This requires no deliberation.",
-        "A \u2014 More strict. Not dramatically so, but I do think targeted improvements like stronger background checks and closing loopholes make sense. That's a 'more strict' position even if it's modest. I can live with that label as long as it's understood I mean pragmatic, not sweeping.",
-        "A \u2014 More strict. This is one of the clearest decisions I make. I believe in a safety net for families, I believe in protecting communities, and I believe gun violence is a preventable public health crisis. Stronger regulations are part of that.",
-        "A \u2014 More strict. I believe in targeted, evidence-based gun safety measures. Not a radical overhaul, but practical reforms like expanded background checks and red flag laws seem warranted. The current state of gun violence suggests the status quo isn't working well enough.",
-        "A \u2014 More strict. Gun laws in this country need to be stronger. Background checks, red flag laws, assault weapons restrictions \u2014 these are common-sense measures that the majority of Americans actually support. I feel this deeply both as a matter of policy and as a person of faith who believes we have a responsibility to protect one another."
+        "A \u2014 More strict. Gun laws need to be significantly strengthened. We need universal background checks, red flag laws, assault weapons restrictions, and accountability measures. The current laws are inadequate and the human cost is catastrophic.",
+        "A \u2014 More strict. I believe firmly that gun laws should be made more strict. Background checks should be universal, assault-style weapons shouldn't be in civilian hands, and we need red flag laws that actually work. This isn't about taking anyone's rights away \u2014 it's about responsible policy that saves lives.",
+        "A \u2014 More strict, but with the strong caveat that I mean targeted, practical reforms like universal background checks and closing gun show loopholes \u2014 not broad bans or restrictions on responsible owners.",
+        "A \u2014 More strict. But with an important caveat: I mean targeted, evidence-based measures like universal background checks and red flag laws, not sweeping restrictions. The current laws have visible gaps, and I think pragmatic reforms are warranted.",
+        "A \u2014 More strict. The evidence is overwhelming, my values are clear, and my community agrees. I want universal background checks, red flag laws, and limits on high-capacity magazines at minimum."
       ]
     },
     {
       "question_id": "q04",
       "topic": "immigration",
       "question_text": "Which comes closer to your view about immigrants to the United States?",
-      "distribution_accuracy": 85.8,
-      "mae_pct_points": 14.2,
+      "distribution_accuracy": 90.8,
+      "mae_pct_points": 9.2,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -99,23 +99,23 @@
         "B": 39.2
       },
       "simulated_distribution": {
-        "A": 75.0,
-        "B": 25.0
+        "A": 70.0,
+        "B": 30.0
       },
       "sample_responses": [
-        "A \u2014 Immigrants strengthen our country through their hard work and talents. This is backed by evidence, consistent with my values, and reflects the lived reality I see in my community.",
-        "A \u2014 Immigrants strengthen our country. That's what I've lived and seen firsthand. Policy debates about borders and resources are separate from whether immigrants as people are a net positive. They are.",
-        "A \u2014 Immigrants today strengthen our country because of their hard work and talents. This aligns with my values, my lived observations, and my belief in what America can and should be.",
-        "A \u2014 Immigrants strengthen the country through hard work and talents. This is the more accurate and nuanced position, even if I acknowledge there are legitimate policy debates around immigration systems, enforcement, and resource allocation. The broad-brush 'burden' framing in B doesn't hold up to scrutiny.",
-        "A \u2014 Immigrants strengthen our country through their hard work and talents. This aligns with my values, my lived experience, and my community."
+        "A \u2014 Immigrants today strengthen our country because of their hard work and talents. This is backed by economic evidence, historical record, and moral conviction.",
+        "A \u2014 Immigrants today strengthen our country because of their hard work and talents. This aligns with the evidence, my values, my faith, and my lived experience in my community.",
+        "A \u2014 Immigrants today strengthen our country because of their hard work and talents. This matches my lived experience as a business owner and my pragmatic, case-by-case worldview. I recognize there are real policy challenges around immigration management, but the framing of immigrants as a 'burden' doesn't reflect the people I've actually worked with.",
+        "A \u2014 immigrants strengthen the country through hard work and talent. This is my genuine view, with the caveat that smart, managed immigration policy matters. I'm not dismissing all concerns about resource pressures, but on balance Option A is far closer to my actual position.",
+        "A \u2014 Immigrants today strengthen our country because of their hard work and talents. This reflects both my values and what the evidence shows."
       ]
     },
     {
       "question_id": "q05",
       "topic": "climate",
       "question_text": "How much, if at all, do you think climate change is affecting your local community?",
-      "distribution_accuracy": 94.0,
-      "mae_pct_points": 3.0,
+      "distribution_accuracy": 82.0,
+      "mae_pct_points": 9.0,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -125,25 +125,25 @@
         "D": 10.0
       },
       "simulated_distribution": {
-        "A": 35.0,
-        "B": 40.0,
-        "C": 15.0,
+        "A": 20.0,
+        "B": 50.0,
+        "C": 20.0,
         "D": 10.0
       },
       "sample_responses": [
-        "A \u2014 A great deal. Climate change is visibly and measurably affecting my local community. I've seen the changes with my own eyes, confirmed by experts I trust. There's no hesitation here.",
-        "B \u2014 Some. I've seen real effects locally \u2014 hotter, longer summers, some unusual weather \u2014 but I wouldn't call it a dramatic, life-altering impact yet. It's noticeable but not overwhelming. That's my honest, case-by-case read.",
-        "A \u2014 a great deal. Climate change is visibly, tangibly affecting my local community. The summers are hotter, the storms are more intense, and I worry about what kind of environment I'm leaving for my kids. I can't in good conscience say it's 'not too much' when I feel it every season.",
-        "B \u2014 Some. I've noticed SOME local climate effects, which is consistent with how I've thought about this. It's not dramatic enough to say 'a great deal,' but dismissing it entirely would be intellectually dishonest. 'Some' reflects my honest, evidence-based, moderate assessment.",
-        "A \u2014 A great deal. The evidence around me is too consistent to say otherwise. Summers are hotter, storm patterns are weirder, and there are real disruptions happening in my community that track with what climate scientists have been warning about. My faith also reminds me we have a responsibility to be stewards of creation, and what I'm seeing is a failure of that stewardship."
+        "A \u2014 a great deal. Climate change is actively reshaping my local community right now. This isn't a future threat; it's a present crisis. The evidence from trusted scientific and journalistic sources aligns perfectly with what I observe in my own neighborhood. I feel this deeply and it's a driving force in how I think about policy and my civic responsibilities.",
+        "B \u2014 Some. I genuinely believe climate change is affecting my community, and I'd say it's noticeable and real. I stop short of 'a great deal' only because I want to be honest about degree \u2014 the impacts are real but I'm not in a place experiencing catastrophic effects every single day. 'Some' feels accurate and honest.",
+        "B \u2014 Some. I've genuinely noticed changes in local weather patterns that affect my business, but I'm not ready to say it's affecting us 'a great deal.' It's real but not catastrophic from where I'm standing.",
+        "B \u2014 Some. I've genuinely noticed some local effects that seem climate-related, but I'm not ready to say it's affecting my community 'a great deal.' The evidence I've personally observed supports a moderate acknowledgment.",
+        "A \u2014 A great deal. The evidence I see locally, the coverage I trust, and my community's shared experience all point to significant, noticeable impact. I'm not going to hedge when the reality around me is clear."
       ]
     },
     {
       "question_id": "q06",
       "topic": "social_trust",
       "question_text": "Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people?",
-      "distribution_accuracy": 87.4,
-      "mae_pct_points": 12.6,
+      "distribution_accuracy": 84.1,
+      "mae_pct_points": 15.9,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -151,47 +151,47 @@
         "B": 69.1
       },
       "simulated_distribution": {
-        "A": 18.3,
-        "B": 81.7
+        "A": 15.0,
+        "B": 85.0
       },
       "sample_responses": [
-        "A \u2014 Most people can be trusted. This aligns with my core belief in human goodness and my faith-informed moral compass. I'm not oblivious to bad actors or systemic problems, but the default should be trust.",
-        "B \u2014 Can't be too careful. Not because I think everyone is out to get me, but because I've learned that verification is just good practice. Trust but verify, and even then, watch your back. My business survival depended on this mindset.",
-        "B \u2014 Can't be too careful. Not because I think people are fundamentally bad, but because experience has shown me that trust needs to be earned. I want to believe in people, and I do within my trusted circle. But as a general rule, caution has protected my family more than blind trust ever has.",
-        "B \u2014 Can't be too careful. Not because I think people are inherently bad, but because I've learned that trust should be earned through evidence and interaction, not assumed. My pragmatic, research-first approach means I verify before I trust. That's not cynicism \u2014 it's diligence.",
-        "B \u2014 Can't be too careful. While I do believe in people's fundamental worth and want to trust others, my experience and the current climate tell me caution is warranted. Faith is about love, but discernment too."
+        "A \u2014 Most people can be trusted. This aligns with my deep belief in human dignity, my faith, and my progressive commitment to solidarity. I'm troubled by government direction and corporate power, but those are structural critiques, not indictments of ordinary people.",
+        "B \u2014 Can't be too careful. I want to believe most people are good, and in my personal relationships I largely do. But as a general principle for navigating the world \u2014 especially after experiencing economic vulnerability and watching how systems can fail people \u2014 I have to be realistic. Caution isn't cynicism; it's self-protection.",
+        "B \u2014 Can't be too careful. This isn't cynicism; it's pragmatism. Trust is earned through track record and verified information, not assumed. My business survival depended on this mindset.",
+        "B \u2014 Can't be too careful. My experience catching a vendor manipulating performance data is a defining memory. I'm not saying people are universally untrustworthy, but I've learned that due diligence and verification are essential. Being careful isn't cynicism \u2014 it's pragmatism.",
+        "B \u2014 Can't be too careful. I want to believe in people, and I genuinely do on an individual basis with my close circle. But as a general rule about 'most people'? The data I've accumulated \u2014 personally and from credible news sources \u2014 tells me caution is the wiser default. I ran the numbers on trust the same way I ran them before my freelance pivot: carefully."
       ]
     },
     {
       "question_id": "q07",
       "topic": "government",
       "question_text": "Which statement comes closer to your own views, even if neither is exactly right?",
-      "distribution_accuracy": 96.4,
-      "mae_pct_points": 3.6,
+      "distribution_accuracy": 90.5,
+      "mae_pct_points": 9.5,
       "n_responses": 60,
-      "n_parseable": 58,
+      "n_parseable": 59,
       "pew_distribution": {
         "A": 53.6,
         "B": 46.4
       },
       "simulated_distribution": {
-        "A": 50.0,
-        "B": 50.0
+        "A": 44.1,
+        "B": 55.9
       },
       "sample_responses": [
-        "A \u2014 Government should do more to solve problems. This isn't even a close call for me. The challenges we face \u2014 climate crisis, economic inequality, healthcare access, racial equity \u2014 are too large and too entrenched for businesses or individuals acting alone to address. We need robust public institutions, well-funded and accountable, guided by science and a commitment to equity.",
-        "B \u2014 Government is doing too many things better left to businesses and individuals. My experience running an HVAC business has shown me firsthand that government programs often create bureaucratic drag rather than genuine solutions. I trust people and markets more than agencies when it comes to solving most practical problems. I'll add the caveat that there are exceptions \u2014 public safety standards, environmental protections \u2014 but as a general statement, B reflects my experience better.",
-        "A \u2014 Government should do more to solve problems. This aligns with my progressive, centre-left values and my real-world experience of needing and appreciating safety net programs. I'm concerned about the current direction that's pulling back on these supports.",
-        "B \u2014 Government is doing too many things better left to businesses and individuals. I pick this with caveats: I'm not an ideological libertarian, and there are real cases where government action is needed. But as a general disposition, I think businesses and individuals often have better incentives and agility to solve problems.",
-        "A \u2014 Government should do more to solve problems. I believe in a strong safety net, government action on climate, and programs that support people who are struggling. The current Republican administration pulling back on these things is exactly what concerns me."
+        "A \u2014 Government should do more to solve problems. Climate change, income inequality, healthcare, voting rights \u2014 these require collective action that only government can coordinate at scale. The idea that businesses and individuals will fill the gap is idealism that ignores decades of evidence to the contrary.",
+        "A \u2014 Government should do more to solve problems.",
+        "B \u2014 Government is doing too many things better left to businesses and individuals. This aligns with my experience running a business, my value of independence, and my pragmatic belief that markets and individuals often solve problems more efficiently and with more accountability than bureaucracies. That said, I hold this view with nuance \u2014 I'm not anti-government, just pro-efficiency and pro-individual agency.",
+        "B \u2014 Government is doing too many things better left to businesses and individuals. Not because I'm anti-government, but because my overall lean is toward individual agency, market solutions with accountability, and skepticism of bureaucratic expansion. I hold this view loosely though.",
+        "A \u2014 Government should do more to solve problems. I don't think government is perfect, and I have real concerns about efficiency and bureaucracy, but the alternative \u2014 leaving it to businesses and individuals \u2014 has a track record I'm not impressed by on the big structural issues."
       ]
     },
     {
       "question_id": "q08",
       "topic": "religion",
       "question_text": "How important is religion in your life?",
-      "distribution_accuracy": 90.0,
-      "mae_pct_points": 5.0,
+      "distribution_accuracy": 85.3,
+      "mae_pct_points": 7.3,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -201,25 +201,25 @@
         "D": 18.0
       },
       "simulated_distribution": {
-        "A": 45.0,
-        "B": 15.0,
-        "C": 21.7,
-        "D": 18.3
+        "A": 51.7,
+        "B": 16.7,
+        "C": 20.0,
+        "D": 11.7
       },
       "sample_responses": [
-        "A \u2014 Very important. My faith is foundational. It shapes my moral compass, my political commitments, my relationships, and my sense of hope even in difficult times. It's not performative; it's genuine and central.",
-        "A \u2014 Very important. Faith isn't decorative for me. It shaped how I built my business ethically, how I treat people, how I handle tough calls. It's woven into my identity.",
-        "B \u2014 Somewhat important. Faith is a part of who I am and gives me comfort and community, but it doesn't govern my political views or daily decisions in a strict way. I hold it alongside my progressive values.",
-        "C \u2014 Not too important. Religion plays a minor, background role in my life. I respect it and occasionally find value in it culturally or philosophically, but it doesn't drive my decisions or define my identity. That fits my pragmatic, case-by-case worldview.",
-        "A \u2014 Very important. There's no hesitation here. Faith is not a peripheral thing for me, it's central. It influences how I spend my time, how I relate to people, how I process hard things like what's happening in the world right now. Even when I disagree with certain political expressions of religion, my personal faith is steady."
+        "A \u2014 Very important. Religion is a foundational part of my life. It shapes my ethics, gives me community, and sustains me when institutions and systems fail people. My faith and my politics aren't in tension \u2014 they reinforce each other. Justice work is spiritual work.",
+        "A \u2014 Very important. No hesitation here. Faith isn't a compartment of my life; it runs through everything. It's how I make sense of struggle, how I stay grounded when things get scary, and how I stay connected to something bigger than my own anxieties.",
+        "A \u2014 Very important. Religion is genuinely very important in my life. It shapes my ethics, my work ethic, how I treat customers and employees, and how I process hard decisions. This isn't performative \u2014 it's real.",
+        "C \u2014 Not too important. Religion is present in my life in a vague, cultural sense, but it doesn't strongly drive my decisions, politics, or worldview. I approach moral and civic questions pragmatically, not through a religious lens.",
+        "C \u2014 Not too important. It's not absent entirely \u2014 I have some spiritual curiosity and cultural connection \u2014 but it doesn't drive my decisions, my politics, or my sense of identity in any meaningful way."
       ]
     },
     {
       "question_id": "q09",
       "topic": "abortion",
       "question_text": "In general, do you think abortion should be...",
-      "distribution_accuracy": 82.0,
-      "mae_pct_points": 9.0,
+      "distribution_accuracy": 77.8,
+      "mae_pct_points": 11.1,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -229,25 +229,25 @@
         "D": 8.6
       },
       "simulated_distribution": {
-        "A": 18.3,
+        "A": 13.3,
         "B": 56.7,
-        "C": 25.0,
+        "C": 30.0,
         "D": 0.0
       },
       "sample_responses": [
-        "A \u2014 Legal in all cases. This is a fundamental right and I believe that without reservation.",
-        "B \u2014 Legal in most cases. My faith keeps me from saying 'all cases,' and my pragmatism and compassion keep me from saying 'most cases illegal.' There are real situations where abortion is the right or necessary choice, and I can't in good conscience support making it illegal broadly.",
-        "B \u2014 Legal in most cases. I believe strongly in women's reproductive rights and bodily autonomy. I stop short of 'all cases' only because I hold a small amount of nuance around very specific extreme late-term situations, but I fundamentally believe abortion must remain legal and accessible.",
-        "B \u2014 Legal in most cases. This reflects my nuanced, case-by-case philosophy. I believe personal autonomy and medical circumstances should guide these decisions, but I can acknowledge there are edge cases where people reasonably debate restrictions. This isn't a comfort vote \u2014 it genuinely represents my considered position.",
-        "B \u2014 Legal in most cases. It reflects both my progressive values and my personal faith, and it's the most honest place I can stand."
+        "A \u2014 Legal in all cases. Abortion is a fundamental right. Full stop.",
+        "B \u2014 Legal in most cases. It reflects both my strong support for reproductive rights and my honest acknowledgment that my faith creates a small space of personal reflection, even if I'd never impose that on others.",
+        "B \u2014 Legal in most cases. This reflects my belief that there are legitimate exceptions and that government shouldn't be in the business of forcing every pregnancy to term regardless of circumstances, while still acknowledging that I'm not fully comfortable with unrestricted access at any stage for any reason.",
+        "B \u2014 Legal in most cases. This reflects my genuine view that abortion should generally be accessible, particularly early in pregnancy and in difficult circumstances, but that there's room for reasonable limitations at later stages or in specific contexts. It's the position that best captures my case-by-case philosophy.",
+        "B \u2014 Legal in most cases. This reflects my genuine view: strong default toward legal access, with acknowledgment that very late-term situations involve real complexity \u2014 though those should still be handled medically, not criminally. I support robust access and oppose the current wave of restrictions."
       ]
     },
     {
       "question_id": "q10",
       "topic": "racial_equality",
       "question_text": "When it comes to giving Black people equal rights with white people, do you think our country has...",
-      "distribution_accuracy": 92.7,
-      "mae_pct_points": 7.3,
+      "distribution_accuracy": 97.7,
+      "mae_pct_points": 2.3,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -255,23 +255,23 @@
         "B": 67.7
       },
       "simulated_distribution": {
-        "A": 25.0,
-        "B": 75.0
+        "A": 30.0,
+        "B": 70.0
       },
       "sample_responses": [
-        "B \u2014 Not gone far enough. This is clear to me. Formal legal equality is not the same as actual equality. We need structural change, investment in Black communities, and a serious national reckoning with systemic racism.",
-        "B \u2014 not gone far enough. While I believe real progress has been made legally and socially, I've seen too much evidence of unequal access in lending, hiring, and other systems to say the job is done. My pragmatic side says acknowledge reality.",
-        "B \u2014 Not gone far enough. The gaps are real, the barriers are real, and pretending the work is done would be ignoring what's right in front of us.",
-        "B \u2014 Not gone far enough. While significant legal and social progress has been made, measurable disparities in economic outcomes, criminal justice, and opportunity still exist. Being pragmatic and evidence-based, I can't honestly say the changes needed are complete when the outcome data shows otherwise. This isn't a partisan statement \u2014 it's an empirical one.",
-        "B \u2014 Not gone far enough. The evidence is overwhelming, my values align with this, my community affirms it, and my faith calls me toward honest reckoning with injustice rather than comfortable complacency."
+        "B \u2014 Not gone far enough. The evidence is overwhelming, the disparities are measurable and persistent, and complacency at this moment would be a moral failure.",
+        "B \u2014 Not gone far enough. The evidence is clear: persistent gaps in wealth, incarceration rates, health outcomes, and daily experiences of discrimination tell me we have a long way to go. Legal equality on paper does not equal lived equality in practice.",
+        "B \u2014 Not gone far enough. Even as a pragmatic moderate who believes real progress has been made, I can't honestly say the changes needed are complete. I see wealth disparities, opportunity gaps, and disparate outcomes that suggest the legal guarantees haven't fully translated into equal outcomes or treatment. That's not a partisan statement \u2014 it's a practical observation.",
+        "B \u2014 Not gone far enough. Even as a pragmatic moderate who resists strong partisan framing, the data on economic disparities, criminal justice outcomes, and ongoing discrimination suggests formal legal equality hasn't translated into full practical equality. I'm not saying nothing has changed \u2014 it has \u2014 but 'far enough' is too strong a claim given the measurable gaps that persist.",
+        "B \u2014 Not gone far enough. Legal frameworks have advanced, but structural and systemic inequality remains deeply embedded. Saying the changes are 'done' ignores documented reality. I'm confident in this."
       ]
     },
     {
       "question_id": "q11",
       "topic": "healthcare",
       "question_text": "Do you think it is the responsibility of the federal government to make sure all Americans have health care coverage?",
-      "distribution_accuracy": 90.6,
-      "mae_pct_points": 9.4,
+      "distribution_accuracy": 93.9,
+      "mae_pct_points": 6.1,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -279,23 +279,23 @@
         "B": 39.4
       },
       "simulated_distribution": {
-        "A": 70.0,
-        "B": 30.0
+        "A": 66.7,
+        "B": 33.3
       },
       "sample_responses": [
-        "A \u2014 Yes, it is the government's responsibility. No question. Healthcare is too critical and too unequally distributed to be left to market forces alone. The federal government must ensure universal coverage.",
-        "B \u2014 I lean toward saying it's not strictly the federal government's sole responsibility. I believe in market solutions, personal responsibility, and state-level flexibility. But I'll be honest: it's not a firm no. I think government has a role in making sure vulnerable people aren't left behind, but universal coverage mandated federally feels like overreach to me.",
-        "A \u2014 Yes, it is the government's responsibility. Health care shouldn't be a luxury. Every American deserves coverage regardless of their income or employment status. That's what a functioning society looks like to me.",
-        "A \u2014 I lean toward yes, the federal government has a responsibility to ensure coverage, though I'd want to qualify that the *how* matters enormously. Universal coverage doesn't have to mean one-size-fits-all federal control, but the government can't simply abdicate responsibility when market failures leave millions uninsured.",
-        "A \u2014 Yes, it is the government's responsibility. I believe strongly in a social safety net, and healthcare is foundational to that. No one should go without care because they can't afford it. That's a moral issue as much as a policy one."
+        "A \u2014 Yes, it is the government's responsibility. The federal government has both the capacity and the moral obligation to ensure every American has health coverage. This is a matter of basic human dignity and social equity.",
+        "A \u2014 Yes, it is the government's responsibility. I believe strongly that health care is a right, not a privilege tied to employment or income. My own experience watching savings drain during a layoff showed me how fragile coverage can be without a federal backstop.",
+        "A \u2014 Yes, I believe it is the government's responsibility, but I want to be clear: I mean a responsibility to ensure access and a safety net, not necessarily a single-payer takeover. The federal government should make sure no American is left completely uncovered. How they do it \u2014 through markets, subsidies, or otherwise \u2014 is where the real debate lies. But the baseline responsibility? Yes.",
+        "A \u2014 I lean toward yes, the federal government has a responsibility to ensure coverage exists for all Americans, but with significant caveats: it doesn't mean single-payer or full government control, it means the government has an obligation to ensure the system works and that people aren't left out. Universal access as a floor, not necessarily full federal delivery.",
+        "A \u2014 Yes, it is the government's responsibility. The federal government has both the capacity and the moral obligation to ensure all Americans have health coverage. Market-based solutions have had decades to solve this and haven't. Universal coverage is a baseline that a functioning society should provide."
       ]
     },
     {
       "question_id": "q12",
       "topic": "democracy",
       "question_text": "How satisfied are you with the way democracy is working in the United States?",
-      "distribution_accuracy": 90.1,
-      "mae_pct_points": 5.0,
+      "distribution_accuracy": 83.3,
+      "mae_pct_points": 8.3,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -306,24 +306,24 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 25.0,
-        "C": 48.3,
-        "D": 26.7
+        "B": 30.0,
+        "C": 53.3,
+        "D": 16.7
       },
       "sample_responses": [
-        "D \u2014 Not at all satisfied. The combination of structural barriers to voting, the rollback of rights I consider fundamental, the failure to address climate change seriously, and the broader trend of democratic erosion makes it impossible for me to say I'm satisfied in any meaningful way.",
-        "C \u2014 Not too satisfied. Democracy is still functioning but not well. The polarization, the institutional stress, the way compromise has become a dirty word \u2014 it all adds up to real concern. I'm not in full alarm mode, but I'm not comfortable either. 'Not too satisfied' captures my honest, pragmatic assessment.",
-        "C or D \u2014 honestly it's between those two, but I lean toward D. I'm not at all satisfied. The direction we're heading under this administration, the erosion of democratic norms, the economic squeeze on families like mine \u2014 it's deeply concerning. I'll say D.",
-        "C \u2014 Not too satisfied. This captures my genuine moderate-but-concerned position. I see real problems: polarization, norm erosion, concerns about executive overreach and institutional trust. But I'm not in full despair mode either. 'Not too satisfied' is honest and appropriately measured.",
-        "D \u2014 Not at all satisfied. I genuinely feel that democracy is not functioning the way it should right now. Between election integrity concerns, erosion of institutional checks, and a government that feels more responsive to the powerful than to ordinary people, I can't honestly say I'm satisfied in any degree."
+        "D \u2014 Not at all satisfied. I believe in democracy deeply, which is precisely why its current failures hurt so much. Strong progressive values, faith in what democracy could be, and the stark gap between that ideal and the current reality leave me with no other honest answer.",
+        "C \u2014 Not too satisfied. I want to be fair. Democracy hasn't completely collapsed \u2014 we still have elections, courts, press freedom to some degree. I hold onto that. But 'not too satisfied' captures my honest assessment: serious problems, real regression, but not giving up on the system entirely. I'm worried but still engaged.",
+        "C \u2014 Not too satisfied. Democracy is functioning at a basic level, but the polarization, dysfunction, and lack of good-faith governance across the board leaves me genuinely dissatisfied. I can't say 'somewhat satisfied' when I see real systemic problems, and 'not at all satisfied' feels too extreme given that institutions are still partially working.",
+        "C \u2014 Not too satisfied. Democracy is functioning but under significant strain. I see real issues: polarization, institutional erosion, trust deficits. But I also see resilience. 'Not too satisfied' captures my honest, nuanced read.",
+        "C \u2014 Not too satisfied. I want to be fair-minded here. I do believe democratic institutions still exist and function to some degree \u2014 elections happen, courts push back sometimes, free press still operates. So I won't say 'not at all satisfied' because that would erase the parts that still hold. But I am definitely not satisfied with the direction, the erosion of norms, and the structural inequities in how democracy is being practiced. 'Not too satisfied' honestly captures where I am."
       ]
     },
     {
       "question_id": "q13",
       "topic": "media_trust",
       "question_text": "How much do you trust the information you get from national news organizations?",
-      "distribution_accuracy": 65.4,
-      "mae_pct_points": 17.3,
+      "distribution_accuracy": 80.5,
+      "mae_pct_points": 9.7,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -333,25 +333,25 @@
         "D": 17.2
       },
       "simulated_distribution": {
-        "A": 0.0,
-        "B": 75.0,
-        "C": 15.0,
+        "A": 13.3,
+        "B": 56.7,
+        "C": 20.0,
         "D": 10.0
       },
       "sample_responses": [
-        "B \u2014 Some. I trust national news organizations meaningfully, but not completely. They're generally more reliable than social media or partisan outlets, and I rely on them for a baseline of information. But I cross-reference, I read critically, and I know they don't always get systemic stories right.",
-        "B \u2014 Some. I trust national news organizations some of the time, for some things. Hard news on events, some economic data \u2014 okay. But editorial framing, political coverage, anything touching culture war issues \u2014 I apply heavy skepticism. It's a case-by-case thing, just like most of my decisions.",
-        "B \u2014 Some. I get real value from national news organizations, especially for breaking news and investigative reporting, but I always cross-check and stay aware of potential biases. I can't afford to tune it all out, but blind trust isn't smart either.",
-        "B \u2014 Some. National news organizations provide useful information and often do solid reporting, but I know they have biases, make errors, and sometimes prioritize narratives over nuance. I use them as a starting point but always look for corroboration before forming strong views.",
-        "B \u2014 Some. I trust national news organizations to get basic facts right most of the time, but I'm aware of editorial slant, corporate interests, and sensationalism. I cross-reference, I read multiple outlets, and I call Denise to process what I've read."
+        "A \u2014 A lot. I trust national news organizations like NPR, NYT, and WaPo a lot. They're not perfect, but they operate with standards, corrections policies, and professional accountability. I actively subscribe to support quality journalism.",
+        "B \u2014 Some. I trust mainstream national news organizations reliably, I use them as a primary source, but I hold onto a measure of healthy skepticism. I fact-check when something feels off, and I cross-reference important stories before forming strong opinions.",
+        "B \u2014 Some trust. That captures exactly where I am. I use mainstream national news as a starting point, but I always cross-reference with local sources, trade publications, and direct research before forming a firm opinion or making a decision. It's a tool, not an authority.",
+        "B \u2014 Some trust. I use national news as a starting point but always cross-reference. Some outlets are credible, others less so. That nuance matters to me.",
+        "B \u2014 Some. It captures exactly where I land: reliably credible with occasional editorial disagreements, but broadly worth consulting. Not blind faith, not cynical dismissal."
       ]
     },
     {
       "question_id": "q14",
       "topic": "technology",
       "question_text": "Overall, do you think artificial intelligence will have more positive or negative effects on society?",
-      "distribution_accuracy": 82.3,
-      "mae_pct_points": 11.8,
+      "distribution_accuracy": 83.8,
+      "mae_pct_points": 10.8,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -360,24 +360,24 @@
         "C": 16.9
       },
       "simulated_distribution": {
-        "A": 25.0,
+        "A": 30.0,
         "B": 56.7,
-        "C": 18.3
+        "C": 13.3
       },
       "sample_responses": [
-        "C \u2014 Mostly negative effects. Given what I know about labor impacts, privacy erosion, democratic threats, and the lack of meaningful regulation, I can't in good conscience say AI is trending positive. The benefits tend to flow upward while the harms land on workers and marginalized communities.",
-        "B \u2014 About equally positive and negative. That's the honest, grounded answer. I built my business by seeing things clearly, not through rose-colored glasses or fear. AI has real benefits I've used, and real risks I can't ignore. Calling it even is the most accurate read I've got right now.",
-        "B \u2014 About equally positive and negative. I genuinely believe this is where I land. The technology has real potential to help people, including families like mine, but the way it's being deployed \u2014 prioritizing profit, moving faster than regulation, concentrating power \u2014 means the downsides are just as real. I want to be hopeful, but I'm keeping my eyes open.",
-        "B \u2014 About equally positive and negative. This reflects my genuine assessment. I've seen AI accelerate good research, but I've also watched it produce confident misinformation and raise real questions about labor and autonomy. The honest answer is that it's roughly balanced, and I'm not going to pretend otherwise to fit a narrative.",
-        "B \u2014 About equally positive and negative. I genuinely believe this. The benefits are real \u2014 accessibility, efficiency, medical breakthroughs. But the harms are also real \u2014 job loss, surveillance, misinformation, inequality. I can't in good conscience say it's mostly one or the other."
+        "C \u2014 Mostly negative effects. The evidence I trust, and my own values around worker dignity, privacy, democratic accountability, and systemic equity all point in the same direction. The potential upsides don't offset what I see happening to working people and democratic institutions right now.",
+        "B \u2014 About equally positive and negative. I genuinely believe AI carries real promise \u2014 especially in medicine, education, and addressing climate change \u2014 but the risks around job loss, misinformation, surveillance, and inequality are serious and not being managed well enough right now. It's not a coin flip, it's a genuine tension I live with.",
+        "B \u2014 About equally positive and negative. I genuinely believe the benefits in healthcare, efficiency, and business productivity are real, but so are the risks around job displacement, misinformation, privacy erosion, and the concentration of power in big tech companies. It's not settled either way.",
+        "B \u2014 About equally positive and negative effects. This aligns with my genuine view and my track record of case-by-case, nuanced thinking. I've seen AI used well and I've seen how it can be gamed or misused. Neither utopia nor dystopia feels right.",
+        "B \u2014 About equally positive and negative. I genuinely believe this. The efficiency gains are real, the creative potential is real, but so are the displacement risks, the misinformation risks, and the concentration of power issues. Pretending it's mostly positive feels naive; pretending it's mostly negative ignores what I see with my own work. The honest answer is that it's deeply mixed."
       ]
     },
     {
       "question_id": "q15",
       "topic": "financial_security",
       "question_text": "Which of the following best describes your financial situation?",
-      "distribution_accuracy": 85.7,
-      "mae_pct_points": 7.2,
+      "distribution_accuracy": 85.0,
+      "mae_pct_points": 7.5,
       "n_responses": 60,
       "n_parseable": 60,
       "pew_distribution": {
@@ -387,17 +387,17 @@
         "D": 9.0
       },
       "simulated_distribution": {
-        "A": 35.0,
-        "B": 48.3,
+        "A": 33.3,
+        "B": 50.0,
         "C": 16.7,
         "D": 0.0
       },
       "sample_responses": [
-        "A \u2014 I live comfortably. I have enough to meet my needs and wants without financial stress, and I make purchasing decisions based on quality and values rather than price. That's the honest truth of where I am.",
-        "A \u2014 I live comfortably. I've worked hard to get here, and my HVAC business provides a stable income. I track every dollar, so I know where I stand. I'm not extravagant, but I'm not scrambling either.",
-        "B \u2014 I meet my basic expenses with a little left over. That's the truest description of where we are. Not thriving, not sinking, but paddling hard to stay above water with just a little margin.",
-        "A \u2014 I live comfortably. I have disposable income beyond just covering basics, I make choices based on value rather than price necessity, and I don't experience financial anxiety as a baseline condition.",
-        "B \u2014 I meet my basic expenses with a little left over. That feels most accurate to where I am. I make it work, but it takes intentionality and I can't afford to be careless."
+        "A \u2014 I live comfortably. My spending habits, my priorities around quality, and my ability to make choices without being dominated by price all reflect a comfortable financial situation. I'm not extravagant, but I have stability and some room beyond the basics.",
+        "B \u2014 I meet my basic expenses with a little left over. That's the honest truth. Bills paid, some savings happening slowly, but I'm always watching the numbers.",
+        "A \u2014 I live comfortably. Eight years of running my own HVAC business, built from careful research and smart decisions, has put me in a stable position. I'm not wealthy, but I'm comfortable. My price-sensitivity is a habit and a discipline, not a necessity.",
+        "A \u2014 I live comfortably. My spending habits, my prioritization of quality, and my general financial behavior all point to this. I'm not wealthy, but I'm not stressed about meeting basic needs either.",
+        "A \u2014 I live comfortably. It's not lavish, but I've made the freelance pivot work. I have more than just the basics covered, I can make intentional spending choices, and I have some savings buffer. That fits 'comfortable' more than 'a little left over.'"
       ]
     }
   ]
