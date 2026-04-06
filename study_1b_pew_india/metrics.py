@@ -103,6 +103,7 @@ def compute_mae(
 def responses_to_distribution(
     responses: list[str],
     valid_options: list[str],
+    option_texts: dict[str, str] | None = None,
 ) -> tuple[dict[str, float], int]:
     """
     Convert raw response strings to a proportional distribution.
@@ -110,9 +111,19 @@ def responses_to_distribution(
     Parsing strategy (priority order):
       1. Single letter exactly matching a valid option
       2. Starts with "LETTER —" / "LETTER." / "LETTER)" / "LETTER:"
+      2b. Starts with option text (e.g. "Somewhat unfavorable — ...") [Sprint A-2]
       3. Explicit declaration: "going with X", "choose X", "answer is X"
       4. First word stripped of punctuation
       5. No greedy fallback
+
+    Args:
+        responses: Raw response strings from the survey model.
+        valid_options: List of valid option letters, e.g. ["A", "B", "C", "D"].
+        option_texts: Optional mapping of letter → option text, e.g.
+            {"A": "Very favorable", "B": "Somewhat favorable", ...}.
+            When provided, enables rule 2b to recover responses that start
+            with the full option text rather than a letter (in04 parse failure
+            pattern: "Somewhat unfavorable — [explanation]").
 
     Returns:
         (distribution dict, n_parseable)
@@ -121,7 +132,7 @@ def responses_to_distribution(
     n_parseable = 0
 
     for response in responses:
-        parsed = _parse_response(response, valid_options)
+        parsed = _parse_response(response, valid_options, option_texts)
         if parsed:
             counts[parsed] += 1
             n_parseable += 1
@@ -133,7 +144,11 @@ def responses_to_distribution(
     return distribution, n_parseable
 
 
-def _parse_response(response: str, valid_options: list[str]) -> str | None:
+def _parse_response(
+    response: str,
+    valid_options: list[str],
+    option_texts: dict[str, str] | None = None,
+) -> str | None:
     import re
 
     if not response:
@@ -152,6 +167,19 @@ def _parse_response(response: str, valid_options: list[str]) -> str | None:
         for pattern in [f"{opt} —", f"{opt}—", f"{opt}.", f"{opt})", f"{opt}:"]:
             if text_upper.startswith(pattern.upper()):
                 return opt
+
+    # 2b. Starts with option text (Sprint A-2 fix for in04 parse failure).
+    # Handles responses like "Somewhat unfavorable — [explanation]" where the
+    # survey model writes the option text rather than a letter prefix.
+    if option_texts:
+        text_lower = text.lower()
+        # Sort by length descending to match longest prefix first
+        # (avoids "Very favorable" being matched by "favorable" substring).
+        for opt_letter, opt_text in sorted(
+            option_texts.items(), key=lambda kv: len(kv[1]), reverse=True
+        ):
+            if opt_letter in valid_set and text_lower.startswith(opt_text.lower()):
+                return opt_letter
 
     # 3. Explicit declaration patterns
     declaration_patterns = [
@@ -194,13 +222,14 @@ def evaluate_system(
         qid = q["id"]
         responses = raw_survey_output.get(qid, [])
         valid_options = list(q["options"].keys())
+        option_texts = {k: v for k, v in q["options"].items()}
 
         # Ground truth — exclude DK/Refused, renormalise
         raw_pew = {k: v for k, v in q["pew_distribution"].items() if k != "DK"}
         total = sum(raw_pew.values())
         pew_dist = {k: v / total for k, v in raw_pew.items()}
 
-        sim_dist, n_parseable = responses_to_distribution(responses, valid_options)
+        sim_dist, n_parseable = responses_to_distribution(responses, valid_options, option_texts)
 
         acc = compute_distribution_accuracy(pew_dist, sim_dist)
         mae = compute_mae(pew_dist, sim_dist)
