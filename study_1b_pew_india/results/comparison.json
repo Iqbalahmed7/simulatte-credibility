@@ -1,0 +1,15 @@
+{
+  "study": "1B \u2014 Pew India Replication",
+  "human_benchmark_pct": 91.0,
+  "study_1a_simulatte_pct": 86.1,
+  "systems": [
+    {
+      "system": "Simulatte",
+      "n_questions": 15,
+      "mean_distribution_accuracy": 46.2,
+      "mean_mae_pct_points": 27.9,
+      "gap_to_human_benchmark_pct_points": 44.8,
+      "human_benchmark": 91.0
+    }
+  ]
+}
