@@ -97,18 +97,28 @@ Profiles approximate US Census / Pew ATP composition across:
 Any researcher with access to the Simulatte API can reproduce this study:
 
 ```bash
-# Clone the credibility repo
-git clone https://github.com/Iqbalahmed7/simulatte-persona-generator.git
-cd simulatte-persona-generator
-git checkout study-1a-sprint-b8   # pinned tag
+# Clone the credibility repo (this repo — no persona generator access required)
+git clone https://github.com/Iqbalahmed7/simulatte-credibility.git
+cd simulatte-credibility
+git checkout study-1a-sprint-b8   # pinned tag at commit c9c8de1
 
-# Run the study
+# Install dependencies
+pip install -r study_1a_pew_replication/requirements.txt
+
+# Run the study against the public Simulatte API
 cd study_1a_pew_replication
 python3 run_study.py --simulatte-only --cohort-size 60
 ```
 
+The study calls the **public Simulatte API** (`https://simulatte-persona-generator.onrender.com`).
+No access to the persona generator source code is required to reproduce.
+
 Expected result: **86.1% ± 3pp** (sampling variance at n=60).
 For publication-grade confidence intervals, run with `--cohort-size 200`.
+
+> **Note on reproducibility:** Exact distributions will vary by ±3pp due to LLM sampling
+> variance. The pinned git tag freezes the study code, question set, and Pew ground truth.
+> Model versions are fixed in `results/audit_manifest_b8.json`.
 
 ---
 

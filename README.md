@@ -113,19 +113,20 @@ credibility-research-ground-truth.html  # Ground truth reference
 Any researcher with access to the Simulatte API can reproduce Sprint B-8:
 
 ```bash
-git clone https://github.com/Iqbalahmed7/simulatte-persona-generator.git
-cd simulatte-persona-generator
+# Clone this credibility repo — no persona generator access required
+git clone https://github.com/Iqbalahmed7/simulatte-credibility.git
+cd simulatte-credibility
 git checkout study-1a-sprint-b8      # pinned tag at commit c9c8de1
 
-export SIMULATTE_API_URL=https://simulatte-persona-generator.onrender.com
+pip install -r study_1a_pew_replication/requirements.txt
 
 cd study_1a_pew_replication
-pip install -r requirements.txt
 python run_study.py --simulatte-only --cohort-size 60
 ```
 
-Expected result: **86.1% ± 3pp** (sampling variance at n=60).
+The study runner calls the **public Simulatte API** — no persona generator source code needed.
 
+Expected result: **86.1% ± 3pp** (sampling variance at n=60).
 For publication-grade confidence intervals: `--cohort-size 200`.
 
 ---
