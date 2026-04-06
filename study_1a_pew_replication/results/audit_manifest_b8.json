@@ -1,0 +1,295 @@
+{
+  "study_id": "study_1a_pew_replication",
+  "sprint": "B-8",
+  "generated_at": "2026-04-06T12:39:08.159800Z",
+  "git_commit": "c9c8de1",
+  "git_tag": "study-1a-sprint-b8",
+  "git_repo": "https://github.com/Iqbalahmed7/simulatte-persona-generator",
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 86.1,
+    "mean_mae_pct_points": 9.2,
+    "n_personas": 60,
+    "n_questions": 15,
+    "n_total_responses": 900
+  },
+  "benchmark_comparison": {
+    "artificial_societies_jan_2026": 86.0,
+    "human_ceiling_stanford": 91.0,
+    "simulatte_b8": 86.1,
+    "beats_benchmark": true,
+    "gap_to_ceiling_pp": 4.9
+  },
+  "metric_formula": "distribution_accuracy = 1 - (sum(|real_i - sim_i|)) / 2",
+  "metric_source": "Artificial Societies Jan 2026 white paper",
+  "pew_data_source": "Pew Research Center American Trends Panel \u2014 published reports",
+  "survey_model": "claude-haiku-4-5-20251001",
+  "generation_model": "claude-sonnet-4-6",
+  "persona_pool": "us_general \u2014 40 profiles (demographic_sampler.py)",
+  "cohorts_run": 3,
+  "personas_per_cohort": 20,
+  "raw_data_files": {
+    "simulatte_results.json": {
+      "sha256": "50b666fd97de09617919e0b0191e60d75adf73c10e99f7103f59c7fdff7fa812",
+      "description": "Full per-question distributions, Pew baselines, and sample responses"
+    }
+  },
+  "per_question_results": [
+    {
+      "question_id": "q01",
+      "topic": "economy",
+      "distribution_accuracy_pct": 90.5,
+      "mae_pct_points": 4.8,
+      "n_parseable": 59,
+      "pew_distribution": {
+        "A": 2.0,
+        "B": 16.0,
+        "C": 41.0,
+        "D": 41.0
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 8.5,
+        "C": 47.5,
+        "D": 44.1
+      }
+    },
+    {
+      "question_id": "q02",
+      "topic": "economy",
+      "distribution_accuracy_pct": 96.0,
+      "mae_pct_points": 4.0,
+      "n_parseable": 59,
+      "pew_distribution": {
+        "A": 26.0,
+        "B": 74.0
+      },
+      "simulated_distribution": {
+        "A": 22.0,
+        "B": 78.0
+      }
+    },
+    {
+      "question_id": "q03",
+      "topic": "gun_policy",
+      "distribution_accuracy_pct": 83.7,
+      "mae_pct_points": 10.9,
+      "n_parseable": 53,
+      "pew_distribution": {
+        "A": 59.2,
+        "B": 26.5,
+        "C": 14.3
+      },
+      "simulated_distribution": {
+        "A": 75.5,
+        "B": 13.2,
+        "C": 11.3
+      }
+    },
+    {
+      "question_id": "q04",
+      "topic": "immigration",
+      "distribution_accuracy_pct": 84.2,
+      "mae_pct_points": 15.8,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 60.8,
+        "B": 39.2
+      },
+      "simulated_distribution": {
+        "A": 76.7,
+        "B": 23.3
+      }
+    },
+    {
+      "question_id": "q05",
+      "topic": "climate",
+      "distribution_accuracy_pct": 87.3,
+      "mae_pct_points": 6.3,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 38.0,
+        "B": 34.0,
+        "C": 18.0,
+        "D": 10.0
+      },
+      "simulated_distribution": {
+        "A": 30.0,
+        "B": 46.7,
+        "C": 13.3,
+        "D": 10.0
+      }
+    },
+    {
+      "question_id": "q06",
+      "topic": "social_trust",
+      "distribution_accuracy_pct": 89.1,
+      "mae_pct_points": 10.9,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 30.9,
+        "B": 69.1
+      },
+      "simulated_distribution": {
+        "A": 20.0,
+        "B": 80.0
+      }
+    },
+    {
+      "question_id": "q07",
+      "topic": "government",
+      "distribution_accuracy_pct": 98.1,
+      "mae_pct_points": 1.9,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 53.6,
+        "B": 46.4
+      },
+      "simulated_distribution": {
+        "A": 51.7,
+        "B": 48.3
+      }
+    },
+    {
+      "question_id": "q08",
+      "topic": "religion",
+      "distribution_accuracy_pct": 88.7,
+      "mae_pct_points": 5.7,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 41.0,
+        "B": 25.0,
+        "C": 16.0,
+        "D": 18.0
+      },
+      "simulated_distribution": {
+        "A": 48.3,
+        "B": 15.0,
+        "C": 20.0,
+        "D": 16.7
+      }
+    },
+    {
+      "question_id": "q09",
+      "topic": "abortion",
+      "distribution_accuracy_pct": 80.4,
+      "mae_pct_points": 9.8,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 26.9,
+        "B": 38.7,
+        "C": 25.8,
+        "D": 8.6
+      },
+      "simulated_distribution": {
+        "A": 18.3,
+        "B": 58.3,
+        "C": 23.3,
+        "D": 0.0
+      }
+    },
+    {
+      "question_id": "q10",
+      "topic": "racial_equality",
+      "distribution_accuracy_pct": 91.1,
+      "mae_pct_points": 8.9,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 32.3,
+        "B": 67.7
+      },
+      "simulated_distribution": {
+        "A": 23.3,
+        "B": 76.7
+      }
+    },
+    {
+      "question_id": "q11",
+      "topic": "healthcare",
+      "distribution_accuracy_pct": 87.3,
+      "mae_pct_points": 12.7,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 60.6,
+        "B": 39.4
+      },
+      "simulated_distribution": {
+        "A": 73.3,
+        "B": 26.7
+      }
+    },
+    {
+      "question_id": "q12",
+      "topic": "democracy",
+      "distribution_accuracy_pct": 90.1,
+      "mae_pct_points": 5.0,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 4.0,
+        "B": 28.3,
+        "C": 38.4,
+        "D": 29.3
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 23.3,
+        "C": 48.3,
+        "D": 28.3
+      }
+    },
+    {
+      "question_id": "q13",
+      "topic": "media_trust",
+      "distribution_accuracy_pct": 63.7,
+      "mae_pct_points": 18.1,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 10.1,
+        "B": 40.4,
+        "C": 32.3,
+        "D": 17.2
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 76.7,
+        "C": 13.3,
+        "D": 10.0
+      }
+    },
+    {
+      "question_id": "q14",
+      "topic": "technology",
+      "distribution_accuracy_pct": 80.6,
+      "mae_pct_points": 12.9,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 42.7,
+        "B": 40.4,
+        "C": 16.9
+      },
+      "simulated_distribution": {
+        "A": 23.3,
+        "B": 58.3,
+        "C": 18.3
+      }
+    },
+    {
+      "question_id": "q15",
+      "topic": "financial_security",
+      "distribution_accuracy_pct": 80.7,
+      "mae_pct_points": 9.7,
+      "n_parseable": 60,
+      "pew_distribution": {
+        "A": 34.0,
+        "B": 35.0,
+        "C": 22.0,
+        "D": 9.0
+      },
+      "simulated_distribution": {
+        "A": 40.0,
+        "B": 48.3,
+        "C": 11.7,
+        "D": 0.0
+      }
+    }
+  ]
+}

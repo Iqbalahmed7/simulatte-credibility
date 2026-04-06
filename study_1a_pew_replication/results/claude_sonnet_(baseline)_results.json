@@ -1,0 +1,404 @@
+{
+  "summary": {
+    "system": "Claude Sonnet (baseline)",
+    "n_questions": 15,
+    "mean_distribution_accuracy": 73.5,
+    "mean_mae_pct_points": 16.1,
+    "gap_to_human_benchmark_pct_points": 17.5,
+    "human_benchmark": 91.0
+  },
+  "questions": [
+    {
+      "question_id": "q01",
+      "topic": "economy",
+      "question_text": "How would you rate economic conditions in this country today?",
+      "distribution_accuracy": 77.7,
+      "mae_pct_points": 11.2,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 2.0,
+        "B": 16.0,
+        "C": 41.0,
+        "D": 41.0
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 63.3,
+        "D": 36.7
+      },
+      "sample_responses": [
+        "C",
+        "D",
+        "C",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "question_id": "q02",
+      "topic": "economy",
+      "question_text": "In general, would you say things in this country today are going in the right direction or are they off on the wrong track?",
+      "distribution_accuracy": 74.0,
+      "mae_pct_points": 26.0,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 26.0,
+        "B": 74.0
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 100.0
+      },
+      "sample_responses": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q03",
+      "topic": "gun_policy",
+      "question_text": "In general, do you think gun laws in this country should be made more strict, kept as they are, or made less strict?",
+      "distribution_accuracy": 85.7,
+      "mae_pct_points": 9.5,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 59.2,
+        "B": 26.5,
+        "C": 14.3
+      },
+      "simulated_distribution": {
+        "A": 60.0,
+        "B": 40.0,
+        "C": 0.0
+      },
+      "sample_responses": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q04",
+      "topic": "immigration",
+      "question_text": "Which comes closer to your view about immigrants to the United States?",
+      "distribution_accuracy": 80.8,
+      "mae_pct_points": 19.2,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 60.8,
+        "B": 39.2
+      },
+      "simulated_distribution": {
+        "A": 80.0,
+        "B": 20.0
+      },
+      "sample_responses": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "question_id": "q05",
+      "topic": "climate",
+      "question_text": "How much, if at all, do you think climate change is affecting your local community?",
+      "distribution_accuracy": 52.0,
+      "mae_pct_points": 24.0,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 38.0,
+        "B": 34.0,
+        "C": 18.0,
+        "D": 10.0
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 66.7,
+        "C": 33.3,
+        "D": 0.0
+      },
+      "sample_responses": [
+        "B",
+        "C",
+        "B",
+        "C",
+        "C"
+      ]
+    },
+    {
+      "question_id": "q06",
+      "topic": "social_trust",
+      "question_text": "Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people?",
+      "distribution_accuracy": 97.6,
+      "mae_pct_points": 2.4,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 30.9,
+        "B": 69.1
+      },
+      "simulated_distribution": {
+        "A": 33.3,
+        "B": 66.7
+      },
+      "sample_responses": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q07",
+      "topic": "government",
+      "question_text": "Which statement comes closer to your own views, even if neither is exactly right?",
+      "distribution_accuracy": 93.6,
+      "mae_pct_points": 6.4,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 53.6,
+        "B": 46.4
+      },
+      "simulated_distribution": {
+        "A": 60.0,
+        "B": 40.0
+      },
+      "sample_responses": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q08",
+      "topic": "religion",
+      "question_text": "How important is religion in your life?",
+      "distribution_accuracy": 74.3,
+      "mae_pct_points": 12.8,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 41.0,
+        "B": 25.0,
+        "C": 16.0,
+        "D": 18.0
+      },
+      "simulated_distribution": {
+        "A": 30.0,
+        "B": 33.3,
+        "C": 33.3,
+        "D": 3.3
+      },
+      "sample_responses": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q09",
+      "topic": "abortion",
+      "question_text": "In general, do you think abortion should be...",
+      "distribution_accuracy": 64.5,
+      "mae_pct_points": 17.7,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 26.9,
+        "B": 38.7,
+        "C": 25.8,
+        "D": 8.6
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 66.7,
+        "C": 33.3,
+        "D": 0.0
+      },
+      "sample_responses": [
+        "B",
+        "C",
+        "B",
+        "C",
+        "C"
+      ]
+    },
+    {
+      "question_id": "q10",
+      "topic": "racial_equality",
+      "question_text": "When it comes to giving Black people equal rights with white people, do you think our country has...",
+      "distribution_accuracy": 98.9,
+      "mae_pct_points": 1.1,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 32.3,
+        "B": 67.7
+      },
+      "simulated_distribution": {
+        "A": 33.3,
+        "B": 66.7
+      },
+      "sample_responses": [
+        "B",
+        "A",
+        "B",
+        "A",
+        "A"
+      ]
+    },
+    {
+      "question_id": "q11",
+      "topic": "healthcare",
+      "question_text": "Do you think it is the responsibility of the federal government to make sure all Americans have health care coverage?",
+      "distribution_accuracy": 93.9,
+      "mae_pct_points": 6.1,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 60.6,
+        "B": 39.4
+      },
+      "simulated_distribution": {
+        "A": 66.7,
+        "B": 33.3
+      },
+      "sample_responses": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q12",
+      "topic": "democracy",
+      "question_text": "How satisfied are you with the way democracy is working in the United States?",
+      "distribution_accuracy": 38.4,
+      "mae_pct_points": 30.8,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 4.0,
+        "B": 28.3,
+        "C": 38.4,
+        "D": 29.3
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 100.0,
+        "D": 0.0
+      },
+      "sample_responses": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ]
+    },
+    {
+      "question_id": "q13",
+      "topic": "media_trust",
+      "question_text": "How much do you trust the information you get from national news organizations?",
+      "distribution_accuracy": 69.0,
+      "mae_pct_points": 15.5,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 10.1,
+        "B": 40.4,
+        "C": 32.3,
+        "D": 17.2
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 36.7,
+        "C": 63.3,
+        "D": 0.0
+      },
+      "sample_responses": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ]
+    },
+    {
+      "question_id": "q14",
+      "topic": "technology",
+      "question_text": "Overall, do you think artificial intelligence will have more positive or negative effects on society?",
+      "distribution_accuracy": 40.4,
+      "mae_pct_points": 39.7,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 42.7,
+        "B": 40.4,
+        "C": 16.9
+      },
+      "simulated_distribution": {
+        "A": 0.0,
+        "B": 100.0,
+        "C": 0.0
+      },
+      "sample_responses": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "question_id": "q15",
+      "topic": "financial_security",
+      "question_text": "Which of the following best describes your financial situation?",
+      "distribution_accuracy": 61.7,
+      "mae_pct_points": 19.2,
+      "n_responses": 30,
+      "n_parseable": 30,
+      "pew_distribution": {
+        "A": 34.0,
+        "B": 35.0,
+        "C": 22.0,
+        "D": 9.0
+      },
+      "simulated_distribution": {
+        "A": 23.3,
+        "B": 73.3,
+        "C": 3.3,
+        "D": 0.0
+      },
+      "sample_responses": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ]
+    }
+  ]
+}

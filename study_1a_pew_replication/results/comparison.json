@@ -1,0 +1,15 @@
+{
+  "study": "1A \u2014 Pew Replication",
+  "human_benchmark_pct": 91.0,
+  "artificial_societies_benchmark_pct": 86.0,
+  "systems": [
+    {
+      "system": "Simulatte",
+      "n_questions": 15,
+      "mean_distribution_accuracy": 86.1,
+      "mean_mae_pct_points": 9.2,
+      "gap_to_human_benchmark_pct_points": 4.9,
+      "human_benchmark": 91.0
+    }
+  ]
+}

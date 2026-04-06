@@ -1,0 +1,284 @@
+[
+  {
+    "id": "q01",
+    "topic": "economy",
+    "source": "Pew Research Center, American Trends Panel Wave 125, March 2023",
+    "text": "How would you rate economic conditions in this country today?",
+    "options": {
+      "A": "Excellent",
+      "B": "Good",
+      "C": "Only fair",
+      "D": "Poor"
+    },
+    "pew_distribution": {
+      "A": 0.02,
+      "B": 0.16,
+      "C": 0.41,
+      "D": 0.41
+    },
+    "pew_n": 5079,
+    "pew_notes": "March 2023 ATP Wave 125"
+  },
+  {
+    "id": "q02",
+    "topic": "economy",
+    "source": "Pew Research Center, American Trends Panel Wave 125, March 2023",
+    "text": "In general, would you say things in this country today are going in the right direction or are they off on the wrong track?",
+    "options": {
+      "A": "Right direction",
+      "B": "Wrong track"
+    },
+    "pew_distribution": {
+      "A": 0.26,
+      "B": 0.74
+    },
+    "pew_n": 5079,
+    "pew_notes": "March 2023 ATP Wave 125"
+  },
+  {
+    "id": "q03",
+    "topic": "gun_policy",
+    "source": "Pew Research Center, Gun Policy Survey, June 2023",
+    "text": "In general, do you think gun laws in this country should be made more strict, kept as they are, or made less strict?",
+    "options": {
+      "A": "More strict",
+      "B": "Kept as they are",
+      "C": "Less strict"
+    },
+    "pew_distribution": {
+      "A": 0.58,
+      "B": 0.26,
+      "C": 0.14,
+      "DK": 0.02
+    },
+    "pew_n": 5115,
+    "pew_notes": "June 2023 Gun Policy Survey. DK/Refused excluded from distribution calc."
+  },
+  {
+    "id": "q04",
+    "topic": "immigration",
+    "source": "Pew Research Center, American Trends Panel Wave 126, April 2023",
+    "text": "Which comes closer to your view about immigrants to the United States?",
+    "options": {
+      "A": "Immigrants today strengthen our country because of their hard work and talents",
+      "B": "Immigrants today are a burden on our country because they take our jobs, housing and health care"
+    },
+    "pew_distribution": {
+      "A": 0.59,
+      "B": 0.38,
+      "DK": 0.03
+    },
+    "pew_n": 3576,
+    "pew_notes": "April 2023. DK excluded."
+  },
+  {
+    "id": "q05",
+    "topic": "climate",
+    "source": "Pew Research Center, Climate & Energy Survey, October 2023",
+    "text": "How much, if at all, do you think climate change is affecting your local community?",
+    "options": {
+      "A": "A great deal",
+      "B": "Some",
+      "C": "Not too much",
+      "D": "Not at all"
+    },
+    "pew_distribution": {
+      "A": 0.38,
+      "B": 0.34,
+      "C": 0.18,
+      "D": 0.10
+    },
+    "pew_n": 8842,
+    "pew_notes": "October 2023 Climate & Energy Survey"
+  },
+  {
+    "id": "q06",
+    "topic": "social_trust",
+    "source": "Pew Research Center, American Trends Panel Wave 119, September 2022",
+    "text": "Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people?",
+    "options": {
+      "A": "Most people can be trusted",
+      "B": "Can't be too careful"
+    },
+    "pew_distribution": {
+      "A": 0.30,
+      "B": 0.67,
+      "DK": 0.03
+    },
+    "pew_n": 6174,
+    "pew_notes": "Sept 2022. DK excluded."
+  },
+  {
+    "id": "q07",
+    "topic": "government",
+    "source": "Pew Research Center, American Trends Panel Wave 128, May 2023",
+    "text": "Which statement comes closer to your own views, even if neither is exactly right?",
+    "options": {
+      "A": "Government should do more to solve problems",
+      "B": "Government is doing too many things better left to businesses and individuals"
+    },
+    "pew_distribution": {
+      "A": 0.52,
+      "B": 0.45,
+      "DK": 0.03
+    },
+    "pew_n": 5079,
+    "pew_notes": "May 2023. DK excluded."
+  },
+  {
+    "id": "q08",
+    "topic": "religion",
+    "source": "Pew Research Center, Religious Landscape Study 2023",
+    "text": "How important is religion in your life?",
+    "options": {
+      "A": "Very important",
+      "B": "Somewhat important",
+      "C": "Not too important",
+      "D": "Not at all important"
+    },
+    "pew_distribution": {
+      "A": 0.41,
+      "B": 0.25,
+      "C": 0.16,
+      "D": 0.18
+    },
+    "pew_n": 11201,
+    "pew_notes": "2023 Religious Landscape Study"
+  },
+  {
+    "id": "q09",
+    "topic": "abortion",
+    "source": "Pew Research Center, American Trends Panel, July 2023",
+    "text": "In general, do you think abortion should be...",
+    "options": {
+      "A": "Legal in all cases",
+      "B": "Legal in most cases",
+      "C": "Illegal in most cases",
+      "D": "Illegal in all cases"
+    },
+    "pew_distribution": {
+      "A": 0.25,
+      "B": 0.36,
+      "C": 0.24,
+      "D": 0.08,
+      "DK": 0.07
+    },
+    "pew_n": 6912,
+    "pew_notes": "July 2023 ATP. DK excluded."
+  },
+  {
+    "id": "q10",
+    "topic": "racial_equality",
+    "source": "Pew Research Center, Race in America Survey, March 2023",
+    "text": "When it comes to giving Black people equal rights with white people, do you think our country has...",
+    "options": {
+      "A": "Made the changes needed for Black people to have equal rights with whites",
+      "B": "Not gone far enough in making changes to give Black people equal rights"
+    },
+    "pew_distribution": {
+      "A": 0.30,
+      "B": 0.63,
+      "DK": 0.07
+    },
+    "pew_n": 5073,
+    "pew_notes": "March 2023 Race in America Survey. DK excluded."
+  },
+  {
+    "id": "q11",
+    "topic": "healthcare",
+    "source": "Pew Research Center, Health Care Survey, February 2023",
+    "text": "Do you think it is the responsibility of the federal government to make sure all Americans have health care coverage?",
+    "options": {
+      "A": "Yes, it is the government's responsibility",
+      "B": "No, it is not the government's responsibility"
+    },
+    "pew_distribution": {
+      "A": 0.60,
+      "B": 0.39,
+      "DK": 0.01
+    },
+    "pew_n": 5079,
+    "pew_notes": "February 2023. DK excluded."
+  },
+  {
+    "id": "q12",
+    "topic": "democracy",
+    "source": "Pew Research Center, American Trends Panel Wave 130, July 2023",
+    "text": "How satisfied are you with the way democracy is working in the United States?",
+    "options": {
+      "A": "Very satisfied",
+      "B": "Somewhat satisfied",
+      "C": "Not too satisfied",
+      "D": "Not at all satisfied"
+    },
+    "pew_distribution": {
+      "A": 0.04,
+      "B": 0.28,
+      "C": 0.38,
+      "D": 0.29,
+      "DK": 0.01
+    },
+    "pew_n": 8480,
+    "pew_notes": "July 2023 ATP. DK excluded."
+  },
+  {
+    "id": "q13",
+    "topic": "media_trust",
+    "source": "Pew Research Center, Media & News Survey, October 2022",
+    "text": "How much do you trust the information you get from national news organizations?",
+    "options": {
+      "A": "A lot",
+      "B": "Some",
+      "C": "Not much",
+      "D": "None at all"
+    },
+    "pew_distribution": {
+      "A": 0.10,
+      "B": 0.40,
+      "C": 0.32,
+      "D": 0.17,
+      "DK": 0.01
+    },
+    "pew_n": 12147,
+    "pew_notes": "October 2022 Media & News Survey. DK excluded."
+  },
+  {
+    "id": "q14",
+    "topic": "technology",
+    "source": "Pew Research Center, AI Survey, February 2023",
+    "text": "Overall, do you think artificial intelligence will have more positive or negative effects on society?",
+    "options": {
+      "A": "Mostly positive effects",
+      "B": "About equally positive and negative",
+      "C": "Mostly negative effects"
+    },
+    "pew_distribution": {
+      "A": 0.38,
+      "B": 0.36,
+      "C": 0.15,
+      "DK": 0.11
+    },
+    "pew_n": 11004,
+    "pew_notes": "February 2023 AI Survey. DK excluded."
+  },
+  {
+    "id": "q15",
+    "topic": "financial_security",
+    "source": "Pew Research Center, Financial Wellbeing Survey, November 2023",
+    "text": "Which of the following best describes your financial situation?",
+    "options": {
+      "A": "I live comfortably",
+      "B": "I meet my basic expenses with a little left over",
+      "C": "I just meet my basic expenses",
+      "D": "I don't meet my basic expenses"
+    },
+    "pew_distribution": {
+      "A": 0.34,
+      "B": 0.35,
+      "C": 0.22,
+      "D": 0.09
+    },
+    "pew_n": 3576,
+    "pew_notes": "November 2023 Financial Wellbeing Survey"
+  }
+]
