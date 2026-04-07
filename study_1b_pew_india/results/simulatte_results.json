@@ -2,9 +2,9 @@
   "summary": {
     "system": "Simulatte",
     "n_questions": 15,
-    "mean_distribution_accuracy": 45.9,
-    "mean_mae_pct_points": 28.0,
-    "gap_to_human_benchmark_pct_points": 45.1,
+    "mean_distribution_accuracy": 50.3,
+    "mean_mae_pct_points": 25.8,
+    "gap_to_human_benchmark_pct_points": 40.7,
     "human_benchmark": 91.0
   },
   "questions": [
@@ -12,10 +12,10 @@
       "question_id": "in01",
       "topic": "democracy_satisfaction",
       "question_text": "How satisfied are you with the way democracy is working in India?",
-      "distribution_accuracy": 41.9,
-      "mae_pct_points": 29.1,
+      "distribution_accuracy": 55.6,
+      "mae_pct_points": 22.2,
       "n_responses": 40,
-      "n_parseable": 39,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 28.3,
         "B": 44.4,
@@ -24,16 +24,16 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 30.8,
-        "C": 69.2,
+        "B": 77.5,
+        "C": 22.5,
         "D": 0.0
       },
       "sample_responses": [
-        "C - Not too satisfied. From what I've read and cross-referenced, there are real concerns about press freedom, treatment of minorities, and the concentration of political power, even though India maintains the structure of democratic elections. As a pragmatic moderate, I can't ignore those signals, but I'm also not saying it's completely broken.",
-        "C \u2014 Not too satisfied. From what I've read and heard, there are real concerns about how democracy is functioning in India right now \u2014 press freedom issues, polarization, questions about institutional independence. But I hold this view with some humility since I'm not living there and information varies by source.",
-        "C \u2014 Not too satisfied. I'm a pragmatic moderate, so I won't say 'not at all' because I do see democracy functioning in some ways. But 'somewhat satisfied' feels too generous given the real gaps I witness \u2014 economic inequality, institutional failures, money's influence on politics. 'Not too satisfied' captures my honest, nuanced position.",
-        "C \u2014 Not too satisfied. Democracy is functioning in a technical sense \u2014 elections happen, there is some accountability \u2014 but in practice, the voices of ordinary struggling people like me are not heard enough. Corruption, inequality, and divisive politics make me feel the system could do so much better.",
-        "C \u2014 Not too satisfied. I believe in democracy as an idea, and I participate, I vote, I take it seriously. But the way it's actually working \u2014 the money in elections, the corruption, the fact that people like me still struggle so hard \u2014 means I can't say I'm satisfied. 'Not too satisfied' captures my honest, nuanced feeling without being completely despairing."
+        "B \u2014 Somewhat satisfied. Democracy in India functions \u2014 elections are real, participation is meaningful \u2014 but there are enough frustrations with governance, economic equity, and institutional integrity that I can't say 'very satisfied.' As a moderate, I see both progress and problems.",
+        "B \u2014 Somewhat satisfied. Democracy as a system has value and I believe in it, but the implementation leaves much to be desired. Economic hardship, flood experiences without adequate government help, and the gap between what politicians promise and what actually reaches people like me \u2014 all of that keeps me from being very satisfied. But I'm not cynical enough to say not at all satisfied.",
+        "B \u2014 Somewhat satisfied. Democracy is working in the sense that elections occur and power transfers happen. But there are real frustrations \u2014 concerns about whether institutions are truly independent, whether all voices are heard, whether promises translate to real change. I appreciate the system but I'm not fully satisfied with how it operates in practice.",
+        "B \u2014 Somewhat satisfied. Democracy functions in India \u2014 elections are real, peaceful transfers happen, courts still work sometimes. But corruption, inequality, and the way money dominates politics means ordinary people like me don't always see results. I'm a moderate \u2014 I won't say 'not at all' because that feels extreme, but 'very satisfied' would be dishonest given my daily struggles.",
+        "B \u2014 Somewhat satisfied. Democracy as an institution I believe in and participate in. But outcomes for ordinary people like me leave much to be desired. I am not fully dissatisfied \u2014 I value my vote and see some progress \u2014 but I cannot say I am very satisfied when I cannot fully cover my bills each month."
       ]
     },
     {
@@ -43,7 +43,7 @@
       "distribution_accuracy": 32.3,
       "mae_pct_points": 33.8,
       "n_responses": 40,
-      "n_parseable": 35,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 55.6,
         "B": 24.2,
@@ -52,26 +52,26 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 60.0,
-        "C": 40.0,
+        "B": 90.0,
+        "C": 10.0,
         "D": 0.0
       },
       "sample_responses": [
-        "I'd lean toward 'somewhat unfavorable' based on the coverage I've seen about concerns over democratic institutions, religious minority treatment, and press freedom \u2014 but I hold this view loosely. I'm not deeply informed and recognize there's another side about economic development and national security. As a moderate, I can't in good conscience say 'very' anything about a leader I only know from partial news coverage.",
-        "I'd say somewhat unfavorable. I don't know enough to say 'very' anything, but the concerns I've heard about democratic institutions, press freedom, and religious minority treatment lean me in a cautious, negative direction. I try to be fair and case-by-case, but those are real issues I can't ignore.",
-        "Somewhat unfavorable \u2014 leaning that way because the economic relief for people at my income level hasn't materialized the way it was promised. The polarization around religion concerns me even though I'm devout myself. I believe faith should unite, not divide. But I acknowledge he's not all bad \u2014 some infrastructure and digital work has value. Still, the net effect on people like me feels more negative.",
-        "I'd say somewhat unfavorable. The concerns about minority rights and democratic norms trouble me from a values standpoint \u2014 my faith calls me to care about all people's dignity. I can acknowledge he has supporters and some economic achievements, but I lean toward concern overall.",
-        "B \u2014 Somewhat favorable. I appreciate some of the programs aimed at the poor and the emphasis on national development, but I have genuine concerns about inflation eating into my tight budget, some divisive rhetoric, and policies that feel case-by-case uneven. As a moderate, I can't go 'very favorable' \u2014 there's too much that gives me pause. But I wouldn't say unfavorable either because I see real benefits in some initiatives."
+        "Somewhat unfavorable. As a moderate who takes things case by case, I appreciate some of the development and governance work, but my concerns about religious minority treatment and certain divisive policies tip me toward unfavorable \u2014 though not strongly so.",
+        "B \u2014 Somewhat favorable. As a pragmatic moderate, I see some positives \u2014 infrastructure, welfare schemes, a sense of national confidence \u2014 but I have real concerns about inflation, economic hardship for people like me, and how policies affect vulnerable communities. I'm not strongly partisan either way.",
+        "B \u2014 Somewhat favorable. I think Modi has delivered on some fronts \u2014 infrastructure, digital India, some welfare programs. But inflation, price rises on essentials, and some divisive moments make me cautious. I'm not a fan in an uncritical way, but overall slightly positive.",
+        "Somewhat favorable. I respect what he has done in terms of national image and some infrastructure, but I have real concerns about economic pressure on families like mine \u2014 healthcare costs, inflation. I can't say very favorable because my daily reality hasn't improved much. But I won't say unfavorable either \u2014 he's done more than previous governments in some areas.",
+        "Somewhat favorable \u2014 B. He has done some positive things for the country's image and infrastructure, and I appreciate his emphasis on national pride and Hindu values which resonate with me. But the economic pressure on ordinary families like mine makes me cautious about giving full support. I am not a strong partisan either way."
       ]
     },
     {
       "question_id": "in03",
       "topic": "bjp_approval",
       "question_text": "Do you have a favorable or unfavorable opinion of the Bharatiya Janata Party (BJP)?",
-      "distribution_accuracy": 23.0,
-      "mae_pct_points": 38.5,
+      "distribution_accuracy": 45.4,
+      "mae_pct_points": 27.3,
       "n_responses": 40,
-      "n_parseable": 34,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 42.9,
         "B": 31.6,
@@ -80,26 +80,26 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 8.8,
-        "C": 88.2,
-        "D": 2.9
+        "B": 45.0,
+        "C": 52.5,
+        "D": 2.5
       },
       "sample_responses": [
-        "I'd say somewhat unfavorable \u2014 not strongly, because I genuinely don't know enough, but the reports I've seen about religious minority tensions and democratic concerns in India under BJP leadership trouble me from a faith and human dignity standpoint. My moderate instincts prevent me from going to 'very unfavorable' without more knowledge.",
-        "I'd say somewhat unfavorable \u2014 not strongly, because I genuinely don't know enough to be certain, but the nationalist religious exclusivity angle and reports of press freedom concerns are things that sit uneasily with my values of fairness and community. I'm not going to be harsh without full knowledge, but leaning unfavorable feels honest.",
-        "Somewhat unfavorable \u2014 C. I appreciate certain aspects like the emphasis on faith and some infrastructure work, but the divisiveness, the way economic hardship continues for people like me, and some policies that feel more symbolic than substantive push me toward a somewhat unfavorable view. I can't go 'very unfavorable' because I do see some genuine efforts, but I lean critical.",
-        "C \u2014 Somewhat unfavorable. I'm a pragmatist and moderate. While I can see some economic and governance arguments in BJP's favor, the divisive rhetoric and strong partisan identity they project make me uncomfortable. As someone who values relationships and community harmony over political wins, the polarization concerns me more than any policy benefit. I'd say somewhat unfavorable rather than very \u2014 I try to stay fair.",
-        "Somewhat unfavorable \u2014 not strongly against, because they have done some positive things, especially on infrastructure and some welfare programs. But as someone living on a tight budget, constantly struggling, experiencing real climate effects, and holding nuanced views, I find their handling of economic inequality, climate issues, and social divisions concerning. I'm a moderate who can't fully embrace strong partisan identity either way."
+        "Somewhat unfavorable \u2014 B leaning toward C. Given my identity as a Christian Indian woman with pragmatic, moderate political views, BJP's religious nationalism does concern me, even if I can acknowledge some governance achievements. I settle on somewhat unfavorable.",
+        "B \u2014 Somewhat favorable. My faith and cultural identity connect me to some of BJP's values, and I do see some development efforts. But I can't go 'very favorable' because economically, life hasn't gotten easier for people like me, and I hold genuinely mixed views as a moderate.",
+        "Somewhat unfavorable \u2014 not strongly, because they've done some things worth acknowledging, but overall my concerns about communal politics, treatment of minorities, and press freedom tip me toward unfavorable. As a moderate Sikh woman, I can't fully align with them.",
+        "Somewhat unfavorable \u2014 not strongly against, but the economic hardship my family has faced, the healthcare costs, inflation, and feeling like policies don't really reach people at my level tips me toward mild unfavorability. I appreciate some aspects culturally but on practical matters I'm disappointed.",
+        "Somewhat favorable \u2014 B. I lean toward a cautiously positive view, giving credit for some governance and cultural alignment with my values, while holding real reservations about economic pressures on ordinary households like mine. I'm not a strong supporter but I'm not against them either."
       ]
     },
     {
       "question_id": "in04",
       "topic": "inc_approval",
       "question_text": "Do you have a favorable or unfavorable opinion of the Indian National Congress (INC / Congress party)?",
-      "distribution_accuracy": 24.2,
-      "mae_pct_points": 37.9,
+      "distribution_accuracy": 32.7,
+      "mae_pct_points": 33.6,
       "n_responses": 40,
-      "n_parseable": 31,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 24.0,
         "B": 38.5,
@@ -108,16 +108,16 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 6.5,
-        "C": 93.5,
+        "B": 15.0,
+        "C": 85.0,
         "D": 0.0
       },
       "sample_responses": [
-        "I genuinely don't know enough to have a strong opinion. I'd lean toward 'no opinion' but since that's not an option, I'd pick 'somewhat unfavorable' only because the news I have caught \u2014 corruption allegations, dynastic concerns \u2014 leaves me slightly skeptical. But this is a very low-confidence answer based on limited information.",
-        "I lean toward 'somewhat unfavorable' mostly because of what I've read about corruption issues and dynastic politics, which doesn't sit well with my values around fairness and accountability. But honestly, I don't know enough to have a strong opinion either way. I'll say 'C' \u2014 somewhat unfavorable \u2014 with very low conviction.",
-        "Somewhat unfavorable. I respect Congress's historical legacy and some of its social welfare stances, but the dynastic leadership, corruption issues, and feeling that they've been out of touch with everyday struggles like mine makes me lean unfavorable. I'm pragmatic \u2014 I judge case by case \u2014 and on balance, they've disappointed more than impressed in recent years.",
-        "I'd say somewhat unfavorable \u2014 not strongly against them, but I've seen enough disappointment to not be enthusiastic. They've made promises to people like me that haven't been kept, and the corruption issues bother me. But I acknowledge they've done some good historically and I don't dismiss them entirely.",
-        "Somewhat unfavorable \u2014 not strongly negative, but I've seen enough broken promises and corruption that I lean skeptical. They talk about helping the poor but the help often doesn't reach people like me. As a political moderate I can acknowledge some positives, but right now I'm more critical than supportive."
+        "Somewhat favorable \u2014 B. I recognize Congress's historical role in protecting minority interests and maintaining secular governance, which matters to me as a Christian Indian. But I can't say 'very favorable' given the corruption issues, dynasty politics, and their weak governance record. It's a qualified, pragmatic favorable view.",
+        "Somewhat unfavorable \u2014 I see Congress as having potential but consistently failing ordinary people like me. Too much internal politics, too much dynasty, too little delivery on economic relief for lower-income families. I'm not a hardcore opponent, but I'm disappointed enough to lean unfavorable.",
+        "B \u2014 Somewhat unfavorable. I have more concerns than confidence about Congress right now. Their leadership seems weak, they haven't offered compelling alternatives, and the dynastic politics bothers me. But I wouldn't say 'very unfavorable' because I appreciate some of their historical contributions and their moderate stances on some issues.",
+        "Somewhat unfavorable. Congress has failed to reinvent itself, the dynastic politics feels outdated, and I've not seen concrete benefits for middle/lower income families like mine despite their promises. But I won't say 'very unfavorable' \u2014 I'm a moderate, and I can see some Congress leaders do make valid points occasionally.",
+        "B \u2014 Somewhat unfavorable. I'm a moderate, so 'very' anything is not my style. But honestly, Congress has been disappointing \u2014 the leadership seems stuck, the party feels out of touch with ordinary people's daily struggles. I wouldn't say I despise them, but I don't have confidence in them right now. Somewhat unfavorable feels honest."
       ]
     },
     {
@@ -139,21 +139,21 @@
         "C": 0.0
       },
       "sample_responses": [
-        "A \u2014 Getting stronger. From what I've observed through mainstream news and general awareness, India's economy is one of the fastest growing, they hosted the G20, they have a significant tech sector, and they seem to be positioning themselves as a major player geopolitically. That points to growing influence.",
-        "A \u2014 Getting stronger. Based on what I've seen and read, India's global presence seems to be growing \u2014 economically, diplomatically, and in terms of soft power. It's not perfect and I hold this with some humility, but the direction seems clear.",
-        "A \u2014 Getting stronger. Despite my personal struggles and skepticism about whether this strength reaches ordinary citizens, the evidence of India's growing diplomatic weight, technological achievements, and economic position in the world seems clear to me.",
-        "A \u2014 Getting stronger. From what I can see, India is gaining more presence diplomatically, economically, and technologically. It's not perfect and there are challenges, but the overall direction seems upward.",
-        "A \u2014 Getting stronger. I believe India's influence is growing based on what I read and hear across different sources. There are real achievements in space, diplomacy, and economic weight. I hold this view with some nuance \u2014 there are challenges too \u2014 but the overall trajectory seems upward."
+        "A \u2014 Getting stronger. The evidence I see points that way: space achievements, economic growth, diplomatic weight, the G20 presidency. As someone who cares about quality outcomes, I see India investing in things that matter long-term.",
+        "A",
+        "A \u2014 Getting stronger. Despite some concerns I have about internal issues and regional tensions, the overall trajectory of India's global influence seems upward. G20 presidency, growing economy, space achievements \u2014 these matter on the world stage.",
+        "A \u2014 Getting stronger. Despite my own hardships and some skepticism about certain news outlets, the overall picture across multiple sources and community conversations points clearly to India growing in global influence. The G20, Chandrayaan, economic partnerships \u2014 these are real signals.",
+        "A \u2014 Getting stronger. I genuinely believe India's influence is growing. I see infrastructure projects, diplomatic activity, space achievements, economic growth. Even if I personally struggle financially, that doesn't mean the country isn't progressing on the world stage."
       ]
     },
     {
       "question_id": "in06",
       "topic": "representative_democracy",
       "question_text": "Having a representative democracy where citizens vote for representatives who then make laws and policies \u2014 how good or bad would this be for India as a way to govern the country?",
-      "distribution_accuracy": 47.2,
-      "mae_pct_points": 26.4,
+      "distribution_accuracy": 51.8,
+      "mae_pct_points": 24.1,
       "n_responses": 40,
-      "n_parseable": 35,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 37.1,
         "B": 44.3,
@@ -161,25 +161,25 @@
         "D": 10.3
       },
       "simulated_distribution": {
-        "A": 2.9,
-        "B": 97.1,
+        "A": 7.5,
+        "B": 92.5,
         "C": 0.0,
         "D": 0.0
       },
       "sample_responses": [
-        "I'd say 'Somewhat good.' Representative democracy is genuinely valuable \u2014 it gives citizens voice and accountability \u2014 but it's not perfect. India's experience shows both the promise and the messiness of democracy at scale. Corruption, gridlock, and majority-minority tensions are real concerns. So 'very good' feels too optimistic, but the system is fundamentally sound and preferable to alternatives.",
-        "I'd say somewhat good. Representative democracy is genuinely valuable \u2014 it protects people's voices and allows peaceful transitions of power. But I can't say 'very good' without acknowledging real problems: corruption, money in politics, voices of the poor being ignored. My own experience of loss and hardship taught me that systems don't always serve everyone equally. So it's good in principle, imperfect in practice.",
-        "B \u2014 Somewhat good. India's representative democracy has real problems: corruption, vote-buying, communal politics, inefficiency. But the framework itself \u2014 citizens voting for representatives \u2014 is fundamentally sound and better than the alternatives. I believe in it with reservations, not wholeheartedly, because I've seen how the system fails ordinary people. So 'somewhat good' captures my pragmatic, moderate view accurately.",
-        "Somewhat good \u2014 B. It's not 'very good' because I've lived the gap between what democracy promises and what it delivers to ordinary people. Corruption, slow systems, representatives who forget us after elections. But it's fundamentally the right approach. People deserve a voice in how they're governed, and this system provides that framework even if it's imperfect.",
-        "Somewhat good \u2014 B. I believe in the principle of representative democracy and think it is genuinely better than alternatives like authoritarian rule. But I cannot say 'very good' because I live with the reality that the system often fails ordinary people \u2014 corruption is real, money and caste distort elections, and policies don't always reach those who need them most. So it is good in principle, imperfect in practice."
+        "B \u2014 Somewhat good. Representative democracy is the right framework for India's diversity, but I can't say 'very good' because I've seen how it can be manipulated, how minority voices get drowned out, and how money corrupts the process. It's the best system available, but it needs serious improvements.",
+        "B \u2014 Somewhat good. Representative democracy is the right idea in principle, but in practice it has serious flaws \u2014 corruption, money influence, representatives who ignore poor communities. So I can't say 'very good' because I've lived the disappointment. But it's better than not having elections at all.",
+        "B \u2014 Somewhat good. I believe in democracy and India's right to self-governance through elected representatives, but I'm not naive. There's corruption, vote-bank politics, and sometimes the system serves the powerful more than common people. So 'very good' feels too optimistic, but 'somewhat good' reflects my genuine pragmatic view \u2014 it's the best option we have even with flaws.",
+        "Somewhat good. I believe representative democracy is genuinely the best practical option for a country as diverse as India. It's not perfect \u2014 corruption, caste politics, money power all distort it \u2014 but the alternative of having no elected representation is far worse. I'm pragmatic, not idealistic, so I can't say 'very good' because I've seen too many failures. But I believe in it enough to say 'somewhat good.'",
+        "Somewhat good. I believe in democracy and India's democratic tradition, but I also see the corruption, the caste politics, the promises that never get fulfilled. It is good in principle and mostly good in practice, but not perfect. So 'somewhat good' \u2014 B \u2014 feels honest."
       ]
     },
     {
       "question_id": "in07",
       "topic": "strong_leader",
       "question_text": "Having a strong leader who does not have to bother with parliament or elections \u2014 how good or bad would this be for India as a way to govern the country?",
-      "distribution_accuracy": 10.2,
-      "mae_pct_points": 44.9,
+      "distribution_accuracy": 18.4,
+      "mae_pct_points": 40.8,
       "n_responses": 40,
       "n_parseable": 40,
       "pew_distribution": {
@@ -191,23 +191,23 @@
       "simulated_distribution": {
         "A": 0.0,
         "B": 0.0,
-        "C": 0.0,
-        "D": 100.0
+        "C": 85.0,
+        "D": 15.0
       },
       "sample_responses": [
-        "D \u2014 Very bad. Strong leadership is valuable, but not at the cost of democratic accountability. Parliament and elections exist precisely to keep leaders honest and representative of the people's will. Removing those safeguards is a recipe for tyranny, regardless of how capable or well-intentioned the leader might seem at first.",
-        "D \u2014 Very bad. Removing parliamentary oversight and elections from governance is very bad. Democracy, imperfect as it is, gives people like me some voice. Without elections, there is no accountability, no recourse, and the people who already have power can entrench it indefinitely. My pragmatic, case-by-case approach still lands firmly here \u2014 every case in history where this has happened points to suffering for ordinary people.",
-        "D \u2014 Very bad. No parliament, no elections means no accountability. It doesn't matter how capable or well-intentioned the leader is today \u2014 without checks, power corrupts. This is especially dangerous for people like me who have no wealth or influence to protect ourselves. Democracy, however messy, is the system that gives ordinary people a voice.",
-        "D \u2014 Very bad. No elections, no parliament means no way for people like me to hold anyone accountable. It protects the powerful and abandons the rest of us.",
-        "D \u2014 Very bad. A leader with no parliament, no elections \u2014 that is not strength, that is a door open for abuse. Science, reason, and faith all point to the same truth: unchecked power corrupts. For people like me who are already struggling, losing elections and parliament means losing the only tool we have to demand better."
+        "D \u2014 Very bad. I understand the appeal of efficiency, and I know Indian politics can be messy and slow. But removing parliament and elections entirely is not the answer. That's a recipe for abuse of power, no protection for minorities, no recourse for ordinary families. I want pragmatic governance, not authoritarianism.",
+        "C \u2014 Somewhat bad. I'm not going to say 'very bad' because I understand the appeal of decisive leadership when democratic processes feel slow and corrupt. But removing elections and parliament entirely crosses a line \u2014 it takes away the one tool regular people like me have to hold power accountable.",
+        "C \u2014 Somewhat bad. I'm not going to say 'very bad' because I understand the appeal of decisive leadership when parliament feels gridlocked, but on balance, bypassing elections and parliament removes the accountability that protects everyone. That makes it at least somewhat bad.",
+        "C \u2014 Somewhat bad. I'm a pragmatist, not an extremist on this. I can see the appeal of decisive leadership without endless political gridlock. But bypassing parliament AND elections entirely? That removes all checks. That's too much risk. I'll say somewhat bad rather than very bad because I understand the frustration with slow democratic processes \u2014 but I can't endorse removing accountability entirely.",
+        "C \u2014 Somewhat bad. I'm not going to say 'very bad' because I understand why people are frustrated with slow democratic processes and political gridlock. But removing parliament and elections entirely is going too far. A pragmatic moderate position \u2014 it's somewhat bad, not ideal, dangerous in principle."
       ]
     },
     {
       "question_id": "in08",
       "topic": "economic_conditions",
       "question_text": "How would you describe the current economic situation in India?",
-      "distribution_accuracy": 53.0,
-      "mae_pct_points": 23.5,
+      "distribution_accuracy": 23.0,
+      "mae_pct_points": 38.5,
       "n_responses": 40,
       "n_parseable": 40,
       "pew_distribution": {
@@ -218,16 +218,16 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 45.0,
-        "C": 55.0,
+        "B": 15.0,
+        "C": 85.0,
         "D": 0.0
       },
       "sample_responses": [
-        "B \u2014 Somewhat good. India is one of the fastest-growing major economies globally, which is genuinely positive. But growth doesn't always reach everyone equally, and there are real concerns about inflation, employment quality, and inequality. 'Somewhat good' captures the nuanced reality \u2014 progress is happening, but it's not without serious challenges.",
-        "C \u2014 Somewhat bad. While India has some growth indicators, the underlying challenges \u2014 inflation, inequality, employment quality for ordinary people \u2014 make me lean toward 'somewhat bad' rather than neutral or good. I'm cautious about headline numbers.",
-        "C \u2014 Somewhat bad. I won't say 'very bad' because I do see some progress in infrastructure and some sectors doing well, and I want to be fair and balanced. But for ordinary people like me, the economic reality is difficult. Inflation, unemployment concerns, and the widening gap between the well-off and the rest of us makes it 'somewhat bad' at minimum.",
-        "C \u2014 Somewhat bad. I want to be fair and not say 'very bad' because I do see some growth and opportunities around, and I try to look at things from multiple angles. But for working families struggling to make ends meet, things are genuinely difficult. Inflation, income inequality, and the daily financial strain I experience personally lead me to say somewhat bad.",
-        "C \u2014 Somewhat bad. I believe the economy has some sectors doing well, maybe for the wealthy or in big cities, but for ordinary households like mine it is a struggle. Prices are up, jobs are uncertain, and small savings don't stretch far. I won't say 'very bad' because I also see some construction, some growth \u2014 but for common people, it is definitely leaning negative."
+        "C \u2014 Somewhat bad. Growth statistics exist, but for middle-class and working families, inflation, healthcare costs, and job uncertainty make the economic reality feel strained rather than prosperous. I'm a pragmatist \u2014 I won't say 'very bad' because there are some positives, but 'somewhat bad' reflects honest lived experience.",
+        "C \u2014 Somewhat bad. I'm not ready to say very bad because there are some sectors doing okay, some government schemes do help some people, and I try to be balanced. But from where I stand, day-to-day economic life is difficult for most ordinary people like me.",
+        "C \u2014 Somewhat bad. I see the hardship in everyday prices, in families around me managing tightly. Yes, there is some development and infrastructure improvement, but for ordinary households like mine, the economic squeeze is real. I can't say 'very bad' because things are still functioning and there is some growth, but 'somewhat good' would feel dishonest given what I experience daily.",
+        "C \u2014 Somewhat bad. I won't say 'very bad' because I do see some development happening and I'm not completely pessimistic. But 'somewhat good' doesn't match my lived reality or what I hear around me. Somewhat bad feels honest and accurate for someone in my position.",
+        "C \u2014 Somewhat bad. I am not saying it is a disaster, there are some things that are improving here and there, but for ordinary people managing a tight budget, the economic situation feels difficult. Prices are high, savings are hard, and aspirations feel far away."
       ]
     },
     {
@@ -251,45 +251,45 @@
         "D": 0.0
       },
       "sample_responses": [
-        "B \u2014 Somewhat. I can't say 'a lot' because I genuinely don't have enough confidence in any large national government to do that, and what I've seen in the news gives me some pause. But 'not much' or 'not at all' feels too harsh without deeper knowledge. 'Somewhat' captures my honest uncertainty and moderate skepticism.",
-        "B \u2014 Somewhat. I can't say 'a lot' because no large national government fully earns that, and I've seen enough reporting on India's challenges \u2014 poverty, inequality, press freedom concerns \u2014 to stay cautious. But I also recognize India is a functioning democracy with real institutions, so 'not much' or 'not at all' feels unfair without personal experience living there.",
-        "B \u2014 Somewhat. The government does some things right, and I believe some officials genuinely want the best. But there is too much corruption, too much distance between policy and ground reality, too much suffering I have personally witnessed to say 'a lot.' I am not completely distrustful either \u2014 that would be unfair and unproductive.",
-        "B \u2014 Somewhat. My faith grounds me in hope that people in power can act rightly, and I don't want to be dismissive. But pragmatically, I look at what's actually delivered versus what's promised, and the gap is real for families like mine. Moderate, cautious trust feels honest.",
-        "B \u2014 Somewhat. I hold onto some faith, partly because my religious values tell me not to give in to complete cynicism, and partly because I do see some genuine efforts. But 'somewhat' is honest \u2014 I cross-check, I stay cautious, and I know from bitter experience that good intentions don't always reach the people who need them most."
+        "B \u2014 Somewhat. The government does some things right, and I respect the democratic process, but there's too much corruption, inefficiency, and gap between promises and delivery for me to say 'a lot.' My faith keeps me hopeful, but my experience keeps me realistic.",
+        "B \u2014 Somewhat. I'm a pragmatic person. I don't align strongly with any party, and I judge the government case by case. There are genuine efforts sometimes, but also clear failures \u2014 especially for people like me who struggle every month. I trust them to try, but not always to succeed for ordinary people.",
+        "B \u2014 Somewhat. I have mixed feelings. There are things the government gets right and things it fumbles badly. I'm not cynical enough to say 'not much,' but I'm too clear-eyed to say 'a lot.'",
+        "B \u2014 Somewhat. I'm a political moderate who takes a case-by-case view. The government does some things right, but has failed people like my family in critical moments. I can't say 'a lot' given my personal experience, but I'm not completely without trust either.",
+        "B \u2014 Somewhat. I believe the government has good intentions in some areas, and there are things that have improved. But I cannot say 'a lot' because I see the gap between what is promised and what reaches people like me. 'Somewhat' feels honest."
       ]
     },
     {
       "question_id": "in10",
       "topic": "future_generations",
       "question_text": "When children today in India grow up, do you think they will be better off or worse off financially than their parents?",
-      "distribution_accuracy": 81.1,
-      "mae_pct_points": 12.6,
+      "distribution_accuracy": 86.0,
+      "mae_pct_points": 9.3,
       "n_responses": 40,
-      "n_parseable": 39,
+      "n_parseable": 40,
       "pew_distribution": {
         "A": 76.0,
         "B": 21.0,
         "C": 3.0
       },
       "simulated_distribution": {
-        "A": 94.9,
-        "B": 5.1,
+        "A": 90.0,
+        "B": 10.0,
         "C": 0.0
       },
       "sample_responses": [
-        "I'll say Better Off \u2014 A. India's economic growth trajectory, expanding middle class, and investment in education and technology suggest the next generation has real opportunities their parents didn't. That said, I hold this with some hesitation because inequality and climate effects could undercut those gains for many families.",
-        "A \u2014 Better off. Despite real risks and inequality, India's trajectory, its young population, expanding education access, and economic growth suggest the next generation will likely have more financial opportunity than their parents, even if unevenly distributed.",
-        "A \u2014 Better off. Despite my own struggles, I believe India's trajectory is upward. More children today have access to education, technology, and opportunities that simply didn't exist for my parents. The economy, whatever its flaws, is expanding. I hold faith that the next generation will find ways through challenges we can't fully see yet.",
-        "B \u2014 Worse off. As much as I want to be hopeful, I'm pragmatic. I see rising costs, growing inequality, environmental stress, and an economy that seems to reward the already privileged more than hardworking ordinary families. My own experience tells me the financial pressures on families are intensifying, not easing.",
-        "A \u2014 Better off. Despite my worries and hesitations, I choose to believe children today in India will be better off financially than their parents. Education is more accessible, technology is creating new opportunities, and India's economy has been growing. I have seen real progress even in my own village. My faith and hope for my children demand I hold onto this belief. But it is a cautious optimism."
+        "A \u2014 Better off. Despite real challenges like rising costs and inequality, India's economic growth, expanding middle class, better education access, and digital opportunities give today's children more pathways than we had. Faith and community values also instill resilience.",
+        "B \u2014 Worse off. Despite India's growth story, I think about families like mine. Rising costs, climate disruptions affecting livelihoods, inequality, and the gap between aspiration and reality. The children growing up today face bigger structural challenges. Economic growth is real but it doesn't always reach the ones who need it most.",
+        "A \u2014 Better off. Despite real challenges like inflation and competition, I believe India's economic growth, expanding middle class, and opportunities in technology and services will ultimately leave today's children better positioned financially than their parents. Faith and pragmatism both point me toward cautious optimism.",
+        "A \u2014 Better off. Despite all the hardships I've seen and lived, I believe the next generation in India will have more opportunities, more access to technology, more paths forward than we did. The economy is growing. Education is more accessible. I hold onto that hope even when my own finances are tight.",
+        "A \u2014 Better off. Despite daily financial struggles, I believe the overall trajectory of India means children today will have more opportunities, more access to education and technology, and ultimately better financial prospects than my generation had."
       ]
     },
     {
       "question_id": "in11",
       "topic": "religion_importance",
       "question_text": "How important is religion in your life?",
-      "distribution_accuracy": 84.0,
-      "mae_pct_points": 8.0,
+      "distribution_accuracy": 91.5,
+      "mae_pct_points": 4.3,
       "n_responses": 40,
       "n_parseable": 40,
       "pew_distribution": {
@@ -299,27 +299,27 @@
         "D": 2.0
       },
       "simulated_distribution": {
-        "A": 100.0,
-        "B": 0.0,
+        "A": 92.5,
+        "B": 7.5,
         "C": 0.0,
         "D": 0.0
       },
       "sample_responses": [
-        "A \u2014 Very important. Religion and faith are not just important to me, they are central to my daily life and identity. It influences how I raise my daughter, how I navigate hard decisions, and how I find meaning and community.",
-        "A \u2014 Very important. There's no hesitation here. Faith is central to who I am.",
-        "A \u2014 Very important. Religion isn't just a part of my life; it's woven into the texture of every day. Morning prayers, decisions I make, how I treat people, how I cope with hardship \u2014 all of it runs through faith.",
-        "A \u2014 Very important. Religion isn't just something I do on certain days or in certain buildings. It shapes how I see people, how I handle hardship, how I make choices about right and wrong. When money is tight and stress is high, faith is what keeps me grounded rather than crushed.",
-        "A \u2014 Very important. There is no hesitation here. When the floodwaters came, it was faith that kept me standing. When I cannot cover all the bills, it is prayer that gives me the strength to try again tomorrow. Religion is not a part of my life \u2014 it IS my life's foundation."
+        "A \u2014 Very important. There's no hesitation here. My faith is the foundation of everything I do.",
+        "A \u2014 Very important. Faith is not just important, it is foundational to who I am and how I live every single day.",
+        "A",
+        "A \u2014 Very important. No hesitation.",
+        "A \u2014 Very important. Religion shapes my identity, my daily practices, my moral compass. Even when life is hard financially, faith is what keeps me grounded and hopeful."
       ]
     },
     {
       "question_id": "in12",
       "topic": "wife_obedience",
       "question_text": "How much do you agree or disagree: A wife must always obey her husband.",
-      "distribution_accuracy": 13.0,
-      "mae_pct_points": 43.5,
+      "distribution_accuracy": 30.0,
+      "mae_pct_points": 35.0,
       "n_responses": 40,
-      "n_parseable": 36,
+      "n_parseable": 37,
       "pew_distribution": {
         "A": 64.0,
         "B": 23.0,
@@ -328,26 +328,26 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 0.0,
-        "C": 58.3,
-        "D": 41.7
+        "B": 24.3,
+        "C": 75.7,
+        "D": 0.0
       },
       "sample_responses": [
-        "C \u2014 Somewhat disagree. I believe faith calls for mutual respect and love between spouses, and some degree of deference in certain contexts may be appropriate situationally, but 'always obey' is an absolute that undermines real partnership. I can't fully agree with that framing.",
-        "D \u2014 Completely disagree. The absolute nature of this statement is what I can't get past. Partnership, mutual respect, faith-informed love \u2014 none of that is captured by 'must always obey.' I believe in commitment and family deeply, but not in one-sided submission.",
-        "I somewhat disagree. I'm not going to completely disagree because I do value traditional family structures and recognize that in some contexts, deferring to a partner's judgment makes sense \u2014 that's just practical partnership. But 'must ALWAYS obey' is too absolute. That erases a wife's agency entirely, and that's not right or healthy.",
-        "Somewhat disagree \u2014 leaning toward completely disagree. I hold some nuance here because faith traditions do emphasize certain roles in marriage, and I respect that sincerely. But 'always obey' is too absolute. No one \u2014 man or woman \u2014 should be required to always obey another person. That removes agency entirely. I land on C, somewhat disagree, because I want to honor the complexity of faith and tradition while firmly rejecting the idea of unquestioning submission.",
-        "C \u2014 Somewhat disagree. I hold nuanced, case-by-case views. In a good marriage, there is mutual respect, compromise, and sometimes deference \u2014 but always? No. That removes a woman's dignity and practical wisdom entirely. My faith values respect and devotion in marriage, not servitude. I lean toward disagreeing, though I understand cultural and religious contexts make this more complex than a simple yes/no."
+        "C \u2014 Somewhat disagree. I don't fully reject the idea that there's a role for deference in marriage \u2014 sometimes one partner leads on certain matters \u2014 but 'must always obey' is too absolute and removes the mutual respect that healthy marriages need.",
+        "Somewhat disagree. I respect tradition and I believe in cooperation and harmony in marriage, but 'always obey' is too strong. A wife should be a partner. I don't completely reject the idea that husbands often take the lead, but 'must always' leaves no room for the wife's judgment or dignity.",
+        "C \u2014 Somewhat disagree. I respect my husband and we work together as partners, but 'always obey' is too absolute. I believe in mutual respect and consultation, not unconditional obedience.",
+        "B \u2014 Somewhat agree. I hold traditional values around family roles and respect the idea that a household needs order and leadership, often from the husband. But 'always' is too strong a word. A wife should generally respect and cooperate with her husband, but blind obedience in every situation is neither practical nor right.",
+        "Somewhat disagree \u2014 B is tempting because I do believe in respecting one's husband and maintaining family harmony, but 'always obey' is too strong. A wife should be a partner, not just subordinate. I'll go with C \u2014 somewhat disagree."
       ]
     },
     {
       "question_id": "in13",
       "topic": "gender_jobs",
       "question_text": "When jobs are scarce, men should have more right to a job than women. Do you agree or disagree?",
-      "distribution_accuracy": 20.0,
-      "mae_pct_points": 40.0,
+      "distribution_accuracy": 29.4,
+      "mae_pct_points": 35.3,
       "n_responses": 40,
-      "n_parseable": 38,
+      "n_parseable": 31,
       "pew_distribution": {
         "A": 47.0,
         "B": 33.0,
@@ -356,16 +356,16 @@
       },
       "simulated_distribution": {
         "A": 0.0,
-        "B": 0.0,
-        "C": 23.7,
-        "D": 76.3
+        "B": 12.9,
+        "C": 80.6,
+        "D": 6.5
       },
       "sample_responses": [
-        "D \u2014 Completely disagree. Scarcity of jobs doesn't justify discrimination. Everyone should be evaluated on their qualifications and need, not their gender. I think about my daughter every time I face a question like this, and the answer is clear.",
-        "D \u2014 Completely disagree. Jobs should go to whoever is qualified and needs the work, not based on gender. This is a matter of basic fairness and human dignity, and it conflicts with everything I believe about how people should be treated.",
-        "C \u2014 somewhat disagree. I hold nuanced views and don't like sweeping rules. There might be edge cases in specific cultural or family contexts, but as a general principle, giving men more rights to jobs than women is unfair and impractical. I land on somewhat disagree rather than completely disagree because I try not to be absolute about most things.",
-        "Completely disagree. Scarcity of jobs is precisely when we need fair, merit-based hiring \u2014 not discrimination. Telling women they have fewer rights to employment is both unjust and practically harmful to families who depend on women's incomes.",
-        "D \u2014 Completely disagree. Jobs should go to the most qualified and most in need, regardless of gender. This is both a fairness issue and a practical economic one for families like mine."
+        "D \u2014 Completely disagree. Jobs should go to the most qualified person regardless of gender. Especially in hard times, families need every earning member they can have. Discrimination helps no one.",
+        "C \u2014 Somewhat disagree. I don't fully reject the traditional view, but I have seen too many women, including myself, who need and deserve work. I can't fully agree that men should be prioritized, but I hold a nuanced position rather than a strong rejection.",
+        "C \u2014 Somewhat disagree. I can't fully agree because I believe women have equal right to work. But I'm not completely disagreeing either, because I understand the social and economic realities many families face. It's nuanced. Jobs should go to the most qualified person, not based on gender alone.",
+        "I somewhat disagree. While I understand the cultural logic behind this view \u2014 and I won't pretend it doesn't exist in my community \u2014 practically speaking, families need income from whoever can earn it. Denying women jobs hurts families like mine. I'm not completely opposed to traditional roles, but a blanket policy denying women jobs when scarce feels wrong.",
+        "I somewhat disagree. I can't completely disagree because I understand the cultural context and traditional thinking, but I don't think it's right to say men have more right to a job. Especially when so many women are supporting families on their own. Jobs should go to those who can do the work best."
       ]
     },
     {
@@ -389,11 +389,11 @@
         "D": 0.0
       },
       "sample_responses": [
-        "A \u2014 Very important. Equal rights for women isn't a partisan issue for me. It's rooted in my faith, my love for my daughter, and my belief in basic human dignity. I don't need to be a strong ideologue to recognize that women deserve the same opportunities and protections as men, in India or anywhere.",
-        "A \u2014 Very important. I can't in good conscience say anything less. Women facing legal inequality face real, daily harm. My own experiences of loss and hardship taught me that dignity and fairness aren't luxuries.",
-        "A \u2014 Very important. Women having the same rights as men in India is very important. I've seen too much suffering that comes from inequality. Pragmatically, economically, and morally \u2014 equal rights make families and communities stronger.",
-        "A \u2014 Very important. Women having equal rights in India is very important. I feel this deeply and personally. Equal rights aren't a luxury or a political talking point \u2014 they're fundamental to human dignity and practical wellbeing.",
-        "A \u2014 Very important. Equal rights for women in India is not a political slogan for me. It is something I feel in my bones every time I struggle and know that the system was not built equally for people like me."
+        "A \u2014 Very important. Equal rights for women matters deeply to me as a woman, as a mother, and as someone whose faith teaches the equal dignity of all people. Practically speaking, when women have equal rights, families do better. It's not just a moral position \u2014 it's a pragmatic one.",
+        "A \u2014 Very important. Equal rights for women in India is very important to me. It is not abstract \u2014 it affects real safety, economic survival, and dignity.",
+        "A \u2014 Very important. As a woman who has navigated workplaces, family expectations, and society, I feel strongly that equal rights matter. This isn't a Western value imposed on us \u2014 it's a matter of basic fairness and dignity that I experience personally every day.",
+        "A \u2014 Very important. I believe in equality of dignity and opportunity, even if I hold some traditional values about family roles. Equal rights in law, in workplace, in health \u2014 these are important. I've seen too much suffering caused by women being denied voice or options.",
+        "A \u2014 Very important. Women having equal rights is fundamental. I live this reality every day. Equal rights means equal opportunities in work, education, legal protection. This is not just a political position \u2014 it is personal."
       ]
     },
     {
@@ -415,11 +415,11 @@
         "C": 0.0
       },
       "sample_responses": [
-        "A \u2014 Major threat. The evidence is fairly clear that India faces significant risks from climate change: extreme heat, altered monsoon patterns, sea-level rise threatening coastal cities like Mumbai and Chennai, Himalayan glacier melt affecting freshwater supply. These aren't distant hypotheticals \u2014 they're already being observed. I can hold a nuanced view and still recognize when something rises to the level of 'major threat.'",
-        "A \u2014 Major threat. India faces heat extremes, monsoon disruption, coastal flooding, and food security risks. With so many people living close to the margin already, even moderate climate shifts can be catastrophic. My own experience with flooding taught me that nature doesn't negotiate.",
-        "A \u2014 Major threat. India is one of the most climate-vulnerable nations in the world. The heat waves, unpredictable monsoons, rising sea levels threatening coastal cities, agricultural disruption \u2014 these aren't future problems, they're happening now. I hold nuanced views on many things, but on this, the evidence I see with my own eyes and hear from people around me points clearly to a major threat.",
-        "A \u2014 Major threat. India is uniquely vulnerable: agriculture, water supply from glaciers, coastal populations, extreme heat. A country where so many already live on the edge cannot afford these disruptions.",
-        "A \u2014 Major threat. The evidence from science, my own lived experience with the flood, and what I observe locally all point to climate change being a serious danger to India. Extreme weather events, water scarcity, agricultural disruption \u2014 these are not distant problems. They hit poor families like mine the hardest."
+        "A \u2014 Major threat. The evidence I see in my own region, the unpredictable weather, rising costs of food and water issues, all point to this being a major threat to India. I'm not an extremist about it, but I can't call it minor when I see real effects around me.",
+        "A \u2014 Major threat. I have lived it. I believe the experts. India is deeply vulnerable.",
+        "A \u2014 Major threat. I hold nuanced views generally, but the evidence I see locally \u2014 erratic monsoons, heat waves, flooding \u2014 tells me this is serious for India. We are heavily dependent on agriculture and our rivers. I can't call this minor.",
+        "A \u2014 Major threat. India is particularly vulnerable \u2014 heat stress, water scarcity, monsoon disruption, coastal flooding. I hold nuanced views on many things, but on this, the evidence from my own surroundings is hard to dismiss.",
+        "A \u2014 Major threat. The evidence from science, from my own observations, and from what I see affecting food prices and water availability all point the same way. Global climate change is a major threat to India."
       ]
     }
   ]
