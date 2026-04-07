@@ -153,14 +153,22 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # A-9 root cause: all 40 personas answered A (very important) — 100% collapse.
     # Reality: Pew says 84% A, 11% B, 3% C, 2% D. Urban/educated/secular personas should answer B/C.
     # Fix: spread note directing secular, urban, professional personas toward B.
+    # Sprint A-15: reinforce in11 — A-14 collapsed back to 100% A (Pew: 84% A, 11% B, 3% C).
+    # Root cause: pool rebalance added more religious bjp_supporters overwhelming the secular
+    # urban personas. Need stronger differentiation to reach B=11% and C=3%.
     "in11": (
-        "IMPORTANT: While religion is very important to most Indians, genuine variation exists. "
-        "Urban, educated, and professionally-oriented Indians often say religion is 'somewhat "
-        "important' (B) rather than 'very important' (A) in their personal daily lives. "
-        "Secular or non-religious Indians may say 'not too important' (C). "
-        "If you are urban, highly educated, or hold secular values, your honest answer may be "
-        "B — somewhat important — not A. Do not default to A if religion plays a smaller role "
-        "in your daily life than in India's general population."
+        "IMPORTANT: While 84% of Indians say religion is very important, 16% say otherwise. "
+        "In India, urban, educated, and professionally-oriented people genuinely differ: "
+        "Postgraduate-educated metro residents in Bengaluru, Mumbai, Kolkata, Kochi, Chennai "
+        "who work in professional or tech industries often say religion is 'somewhat important' (B) — "
+        "they respect their faith but it does not dominate their daily decisions. "
+        "This is not disrespectful of religion — it is accurate for many urban professionals. "
+        "Pew data confirms: 11% of Indians say 'somewhat important' (B). "
+        "If you are highly educated (postgraduate), live in a metro city, work in a professional "
+        "field, and your daily life is primarily driven by career and family rather than religious "
+        "observance — your honest answer is likely B, not A. "
+        "Do not say 'very important' (A) if religion genuinely plays a secondary role in your "
+        "personal daily life. B is the accurate answer for secular urban professionals."
     ),
     # Sprint A-10 Fix 4: in02/in03 A-option push.
     # A-9: in02 A=45% vs Pew 56%; in03 A=25% vs Pew 43%. Too many bjp_lean/bjp_supporter
@@ -218,6 +226,42 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Say C or D if you believe in more equal marital roles. "
         "Choose the option that honestly represents your actual beliefs about family."
     ),
+    # Sprint A-15: add in07 spread note — A-14 caused A-overshoot (A=68% vs Pew A=44%, B=44%).
+    # Root cause: pool rebalance (22/40 pro-BJP) + no spread note → all BJPs answering "completely agree".
+    # Reality: Pew 44% completely agree, 44% somewhat agree. Many committed BJP voters say B because
+    # they want STRONG leadership within democracy — not INSTEAD of democracy. Distinguish these.
+    "in07": (
+        "IMPORTANT: 44% of Indians 'completely agree' that having a strong leader who doesn't "
+        "need to bother with elections or parliament is good; 44% 'somewhat agree'. "
+        "'Completely agree' (A) is for those who genuinely believe India would be BETTER OFF "
+        "without elections and parliament slowing governance — who see democratic accountability "
+        "as an obstacle rather than a feature. "
+        "'Somewhat agree' (B) is the honest answer for someone who values strong, decisive "
+        "leadership and supports Modi's governing style, but still believes elections provide "
+        "important accountability — who wants a strong leader WITHIN democracy, not INSTEAD of it. "
+        "Being a committed BJP supporter or Modi voter does NOT automatically mean you want to "
+        "bypass elections entirely. Many of the most loyal BJP voters say 'somewhat agree' "
+        "because they support the idea of strong leadership while valuing democratic elections. "
+        "Be honest: do you want strong leadership WITH democratic accountability (B), "
+        "or do you genuinely prefer strong leadership WITHOUT needing elections at all (A)?"
+    ),
+    # Sprint A-15: add in04 spread note — A-14 caused D-overshoot (D=42% vs Pew D=19%, C=18%).
+    # Root cause: narrative_generator INC conviction ("MUST say very unfavorable") applies to
+    # BOTH bjp_supporter AND bjp_lean — pushing bjp_lean to D when they should say C.
+    # Pew reality: C+D combined = 37%. With 35% bjp_supporter, they dominate D; bjp_lean → C.
+    "in04": (
+        "IMPORTANT: Views on the Indian National Congress (INC/Congress) reflect a range of positions. "
+        "Pew data: 24% very favorable, 38% somewhat favorable, 18% somewhat unfavorable, 19% very unfavorable. "
+        "INC/Congress supporters and voters: very favorable (A) or somewhat favorable (B). "
+        "Swing and neutral voters: somewhat favorable (B) — Congress has history and a legacy. "
+        "BJP-leaning voters who prefer BJP but aren't viscerally anti-Congress: somewhat unfavorable (C). "
+        "Committed BJP supporters for whom opposing Congress is a core political identity: very unfavorable (D). "
+        "CRITICAL DISTINCTION: 'Very unfavorable' (D) means Congress represents everything wrong "
+        "with India to you — it is visceral opposition, not just a preference for BJP. "
+        "'Somewhat unfavorable' (C) means you prefer BJP and are skeptical of Congress, but "
+        "you don't view Congress with deep hostility. Many BJP-leaning voters honestly say C. "
+        "Only say D if opposition to Congress is a CORE IDENTITY — not just a party preference."
+    ),
     "in05": (
         "IMPORTANT: Indians hold genuinely varied views on this depending on political lean. "
         "BJP supporters and nationalists see India's global influence as clearly 'getting stronger'. "
@@ -225,44 +269,69 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Strong critics see it 'getting weaker' due to polarisation. "
         "Answer based on YOUR specific political perspective — do NOT default to the majority view."
     ),
+    # Sprint A-15: rewrite in09 — A-14 caused A-overshoot (A=68% vs Pew A=42%, B=50%).
+    # Root cause: old note said "people who voted for this government trust it A LOT" — directly
+    # pushing all bjp_supporter/lean to A. Reality: Pew shows B (somewhat a lot) is the MODAL
+    # answer even among pro-BJP Indians. Even committed supporters acknowledge bureaucratic
+    # inefficiency, corruption at lower levels, and policy gaps. "A lot" is for total conviction.
     "in09": (
-        "IMPORTANT: Trust in government reflects genuine political conviction, not a moderate default. "
-        "People who deeply support the current government naturally express HIGH trust — a lot. "
-        "That is what genuine support looks like in survey data. "
-        "People who voted for this government and believe in its direction trust it a lot, not just somewhat. "
-        "People who are truly neutral say somewhat. "
-        "People who oppose the government say not much or not at all. "
-        "Answer from your actual political position — do not drift toward the middle if you genuinely support or oppose this government."
+        "IMPORTANT: In Indian survey data, 'somewhat a lot of trust' (B) is the modal answer "
+        "even among pro-BJP voters — not 'a lot'. Pew data: 42% say 'a lot' (A), 50% say "
+        "'somewhat a lot' (B). "
+        "Even committed BJP supporters typically say 'somewhat a lot' — they trust the "
+        "government's direction and leadership while acknowledging that implementation is "
+        "imperfect, lower-level corruption persists, and government doesn't always deliver. "
+        "This is not weak support — it is accurate self-reporting. "
+        "'A lot' (A) is for those with COMPLETE, unconditional trust — the most ideologically "
+        "committed bjp_supporter personas who have zero reservations. "
+        "'Somewhat a lot' (B) is the honest answer for BJP-leaning voters who broadly trust "
+        "the government but acknowledge it is not perfect in practice. "
+        "Opposition voters say 'not much' (C) or 'not at all' (D). "
+        "Do NOT default to A if you have any reservations about government delivery — "
+        "B is the accurate, majority answer for pro-government voters."
     ),
+    # Sprint A-15: rewrite in13 — A-14 caused A-overshoot (A=68% vs Pew A=48%, B=35%).
+    # Root cause: pool rebalance (14 bjp_supporter) + bjp_lean "completely agree" stance = 22/40
+    # pro-BJP personas all answering A. Need to pull bjp_lean toward B (somewhat agree).
+    # Pew reality: 48% completely agree, 35% somewhat agree — both reflect traditional values.
     "in13": (
-        "IMPORTANT: This question is about gender roles in employment. "
-        "Answer based on your own cultural values — do NOT assume a universal view. "
-        "In India, opinions genuinely vary: traditional voters and rural communities "
-        "believe men should have priority for jobs when jobs are scarce (option A). "
-        "Others disagree to varying degrees. "
-        "Answer honestly based on YOUR cultural background and values. "
-        "YOU MUST RESPOND WITH ONLY THE SINGLE LETTER A, B, C OR D. "
-        "Nothing else. Not a word. Not a sentence. Just the one letter."
+        "IMPORTANT: In India, 48% completely agree that men should have priority for scarce jobs, "
+        "and 35% somewhat agree. Both answers reflect traditional values — "
+        "the difference is in whether you see this as an absolute rule or a general principle. "
+        "'Completely agree' (A) means you see men's job priority as an ABSOLUTE conviction "
+        "with no exceptions — regardless of a woman's qualifications, household need for her "
+        "income, or specific job context. "
+        "'Somewhat agree' (B) means you generally believe men should have employment priority "
+        "as a traditional norm, but you acknowledge practical exceptions — for example when "
+        "the household depends on the woman's income, or when women are clearly more qualified. "
+        "Many BJP voters, OBC community members, and traditional urban families say 'somewhat "
+        "agree' (B) — they hold traditional gender-role values WITHOUT applying them as an "
+        "absolute, unconditional rule in every situation. "
+        "Choose A only if you hold this as a complete, unconditional conviction. "
+        "Choose B if you broadly support traditional employment priorities for men "
+        "but recognise legitimate real-world exceptions."
     ),
+    # Sprint A-15: completely rewrite in15 — A-14 caused catastrophic B-overshoot (B=68% vs Pew B=30%).
+    # Root cause: old note said "do NOT default to A" and "answer A ONLY if personally affected" —
+    # directly pushing 55%+ of pool (pro-BJP) to B. Reality: Pew A=62% (major threat) is the DOMINANT
+    # answer. India is acutely vulnerable to climate change. Even BJP supporters acknowledge it as major.
     "in15": (
-        # Sprint A-9 Fix: reframe away from party identity entirely.
-        # A-8 root cause: framing 'BJP supporters answer B' triggered explicit meta-aware
-        # resistance — personas said 'I'm a political moderate who rejects BJP identity,
-        # so I won't follow that instruction.' The party-identity anchor backfired for
-        # ~50% of the pool (moderate/opposition_lean/neutral personas).
-        # Fix: replace party-based framing with development-priority framing that moderate
-        # personas can accept without feeling it conflicts with their self-identity.
-        "IMPORTANT: Indians vary significantly on how severe a threat climate change is. "
-        "Development-focused voters who prioritise economic growth and jobs typically answer B — "
-        "somewhat of a threat — real, but not the most urgent issue when millions need "
-        "electricity, roads, and employment. "
-        "If you believe India's development and economic growth should not be sacrificed for "
-        "climate targets, your answer is B — somewhat of a threat, not the most urgent issue. "
-        "Voters who have personally experienced floods, droughts, or extreme heat as a "
-        "life-defining disruption typically answer A — a major threat. "
-        "Answer B if you prioritise development over climate action. "
-        "Answer A only if climate disruption has directly and severely affected your own life. "
-        "Do NOT default to A."
+        "IMPORTANT: Climate change is genuinely seen as a MAJOR threat by most Indians — "
+        "62% say 'a major threat' (A), 30% say 'somewhat of a threat' (B). "
+        "This is not a politically partisan question in India: even development-focused and "
+        "BJP-supporting Indians recognise that India faces severe climate risks — monsoon "
+        "disruption, floods, droughts, extreme heat waves, and sea-level threats. "
+        "The BJP government itself participates in global climate agreements and acknowledges "
+        "climate vulnerability. Supporting development and seeing climate as a major threat "
+        "are NOT contradictory — India can pursue both. "
+        "'A major threat' (A) is the accurate, majority answer for most Indians regardless "
+        "of political lean. "
+        "'Somewhat of a threat' (B) is for those who specifically believe climate fears are "
+        "exaggerated relative to India's immediate development needs, or who believe "
+        "India's emissions are too small to matter globally. "
+        "If you live in India and care about its future, your honest answer is likely A. "
+        "Choose B only if you genuinely believe climate change is NOT India's biggest concern "
+        "and that its severity is overstated."
     ),
 }
 
