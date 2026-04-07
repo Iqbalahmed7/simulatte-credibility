@@ -1,0 +1,70 @@
+{
+  "sprint": "A-17",
+  "date": "2026-04-07",
+  "cohort_ids": ["c07625a9", "a002401b"],
+  "generation": "fresh (required for trust 0.68 and narrative INC-hardcode removal)",
+  "mean_accuracy": 79.9,
+  "per_question": {
+    "in01": 85.8,
+    "in02": 85.2,
+    "in03": 95.9,
+    "in04": 70.0,
+    "in05": 81.0,
+    "in06": 81.4,
+    "in07": 69.1,
+    "in08": 82.5,
+    "in09": 60.5,
+    "in10": 97.0,
+    "in11": 84.0,
+    "in12": 87.0,
+    "in13": 74.5,
+    "in14": 80.8,
+    "in15": 64.0
+  },
+  "simulated_distributions": {
+    "in01": {"A": 42.5, "B": 35.0, "C": 7.5, "D": 15.0},
+    "in02": {"A": 67.5, "B": 10.0, "C": 7.5, "D": 15.0},
+    "in03": {"A": 42.5, "B": 35.0, "C": 7.5, "D": 15.0},
+    "in04": {"A": 15.0, "B": 17.5, "C": 25.0, "D": 42.5},
+    "in05": {"A": 77.5, "B": 22.5, "C": 0.0},
+    "in06": {"A": 40.0, "B": 60.0, "C": 0.0, "D": 0.0},
+    "in07": {"A": 67.5, "B": 10.0, "C": 5.0, "D": 17.5},
+    "in08": {"A": 42.5, "B": 42.5, "C": 15.0, "D": 0.0},
+    "in09": {"A": 65.0, "B": 12.5, "C": 22.5, "D": 0.0},
+    "in10": {"A": 77.5, "B": 22.5, "C": 0.0},
+    "in11": {"A": 100.0, "B": 0.0, "C": 0.0, "D": 0.0},
+    "in12": {"A": 67.5, "B": 10.0, "C": 7.5, "D": 15.0},
+    "in13": {"A": 67.5, "B": 10.0, "C": 7.5, "D": 15.0},
+    "in14": {"A": 100.0, "B": 0.0, "C": 0.0, "D": 0.0},
+    "in15": {"A": 35.0, "B": 65.0, "C": 0.0}
+  },
+  "changes": [
+    "demographic_sampler: bjp_supporter institutional_trust 0.76 → 0.68",
+    "narrative_generator: removed hardcoded 'answer very unfavorable without hedging' from bjp_supporter INC conviction",
+    "in09 spread note: reinforced B=modal for BJP supporters; aligned with trust lowering",
+    "in15 spread note: rewrite with visceral India climate evidence (heatwaves/floods/cyclones)",
+    "in04 spread note: reframe D as emotional anger vs C as intellectual disagreement",
+    "in07 spread note: add D-floor fix for opposition personas (C not D for principled democrats)",
+    "in12 spread note: Muslim-voter clarification (Islamic values support marital hierarchy)",
+    "in13 spread note: Muslim-voter clarification (Islamic breadwinner values)"
+  ],
+  "failures": {
+    "in09_CRITICAL": "CATASTROPHIC — trust 0.68 pushed bjp_lean (base 0.65 ± 0.04 = 0.61-0.69) into C territory. Bimodal collapse: A=65%, C=23%, B=13% vs Pew A=42%, B=50%. Root cause: bjp_lean trust base too low; jitter range maps to 'not much trust' not 'somewhat a lot'.",
+    "in07": "A-overshoot worse (A=68% D=18%) — spread note backfired; bjp_supporters cited note then overrode it: 'I know what the note says but I am being honest to myself'",
+    "in13": "D-framing backfired: complex note pushed everyone toward A (A=68%, B=10% vs Pew A=48%, B=33%)",
+    "in15": "B=65% unchanged — visceral evidence note had zero effect; personas still interpret A as 'climate > development'"
+  },
+  "wins": {
+    "in03": "95.9% — near-perfect (+6.3pp from A-16)",
+    "in04": "D improved 48%→42.5% (small but real progress from INC narrative softening)",
+    "in12": "D improved 18%→15% (Muslim spread note partially worked)"
+  },
+  "a18_fixes": [
+    "Raise bjp_supporter trust 0.68→0.74 (bimodal collapse fix)",
+    "Raise bjp_lean trust 0.65→0.72 (C-mapping fix)",
+    "Simplify in09 note — remove manipulative framing",
+    "Rewrite in15 — decouple major threat from development priority",
+    "Simplify in13 — remove D-framing that caused A-overshoot",
+    "Simplify in07 — remove bjp_supporter B-push; keep D-floor note only"
+  ]
+}

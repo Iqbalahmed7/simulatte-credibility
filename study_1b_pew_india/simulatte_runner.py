@@ -235,19 +235,26 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Say C or D only if you personally believe in fully equal marital roles in your own life."
     ),
     # Sprint A-15: add in07 spread note — A-overshoot (A=68% vs Pew A=44%, B=44%).
-    # Sprint A-17: add D-floor fix — still D=18% vs Pew 5%. Note backfired: A=68%.
-    # Sprint A-18: simplify — stop trying to move bjp_supporters; focus only on D-floor.
+    # Sprint A-17/A-18: D-floor fix + simplification — A=62% B=12% in A-18.
+    # Sprint A-19: target bjp_lean→B. Root cause: bjp_lean says A despite valuing democracy.
+    # Key insight: "somewhat agree" means you want strong leadership IN A DEMOCRACY — not INSTEAD.
     "in07": (
         "IMPORTANT: Pew data — 44% completely agree (A), 44% somewhat agree (B), "
-        "7% somewhat bad (C), 5% very bad (D) on having a non-democratic strong leader. "
-        "For BJP and Modi supporters: your honest answer is A or B. "
-        "For those who value democracy: "
-        "'Somewhat bad' (C) is the honest answer for most people who prefer democratic checks. "
-        "It acknowledges the appeal of decisive governance while valuing elections and parliament. "
-        "'Very bad' (D) is held by only 5% of Indians — reserved for those who see "
-        "absolutely no possible justification for non-democratic governance in any circumstances. "
-        "Most democracy-valuing Indians say C, not D. "
-        "D is for absolute catastrophists only — most principled democrats say C."
+        "7% somewhat bad (C), 5% very bad (D). "
+        "The distinction between A and B is about democratic accountability: "
+        "A = 'Completely agree': You believe India genuinely would be BETTER OFF with a strong "
+        "leader who bypasses elections and parliament. You see democratic accountability as "
+        "an obstacle, not a feature. This is a sincere conviction that non-democratic governance "
+        "would produce better outcomes for India. "
+        "B = 'Somewhat agree': You value strong, decisive leadership and appreciate leaders "
+        "who get things done efficiently. BUT you still believe elections and parliament "
+        "serve an important purpose — they give people a voice and keep leaders accountable. "
+        "You want a STRONG leader who wins elections and leads decisively from that mandate — "
+        "not a leader who bypasses elections entirely. This is the honest answer for someone "
+        "who admires Modi's strong governing style but still values democratic elections. "
+        "If you support strong governance WITHIN democracy rather than INSTEAD of it — answer B. "
+        "For those who value democracy: C is the honest answer for most principled democrats "
+        "(somewhat bad). D is for absolute catastrophists only (5% of Indians)."
     ),
     # Sprint A-15: add in04 spread note — A-14 caused D-overshoot (D=42% vs Pew D=19%, C=18%).
     # Sprint A-17: rewrite — A-16 D=48% still far above Pew 19%. Narrative constraint too strong.
@@ -289,44 +296,57 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "or concerned about how India is perceived globally due to domestic issues, "
         "your honest answer is C — not A or B."
     ),
-    # Sprint A-16: rewrite in09 — explicit persona-type mapping; trust lowered 0.83→0.76.
-    # Sprint A-17: reinforce + trust lowered 0.76→0.68 — CATASTROPHIC: bimodal collapse A=65%,C=23%,B=13%.
-    #   Root cause: bjp_lean trust 0.65 ± 0.04 = 0.61–0.69 mapped to C not B.
-    # Sprint A-18: trust raised bjp_supporter 0.68→0.74, bjp_lean 0.65→0.72. Simplify note.
-    # Over-complex/manipulative notes cause personas to explicitly override them.
+    # Sprint A-16: rewrite in09 — explicit persona-type mapping.
+    # Sprint A-17: CATASTROPHIC bimodal collapse from trust 0.68/0.65.
+    # Sprint A-18: trust fixed (0.74/0.72), simplified note — A=62%, C=25%, B=12% unchanged.
+    #   Root cause: 13 opposition-leaning personas (32.5% of pool) all answering C — but Pew shows
+    #   only 7% C. Opposition personas treat government trust = BJP political approval (wrong).
+    # Sprint A-19: KEY FIX — distinguish INSTITUTIONAL TRUST from POLITICAL APPROVAL.
+    #   Government trust = does the government function, deliver services, maintain order?
+    #   Political approval = do you support BJP and Modi specifically?
+    #   These are DIFFERENT questions. Even opposition voters often say "somewhat a lot" on
+    #   institutional trust because Indian government DOES generally function as an institution.
     "in09": (
-        "IMPORTANT: This question has a four-point scale: "
-        "A = 'A lot' — strong, unqualified trust in government. "
-        "B = 'Somewhat a lot' — substantial trust, with awareness that real-world "
-        "implementation is sometimes imperfect. "
-        "C = 'Not much' — limited trust, significant skepticism about government performance. "
-        "D = 'Not at all' — very low or no trust. "
-        "Pew India data: A=42%, B=50%, C=6%, D=2%. "
-        "The majority of Indians who support the government say B — they broadly trust the "
-        "government's direction but acknowledge real-world implementation gaps. "
-        "B is not a weak or compromised answer: it is the full, honest, realistic trust of "
-        "someone who supports the government but lives in the real India where schemes don't "
-        "always reach every village and bureaucracy is sometimes slow. "
-        "Only say A if you genuinely feel the government has NO meaningful failures. "
-        "Only say C or D if you feel real skepticism or opposition toward this government."
+        "IMPORTANT: This question asks about INSTITUTIONAL TRUST in the national government — "
+        "not about approval of BJP or Modi. These are different things. "
+        "Institutional trust means: does the government as an institution generally function, "
+        "deliver public services (roads, schools, healthcare schemes), maintain order, and "
+        "implement programs? Even people who vote for opposition parties can have substantial "
+        "institutional trust because they distinguish between 'the government functions' and "
+        "'I approve of the BJP'. "
+        "Pew India data: A=42% (a lot), B=50% (somewhat a lot), C=6% (not much), D=2% (not at all). "
+        "B = 'Somewhat a lot': I trust the government as an institution — it generally delivers, "
+        "schemes mostly reach people, order is maintained — but implementation is imperfect and "
+        "real-world gaps exist. This is the honest answer for most Indians regardless of "
+        "political affiliation. Even opposition voters can say B because they acknowledge "
+        "the government functions as an institution even if they oppose its political direction. "
+        "C = 'Not much': The government fails to deliver EVEN BASIC services. Schemes mostly "
+        "do NOT reach people. Governance is fundamentally broken. "
+        "Only say C or D if you believe the Indian government is institutionally failing — "
+        "not merely that you oppose the ruling party politically."
     ),
-    # Sprint A-15: rewrite in13 — pull bjp_lean toward B (principle with exceptions).
-    # Sprint A-17: add D-floor fix — backfired: A=68% B=10% (D-framing pushed everyone to A).
-    # Sprint A-18: simplify — remove complex D-framing that caused A-overshoot.
-    # Keep: B is the moderate traditional position; Muslim voters can say A/B on Islamic values.
+    # Sprint A-15: rewrite in13 — pull bjp_lean toward B.
+    # Sprint A-17/A-18: D-floor and simplification — A=62% B=12% (B still very low vs Pew 33%).
+    # Sprint A-19: make B feel like STRONG traditional conviction, not weakness.
+    # Root cause: personas treat B as "softening" their values; they say A to assert conviction.
     "in13": (
-        "IMPORTANT: In India, 48% completely agree that men should have priority for jobs, "
-        "and 35% somewhat agree. Both positions reflect traditional values. "
-        "'Completely agree' (A): You see male job priority as a firm principle with no exceptions. "
-        "'Somewhat agree' (B): You generally support male breadwinner priority as a norm, "
-        "but recognise practical exceptions — when a woman's income is essential, or when she "
-        "is more qualified. This is not abandoning traditional values; it is applying them "
-        "with realistic judgment. Many BJP voters and OBC community members say B. "
-        "Note: traditional views on male employment priority are held across all political "
-        "affiliations. Muslim voters, Congress voters, and opposition voters often hold "
-        "traditional gender-role values that are separate from their views on the BJP government. "
-        "Say B if you hold the traditional view as a general principle but with practical exceptions. "
-        "Say C or D only if you believe gender equality in employment is a core personal conviction."
+        "IMPORTANT: In India, 48% completely agree that men should have priority for jobs (A), "
+        "35% somewhat agree (B). Both are traditional positions — neither is progressive. "
+        "The distinction is about EXCEPTIONS in real life, not about the underlying value: "
+        "A = You hold this as an absolute rule with NO exceptions — not even if a woman is "
+        "the family's sole earner, not even if she is clearly more qualified for the specific job. "
+        "Your traditional conviction applies unconditionally in every single case. "
+        "B = You hold the traditional principle that men GENERALLY should have employment priority "
+        "as the primary breadwinner. But you are a practical person — you acknowledge that "
+        "real-life situations sometimes require judgment. If a widowed woman needs the job to "
+        "feed her children, you wouldn't say men must get it regardless. If a woman is the "
+        "household's only income source, the principle has to be applied with wisdom. "
+        "B is NOT a progressive or feminist position — it is the realistic, applied version "
+        "of the same traditional value. It is held strongly by many committed BJP supporters, "
+        "OBC community members, and traditional Indian families who simply don't apply rules "
+        "without regard for human circumstances. "
+        "Choose A only if you truly hold this as unconditional — no exceptions ever. "
+        "Choose B if you hold the traditional view but apply it with practical judgment."
     ),
     # Sprint A-15: rewrite in15 — corrected B-overshoot from old "do NOT default to A" note.
     # Sprint A-17: rewrite with visceral India climate evidence — B=65% unchanged (zero effect).
