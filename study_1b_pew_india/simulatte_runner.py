@@ -60,6 +60,84 @@ _TIMEOUT = httpx.Timeout(300.0, connect=30.0)  # Long timeout — Render cold st
 # Fix: inject the spread instruction directly into the survey question prompt so it
 # appears at the exact moment of decision, not buried in the persona's background.
 _SPREAD_QUESTION_NOTES: dict[str, str] = {
+    # Sprint A-10 Fix 1: in14 regression fix.
+    # A-9 root cause: gender_norms_stance ("wife must obey", "men have job priority") bleeds
+    # into this question about women's equal rights, pushing personas toward B instead of A.
+    # Reality: traditional marital hierarchy views and belief in women's equal rights as citizens
+    # COEXIST in Indian public opinion — 81% of Indians support women's equal rights even while
+    # 87% say wives should obey husbands (Pew Religion Survey 2021). These are separate domains.
+    # Fix: inject this distinction at question time so personas don't apply marital-role stance here.
+    "in14": (
+        "IMPORTANT: This question is about women having the same rights as men in society — "
+        "voting, education, employment, and legal rights. This is completely separate from "
+        "questions about marital roles, family hierarchy, or household structure. "
+        "In India, holding traditional family values and believing women deserve equal rights "
+        "as citizens are NOT contradictory — they coexist. Pew Research finds 81% of Indians "
+        "strongly agree women should have equal rights, including most who hold traditional "
+        "family views. This question is about civic and social rights — not about family roles. "
+        "Your honest answer on women's equal rights in society is almost certainly A — strongly agree."
+    ),
+    # Sprint A-10 Fix 2: in06 regression fix.
+    # A-9 root cause: governance_stance ("parliamentary gridlock is bad, strong leader is good")
+    # is bleeding into THIS question about representative democracy as a system — causing 0% C/D
+    # and pushing all personas to B (somewhat good) instead of the real A=37%, C=8%, D=10%.
+    # Fix: clarify the distinction between preferring strong leadership (in07) and evaluating
+    # representative democracy as a system (in06). Add explicit C/D acknowledgement.
+    "in06": (
+        "IMPORTANT: This question asks whether having a representative democratic political system "
+        "is good or bad — a separate question from whether you prefer strong decisive leadership. "
+        "Most Indians think representative democracy is good: 37% very good (A), 44% somewhat good (B). "
+        "But ~18% have reservations: those who genuinely prefer centralised authority over elections "
+        "say somewhat bad (C); those who believe elections have failed India say very bad (D). "
+        "If you strongly value strong centralised governance over parliamentary elections, your "
+        "answer may be C — somewhat bad. "
+        "Most BJP and opposition supporters say A or B. Answer based on your genuine view of "
+        "whether elected representatives and democratic accountability are good for India."
+    ),
+    # Sprint A-10 Fix 3: in11 collapse fix.
+    # A-9 root cause: all 40 personas answered A (very important) — 100% collapse.
+    # Reality: Pew says 84% A, 11% B, 3% C, 2% D. Urban/educated/secular personas should answer B/C.
+    # Fix: spread note directing secular, urban, professional personas toward B.
+    "in11": (
+        "IMPORTANT: While religion is very important to most Indians, genuine variation exists. "
+        "Urban, educated, and professionally-oriented Indians often say religion is 'somewhat "
+        "important' (B) rather than 'very important' (A) in their personal daily lives. "
+        "Secular or non-religious Indians may say 'not too important' (C). "
+        "If you are urban, highly educated, or hold secular values, your honest answer may be "
+        "B — somewhat important — not A. Do not default to A if religion plays a smaller role "
+        "in your daily life than in India's general population."
+    ),
+    # Sprint A-10 Fix 4: in02/in03 A-option push.
+    # A-9: in02 A=45% vs Pew 56%; in03 A=25% vs Pew 43%. Too many bjp_lean/bjp_supporter
+    # landing on B (somewhat favorable) instead of A (very favorable).
+    "in02": (
+        "IMPORTANT: Views on Narendra Modi are strongly polarised in India. "
+        "Committed BJP supporters hold a VERY favorable view of Modi — not just somewhat. "
+        "If you are a strong BJP supporter who sees Modi as a transformational leader for India, "
+        "your honest answer is A — very favorable — not B. "
+        "BJP leaners who broadly support but have some reservations say B (somewhat favorable). "
+        "Critics and opposition voters say C or D. "
+        "Answer from your actual conviction — do not soften a strong view to somewhat."
+    ),
+    "in03": (
+        "IMPORTANT: Views on the BJP party are strongly divided. "
+        "Strong BJP supporters hold a VERY favorable view of the party — not just somewhat. "
+        "If BJP represents your political identity and you believe in the party's direction for India, "
+        "your honest answer is A — very favorable — not B. "
+        "BJP leaners with reservations say B. Critics and opposition voters say C or D. "
+        "Do not soften a genuinely strong view to 'somewhat favorable'."
+    ),
+    # Sprint A-10 Fix 5: in12 A-option push.
+    # A-9: A=45% vs Pew 64%. bjp_lean personas are going B instead of A.
+    # Both bjp_supporter AND bjp_lean should answer A (completely agree) for in12.
+    "in12": (
+        "IMPORTANT: On whether a wife must always obey her husband, India is strongly traditional. "
+        "64% of Indians say 'completely agree' (A) — this is the clear majority view. "
+        "In Indian households rooted in dharma and traditional family values, 'completely agree' "
+        "is the authentic answer — not 'somewhat agree'. "
+        "If you hold traditional Indian family values, your honest answer is A — completely agree — "
+        "not B. Only say B if you see this as a matter of degree or partnership rather than duty."
+    ),
     "in05": (
         "IMPORTANT: Indians hold genuinely varied views on this depending on political lean. "
         "BJP supporters and nationalists see India's global influence as clearly 'getting stronger'. "
