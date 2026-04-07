@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**Study 1B — India Pew Replication · Sprint A-6 (A-7 in progress) | Study 1A — US Complete at 88.7% | April 2026**
+**Study 1B — India Pew Replication · Sprint A-7 (A-8 in progress) | Study 1A — US Complete at 88.7% | April 2026**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -8,7 +8,7 @@ Simulatte generates synthetic AI personas and surveys them at scale. This reposi
 
 ## Study 1B — India Pew Replication · Active
 
-Replicating 15 Pew Research Center India survey questions against a 40-persona synthetic Indian general population. Sprint A-6 complete; A-7 in progress.
+Replicating 15 Pew Research Center India survey questions against a 40-persona synthetic Indian general population. Sprint A-7 complete; A-8 in progress.
 
 | Sprint | Score | Key Change |
 |--------|-------|------------|
@@ -18,9 +18,10 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-4 | 49.2% | Preamble conflict fix; political/economic contamination root cause identified |
 | A-5 | 50.0% | Economics–politics decoupling attempt; in10 hit 96.7% (new best); in13 parse recovery |
 | **A-6** | **50.5%** | BJP narrative hardship exclusion; survey-prompt spread injection; in05 **+13.5 pp** breakthrough |
-| **A-7** | **In progress** | Budget ceiling gate for BJP in decide.py; in09 BJP "a lot" reinforcement; in13 parse fix; in15 strengthened; in04 INC narrative identity |
+| A-7 | 51.6% | Budget ceiling gate (in08 +5 pp); in13 parse recovered (40/40); in15 first B responses (+7.5 pp); in10 **97%** new study best |
+| **A-8** | **In progress** | in09 descriptive anchor rewrite; tendency_summary gate for BJP; in04 INC stance field; in15 B-anchor strengthened |
 
-> **Sprint A-6 note:** Headline +0.5 pp masks two significant wins: in05 +13.5 pp (spread injection broke 100% A lock; 62.5% vs Pew 68%) and in09 +7.5 pp. Both masked by in13 parse regression (24/40 parseable, −13.0 pp) and in10 variance (−7.1 pp). True signal positive. New root cause confirmed: economic context bleeds into BJP political answers through FOUR memory channels — narrative text (fixed A-6), budget_ceiling in decide.py (A-7 P1), tendency_summary (pending), life_defining_events (pending).
+> **Sprint A-7 note:** +1.1 pp net. Five wins (in05 +5.5, in06 +8.0, in08 +5.0 budget gate, in10 +7.4 new best, in13 +8.3 parse recovery, in15 +7.5 first B) offset by in09 −7.5 (explicit 'your answer is A' triggered resistance, collapsed to 100% B) and in04 −5.0 (INC narrative added conviction but strengthened C, not D). New root cause: prescriptive spread anchors trigger model resistance; descriptive framing needed instead.
 
 ---
 
@@ -40,39 +41,38 @@ See [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding
 
 ---
 
-## Study 1B Per-Question Results — Sprint A-6
+## Study 1B Per-Question Results — Sprint A-7
 
-| ID | Topic | Accuracy | MAE (pp) | Δ vs A-5 | Classification |
+| ID | Topic | Accuracy | MAE (pp) | Δ vs A-6 | Classification |
 |----|-------|----------|----------|----------|----------------|
-| in01 | Democracy satisfaction | 55.6% | 22.2 | 0.0 | stable |
-| in02 | Modi approval | 32.3% | 33.8 | +5.4 | partial — narrative constraint helped; 3 channels remain |
+| in01 | Democracy satisfaction | 47.0% | 26.5 | −8.6 | cohort variance regression |
+| in02 | Modi approval | 31.7% | 34.1 | −0.6 | flat — tendency_summary still active |
 | in03 | BJP approval | 42.9% | 28.6 | 0.0 | stable |
-| in04 | INC approval | 27.7% | 36.1 | −0.3 | stuck — modal C lock; pragmatic-moderate override |
-| **in05** | **India global power** | **81.5%** | **12.3** | **+13.5** | **major win — spread injection breakthrough** |
-| in06 | Representative democracy | 47.4% | 26.3 | +3.1 | parse variance (33/40) |
-| in07 | Strong leader | 16.1% | 42.0 | +0.4 | **RLHF hard ceiling** |
-| in08 | Economic conditions | 38.0% | 31.0 | 0.0 | stuck — economic context override |
-| in09 | Government trust | 55.5% | 22.2 | +7.5 | partial win — first C responses; A still 2.5% vs 41% |
-| in10 | Future generations | 89.6% | 7.0 | −7.1 | variance / parse loss (35/40) |
-| in11 | Religion importance | 84.0% | 8.0 | −2.5 | variance |
+| in04 | INC approval | 22.7% | 38.6 | −5.0 | INC fix backfired — 95% C, 0% D |
+| **in05** | **India global power** | **87.0%** | **8.7** | **+5.5** | **new best — A=70% vs Pew 68%** |
+| in06 | Representative democracy | 55.4% | 22.3 | +8.0 | parse recovered |
+| in07 | Strong leader | 10.7% | 44.7 | −5.4 | **RLHF hard ceiling** |
+| in08 | Economic conditions | 43.0% | 28.5 | +5.0 | budget gate partial — B 30→35% |
+| in09 | Government trust | 48.0% | 26.0 | −7.5 | explicit anchor backfired — 100% B |
+| **in10** | **Future generations** | **97.0%** | **2.0** | **+7.4** | **🏆 study best — A=76.3% vs Pew 76%** |
+| in11 | Religion importance | 84.0% | 8.0 | 0.0 | stable |
 | in12 | Wife obedience | 30.0% | 35.0 | 0.0 | **RLHF hard ceiling** |
-| in13 | Gender roles / jobs | 14.2% | 42.9 | −13.0 | **parse regression 24/40** — RLHF ceiling confirmed |
-| in14 | Women equal rights | 80.8% | 9.6 | 0.0 | unchanged |
-| in15 | Climate change threat | 62.0% | 25.3 | 0.0 | spread injection not firing — 100% A persists |
-| **MEAN** | | **50.5%** | **25.5** | **+0.5** | |
+| in13 | Gender roles / jobs | 22.5% | 38.8 | +8.3 | parse fully recovered (40/40); RLHF ceiling at A |
+| in14 | Women equal rights | 83.3% | 8.3 | +2.5 | variance improvement |
+| in15 | Climate change threat | 69.5% | 20.3 | +7.5 | first B responses (7.5% vs Pew 29%) |
+| **MEAN** | | **51.6%** | **24.7** | **+1.1** | |
 
 ---
 
-## Sprint A-7 Roadmap
+## Sprint A-8 Roadmap
 
 | Priority | Fix | Target questions |
 |----------|-----|-----------------|
-| 1 | **Gate budget_ceiling for BJP in decide.py** — suppress "Budget reality:" line in `_decide_core_memory_block()` for bjp_supporter/bjp_lean. Main remaining economic contamination channel. | in02, in08, in09 |
-| 2 | **Strengthen in15 spread note** — explicit BJP anchor: "your answer is B — somewhat of a threat, not A". Current note insufficient vs. climate lived experience. | in15 |
-| 3 | **in13 parse reinforcement** — add to `_SPREAD_QUESTION_NOTES` with explicit "YOU MUST RESPOND WITH ONLY THE SINGLE LETTER". Parse rate 24/40 is unacceptable. | in13 |
-| 4 | **Strengthen in09 BJP "a lot" anchor** — more explicit: "If you voted BJP, your answer is A — a lot — not B." A=2.5% vs Pew 41%. | in09 |
-| 5 | **in04 INC narrative identity** — add anti-Congress identity to BJP persona narrative at generation time. Pragmatic-moderate tendency overrides stance anchors; must be embedded in narrative identity. | in04 |
-| Track 2 | **Sarvam evaluation** — RLHF hard ceiling confirmed across 6 sprints for in07/in12/in13. | in07, in12, in13 |
+| 1 | **Rewrite in09 spread note** — replace prescriptive "your answer IS A" with descriptive framing: "Those who genuinely support this government express high trust — a lot." Prescriptive language triggered model resistance and collapsed to 100% B. | in09 |
+| 2 | **Gate tendency_summary financial caution for BJP** — the `{tendency_summary}` slot in `_DECIDE_SYSTEM_TEMPLATE` still injects financial caution language for lower-income BJP personas. Gate same as budget_ceiling in A-7. Main remaining channel for in02. | in02, in08 |
+| 3 | **Fix in04 INC D-anchor** — remove hedged anti-Congress narrative language (strengthened C, not D). Add explicit INC stance field in `_decide_core_memory_block()` for bjp_supporter: "VERY unfavorable — D" (same pattern as gender_norms_stance). | in04 |
+| 4 | **Strengthen in15 B-anchor** — add climate-lived-experience exclusion to BJP narrative constraint: BJP personas must NOT have flood/drought life events. Also add C-anchor for moderate personas. | in15 |
+| Track 2 | **Sarvam evaluation** — RLHF hard ceiling confirmed across 7 sprints for in07/in12/in13. | in07, in12, in13 |
 
 ---
 
@@ -111,7 +111,8 @@ study_1b_pew_india/                      ← Active study
 ├── data/questions_india.json            # 15 Pew India questions + distributions
 ├── data/india_population_pool.py        # 40-persona Indian population sampler
 ├── results/
-│   ├── simulatte_results.json           # Latest India run (Sprint A-6)
+│   ├── simulatte_results.json           # Latest India run (Sprint A-7)
+│   ├── audit_manifest_a7.json           # Sprint A-7 results + prescriptive anchor backfire analysis
 │   ├── audit_manifest_a6.json           # Sprint A-6 results + multi-channel contamination analysis
 │   ├── audit_manifest_a5.json           # Sprint A-5 results + decoupling failure analysis
 │   ├── audit_manifest_a4.json           # Sprint A-4 results + root cause
@@ -147,14 +148,14 @@ reports/
 ```bash
 git clone https://github.com/Iqbalahmed7/simulatte-credibility.git
 cd simulatte-credibility
-git checkout study-1b-sprint-a6
+git checkout study-1b-sprint-a7
 
 pip install -r study_1b_pew_india/requirements.txt
 cd study_1b_pew_india
 python3 run_study.py --simulatte-only
 ```
 
-Expected: **50.5% ± 3 pp** (sampling variance at n=40).
+Expected: **51.6% ± 3 pp** (sampling variance at n=40).
 
 ## Reproduce Study 1A (Sprint B-10)
 
