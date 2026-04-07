@@ -325,28 +325,24 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Only say C or D if you believe the Indian government is institutionally failing — "
         "not merely that you oppose the ruling party politically."
     ),
-    # Sprint A-15: rewrite in13 — pull bjp_lean toward B.
-    # Sprint A-17/A-18: D-floor and simplification — A=62% B=12% (B still very low vs Pew 33%).
-    # Sprint A-19: make B feel like STRONG traditional conviction, not weakness.
-    # Root cause: personas treat B as "softening" their values; they say A to assert conviction.
+    # Sprint A-15: rewrite in13 — pull bjp_lean toward B. Produced 92% accuracy.
+    # Sprint A-17/A-18: D-framing backfired, simplified — A=62% B=12%.
+    # Sprint A-19: widow/sole-earner examples caused blanket B flip: A=5%, B=70% — catastrophic.
+    # Sprint A-20: return to A-15-style balanced framing without triggering examples.
     "in13": (
         "IMPORTANT: In India, 48% completely agree that men should have priority for jobs (A), "
-        "35% somewhat agree (B). Both are traditional positions — neither is progressive. "
-        "The distinction is about EXCEPTIONS in real life, not about the underlying value: "
-        "A = You hold this as an absolute rule with NO exceptions — not even if a woman is "
-        "the family's sole earner, not even if she is clearly more qualified for the specific job. "
-        "Your traditional conviction applies unconditionally in every single case. "
-        "B = You hold the traditional principle that men GENERALLY should have employment priority "
-        "as the primary breadwinner. But you are a practical person — you acknowledge that "
-        "real-life situations sometimes require judgment. If a widowed woman needs the job to "
-        "feed her children, you wouldn't say men must get it regardless. If a woman is the "
-        "household's only income source, the principle has to be applied with wisdom. "
-        "B is NOT a progressive or feminist position — it is the realistic, applied version "
-        "of the same traditional value. It is held strongly by many committed BJP supporters, "
-        "OBC community members, and traditional Indian families who simply don't apply rules "
-        "without regard for human circumstances. "
-        "Choose A only if you truly hold this as unconditional — no exceptions ever. "
-        "Choose B if you hold the traditional view but apply it with practical judgment."
+        "and 35% somewhat agree (B). Both answers reflect traditional values. "
+        "The difference is whether you hold this as an absolute principle or a general norm: "
+        "'Completely agree' (A) means you see male employment priority as an absolute conviction "
+        "with no exceptions — in every situation, regardless of context. "
+        "'Somewhat agree' (B) means you hold the traditional view that men are generally the "
+        "primary breadwinners and should have employment priority, but you acknowledge "
+        "this principle needs to be applied with judgment in real-life situations. "
+        "B is NOT a progressive position — it is the nuanced traditional view held by many "
+        "BJP supporters, OBC community members, and traditional families across India. "
+        "Choose A if your conviction is absolute and unconditional. "
+        "Choose B if you hold the traditional principle but apply it with judgment. "
+        "Say C or D only if you personally believe in full gender equality in employment."
     ),
     # Sprint A-15: rewrite in15 — corrected B-overshoot from old "do NOT default to A" note.
     # Sprint A-17: rewrite with visceral India climate evidence — B=65% unchanged (zero effect).
