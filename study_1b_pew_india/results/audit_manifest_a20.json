@@ -1,0 +1,31 @@
+{
+  "sprint": "A-20",
+  "date": "2026-04-08",
+  "cohort_ids": ["not_recorded_session_compacted"],
+  "generation": "fresh (required for in13 note rewrite to take full effect)",
+  "mean_accuracy": 83.8,
+  "per_question": {
+    "note": "Per-question distributions not recorded — session compacted before manifest creation.",
+    "in13_confirmed": 79.5,
+    "note_in13": "Confirmed from A-21 analysis: 'in13: +5pp from A-20 (79.5%→84.5%)'"
+  },
+  "simulated_distributions": {
+    "note": "Not recorded"
+  },
+  "changes": [
+    "in13 spread note: reverted to A-15-style — removed widow/sole-earner example",
+    "  — Restored 'absolute principle vs practical judgment' framing without triggering examples",
+    "  — 'Completely agree (A) = absolute conviction with no exceptions'",
+    "  — 'Somewhat agree (B) = traditional principle applied with judgment in real-life situations'",
+    "  — 'B is NOT a progressive position — it is the nuanced traditional view'",
+    "  — Key: emphasised B is still traditional/conservative, just contextual"
+  ],
+  "analysis": {
+    "in13": "Recovered from A-19's 72% to ~79.5% — removal of widow example and restored absolute-vs-contextual framing worked. B came down from 70% to more calibrated range. Did NOT fully recover to A-18's ~93% because examples were gone but the B-legitimacy framing from A-19 may have lingered in personas' logic.",
+    "in09": "Still structurally limited — A-overshoot persists (A=62-65% vs Pew 42%). 13 opposition-leaning personas (32.5%) creating C floor; A-overshoot from bjp_supporters despite trust 0.72.",
+    "in07": "Still limited — 23 pro-BJP personas (57.5%) create near-majority A. bjp_lean democratic narrative not yet implemented.",
+    "session_best": "83.8% — highest score of the session. Structural ceiling at ~84% identified: in09/in07 are pool-composition limited, not prompt-engineering limited.",
+    "structural_ceiling_identified": "Breaking through 84% requires pool recomposition to reduce opposition-lean count (fixes in09 C-overshoot) or reduce bjp_supporter count (fixes in07/in04 — but risks in02/in03 regression).",
+    "mean_delta": "+1.5pp from A-19 (82.3%→83.8%)"
+  }
+}

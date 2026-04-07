@@ -1,0 +1,29 @@
+{
+  "sprint": "A-19",
+  "date": "2026-04-08",
+  "cohort_ids": ["not_recorded_session_compacted"],
+  "generation": "fresh (required for in09 spread note change to be meaningfully tested)",
+  "mean_accuracy": 82.3,
+  "per_question": {
+    "note": "Per-question distributions not recorded — session compacted before manifest creation. Key deltas documented in analysis field.",
+    "in13_reconstructed": "~72% (A-18 in13 ~93% − 21pp widow-example flip)",
+    "in09_reconstructed": "~68% (A-18 in09 + ~5pp from institutional trust framing)"
+  },
+  "simulated_distributions": {
+    "note": "Not recorded — key known distributions: in13 B≈70% (widow-example caused flip from A-modal to B-modal)"
+  },
+  "changes": [
+    "in09 spread note: rewrite — 'institutional trust vs political approval' framing",
+    "  — 'Even opposition voters can say B because they distinguish government functioning from approval of ruling party'",
+    "  — Intended to push opposition personas from C toward B",
+    "in13 spread note: widow/sole-earner example added",
+    "  — BACKFIRED: 'In a household where a woman is the sole earner, saying somewhat agree is honest'",
+    "  — Example made B feel too legitimate; triggered B=70% flip (vs A-modal in A-18)"
+  ],
+  "analysis": {
+    "in09": "+~5pp from A-18 — institutional trust framing partially worked for opposition_lean personas. A-overshoot (A>42%) persists structurally.",
+    "in13_CATASTROPHIC": "−21pp from A-18 — widow/sole-earner example caused B=70%, A=~5% flip. The specific example made B (somewhat agree) feel like the honest, thoughtful answer for EVERY persona, completely collapsing the A-modal distribution. Root cause: providing a concrete case where B is 'honest' gives all personas permission to choose it regardless of their actual conviction level.",
+    "mean_delta": "−1.1pp from A-18 (83.4%→82.3%). The in13 catastrophic flip (−21pp) was partially offset by in09 improvement (+5pp) and stable performance elsewhere.",
+    "lesson": "Concrete examples in spread notes that make a non-A option feel 'honest' are high-risk. Even a single well-reasoned example can flip an entire distribution if it resonates with most personas' desire to appear thoughtful rather than absolutist."
+  }
+}

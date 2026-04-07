@@ -1,0 +1,31 @@
+{
+  "sprint": "A-18",
+  "date": "2026-04-08",
+  "cohort_ids": ["not_recorded_session_compacted"],
+  "generation": "fresh (trust values changed — required for pool parameter changes to take effect)",
+  "mean_accuracy": 83.4,
+  "per_question": {
+    "note": "Per-question distributions not recorded — session compacted before manifest creation. Key deltas documented in analysis field."
+  },
+  "simulated_distributions": {
+    "note": "Not recorded — see analysis for key distributions"
+  },
+  "changes": [
+    "demographic_sampler: bjp_supporter institutional_trust 0.68 → 0.74 (bimodal collapse fix from A-17)",
+    "demographic_sampler: bjp_lean institutional_trust 0.65 → 0.72 (fixes C-mapping: jitter range now 0.68–0.76, safely in B territory)",
+    "in15 spread note: REWRITE — decoupled 'major threat' from 'development priority framing'",
+    "  — 'A major threat does NOT mean climate is more important than development'",
+    "  — 'A farmer in Bihar who votes BJP can honestly say major threat'",
+    "  — This is the methodological breakthrough of the session",
+    "in09 spread note: simplified — removed manipulative framing from A-17",
+    "in13 spread note: simplified — removed D-framing that caused A-overshoot in A-17",
+    "in07 spread note: simplified — removed bjp_supporter B-push that backfired in A-17"
+  ],
+  "analysis": {
+    "in15_BREAKTHROUGH": "+25pp from A-17 (64%→~89%) — decoupling 'major threat' from 'climate vs development priority' solved the root cause. Personas had been refusing A because they interpreted it as an anti-development position. Clarifying that A is about physical damage (heatwaves/floods/monsoon disruption) while staying pro-development allowed BJP-supporting farmers and workers to answer honestly.",
+    "in09": "Recovered from A-17 bimodal collapse (A=65%, C=23% → approximately normalised). Trust raise 0.68→0.74 for bjp_supporter and 0.65→0.72 for bjp_lean brought jitter ranges back into B territory. Structural overshoot (A too high vs Pew 42%) remains but bimodal collapse resolved.",
+    "in07": "Small improvement from simplified note — A-17 spread note backfired when bjp_supporters explicitly cited then overrode it. Simpler framing slightly better.",
+    "in13": "Significant recovery from A-17's 74.5% — simplified note removed the D-anchor that was pushing everyone toward A to assert absolute conviction.",
+    "mean_delta": "+3.5pp from A-17 (79.9%→83.4%). The in15 breakthrough (+25pp) was partially offset by remaining structural issues in in09/in07."
+  }
+}

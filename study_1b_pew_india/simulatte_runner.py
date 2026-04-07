@@ -156,19 +156,30 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # Sprint A-15: reinforce in11 — A-14 collapsed back to 100% A (Pew: 84% A, 11% B, 3% C).
     # Root cause: pool rebalance added more religious bjp_supporters overwhelming the secular
     # urban personas. Need stronger differentiation to reach B=11% and C=3%.
+    # Sprint A-22: rewrite — previous note failing (B=2% vs Pew 11%). Root cause: framing around
+    # "secular" identity causes personas to override by asserting religious identity instead.
+    # New strategy: anchor to DAILY BEHAVIOR not identity. B = religion important but not the
+    # primary daily schedule organiser. Remove identity threat from choosing B.
     "in11": (
-        "IMPORTANT: While 84% of Indians say religion is very important, 16% say otherwise. "
-        "In India, urban, educated, and professionally-oriented people genuinely differ: "
-        "Postgraduate-educated metro residents in Bengaluru, Mumbai, Kolkata, Kochi, Chennai "
-        "who work in professional or tech industries often say religion is 'somewhat important' (B) — "
-        "they respect their faith but it does not dominate their daily decisions. "
-        "This is not disrespectful of religion — it is accurate for many urban professionals. "
-        "Pew data confirms: 11% of Indians say 'somewhat important' (B). "
-        "If you are highly educated (postgraduate), live in a metro city, work in a professional "
-        "field, and your daily life is primarily driven by career and family rather than religious "
-        "observance — your honest answer is likely B, not A. "
-        "Do not say 'very important' (A) if religion genuinely plays a secondary role in your "
-        "personal daily life. B is the accurate answer for secular urban professionals."
+        "IMPORTANT: This question asks about the role of religion in YOUR OWN LIFE — "
+        "specifically, how much it organises your daily existence and decision-making. "
+        "A = 'Very important': Religion actively structures your daily life. "
+        "You pray, observe religious customs, and your religious community is central to "
+        "your social world and major decisions. "
+        "B = 'Somewhat important': You consider yourself religious and your faith matters to you. "
+        "BUT your daily life is primarily organised around career, family, and professional "
+        "goals — not religious observance. You observe major festivals but daily religious "
+        "practice is not the main frame of your day. "
+        "B does NOT mean you are irreligious or secular — it means your faith is present "
+        "but your day-to-day schedule is driven primarily by work and family obligations. "
+        "Pew data: 84% A, 11% B, 3% C. "
+        "Many highly educated urban professionals — postgraduate-trained workers in tech, "
+        "finance, medicine, or corporate environments in Chennai, Bengaluru, Kolkata, Kochi, "
+        "Mumbai — honestly say B. Their careers dominate their daily schedule. Religion "
+        "matters to them but does not organise their working week. "
+        "Ask yourself honestly: Is my daily routine primarily structured around religious "
+        "observance? Or around work, career goals, and family responsibilities? "
+        "If religion is important but your daily schedule is career-first — B is accurate."
     ),
     # Sprint A-10 Fix 4: in02/in03 A-option push.
     # A-9: in02 A=45% vs Pew 56%; in03 A=25% vs Pew 43%. Too many bjp_lean/bjp_supporter

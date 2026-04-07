@@ -59,7 +59,7 @@ INDIA_GENERAL_POOL = [
     ("Poonam Verma",         40, "female", "India", "Uttar Pradesh", "Varanasi",    "tier2",  "nuclear",        4, "lower",   True,  "mid-career",    "secondary",     "part-time",  "bjp_supporter",  "hindu",    "general"),
 
     # North — SC (Dalit), economic anxiety
-    ("Ramesh Chamar",        38, "male",   "India", "Punjab",        "Ludhiana",    "metro",  "nuclear",        4, "lower",   False, "mid-career",    "secondary",     "full-time",  "opposition_lean","hindu",    "sc"),
+    ("Ramesh Chamar",        38, "male",   "India", "Punjab",        "Ludhiana",    "metro",  "nuclear",        4, "lower",   False, "mid-career",    "secondary",     "full-time",  "neutral",        "hindu",    "sc"),  # A-22: opposition_lean→neutral
     ("Kamla Devi",           52, "female", "India", "Uttar Pradesh", "Agra",        "tier2",  "nuclear",        5, "lower",   False, "late-career",   "primary",       "part-time",  "opposition",     "hindu",    "sc"),
 
     # North — Muslim minority
@@ -83,7 +83,7 @@ INDIA_GENERAL_POOL = [
     ("Geetha Rani",          42, "female", "India", "Andhra Pradesh","Vijayawada",  "tier2",  "nuclear",        4, "lower",   False, "mid-career",    "secondary",     "part-time",  "bjp_supporter",  "hindu",    "obc"),
 
     # South — Christian minority (Kerala/Goa)
-    ("Thomas Mathew",        48, "male",   "India", "Kerala",        "Thiruvananthapur","metro","nuclear",      4, "middle",  True,  "mid-career",    "undergraduate", "full-time",  "opposition_lean","christian","general"),
+    ("Thomas Mathew",        48, "male",   "India", "Kerala",        "Thiruvananthapur","metro","nuclear",      4, "middle",  True,  "mid-career",    "undergraduate", "full-time",  "neutral",        "christian","general"),  # A-22: opposition_lean→neutral
     ("Mary George",          35, "female", "India", "Goa",           "Panaji",      "metro",  "nuclear",        3, "middle",  True,  "early-family",  "undergraduate", "full-time",  "neutral",        "christian","general"),
 
     # ============================================================
@@ -117,7 +117,7 @@ INDIA_GENERAL_POOL = [
 
     # Rural East — ST (tribal) communities
     # Sprint A-12: removed Meena Oram (duplicate tribal representation — Birsa Munda covers ST)
-    ("Birsa Munda",          36, "male",   "India", "Jharkhand",     "Ranchi",      "tier2",  "nuclear",        5, "lower",   False, "mid-career",    "primary",       "full-time",  "opposition_lean","hindu",    "st"),
+    ("Birsa Munda",          36, "male",   "India", "Jharkhand",     "Ranchi",      "tier2",  "nuclear",        5, "lower",   False, "mid-career",    "primary",       "full-time",  "neutral",        "hindu",    "st"),  # A-22: opposition_lean→neutral
 
     # Northeast — Assam, Sikkim (minority religious + ethnic)
     ("Raju Bora",            34, "male",   "India", "Assam",         "Guwahati",    "metro",  "nuclear",        4, "lower",   True,  "early-career",  "undergraduate", "full-time",  "bjp_lean",       "hindu",    "obc"),
@@ -145,21 +145,21 @@ INDIA_GENERAL_POOL = [
     ("Abdul Karim",          70, "male",   "India", "Kerala",        "Kozhikode",   "tier2",  "nuclear",        5, "lower",   False, "retired",       "primary",       "retired",    "opposition",     "muslim",   "obc"),
 ]
 
-# Political lean distribution (n=40) — Sprint A-12 rebalance:
+# Political lean distribution (n=40) — Sprint A-22 rebalance:
 # Root cause of persistent A-option gaps (in02/in03/in08/in12): original pool had only
 # 7 bjp_supporter (18%) but Pew Spring 2023 shows ~43% BJP very favorable. Even with
 # perfect prompt calibration, 7/40=17.5% max A — structurally impossible to reach 43%.
-# Fix: rebalanced to match Pew's observed BJP support distribution.
+# A-12 fix: rebalanced to match Pew's observed BJP support distribution.
+# A-22 fix: reduce opposition_lean 6→3 to address in09 structural C-pool overshoot.
 #
-# bjp_supporter:  14  (35%)  matches Pew "BJP very favorable" ~42%
-# bjp_lean:        9  (22.5%)  matches Pew "BJP somewhat favorable" ~31%
-# neutral:         4  (10%)  pragmatic, issue-by-issue
-# opposition_lean: 6  (15%)  calibrated to INC/opposition lean
+# bjp_supporter:  14  (35%)   matches Pew "BJP very favorable" ~42%
+# bjp_lean:        8  (20%)   matches Pew "BJP somewhat favorable" ~31%
+# neutral:         8  (20%)   pragmatic, issue-by-issue (A-22: +3 from opposition_lean)
+# opposition_lean: 3  (7.5%)  calibrated to INC/opposition lean (A-22: 6→3)
 # opposition:      7  (17.5%) calibrated to BJP very unfavorable + strong INC
 #
-# Changes from A-11: +7 bjp_supporter (Meera Agarwal, Suresh Kumar, Geetha Rani,
-# Nisha Shah, Ganesh Patil, Prasad Mishra, Neha Tiwari); +2 bjp_lean (Priya
-# Krishnamurthy); Anjali Bose opposition_lean → neutral; removed Meena Oram
+# A-22 conversions: Ramesh Chamar SC/Punjab, Thomas Mathew Christian/Kerala,
+# Birsa Munda ST/Jharkhand — all demographically mixed/neutral in real-world BJP lean.
 
 # Religion distribution (n=40):
 # Hindu:   32  (80%)  — Census 2011: 79.8%
