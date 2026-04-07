@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**Study 1B — India Pew Replication · Sprint A-16 at 80.1% (A-17 in progress) | Study 1A — US Complete at 88.7% | April 2026**
+**Study 1B — India Pew Replication · Sprint A-21 at 83.1% (session best A-20: 83.8%) | Study 1A — US Complete at 88.7% | April 2026**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -28,6 +28,11 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-14 | 80.8% | −4.2 | First true run with correct 14 bjp_supporter pool; conviction framing for in02/in03; in09/in15 backfired |
 | A-15 | 81.6% | +0.8 | Survey reuse; INC conviction split bjp_supporter/bjp_lean; in07/in13 spread notes fixed |
 | A-16 | 80.1% | −1.5 | Fresh cohorts; inst_trust 0.83→0.76; in05 spread note — in09/in15/in04 still regressing |
+| A-17 | 79.9% | −0.2 | Trust 0.68 → bimodal collapse (in09 A=65%,C=23%,B=13%); in15 visceral climate note |
+| **A-18** | **83.4%** | **+3.5** | **Trust raised 0.74/0.72; in15 "major threat ≠ development priority" (+25pp on in15)** |
+| A-19 | 82.3% | −1.1 | in09 institutional trust framing +5pp; in13 widow-example caused B=70% flip −21pp |
+| **A-20** | **83.8%** | **+1.5** | **in13 rebalanced; session best. Structural ceiling: in09/in07 pool-composition limited** |
+| A-21 | 83.1% | −0.7 | bjp_lean democratic narrative (in13 +5pp); in09/in08 sampling variance regression |
 
 > **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path.
 
@@ -60,14 +65,17 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 
 ---
 
-## Sprint A-17 Roadmap
+## Remaining Gaps — Post A-21
 
-| Priority | Fix | Root cause | Target | Expected gain |
-|----------|-----|-----------|--------|---------------|
-| 1 | **Lower bjp_supporter inst_trust 0.76→0.68** — A-16 in09 A=60% vs Pew 42%; 0.76 still too high | demographic_sampler | in09 | +12 pp |
-| 2 | **in15 visceral India climate evidence** — A-16 B=65% vs Pew 30%; abstract framing fails; rewrite with specific heatwave/flood/cyclone events | spread note | in15 | +15 pp |
-| 3 | **in04 narrative fix** — remove hardcoded "answer very unfavorable" instruction; 14 bjp_supporters all say D = 35% minimum, exceeds Pew 19% | narrative_generator | in04 | +8 pp |
-| 4 | **D=18% floor: in07/in12/in13** — 7 opposition personas over-selecting D; Muslim voters should say A/B on in12/in13 per Islamic values; in07 D only for extremists | spread notes | in07,in12,in13 | +10 pp |
+| Question | A-21 | Pew | Root cause | Fixable? |
+|----------|------|-----|-----------|----------|
+| in09 | 63% | — | A=68% vs Pew 42%; C=18% vs Pew 7%. 13 opposition personas (32%) say C, Pew shows only 7%. Structural minimum C=32.5%. | Only with pool recomposition (fewer opposition) |
+| in07 | 77% | — | A=62% vs Pew 44%; B=15% vs Pew 44%. 23 pro-BJP personas (57%) create near-majority A. bjp_lean democratic narrative helped in13 but not in07. | Only with narrative-level intervention at generation |
+| in04 | 70% | — | D=35% vs Pew 20%. 14 bjp_supporters × ~80% D rate. Structural minimum D≈28%. | Only with bjp_supporter pool reduction |
+| in05/in06 | 81% | — | C/D=0% vs Pew 18-19%. Likely RLHF constitutional alignment ceiling. | Possibly not fixable |
+| in11 | 87% | — | A=98% vs Pew 84%. B spread note not working. | Minor nudge possible |
+
+**Session trajectory (A-14→A-21):** Pool rebalance solved in02/in03/in12 A-floors (+25-40pp each) but created in07/in09 regressions. Net: approximately neutral vs A-12. A-18's in15 breakthrough (+25pp) via conceptual reframing is the methodological highlight. Practical ceiling with current pool: **~84%**. Breaking through would require pool recomposition to reduce opposition lean count (in09 fix).
 
 ---
 

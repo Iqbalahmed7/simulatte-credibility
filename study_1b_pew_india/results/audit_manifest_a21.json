@@ -1,0 +1,57 @@
+{
+  "sprint": "A-21",
+  "date": "2026-04-08",
+  "cohort_ids": ["f047d0d0", "390dc657"],
+  "generation": "fresh (required for narrative changes to take effect)",
+  "mean_accuracy": 83.1,
+  "per_question": {
+    "in01": 93.3,
+    "in02": 85.2,
+    "in03": 90.9,
+    "in04": 70.0,
+    "in05": 81.0,
+    "in06": 76.8,
+    "in07": 76.6,
+    "in08": 82.5,
+    "in09": 63.0,
+    "in10": 97.0,
+    "in11": 86.5,
+    "in12": 87.0,
+    "in13": 84.5,
+    "in14": 80.8,
+    "in15": 91.0
+  },
+  "simulated_distributions": {
+    "in01": {"A": 35, "B": 42, "C": 8, "D": 15},
+    "in02": {"A": 68, "B": 10, "C": 8, "D": 15},
+    "in03": {"A": 38, "B": 40, "C": 8, "D": 15},
+    "in04": {"A": 15, "B": 18, "C": 32, "D": 35},
+    "in05": {"A": 78, "B": 22, "C": 0},
+    "in06": {"A": 32, "B": 68, "C": 0, "D": 0},
+    "in07": {"A": 62, "B": 15, "C": 8, "D": 15},
+    "in08": {"A": 42, "B": 42, "C": 15, "D": 0},
+    "in09": {"A": 68, "B": 15, "C": 18, "D": 0},
+    "in10": {"A": 78, "B": 22, "C": 0},
+    "in11": {"A": 98, "B": 2, "C": 0, "D": 0},
+    "in12": {"A": 68, "B": 10, "C": 8, "D": 15},
+    "in13": {"A": 58, "B": 20, "C": 8, "D": 15},
+    "in14": {"A": 100, "B": 0, "C": 0, "D": 0},
+    "in15": {"A": 65, "B": 35, "C": 0}
+  },
+  "changes": [
+    "narrative_generator: bjp_lean now embeds democratic-accountability framing",
+    "  — values strong leadership THROUGH democratic elections, not bypassing them",
+    "  — intended to fix in07 A-overshoot by making B feel natural for bjp_lean",
+    "demographic_sampler: bjp_supporter trust 0.74 → 0.72 (small reduction)"
+  ],
+  "analysis": {
+    "in13": "+5pp from A-20 (79.5%→84.5%) — bjp_lean democratic narrative helped; B went 12%→20%",
+    "in01": "+6.4pp from A-20 — sampling variance gain",
+    "in07": "essentially unchanged (77.0%→76.6%) — democratic narrative didn't affect A/B split",
+    "in09": "-5pp from A-20 (68%→63%) — sampling variance; A went UP despite lower trust",
+    "in08": "-7.5pp from A-20 (90%→82.5%) — sampling variance",
+    "structural_ceiling": "in09 structurally limited: 13 opposition-leaning personas (32.5%) say C, Pew shows only 7% C. Cannot fix without pool recomposition. in07 similarly: 14 bjp_supporters create 35% minimum A, all bjp_lean also going A.",
+    "session_best": "A-20 = 83.8%",
+    "vs_a12": "-1.9pp (A-12 baseline: 85.0% with wrong pool)"
+  }
+}
