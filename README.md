@@ -1,10 +1,10 @@
 # Simulatte Credibility Research Program
 
-**Study 1A — US Pew Replication · Sprint B-10 | Study 1B — India Pew Replication · Sprint A-2 | April 2026**
+**Study 1A — US Pew Replication · Sprint B-10 | April 2026**
 
 ---
 
-## Study 1A Result — US General Population
+## Result — US General Population
 
 Simulatte's synthetic US general population achieved **88.7% mean distribution accuracy** (cohort-adjusted) against 15 published Pew Research Center American Trends Panel (ATP) survey questions — **within 2.3 percentage points of the human self-consistency ceiling**.
 
@@ -13,7 +13,7 @@ Simulatte's synthetic US general population achieved **88.7% mean distribution a
 | Human self-consistency ceiling | 91.0% | Stanford (Iyengar et al.) | Upper bound |
 | **Simulatte B-10 (cohort-adjusted)** | **88.7%** | n=60 personas | **This study, April 2026** |
 | **Simulatte B-10 (raw)** | **86.9%** | n=60 personas | **This study, April 2026** |
-| Artificial Societies | 86.0% | n=1,000 | Self-reported, Jan 2026 |
+| Competitor benchmark | 86.0% | n=1,000 | Self-reported, Jan 2026 |
 | Simulatte B-8 | 86.1% | n=60 personas | Sprint B-8 |
 | Simulatte A-3 (baseline) | 67.7% | n=60 personas | Sprint A-3 |
 
@@ -21,19 +21,7 @@ Simulatte's synthetic US general population achieved **88.7% mean distribution a
 
 ---
 
-## Study 1B — India Pew Replication (In Progress)
-
-| Sprint | Score | Status |
-|--------|-------|--------|
-| A-1 baseline | 46.2% | Unoptimized |
-| A-2 | 45.9% raw / +20.8 pp on in01 | RLHF blocks discovered on in07/in12/in13 |
-| A-3 | In progress | Cultural framing override + NOT-JUST anchors |
-
-**New Finding — Western Model Bias:** Anthropic's Constitutional AI training creates measurable hard blocks on questions where Indian cultural norms diverge from Western liberal defaults. Three specific Pew India questions show 100% wrong answers regardless of explicit persona stance injection. See [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding.md).
-
----
-
-## Study 1A Per-Question Results (Sprint B-10)
+## Per-Question Results (Sprint B-10)
 
 | ID | Topic | Distribution Accuracy | MAE (pp) |
 |----|-------|-----------------------|----------|
@@ -56,7 +44,7 @@ Simulatte's synthetic US general population achieved **88.7% mean distribution a
 
 ---
 
-## Study 1A Sprint Progression
+## Sprint Progression
 
 | Sprint | Score | Key Change |
 |--------|-------|------------|
@@ -82,8 +70,6 @@ Simulatte's synthetic US general population achieved **88.7% mean distribution a
 | Document | Description |
 |----------|-------------|
 | [`reports/study_1a_research_report.md`](reports/study_1a_research_report.md) | Full research report: methodology, sprint-by-sprint engineering narrative, final results |
-| [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding.md) | Research finding: Western AI model bias in cross-cultural survey simulation |
-| [`reports/western_model_bias_deck.md`](reports/western_model_bias_deck.md) | Presentation deck (13 slides) on the RLHF cultural bias finding |
 
 ---
 
@@ -101,19 +87,8 @@ study_1a_pew_replication/
 ├── metrics.py                           # Distribution accuracy computation
 └── METHODOLOGY.md                       # Full methodology and caveats
 
-study_1b_pew_india/
-├── data/questions_india.json            # 15 Pew India questions + distributions
-├── results/
-│   ├── simulatte_results.json           # Latest India run
-│   ├── audit_manifest_a2.json           # Sprint A-2 results + RLHF finding
-│   └── audit_manifest_a1.json           # Sprint A-1 baseline
-├── run_study.py
-└── METHODOLOGY_INDIA.md
-
 reports/
-├── study_1a_research_report.md          # Comprehensive Study 1A report
-├── western_model_bias_finding.md        # RLHF cultural bias research note
-└── western_model_bias_deck.md           # 13-slide presentation deck
+└── study_1a_research_report.md          # Comprehensive Study 1A report
 ```
 
 ---
@@ -134,17 +109,6 @@ Expected: **86.9% ± 2pp** (sampling variance at n=60). For publication-grade co
 
 ---
 
-## Reproduce Study 1B India (Sprint A-2)
-
-```bash
-cd simulatte-credibility
-git checkout study-1b-sprint-a2
-cd study_1b_pew_india
-python3 run_study.py --simulatte-only
-```
-
----
-
 ## Models
 
 | Role | Model |
@@ -158,9 +122,7 @@ python3 run_study.py --simulatte-only
 
 - B-10 raw score (86.9%) has sampling variance of ±2 pp at n=60.
 - Pew distributions are from published reports, not raw microdata.
-- Artificial Societies benchmark is self-reported; no independent replication performed.
-- Study 1B India is in active optimization (Sprint A-3 in progress).
-- Western-aligned LLMs (Haiku) show measurable cultural bias on non-Western survey questions.
+- Social trust (q06) shows a persistent structural undercount across all sprints.
 
 ---
 

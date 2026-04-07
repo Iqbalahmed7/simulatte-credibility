@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary
 
-Simulatte, a synthetic population platform that generates AI personas and surveys them, achieved **88.7% mean distribution accuracy** against 15 questions from Pew Research US public opinion surveys (cohort-adjusted; 86.9% raw). This places Simulatte **4.1 percentage points below the human ceiling** of 91% and **2.7 percentage points above** the Artificial Societies benchmark of 86.0% (self-reported, January 2026).
+Simulatte, a synthetic population platform that generates AI personas and surveys them, achieved **88.7% mean distribution accuracy** against 15 questions from Pew Research US public opinion surveys (cohort-adjusted; 86.9% raw). This places Simulatte **4.1 percentage points below the human ceiling** of 91% and **2.7 percentage points above** a published competitor benchmark of 86.0% in the same domain.
 
 The result was reached over 10 development sprints, starting from a 57.6% baseline — a total gain of **31.1 percentage points**. The core engineering insight was that LLM survey accuracy is primarily a prompt architecture problem, not a model capability problem: the largest single gains came from adding a structured worldview layer to persona generation (+12.9 pp across the ARCH-001 transition) and from replacing abstract stance descriptions with option-vocabulary anchors (+1.5 pp per question on media trust).
 
@@ -22,7 +22,7 @@ The result was reached over 10 development sprints, starting from a 57.6% baseli
 | Final score (raw, n=60) | 86.9% |
 | Human ceiling (Stanford/Iyengar) | 91.0% |
 | Gap to human ceiling | 4.1 pp |
-| Artificial Societies benchmark | 86.0% |
+| Competitor benchmark (self-reported) | 86.0% |
 | Questions tested | 15 |
 | Personas per run | 60 |
 | Total sprint gain | +31.1 pp (57.6% → 88.7%) |
@@ -33,7 +33,7 @@ The result was reached over 10 development sprints, starting from a 57.6% baseli
 
 ### 2.1 Accuracy Metric
 
-Distribution accuracy is computed using the formula from the Artificial Societies white paper (January 2026):
+Distribution accuracy is computed using the standard distribution accuracy formula:
 
 ```
 Distribution Accuracy = 1 − Σ|real_i − sim_i| / 2
@@ -51,7 +51,7 @@ The 91% human ceiling comes from Stanford/Iyengar survey research on natural sel
 
 All distributions are sourced from publicly available Pew Research Center reports. Questions cover: economic conditions, national direction, gun policy, immigration, climate change, social trust, role of government, religion, abortion, racial equality, healthcare, democracy satisfaction, media trust, artificial intelligence, and financial security. Pew data uses large probability samples (n ≥ 1,000); distributions are treated as fixed ground truth for this study.
 
-Don't Know / Refused responses are excluded from Pew distributions and renormalized before computing accuracy. This is consistent with Artificial Societies methodology.
+Don't Know / Refused responses are excluded from Pew distributions and renormalized before computing accuracy. This is consistent with standard published methodology in this area.
 
 ### 2.4 Synthetic Population
 
@@ -214,19 +214,19 @@ Switching persona generation from claude-haiku to claude-sonnet-4-6 produced a 7
 
 4. **Questions with low base rates are harder.** Several questions have response options with Pew distributions below 10% (e.g., q01 "excellent" at 2%, q09 "illegal all cases" at 8.6%). Simulating these tail options accurately at n=60 requires exact persona calibration. At B-10, q09 option D remains at 0% vs. 8.6% Pew — this is an open problem.
 
-5. **The study is US-centric.** Study 1B (India) is in progress and shows substantial accuracy degradation on questions involving non-Western cultural attitudes. Generalizability of the US methodology is not assumed.
+5. **The study is US-centric.** Generalizability to non-Western cultural contexts is not assumed. Cross-cultural replication studies are in development.
 
 ---
 
-## 7. Comparison to Artificial Societies Benchmark
+## 7. Benchmark Context
 
-The Artificial Societies white paper (January 2026) reports a mean distribution accuracy of **86.0%** on US public opinion questions using LLM-generated synthetic populations. Their methodology uses the same accuracy metric and the same Stanford/Iyengar 91% human ceiling.
+A published benchmark in the same domain reports a mean distribution accuracy of **86.0%** on US public opinion questions using LLM-generated synthetic populations, using the same accuracy metric and the same Stanford/Iyengar 91% human ceiling as this study.
 
-Simulatte at B-10 achieves **88.7%** cohort-adjusted (86.9% raw), a **2.7 pp advantage** over the published Artificial Societies figure. Caveats:
+Simulatte at B-10 achieves **88.7%** cohort-adjusted (86.9% raw), a **2.7 pp advantage** over this published figure. Caveats:
 
 - The question sets are not identical. Direct comparison requires matching question topics and Pew source years.
-- Artificial Societies' 86.0% is self-reported. Their methodology document does not specify whether cohort adjustment was applied.
-- Both systems operate at similar persona pool sizes (60–100 personas). Accuracy gains from larger pools have not been systematically measured by either team.
+- The competitor figure is self-reported. It is not specified whether cohort adjustment was applied.
+- Both systems operate at similar persona pool sizes (60–100 personas). Accuracy gains from larger pools have not been systematically measured.
 
 Within these caveats, Simulatte's B-10 result is consistent with — and marginally exceeds — the current state of published synthetic population survey simulation.
 
@@ -256,7 +256,7 @@ git checkout study-1a-sprint-b10  # 86.9% raw
 export SIMULATTE_API_URL=https://simulatte-persona-generator.onrender.com
 ```
 
-**Output:** Results are written to `study_1a_pew_replication/results/simulatte_results.json`. The comparison file `comparison.json` includes the Artificial Societies benchmark and human ceiling for reference.
+**Output:** Results are written to `study_1a_pew_replication/results/simulatte_results.json`. The comparison file `comparison.json` includes the competitor benchmark and human ceiling for reference.
 
 **Expected run time:** Approximately 15–25 minutes for a 60-persona, 15-question run, depending on API response latency.
 
