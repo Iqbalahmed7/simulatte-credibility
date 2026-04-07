@@ -23,7 +23,7 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | **A-9** | **83.3%** | **+29.9** | **ROOT CAUSE FIX: `_get_political_lean()` — India archetypes were silently mapped to "moderate" for 8 sprints** |
 | A-10 | 84.6% | +1.3 | Spread notes for in14/in06/in11/in02/in03/in12; bjp_lean in13 stance fix |
 | A-11 | 84.8% | +0.2 | Remove in03 spread note; in01/in08 spread notes; in14/in06 strengthened |
-| **A-12** | **In progress** | — | **ROOT CAUSE 2: Pool rebalance** — bjp_supporter 18%→35% to match Pew 43% BJP very favorable; +in03/in02/in08/in12 A-options |
+| A-12 | 85.0% | +0.2 | Pool rebalance bjp_supporter 18%→35% — B-modal pull identified as remaining barrier |
 
 > **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path. The previously reported "RLHF hard ceilings" on in07/in12/in13 were actually caused by this missing differentiation, not RLHF — all three questions jumped 40–62 pp in A-9.
 
