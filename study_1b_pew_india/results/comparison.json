@@ -6,9 +6,9 @@
     {
       "system": "Simulatte",
       "n_questions": 15,
-      "mean_distribution_accuracy": 50.0,
-      "mean_mae_pct_points": 25.8,
-      "gap_to_human_benchmark_pct_points": 41.0,
+      "mean_distribution_accuracy": 50.5,
+      "mean_mae_pct_points": 25.5,
+      "gap_to_human_benchmark_pct_points": 40.5,
       "human_benchmark": 91.0
     }
   ]

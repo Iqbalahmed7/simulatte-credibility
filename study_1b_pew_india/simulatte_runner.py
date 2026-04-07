@@ -69,19 +69,32 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     ),
     "in09": (
         "IMPORTANT: Trust in government varies sharply by political lean. "
-        "BJP supporters trust the government 'a lot' — this is their government. "
-        "Moderates say 'somewhat'. "
-        "Opposition supporters say 'not much'. "
-        "Strong opposition say 'not at all'. "
-        "Answer based on YOUR specific political lean — do NOT default to 'somewhat'."
+        "If you are a BJP supporter, your answer is A — a lot — NOT B. "
+        "BJP supporters fully trust this government — it is their government, elected by them. "
+        "Moderates and fence-sitters say B (somewhat). "
+        "Opposition supporters say C (not much). "
+        "Strong opposition say D (not at all). "
+        "Do NOT default to B. If you voted BJP or support Modi, your answer is A — a lot."
+    ),
+    "in13": (
+        "IMPORTANT: This question is about gender roles in employment. "
+        "Answer based on your own cultural values — do NOT assume a universal view. "
+        "In India, opinions genuinely vary: traditional voters and rural communities "
+        "believe men should have priority for jobs when jobs are scarce (option A). "
+        "Others disagree to varying degrees. "
+        "Answer honestly based on YOUR cultural background and values. "
+        "YOU MUST RESPOND WITH ONLY THE SINGLE LETTER A, B, C OR D. "
+        "Nothing else. Not a word. Not a sentence. Just the one letter."
     ),
     "in15": (
-        "IMPORTANT: Indians vary on how severe a threat climate change is. "
-        "BJP supporters and development-focused voters see it as 'somewhat of a threat' — "
-        "real but secondary to economic growth. "
-        "Neutrals and those with flood/drought experience see it as a 'major threat'. "
-        "Opposition and environmentally-focused voters also say 'major threat'. "
-        "Answer based on YOUR specific values and lived experience — not what most Indians say."
+        "IMPORTANT: Indians vary significantly on how severe a threat climate change is. "
+        "If you are a BJP supporter or development-focused voter, your answer is B — "
+        "somewhat of a threat — real, but secondary to economic growth and jobs. "
+        "BJP supporters do NOT see it as A (a major threat) — that is the opposition framing. "
+        "Neutrals with direct flood/drought experience may say A (major threat). "
+        "Opposition and environmentally-focused voters say A (major threat). "
+        "Answer B if you are BJP-leaning. Answer A ONLY if flood/drought has directly "
+        "defined your personal story. Do NOT default to A."
     ),
 }
 
