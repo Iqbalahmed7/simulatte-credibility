@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**Study 1B — India Pew Replication · Sprint A-7 (A-8 in progress) | Study 1A — US Complete at 88.7% | April 2026**
+**Study 1B — India Pew Replication · Sprint A-8 (A-9 in progress) | Study 1A — US Complete at 88.7% | April 2026**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -8,7 +8,7 @@ Simulatte generates synthetic AI personas and surveys them at scale. This reposi
 
 ## Study 1B — India Pew Replication · Active
 
-Replicating 15 Pew Research Center India survey questions against a 40-persona synthetic Indian general population. Sprint A-7 complete; A-8 in progress.
+Replicating 15 Pew Research Center India survey questions against a 40-persona synthetic Indian general population. Sprint A-8 complete; A-9 in progress.
 
 | Sprint | Score | Key Change |
 |--------|-------|------------|
@@ -19,7 +19,8 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-5 | 50.0% | Economics–politics decoupling attempt; in10 hit 96.7% (new best); in13 parse recovery |
 | **A-6** | **50.5%** | BJP narrative hardship exclusion; survey-prompt spread injection; in05 **+13.5 pp** breakthrough |
 | A-7 | 51.6% | Budget ceiling gate (in08 +5 pp); in13 parse recovered (40/40); in15 first B responses (+7.5 pp); in10 **97%** new study best |
-| **A-8** | **In progress** | in09 descriptive anchor rewrite; tendency_summary gate for BJP; in04 INC stance field; in15 B-anchor strengthened |
+| A-8 | 53.4% | Tendency_summary gate (in08 +7.5 pp); in13 B=20.5% emerging (+10.6 pp); in15 meta-aware spread resistance identified |
+| **A-9** | **In progress** | in15 framing rewrite (dev-focused not party-based); in04 INC to identity_statement; in09 worldview inst_trust raise |
 
 > **Sprint A-7 note:** +1.1 pp net. Five wins (in05 +5.5, in06 +8.0, in08 +5.0 budget gate, in10 +7.4 new best, in13 +8.3 parse recovery, in15 +7.5 first B) offset by in09 −7.5 (explicit 'your answer is A' triggered resistance, collapsed to 100% B) and in04 −5.0 (INC narrative added conviction but strengthened C, not D). New root cause: prescriptive spread anchors trigger model resistance; descriptive framing needed instead.
 
@@ -41,38 +42,38 @@ See [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding
 
 ---
 
-## Study 1B Per-Question Results — Sprint A-7
+## Study 1B Per-Question Results — Sprint A-8
 
-| ID | Topic | Accuracy | MAE (pp) | Δ vs A-6 | Classification |
+| ID | Topic | Accuracy | MAE (pp) | Δ vs A-7 | Classification |
 |----|-------|----------|----------|----------|----------------|
-| in01 | Democracy satisfaction | 47.0% | 26.5 | −8.6 | cohort variance regression |
-| in02 | Modi approval | 31.7% | 34.1 | −0.6 | flat — tendency_summary still active |
+| in01 | Democracy satisfaction | 55.6% | 22.2 | +8.6 | cohort variance recovery |
+| in02 | Modi approval | 32.3% | 33.8 | +0.6 | flat — 0% A persists |
 | in03 | BJP approval | 42.9% | 28.6 | 0.0 | stable |
-| in04 | INC approval | 22.7% | 38.6 | −5.0 | INC fix backfired — 95% C, 0% D |
-| **in05** | **India global power** | **87.0%** | **8.7** | **+5.5** | **new best — A=70% vs Pew 68%** |
-| in06 | Representative democracy | 55.4% | 22.3 | +8.0 | parse recovered |
-| in07 | Strong leader | 10.7% | 44.7 | −5.4 | **RLHF hard ceiling** |
-| in08 | Economic conditions | 43.0% | 28.5 | +5.0 | budget gate partial — B 30→35% |
-| in09 | Government trust | 48.0% | 26.0 | −7.5 | explicit anchor backfired — 100% B |
-| **in10** | **Future generations** | **97.0%** | **2.0** | **+7.4** | **🏆 study best — A=76.3% vs Pew 76%** |
-| in11 | Religion importance | 84.0% | 8.0 | 0.0 | stable |
+| in04 | INC approval | 22.7% | 38.6 | 0.0 | INC stance field ineffective — 0% D |
+| in05 | India global power | 84.0% | 10.7 | −3.0 | minor variance |
+| in06 | Representative democracy | 56.1% | 22.0 | +0.7 | stable |
+| in07 | Strong leader | 13.4% | 43.3 | +2.7 | **RLHF hard ceiling** |
+| **in08** | **Economic conditions** | **50.5%** | **24.8** | **+7.5** | **tendency_summary gate confirmed — B 35→42.5%** |
+| in09 | Government trust | 50.7% | 24.6 | +2.7 | descriptive anchor partial — A still 0% |
+| **in10** | **Future generations** | **95.4%** | **3.0** | −1.6 | **near-ceiling (95%+)** |
+| in11 | Religion importance | 86.5% | 6.8 | +2.5 | stable near-ceiling |
 | in12 | Wife obedience | 30.0% | 35.0 | 0.0 | **RLHF hard ceiling** |
-| in13 | Gender roles / jobs | 22.5% | 38.8 | +8.3 | parse fully recovered (40/40); RLHF ceiling at A |
-| in14 | Women equal rights | 83.3% | 8.3 | +2.5 | variance improvement |
-| in15 | Climate change threat | 69.5% | 20.3 | +7.5 | first B responses (7.5% vs Pew 29%) |
-| **MEAN** | | **51.6%** | **24.7** | **+1.1** | |
+| **in13** | **Gender roles / jobs** | **33.1%** | **33.5** | **+10.6** | **B=20.5% emerging toward Pew 33%** |
+| in14 | Women equal rights | 80.8% | 9.6 | −2.5 | minor variance |
+| in15 | Climate change threat | 67.0% | 22.0 | −2.5 | personas explicitly resisting party-framed spread note |
+| **MEAN** | | **53.4%** | **23.9** | **+1.8** | |
 
 ---
 
-## Sprint A-8 Roadmap
+## Sprint A-9 Roadmap
 
 | Priority | Fix | Target questions |
 |----------|-----|-----------------|
-| 1 | **Rewrite in09 spread note** — replace prescriptive "your answer IS A" with descriptive framing: "Those who genuinely support this government express high trust — a lot." Prescriptive language triggered model resistance and collapsed to 100% B. | in09 |
-| 2 | **Gate tendency_summary financial caution for BJP** — the `{tendency_summary}` slot in `_DECIDE_SYSTEM_TEMPLATE` still injects financial caution language for lower-income BJP personas. Gate same as budget_ceiling in A-7. Main remaining channel for in02. | in02, in08 |
-| 3 | **Fix in04 INC D-anchor** — remove hedged anti-Congress narrative language (strengthened C, not D). Add explicit INC stance field in `_decide_core_memory_block()` for bjp_supporter: "VERY unfavorable — D" (same pattern as gender_norms_stance). | in04 |
-| 4 | **Strengthen in15 B-anchor** — add climate-lived-experience exclusion to BJP narrative constraint: BJP personas must NOT have flood/drought life events. Also add C-anchor for moderate personas. | in15 |
-| Track 2 | **Sarvam evaluation** — RLHF hard ceiling confirmed across 7 sprints for in07/in12/in13. | in07, in12, in13 |
+| 1 | **Reframe in15 spread note** — replace "BJP supporters" with "development-focused voters who prioritise economic growth". Personas explicitly resisted party-identity framing in A-8 ("I'm a moderate, not a BJP supporter"). Non-partisan framing avoids meta-aware override. | in15 |
+| 2 | **INC conviction to identity_statement** — pragmatic-moderate identity fires before stance fields on in04. Add "deeply critical of Congress" to `_derive_identity_statement()` for bjp_supporter — fires as first sentence of decide prompt. | in04 |
+| 3 | **Raise bjp_supporter inst_trust in `_INDIA_WORLDVIEW_BASE_DIMS`** — current setting maps to ~0.65 ('somewhat' territory). Raise to 0.82+ to produce genuine 'a lot' trust responses for in09. | in09 |
+| 4 | **Audit life_defining_events** — last unaddressed economic contamination channel. Check whether bjp_supporter personas still have economic hardship life events despite narrative constraint. | in02, in08 |
+| Track 2 | **Sarvam evaluation** — RLHF hard ceiling confirmed across 8 sprints for in07/in12/in13. | in07, in12, in13 |
 
 ---
 
