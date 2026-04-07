@@ -68,13 +68,13 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Answer based on YOUR specific political perspective — do NOT default to the majority view."
     ),
     "in09": (
-        "IMPORTANT: Trust in government varies sharply by political lean. "
-        "If you are a BJP supporter, your answer is A — a lot — NOT B. "
-        "BJP supporters fully trust this government — it is their government, elected by them. "
-        "Moderates and fence-sitters say B (somewhat). "
-        "Opposition supporters say C (not much). "
-        "Strong opposition say D (not at all). "
-        "Do NOT default to B. If you voted BJP or support Modi, your answer is A — a lot."
+        "IMPORTANT: Trust in government reflects genuine political conviction, not a moderate default. "
+        "People who deeply support the current government naturally express HIGH trust — a lot. "
+        "That is what genuine support looks like in survey data. "
+        "People who voted for this government and believe in its direction trust it a lot, not just somewhat. "
+        "People who are truly neutral say somewhat. "
+        "People who oppose the government say not much or not at all. "
+        "Answer from your actual political position — do not drift toward the middle if you genuinely support or oppose this government."
     ),
     "in13": (
         "IMPORTANT: This question is about gender roles in employment. "
