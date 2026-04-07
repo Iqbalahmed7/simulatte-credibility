@@ -65,32 +65,40 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # instead of the correct A (very satisfied). Pew: 28% A, 44% B, 11% C, 16% D.
     # Root cause: current_conditions_stance anchor for bjp_supporter says "VERY satisfied" but
     # B-option is winning out. Add spread note to push bjp_supporter/lean back to A.
+    # Sprint A-13: conviction-framing for in01.
+    # A-12: B=60% vs Pew 44%. bjp_supporters collapsing to B (somewhat satisfied).
     "in01": (
-        "IMPORTANT: Satisfaction with Indian democracy is strongly tied to political support. "
-        "Pew India: 28% very satisfied (A), 44% somewhat satisfied (B), 11% not too satisfied (C), "
-        "16% not at all satisfied (D). "
-        "Strong BJP supporters who believe Modi's government reflects democratic success: "
-        "your honest answer is A — VERY satisfied, not just somewhat. Democracy under BJP "
-        "is working well — elections have been free, the mandate is strong, institutions function. "
-        "BJP leaners with some reservations: B — somewhat satisfied. "
-        "Opposition supporters and critics: C or D. "
-        "Do not default to B if you are genuinely very satisfied with how Indian democracy is working."
+        "Think about what 'somewhat satisfied' actually says about a person. "
+        "'Somewhat satisfied' with democracy means you see it working — but with significant "
+        "reservations, with doubts about whether it's truly functioning well. "
+        "If you believe that India's democracy under the current government is genuinely working — "
+        "elections happen freely, the people's mandate is respected, institutions are functioning — "
+        "then 'somewhat satisfied' understates your view. "
+        "'Very satisfied' (A) is the accurate answer for someone who genuinely has no major "
+        "complaints about how Indian democracy is currently working. "
+        "Say B if you're broadly satisfied but have real specific concerns. "
+        "Say C or D if you are genuinely dissatisfied with how democracy is functioning. "
+        "Choose the answer that honestly reflects your actual level of satisfaction."
     ),
     # Sprint A-11 Fix 2: in08 A-undershoot fix.
     # A-10 result: A=15% (sim) vs Pew 32%. BJP personas not producing "very good" economic answers.
     # The A anchor in current_conditions_stance says "VERY good" but only 15% reach it.
     # Add spread note to reinforce for bjp_supporter/lean that India's economy is genuinely "very good".
+    # Sprint A-13: conviction-framing rewrite for in08.
+    # A-12: A=18% vs Pew 32%. Same B-modal pull as in02/in03.
     "in08": (
-        "IMPORTANT: Views on India's economic conditions are strongly shaped by political conviction. "
-        "Pew India: 32% very good (A), 56% somewhat good (B), 8% somewhat bad (C), 4% very bad (D). "
-        "Strong BJP supporters who believe in India's growth story under Modi: "
-        "your honest answer is A — VERY good. India is the world's fastest-growing major economy, "
-        "infrastructure is transforming, digital payments are booming. This is not 'somewhat' good — "
-        "it is genuinely VERY good compared to where India was a decade ago. "
-        "BJP leaners who see growth but acknowledge uneven distribution: B — somewhat good. "
-        "Neutral voters: B. Opposition and critics: C or D. "
-        "Do not soften a genuinely strong assessment to 'somewhat good' if you believe India's "
-        "economic performance is clearly excellent."
+        "Think carefully about what 'somewhat good' actually means about a person's view. "
+        "'Somewhat good' describes cautious optimism — someone who sees improvement but has "
+        "real doubts, who acknowledges problems as large as the gains. "
+        "If you believe India's economy has fundamentally transformed under Modi — fastest-growing "
+        "major economy, infrastructure revolution, digital payments, manufacturing growth — then "
+        "'somewhat good' does not accurately describe your view. It is an understatement. "
+        "'Very good' (A) is the accurate answer for someone who genuinely believes India's "
+        "economic trajectory is strong and that Modi's policies have delivered real results. "
+        "Say B if you see genuine growth but have significant concerns about inequality or "
+        "job creation that temper your assessment. "
+        "Say C or D if you believe economic conditions are actually poor. "
+        "Choose the option that honestly reflects your real assessment."
     ),
     # Sprint A-10 Fix 1: in14 regression fix.
     # A-9 root cause: gender_norms_stance ("wife must obey", "men have job priority") bleeds
@@ -157,31 +165,58 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # Sprint A-10 Fix 4: in02/in03 A-option push.
     # A-9: in02 A=45% vs Pew 56%; in03 A=25% vs Pew 43%. Too many bjp_lean/bjp_supporter
     # landing on B (somewhat favorable) instead of A (very favorable).
+    # Sprint A-13: conviction-framing rewrite for in02.
+    # A-12 diagnosis: B-modal pull — even bjp_supporters defaulting to "somewhat favorable".
+    # "Somewhat favorable" is the answer of a reluctant or ambivalent voter — not a committed one.
+    # New strategy: make choosing B feel like an inaccurate self-representation.
     "in02": (
-        "IMPORTANT: Views on Narendra Modi are strongly polarised in India. "
-        "Committed BJP supporters hold a VERY favorable view of Modi — not just somewhat. "
-        "If you are a strong BJP supporter who sees Modi as a transformational leader for India, "
-        "your honest answer is A — very favorable — not B. "
-        "BJP leaners who broadly support but have some reservations say B (somewhat favorable). "
-        "Critics and opposition voters say C or D. "
-        "Answer from your actual conviction — do not soften a strong view to somewhat."
+        "Think carefully about what 'somewhat favorable' actually means about a person. "
+        "'Somewhat favorable' describes someone who has reservations — who sees both positives "
+        "and negatives, who is not fully committed, who hedges. "
+        "If you genuinely believe Modi has transformed India, stands for Hindu values, and has "
+        "delivered real development — then 'somewhat favorable' does NOT describe your view. "
+        "It would be inaccurate. You are not lukewarm about him. "
+        "'Very favorable' (A) means you strongly support him — this is the accurate answer for "
+        "a committed BJP supporter. "
+        "Say B only if you genuinely have significant reservations about Modi specifically. "
+        "Say C or D if you are critical. "
+        "Do not pick 'somewhat' just because it feels safer — pick the one that accurately "
+        "represents your actual view."
     ),
-    # Sprint A-11: REMOVED in03 spread note.
-    # A-10 root cause: spread note "strong BJP supporters say A" backfired — pushed B to 62%
-    # (Pew: 32%). BJP stances are now correctly firing via _get_political_lean(); the spread
-    # note is redundant and actively harmful (pushes non-BJP personas toward B by contrast).
-    # With correct lean gating, BJP_supporter/lean personas already have A anchors in their
-    # current_conditions_stance and key_values policy_stance. No spread note needed.
+    # Sprint A-13: add in03 conviction-framing spread note.
+    # A-11 removal backfired: removing the note kept B at 60%. Reinstating with conviction framing
+    # instead of prescriptive framing ("your answer is A" was the problem, not the note itself).
+    "in03": (
+        "Think carefully about what 'somewhat favorable' actually means about a person. "
+        "'Somewhat favorable' toward the BJP describes someone with reservations — who sees "
+        "value in the party but has significant doubts about its direction or leadership. "
+        "If you believe the BJP represents your values, your community, and India's future — "
+        "if BJP is your political home — then 'somewhat favorable' understates your actual view "
+        "and does not accurately represent you. "
+        "'Very favorable' (A) is the accurate answer for someone whose political identity "
+        "is genuinely aligned with the BJP. "
+        "Say B if you broadly support BJP but have real reservations about specific policies "
+        "or leadership decisions. "
+        "Say C or D if you are skeptical or opposed. "
+        "Choose the option that accurately represents your real political conviction."
+    ),
     # Sprint A-10 Fix 5: in12 A-option push.
     # A-9: A=45% vs Pew 64%. bjp_lean personas are going B instead of A.
     # Both bjp_supporter AND bjp_lean should answer A (completely agree) for in12.
+    # Sprint A-13: conviction-framing for in12.
+    # A-12: A=38% vs Pew 64%. B-modal pull — "somewhat agree" is overrepresented.
     "in12": (
-        "IMPORTANT: On whether a wife must always obey her husband, India is strongly traditional. "
-        "64% of Indians say 'completely agree' (A) — this is the clear majority view. "
-        "In Indian households rooted in dharma and traditional family values, 'completely agree' "
-        "is the authentic answer — not 'somewhat agree'. "
-        "If you hold traditional Indian family values, your honest answer is A — completely agree — "
-        "not B. Only say B if you see this as a matter of degree or partnership rather than duty."
+        "Think about what 'somewhat agree' actually says about a person's values. "
+        "'Somewhat agree' that a wife must obey her husband means you see it as partially true — "
+        "a preference, not a conviction; something you broadly accept but with reservations. "
+        "In Indian households where dharma and traditional family roles are genuinely held values — "
+        "where the husband as head of household is the natural, sincere belief — "
+        "'somewhat agree' does not capture your actual position. It is an understatement. "
+        "'Completely agree' (A) is the accurate answer for someone who genuinely holds "
+        "traditional Indian family values as a real conviction, not just a preference. "
+        "Say B if you broadly accept traditional roles but see room for partnership and negotiation. "
+        "Say C or D if you believe in more equal marital roles. "
+        "Choose the option that honestly represents your actual beliefs about family."
     ),
     "in05": (
         "IMPORTANT: Indians hold genuinely varied views on this depending on political lean. "
