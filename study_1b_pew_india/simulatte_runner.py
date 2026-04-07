@@ -52,18 +52,60 @@ _TIMEOUT = httpx.Timeout(300.0, connect=30.0)  # Long timeout — Render cold st
 # Question formatting
 # ---------------------------------------------------------------------------
 
+
+# Sprint A-6 Fix 2: per-question spread notes for questions stuck at 100% single option.
+# Root cause: in05/in09/in15 showed 100% A or 100% B across all 5 sprints despite
+# spread anchors in policy stance fields. Stance-field approach is insufficiently salient
+# at response time — the model answers from a "universal Indian" frame.
+# Fix: inject the spread instruction directly into the survey question prompt so it
+# appears at the exact moment of decision, not buried in the persona's background.
+_SPREAD_QUESTION_NOTES: dict[str, str] = {
+    "in05": (
+        "IMPORTANT: Indians hold genuinely varied views on this depending on political lean. "
+        "BJP supporters and nationalists see India's global influence as clearly 'getting stronger'. "
+        "Opposition supporters and skeptics see it as 'staying about the same'. "
+        "Strong critics see it 'getting weaker' due to polarisation. "
+        "Answer based on YOUR specific political perspective — do NOT default to the majority view."
+    ),
+    "in09": (
+        "IMPORTANT: Trust in government varies sharply by political lean. "
+        "BJP supporters trust the government 'a lot' — this is their government. "
+        "Moderates say 'somewhat'. "
+        "Opposition supporters say 'not much'. "
+        "Strong opposition say 'not at all'. "
+        "Answer based on YOUR specific political lean — do NOT default to 'somewhat'."
+    ),
+    "in15": (
+        "IMPORTANT: Indians vary on how severe a threat climate change is. "
+        "BJP supporters and development-focused voters see it as 'somewhat of a threat' — "
+        "real but secondary to economic growth. "
+        "Neutrals and those with flood/drought experience see it as a 'major threat'. "
+        "Opposition and environmentally-focused voters also say 'major threat'. "
+        "Answer based on YOUR specific values and lived experience — not what most Indians say."
+    ),
+}
+
+
 def format_question_for_survey(question: dict) -> str:
     """
     Format a Pew India question with explicit categorical options.
 
     Forces the persona to respond with a single option letter.
+
+    Sprint A-6 Fix 2: injects per-question spread notes for in05/in09/in15
+    which have been stuck at 100% single option across all 5 sprints.
     """
     options_text = "\n".join(
         f"  {letter}) {text}"
         for letter, text in question["options"].items()
     )
+    question_id = question.get("id", "")
+    spread_note = _SPREAD_QUESTION_NOTES.get(question_id, "")
+    spread_block = f"{spread_note}\n\n" if spread_note else ""
+
     return (
         f"{question['text']}\n\n"
+        f"{spread_block}"
         f"Please respond with ONLY the letter of your answer (e.g. 'A' or 'B').\n"
         f"Do not write anything else — just the single letter.\n\n"
         f"Options:\n{options_text}"
