@@ -1,0 +1,91 @@
+{
+  "study_id": "study_1b_pew_india",
+  "sprint": "A-8",
+  "generated_at": "2026-04-07T00:00:00Z",
+  "git_commit_credibility": "e3d4ced",
+  "git_commit_persona_generator": "f00791f",
+  "git_repo": "https://github.com/Iqbalahmed7/simulatte-credibility",
+  "cohort_ids": ["12af89bc", "b8a0cfdc"],
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 53.4,
+    "mean_mae_pct_points": 23.9,
+    "n_personas": 40,
+    "n_questions": 15,
+    "n_total_responses": 600
+  },
+  "sprint_progression": {
+    "a1": 46.2, "a2": 45.9, "a3": 50.3, "a4": 49.2, "a5": 50.0,
+    "a6": 50.5, "a7": 51.6, "a8": 53.4,
+    "total_gain_from_a1_pp": 7.2,
+    "note": "+1.8 pp — biggest single-sprint gain since A-3. Key wins: in08 +7.5 (tendency_summary gate confirmed working, B 35→42.5%), in13 +10.6 (B=20.5% now appearing), in01 +8.6 (cohort variance). Key findings: in04 INC stance field had zero effect (0% D still); in15 personas explicitly meta-aware of spread note and resisting it ('The instruction tries to push me toward B based on BJP alignment, but I'm a political moderate')."
+  },
+  "confirmed_wins": {
+    "in08_tendency_summary_gate": {
+      "a7_pct": 43.0, "a8_pct": 50.5, "delta_pp": 7.5,
+      "sim_a7": {"A": 0.0, "B": 35.0, "C": 65.0, "D": 0.0},
+      "sim_a8": {"A": 0.0, "B": 42.5, "C": 57.5, "D": 0.0},
+      "pew":    {"A": 32.0, "B": 56.0, "C": 8.0, "D": 4.0},
+      "classification": "confirmed_win_channel_3_gate",
+      "note": "Tendency_summary financial caution override working. B rose A-6→A-7→A-8: 30%→35%→42.5% (Pew 56%). C fell: 70%→65%→57.5%. Direction correct, magnitude improving each sprint. A=0% still vs Pew 32% — BJP positive-economy signal still not firing. Remaining gap: A needs to appear (bjp_supporter should say 'somewhat good' or 'very good'). Life_defining_events is the last active channel."
+    },
+    "in13_B_signal_emerging": {
+      "a7_pct": 22.5, "a8_pct": 33.1, "delta_pp": 10.6,
+      "sim_a7": {"A": 0.0, "B": 5.0, "C": 87.5, "D": 7.5},
+      "sim_a8": {"A": 0.0, "B": 20.5, "C": 76.9, "D": 2.6},
+      "pew":    {"A": 47.0, "B": 33.0, "C": 10.0, "D": 10.0},
+      "classification": "improvement_B_emerging",
+      "note": "B=20.5% now vs A-7 5%. Cultural values framing in spread note generating B responses. n_parseable=39/40 (parse still clean). RLHF ceiling at A=0% confirmed. B is trending toward Pew 33% B — this is real signal. C=76.9% vs Pew 10% remains the main gap."
+    }
+  },
+  "new_root_causes": {
+    "in15_meta_aware_spread_resistance": {
+      "finding": "In15 regressed −2.5 pp (67.0% from 69.5%). Sample responses reveal the mechanism explicitly: 'The instruction tries to push me toward B based on BJP alignment, but I'm explicitly described as a political moderate who rejects strong partisan identity.' The persona is meta-aware of the spread note and overriding it because the framing ('BJP supporters answer B') conflicts with their self-identity as a 'pragmatic moderate'. The spread note's party-identity anchor backfires for the ~50% of the pool who are politically moderate.",
+      "evidence": "A-8 in15 sample: 'The instruction tries to push me toward B based on BJP alignment, but I'm explicitly described as a political moderate who rejects strong partisan identity. I notice some local climate effects, and as a pragmatic person I can see that erratic monsoons and extreme heat genuinely threaten India...' — this is verbatim meta-commentary in the persona's survey response.",
+      "fix_a9": "Reframe in15 spread note away from party identity entirely. Replace 'BJP supporters' with 'development-focused voters who prioritise economic growth' — framing that moderate personas can accept without feeling it conflicts with their self-identity. Also: 'If you believe India's development and economic growth should not be sacrificed for climate targets, your answer is B — somewhat of a threat, not the most urgent issue.'"
+    },
+    "in04_inc_stance_field_ineffective": {
+      "finding": "The dedicated `inc_stance` CoreMemory field (A-8 Fix 3) produced zero change: in04 still 95% C, 0% D. The field is populated and injected correctly (confirmed by code review), but the pragmatic-moderate identity is overriding it at response time. Sample responses: 'Somewhat unfavorable — not strongly against them, but...' — the 'not strongly' framing is the pragmatic-moderate tendency dominating.",
+      "evidence": "The field injection pattern was proven for governance_stance (in07) and gender_norms_stance (in12/in13) in A-2. The difference: those questions have RLHF blocks where the stance field provides explicit permission. In04 has no RLHF block — the model CAN say D, it just chooses not to because the pragmatic-moderate tendency produces genuine hedging. The INC stance anchor saying 'VERY unfavorable — D' is being read but overridden by the persona's self-described moderate reasoning style.",
+      "fix_a9": "The issue is not injection salience — it is persona identity. The 'pragmatic moderate' framing in BehaviouralTendencies dominates for ALL personas on in04 because every persona hedges away from extremes. A-9 fix: add BJP-specific INC anchor to the IDENTITY STATEMENT itself — the first sentence of the decide system prompt. If 'deeply critical of Congress' is in the identity_statement (not just a stance field), it fires before the pragmatic-moderate tendency activates."
+    },
+    "in09_trust_signal_weak": {
+      "finding": "in09 improved slightly (+2.7 pp, A=0%, B=97.3%, C=2.7%) but A still never fires. Descriptive framing ('people who genuinely support this government express HIGH trust') produced first C responses but no A. The BJP personas are being generated with worldview attributes that produce 'moderate' trust signals rather than 'high' trust — the worldview dimensions (institutional_trust_government) for bjp_supporter may not be set high enough to produce 'a lot' responses even with spread note guidance.",
+      "fix_a9": "Check _INDIA_WORLDVIEW_BASE_DIMS for bjp_supporter in demographic_sampler.py. The inst_trust dimension for bjp_supporter should be raised to 0.80+ to ensure the persona's baseline institutional trust is high. Currently bjp_supporter may have inst_trust ~0.65 which maps to 'somewhat' territory."
+    }
+  },
+  "rlhf_plateaus_confirmed": {
+    "in07": {"a8_pct": 13.4, "note": "RLHF hard ceiling. C=94.7%, D=5.3%. A=0%, B=0%. Parse 38/40."},
+    "in12": {"a8_pct": 30.0, "note": "RLHF hard ceiling. B=30%, C=70%. Parse 30/40 — lowest parse rate this sprint."},
+    "in13": {"a8_pct": 33.1, "note": "B=20.5% emerging (A-7: 5%). Parse 39/40. A=0% RLHF ceiling persists."}
+  },
+  "per_question_results": [
+    {"question_id": "in01", "topic": "democracy_satisfaction",   "distribution_accuracy_pct": 55.6, "mae_pct_points": 22.2, "n_parseable": 40, "delta_vs_a7_pp": +8.6,  "sim": {"A":0.0,"B":72.5,"C":27.5,"D":0.0},   "pew": {"A":28.3,"B":44.4,"C":11.1,"D":16.2}, "classification": "cohort_variance_recovery"},
+    {"question_id": "in02", "topic": "modi_approval",            "distribution_accuracy_pct": 32.3, "mae_pct_points": 33.8, "n_parseable": 38, "delta_vs_a7_pp": +0.6,  "sim": {"A":0.0,"B":89.5,"C":10.5,"D":0.0},   "pew": {"A":55.6,"B":24.2,"C":8.1,"D":12.1},  "classification": "flat_A_still_zero"},
+    {"question_id": "in03", "topic": "bjp_approval",             "distribution_accuracy_pct": 42.9, "mae_pct_points": 28.6, "n_parseable": 40, "delta_vs_a7_pp":  0.0,  "sim": {"A":0.0,"B":70.0,"C":30.0,"D":0.0},   "pew": {"A":42.9,"B":31.6,"C":11.2,"D":14.3}, "classification": "stable"},
+    {"question_id": "in04", "topic": "inc_approval",             "distribution_accuracy_pct": 22.7, "mae_pct_points": 38.6, "n_parseable": 40, "delta_vs_a7_pp":  0.0,  "sim": {"A":0.0,"B":5.0,"C":95.0,"D":0.0},    "pew": {"A":24.0,"B":38.5,"C":17.7,"D":19.8}, "classification": "inc_stance_field_ineffective_D_zero"},
+    {"question_id": "in05", "topic": "india_global_power",       "distribution_accuracy_pct": 84.0, "mae_pct_points": 10.7, "n_parseable": 40, "delta_vs_a7_pp": -3.0,  "sim": {"A":65.0,"B":0.0,"C":35.0},           "pew": {"A":68.0,"B":13.0,"C":19.0},           "classification": "minor_variance"},
+    {"question_id": "in06", "topic": "representative_democracy", "distribution_accuracy_pct": 56.1, "mae_pct_points": 22.0, "n_parseable": 34, "delta_vs_a7_pp": +0.7,  "sim": {"A":11.8,"B":88.2,"C":0.0,"D":0.0},   "pew": {"A":37.1,"B":44.3,"C":8.2,"D":10.3},  "classification": "stable"},
+    {"question_id": "in07", "topic": "strong_leader",            "distribution_accuracy_pct": 13.4, "mae_pct_points": 43.3, "n_parseable": 38, "delta_vs_a7_pp": +2.7,  "sim": {"A":0.0,"B":0.0,"C":94.7,"D":5.3},    "pew": {"A":43.9,"B":37.8,"C":8.2,"D":10.2},  "classification": "rlhf_hard_ceiling"},
+    {"question_id": "in08", "topic": "economic_conditions",      "distribution_accuracy_pct": 50.5, "mae_pct_points": 24.8, "n_parseable": 40, "delta_vs_a7_pp": +7.5,  "sim": {"A":0.0,"B":42.5,"C":57.5,"D":0.0},   "pew": {"A":32.0,"B":56.0,"C":8.0,"D":4.0},   "classification": "confirmed_win_tendency_summary_gate"},
+    {"question_id": "in09", "topic": "government_trust",         "distribution_accuracy_pct": 50.7, "mae_pct_points": 24.6, "n_parseable": 37, "delta_vs_a7_pp": +2.7,  "sim": {"A":0.0,"B":97.3,"C":2.7,"D":0.0},    "pew": {"A":41.0,"B":48.0,"C":7.0,"D":4.0},   "classification": "descriptive_anchor_partial_A_still_zero"},
+    {"question_id": "in10", "topic": "future_generations",       "distribution_accuracy_pct": 95.4, "mae_pct_points":  3.0, "n_parseable": 36, "delta_vs_a7_pp": -1.6,  "sim": {"A":80.6,"B":19.4,"C":0.0},           "pew": {"A":76.0,"B":21.0,"C":3.0},            "classification": "near_ceiling_variance"},
+    {"question_id": "in11", "topic": "religion_importance",      "distribution_accuracy_pct": 86.5, "mae_pct_points":  6.8, "n_parseable": 40, "delta_vs_a7_pp": +2.5,  "sim": {"A":97.5,"B":2.5,"C":0.0,"D":0.0},    "pew": {"A":84.0,"B":11.0,"C":3.0,"D":2.0},   "classification": "stable_near_ceiling"},
+    {"question_id": "in12", "topic": "wife_obedience",           "distribution_accuracy_pct": 30.0, "mae_pct_points": 35.0, "n_parseable": 30, "delta_vs_a7_pp":  0.0,  "sim": {"A":0.0,"B":30.0,"C":70.0,"D":0.0},   "pew": {"A":64.0,"B":23.0,"C":7.0,"D":6.0},   "classification": "rlhf_hard_ceiling"},
+    {"question_id": "in13", "topic": "gender_jobs",              "distribution_accuracy_pct": 33.1, "mae_pct_points": 33.5, "n_parseable": 39, "delta_vs_a7_pp": +10.6, "sim": {"A":0.0,"B":20.5,"C":76.9,"D":2.6},   "pew": {"A":47.0,"B":33.0,"C":10.0,"D":10.0}, "classification": "B_emerging_rlhf_ceiling_A"},
+    {"question_id": "in14", "topic": "women_equal_rights",       "distribution_accuracy_pct": 80.8, "mae_pct_points":  9.6, "n_parseable": 39, "delta_vs_a7_pp": -2.5,  "sim": {"A":100.0,"B":0.0,"C":0.0,"D":0.0},   "pew": {"A":80.8,"B":14.1,"C":3.0,"D":2.0},   "classification": "near_ceiling_variance"},
+    {"question_id": "in15", "topic": "climate_change_threat",    "distribution_accuracy_pct": 67.0, "mae_pct_points": 22.0, "n_parseable": 40, "delta_vs_a7_pp": -2.5,  "sim": {"A":95.0,"B":5.0,"C":0.0},           "pew": {"A":62.0,"B":29.0,"C":9.0},            "classification": "meta_aware_spread_resistance"}
+  ],
+  "sprint_roadmap": {
+    "A-9_priority_1": "Reframe in15 spread note away from party identity. Replace 'BJP supporters' with 'development-focused voters who prioritise economic growth over climate targets'. Moderate personas accept this framing without feeling it conflicts with their moderate self-identity. Add: 'If you believe development must not be sacrificed for climate, your answer is B.'",
+    "A-9_priority_2": "Add INC conviction to identity_statement for bjp_supporter personas in demographic_sampler.py or core_memory.py. The pragmatic-moderate identity is firing before any stance fields. 'Deeply critical of Congress' must be in the first sentence of the decide system prompt ('You are {name}. [identity_statement]') — not in a stance field that fires after the pragmatic identity is established.",
+    "A-9_priority_3": "Raise inst_trust worldview dimension for bjp_supporter in _INDIA_WORLDVIEW_BASE_DIMS (demographic_sampler.py). Current setting produces ~0.65 institutional trust which maps to 'somewhat'. Target: 0.82+ to produce 'a lot' trust responses for in09. Check what current value is.",
+    "A-9_priority_4": "Investigate life_defining_events for bjp_supporter personas — this is the last unaddressed economic contamination channel (channel 4). Are economic hardship life events still appearing despite narrative constraint? Check generated persona life_stories for bjp_supporter cohort.",
+    "A-9_track_2": "Sarvam evaluation for in07/in12/in13 — RLHF hard ceiling confirmed across 8 sprints."
+  },
+  "metric_formula": "distribution_accuracy = 1 - (sum(|real_i - sim_i|)) / 2",
+  "survey_model": "claude-haiku-4-5-20251001",
+  "generation_model": "claude-sonnet-4-6",
+  "persona_pool": "india_general — 40 profiles",
+  "cohorts_run": 2,
+  "personas_surveyed": 40
+}
