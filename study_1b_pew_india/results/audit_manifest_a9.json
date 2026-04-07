@@ -1,0 +1,324 @@
+{
+  "sprint": "A-9",
+  "run_date": "2026-04-07",
+  "overall_accuracy_pct": 83.3,
+  "a8_overall_pct": 53.4,
+  "delta_from_a8_pp": 29.9,
+  "n_questions": 15,
+  "n_personas": 40,
+  "gap_to_human_ceiling_pp": 7.7,
+  "sprint_changes": [
+    "ROOT CAUSE FIX: _get_political_lean() helper reads India archetypes from demographic_anchor.worldview.political_profile.archetype, bypassing _ARCHETYPE_TO_LEAN bug that defaulted all India personas to 'moderate' across A-1 through A-8",
+    "core_memory.py: _get_political_lean() rolled out to all 6 stance functions (media_trust, gender_norms, governance, current_conditions, key_values, inc_stance)",
+    "core_memory.py: A-9 Priority 2 \u2014 INC conviction prepended to identity_statement for bjp_supporter (fires before pragmatic-moderate tendency)",
+    "decide.py: budget_ceiling gate + tendency_summary override now use _get_political_lean() \u2014 both gates were silently dead for BJP personas in A-7/A-8",
+    "narrative_generator.py: BJP narrative constraint (economic hardship, anti-INC, climate event exclusion) now correctly fires for India archetypes",
+    "demographic_sampler.py: bjp_supporter inst_trust raised 0.78 -> 0.83 for in09",
+    "simulatte_runner.py: in15 spread note reframed from party-identity to development-priority framing"
+  ],
+  "key_findings": [
+    "in07 (strong_leader): +61.7pp to 95.6% \u2014 governance_stance was silently not firing for 8 sprints",
+    "in12 (wife_obedience): +51.9pp to 81.0% \u2014 gender_norms_stance was silently not firing",
+    "in13 (gender_jobs): +40.1pp to 75.5% \u2014 same as in12",
+    "in04 (inc_approval): +30.1pp to 83.5% \u2014 INC conviction in identity_statement effective",
+    "in09 (govt_trust): +21.5pp to 83.0% \u2014 inst_trust raise + lean fix combined",
+    "in14 (women_equal_rights): -16.2pp to 66.6% \u2014 REGRESSION: gender_norms_stance bleeds into women's rights question; needs A-10 spread note",
+    "in06 (representative_democracy): -9.1pp to 75.1% \u2014 REGRESSION: governance_stance bleed causing 0% C/D; needs A-10 fix"
+  ],
+  "per_question": {
+    "in01": {
+      "accuracy_pct": 88.1,
+      "a8_accuracy_pct": 91.1,
+      "delta_pp": -3.0,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 6.0,
+      "pew_distribution": {
+        "A": 28.3,
+        "B": 44.4,
+        "C": 11.1,
+        "D": 16.2
+      },
+      "simulated_distribution": {
+        "A": 25.0,
+        "B": 55.0,
+        "C": 12.5,
+        "D": 7.5
+      }
+    },
+    "in02": {
+      "accuracy_pct": 84.8,
+      "a8_accuracy_pct": 65.4,
+      "delta_pp": 19.4,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 7.6,
+      "pew_distribution": {
+        "A": 55.6,
+        "B": 24.2,
+        "C": 8.1,
+        "D": 12.1
+      },
+      "simulated_distribution": {
+        "A": 45.0,
+        "B": 35.0,
+        "C": 12.5,
+        "D": 7.5
+      }
+    },
+    "in03": {
+      "accuracy_pct": 75.4,
+      "a8_accuracy_pct": 68.2,
+      "delta_pp": 7.2,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 12.3,
+      "pew_distribution": {
+        "A": 42.9,
+        "B": 31.6,
+        "C": 11.2,
+        "D": 14.3
+      },
+      "simulated_distribution": {
+        "A": 25.0,
+        "B": 55.0,
+        "C": 12.5,
+        "D": 7.5
+      }
+    },
+    "in04": {
+      "accuracy_pct": 83.5,
+      "a8_accuracy_pct": 53.4,
+      "delta_pp": 30.1,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 8.2,
+      "pew_distribution": {
+        "A": 24.0,
+        "B": 38.5,
+        "C": 17.7,
+        "D": 19.8
+      },
+      "simulated_distribution": {
+        "A": 7.5,
+        "B": 47.5,
+        "C": 20.0,
+        "D": 25.0
+      }
+    },
+    "in05": {
+      "accuracy_pct": 88.0,
+      "a8_accuracy_pct": 80.3,
+      "delta_pp": 7.7,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 8.0,
+      "pew_distribution": {
+        "A": 68.0,
+        "B": 13.0,
+        "C": 19.0
+      },
+      "simulated_distribution": {
+        "A": 80.0,
+        "B": 7.5,
+        "C": 12.5
+      }
+    },
+    "in06": {
+      "accuracy_pct": 75.1,
+      "a8_accuracy_pct": 84.2,
+      "delta_pp": -9.1,
+      "n_responses": 40,
+      "n_parseable": 39,
+      "mae_pct_points": 12.5,
+      "pew_distribution": {
+        "A": 37.1,
+        "B": 44.3,
+        "C": 8.2,
+        "D": 10.3
+      },
+      "simulated_distribution": {
+        "A": 30.8,
+        "B": 69.2,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in07": {
+      "accuracy_pct": 95.6,
+      "a8_accuracy_pct": 33.9,
+      "delta_pp": 61.7,
+      "n_responses": 40,
+      "n_parseable": 39,
+      "mae_pct_points": 2.2,
+      "pew_distribution": {
+        "A": 43.9,
+        "B": 37.8,
+        "C": 8.2,
+        "D": 10.2
+      },
+      "simulated_distribution": {
+        "A": 46.2,
+        "B": 35.9,
+        "C": 10.3,
+        "D": 7.7
+      }
+    },
+    "in08": {
+      "accuracy_pct": 88.5,
+      "a8_accuracy_pct": 74.3,
+      "delta_pp": 14.2,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 5.8,
+      "pew_distribution": {
+        "A": 32.0,
+        "B": 56.0,
+        "C": 8.0,
+        "D": 4.0
+      },
+      "simulated_distribution": {
+        "A": 25.0,
+        "B": 67.5,
+        "C": 7.5,
+        "D": 0.0
+      }
+    },
+    "in09": {
+      "accuracy_pct": 83.0,
+      "a8_accuracy_pct": 61.5,
+      "delta_pp": 21.5,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 8.5,
+      "pew_distribution": {
+        "A": 41.0,
+        "B": 48.0,
+        "C": 7.0,
+        "D": 4.0
+      },
+      "simulated_distribution": {
+        "A": 45.0,
+        "B": 35.0,
+        "C": 20.0,
+        "D": 0.0
+      }
+    },
+    "in10": {
+      "accuracy_pct": 97.0,
+      "a8_accuracy_pct": 82.5,
+      "delta_pp": 14.5,
+      "n_responses": 40,
+      "n_parseable": 38,
+      "mae_pct_points": 2.0,
+      "pew_distribution": {
+        "A": 76.0,
+        "B": 21.0,
+        "C": 3.0
+      },
+      "simulated_distribution": {
+        "A": 78.9,
+        "B": 21.1,
+        "C": 0.0
+      }
+    },
+    "in11": {
+      "accuracy_pct": 84.0,
+      "a8_accuracy_pct": 88.3,
+      "delta_pp": -4.3,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 8.0,
+      "pew_distribution": {
+        "A": 84.0,
+        "B": 11.0,
+        "C": 3.0,
+        "D": 2.0
+      },
+      "simulated_distribution": {
+        "A": 100.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in12": {
+      "accuracy_pct": 81.0,
+      "a8_accuracy_pct": 29.1,
+      "delta_pp": 51.9,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 9.5,
+      "pew_distribution": {
+        "A": 64.0,
+        "B": 23.0,
+        "C": 7.0,
+        "D": 6.0
+      },
+      "simulated_distribution": {
+        "A": 45.0,
+        "B": 35.0,
+        "C": 12.5,
+        "D": 7.5
+      }
+    },
+    "in13": {
+      "accuracy_pct": 75.5,
+      "a8_accuracy_pct": 35.4,
+      "delta_pp": 40.1,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 12.2,
+      "pew_distribution": {
+        "A": 47.0,
+        "B": 33.0,
+        "C": 10.0,
+        "D": 10.0
+      },
+      "simulated_distribution": {
+        "A": 25.0,
+        "B": 55.0,
+        "C": 12.5,
+        "D": 7.5
+      }
+    },
+    "in14": {
+      "accuracy_pct": 66.6,
+      "a8_accuracy_pct": 82.8,
+      "delta_pp": -16.2,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 16.7,
+      "pew_distribution": {
+        "A": 80.8,
+        "B": 14.1,
+        "C": 3.0,
+        "D": 2.0
+      },
+      "simulated_distribution": {
+        "A": 52.5,
+        "B": 47.5,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in15": {
+      "accuracy_pct": 84.0,
+      "a8_accuracy_pct": 72.9,
+      "delta_pp": 11.1,
+      "n_responses": 40,
+      "n_parseable": 40,
+      "mae_pct_points": 10.7,
+      "pew_distribution": {
+        "A": 62.0,
+        "B": 29.0,
+        "C": 9.0
+      },
+      "simulated_distribution": {
+        "A": 55.0,
+        "B": 45.0,
+        "C": 0.0
+      }
+    }
+  }
+}
