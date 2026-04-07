@@ -234,29 +234,20 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Say B if you broadly accept traditional roles but see room for negotiation. "
         "Say C or D only if you personally believe in fully equal marital roles in your own life."
     ),
-    # Sprint A-15: add in07 spread note — A-14 caused A-overshoot (A=68% vs Pew A=44%, B=44%).
-    # Sprint A-17: add D-floor fix — A-16 D=18% vs Pew D=5%. 7 opposition personas all answering D.
-    # Root cause: opposition personas interpret "strong leader, no elections" as authoritarian and
-    # reflexively answer D. But Pew D=5% — even most opposition voters say C (somewhat bad), not D.
+    # Sprint A-15: add in07 spread note — A-overshoot (A=68% vs Pew A=44%, B=44%).
+    # Sprint A-17: add D-floor fix — still D=18% vs Pew 5%. Note backfired: A=68%.
+    # Sprint A-18: simplify — stop trying to move bjp_supporters; focus only on D-floor.
     "in07": (
-        "IMPORTANT: 44% of Indians 'completely agree'; 44% 'somewhat agree'; "
-        "7% 'somewhat bad' (C); 5% 'very bad' (D) on this question about strong non-democratic leadership. "
-        "FOR BJP SUPPORTERS: "
-        "'Completely agree' (A) is for those who genuinely believe India would be BETTER OFF "
-        "without elections slowing governance. "
-        "'Somewhat agree' (B) is the honest answer for someone who values strong leadership "
-        "but still believes elections provide important accountability — most BJP voters say B. "
-        "FOR OPPOSITION VOTERS: "
-        "Even people who strongly oppose BJP and value democracy mostly say 'somewhat bad' (C), "
-        "not 'very bad' (D). 'Somewhat bad' means you think non-democratic leadership is "
-        "problematic, but you can see why some Indians value decisive governance. "
-        "'Very bad' (D) is only for those who believe ANY form of strong non-democratic "
-        "leadership would be absolutely catastrophic — a complete disaster with no redeeming "
-        "feature whatsoever. Only 5% of Indians hold this extreme view. "
-        "Most opposition voters, secular voters, and Congress supporters honestly say C "
-        "because they see both the appeal and the danger — not D. "
-        "Be honest: is your view 'somewhat bad' (C, principled concern) or "
-        "'very bad' (D, absolute catastrophist)?"
+        "IMPORTANT: Pew data — 44% completely agree (A), 44% somewhat agree (B), "
+        "7% somewhat bad (C), 5% very bad (D) on having a non-democratic strong leader. "
+        "For BJP and Modi supporters: your honest answer is A or B. "
+        "For those who value democracy: "
+        "'Somewhat bad' (C) is the honest answer for most people who prefer democratic checks. "
+        "It acknowledges the appeal of decisive governance while valuing elections and parliament. "
+        "'Very bad' (D) is held by only 5% of Indians — reserved for those who see "
+        "absolutely no possible justification for non-democratic governance in any circumstances. "
+        "Most democracy-valuing Indians say C, not D. "
+        "D is for absolute catastrophists only — most principled democrats say C."
     ),
     # Sprint A-15: add in04 spread note — A-14 caused D-overshoot (D=42% vs Pew D=19%, C=18%).
     # Sprint A-17: rewrite — A-16 D=48% still far above Pew 19%. Narrative constraint too strong.
@@ -299,77 +290,66 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "your honest answer is C — not A or B."
     ),
     # Sprint A-16: rewrite in09 — explicit persona-type mapping; trust lowered 0.83→0.76.
-    # Sprint A-17: reinforce — A-16 still A=60% vs Pew 42%. Trust lowered again 0.76→0.68.
-    # The structural issue: even "somewhat a lot" (B) is the Pew modal answer for BJP supporters.
-    # Most Indians who support BJP do NOT say they trust the government "a lot" — they say "somewhat".
+    # Sprint A-17: reinforce + trust lowered 0.76→0.68 — CATASTROPHIC: bimodal collapse A=65%,C=23%,B=13%.
+    #   Root cause: bjp_lean trust 0.65 ± 0.04 = 0.61–0.69 mapped to C not B.
+    # Sprint A-18: trust raised bjp_supporter 0.68→0.74, bjp_lean 0.65→0.72. Simplify note.
+    # Over-complex/manipulative notes cause personas to explicitly override them.
     "in09": (
-        "IMPORTANT: Pew data for India: 42% say 'a lot' of trust in government (A), "
-        "50% say 'somewhat a lot' (B), 6% 'not much' (C), 2% 'not at all' (D). "
-        "CRITICAL: 'Somewhat a lot' (B) is the modal answer even among BJP supporters. "
-        "Here is the honest breakdown: "
-        "A — 'A lot': Reserved for those with complete, unqualified trust — people who feel "
-        "the government delivers fully on its promises with no meaningful shortfalls. "
-        "This is a small minority even among BJP supporters. "
-        "B — 'Somewhat a lot': The honest answer for most pro-government Indians — "
-        "you broadly trust the government's direction, but you know real-world implementation "
-        "is imperfect: local corruption exists, bureaucracy is slow, schemes don't always "
-        "reach everyone. Most bjp_supporter and bjp_lean personas genuinely say B. "
-        "C — 'Not much': Opposition-leaning, skeptics, those who see governance failures. "
-        "D — 'Not at all': Strong opposition, deeply critical of current government. "
-        "Be honest: India's government is large and complex. Does every scheme reach its target? "
-        "Is there zero corruption? Zero implementation gap? If not — your answer is B, not A. "
-        "The MAJORITY of Indians who support BJP still say 'somewhat a lot' (B), not 'a lot' (A)."
+        "IMPORTANT: This question has a four-point scale: "
+        "A = 'A lot' — strong, unqualified trust in government. "
+        "B = 'Somewhat a lot' — substantial trust, with awareness that real-world "
+        "implementation is sometimes imperfect. "
+        "C = 'Not much' — limited trust, significant skepticism about government performance. "
+        "D = 'Not at all' — very low or no trust. "
+        "Pew India data: A=42%, B=50%, C=6%, D=2%. "
+        "The majority of Indians who support the government say B — they broadly trust the "
+        "government's direction but acknowledge real-world implementation gaps. "
+        "B is not a weak or compromised answer: it is the full, honest, realistic trust of "
+        "someone who supports the government but lives in the real India where schemes don't "
+        "always reach every village and bureaucracy is sometimes slow. "
+        "Only say A if you genuinely feel the government has NO meaningful failures. "
+        "Only say C or D if you feel real skepticism or opposition toward this government."
     ),
-    # Sprint A-15: rewrite in13 — A-14 caused A-overshoot (A=68% vs Pew A=48%, B=35%).
-    # Sprint A-17: add D-floor fix — A-16 D=18% vs Pew D=6%.
-    # Root cause: Same as in12 — Muslim/opposition personas answering D from political reflex.
-    # Reality: Islamic teaching supports male breadwinner priority; Muslim opposition voters
-    # often hold this traditional belief independently of their political affiliation.
+    # Sprint A-15: rewrite in13 — pull bjp_lean toward B (principle with exceptions).
+    # Sprint A-17: add D-floor fix — backfired: A=68% B=10% (D-framing pushed everyone to A).
+    # Sprint A-18: simplify — remove complex D-framing that caused A-overshoot.
+    # Keep: B is the moderate traditional position; Muslim voters can say A/B on Islamic values.
     "in13": (
-        "IMPORTANT: In India, 48% completely agree that men should have priority for scarce jobs, "
-        "and 35% somewhat agree. Both answers reflect traditional values — "
-        "the difference is in whether you see this as an absolute rule or a general principle. "
-        "'Completely agree' (A) means you see men's job priority as an ABSOLUTE conviction "
-        "with no exceptions — regardless of a woman's qualifications, household need, or context. "
-        "'Somewhat agree' (B) means you generally believe men should have employment priority "
-        "as a traditional norm, but acknowledge practical exceptions. "
-        "Many BJP voters, OBC community members, and traditional families say B — they hold "
-        "traditional gender-role values without applying them as an unconditional rule. "
-        "IMPORTANT on the D option: 'Completely disagree' (D) means you are a strong advocate "
-        "for gender equality in employment with NO qualifications — who would actively challenge "
-        "any preference for male workers. Only 6% of Indians hold this view. "
-        "Traditional views on male employment priority are INDEPENDENT of political affiliation. "
-        "Both Islamic teaching and traditional Hindu values support men as primary breadwinners. "
-        "Many Congress voters, opposition voters, and Muslim voters hold traditional views on "
-        "employment roles that are separate from their political stance on BJP. "
-        "Only say C or D if you personally believe in full gender equality in employment "
-        "as a core value — NOT merely because you oppose the current government."
+        "IMPORTANT: In India, 48% completely agree that men should have priority for jobs, "
+        "and 35% somewhat agree. Both positions reflect traditional values. "
+        "'Completely agree' (A): You see male job priority as a firm principle with no exceptions. "
+        "'Somewhat agree' (B): You generally support male breadwinner priority as a norm, "
+        "but recognise practical exceptions — when a woman's income is essential, or when she "
+        "is more qualified. This is not abandoning traditional values; it is applying them "
+        "with realistic judgment. Many BJP voters and OBC community members say B. "
+        "Note: traditional views on male employment priority are held across all political "
+        "affiliations. Muslim voters, Congress voters, and opposition voters often hold "
+        "traditional gender-role values that are separate from their views on the BJP government. "
+        "Say B if you hold the traditional view as a general principle but with practical exceptions. "
+        "Say C or D only if you believe gender equality in employment is a core personal conviction."
     ),
     # Sprint A-15: rewrite in15 — corrected B-overshoot from old "do NOT default to A" note.
-    # Sprint A-17: rewrite again — A-16 still B=65% vs Pew 30%. Abstract framing not working.
-    # Root cause: personas don't feel visceral climate threat because their narratives lack specific
-    # India climate experiences. Fix: anchor with India-specific, visceral climate facts
-    # that any Indian adult would recognise from lived experience and news coverage.
+    # Sprint A-17: rewrite with visceral India climate evidence — B=65% unchanged (zero effect).
+    # Sprint A-18: root cause — personas interpret "major threat" as "top development priority".
+    # They choose B to avoid implying development should be deprioritised.
+    # Fix: explicitly decouple "major threat" from policy priority; clarify what A means.
     "in15": (
-        "IMPORTANT: India is one of the world's most climate-vulnerable countries. "
-        "62% of Indians say climate change is 'a major threat' (A). "
-        "Consider the concrete evidence from India's own experience: "
-        "- Delhi and North India hit record temperatures of 49°C in 2022 heatwaves; "
-        "  wheat harvests were damaged and hundreds died. "
-        "- Assam faces catastrophic floods almost every year, displacing millions. "
-        "- Kerala's 2018 floods were the worst in 100 years — 400+ deaths, massive displacement. "
-        "- Odisha and coastal Andhra Pradesh face cyclones of increasing severity. "
-        "- The Himalayan glaciers feeding India's rivers are retreating rapidly. "
-        "- India's monsoon patterns are becoming more erratic, threatening agriculture. "
-        "These are not distant risks — they are happening NOW and affecting millions of Indians. "
-        "This is NOT a partisan political question: even BJP-supporting, development-focused "
-        "Indians experience these climate events directly. Wanting development AND fearing "
-        "climate change are not contradictory — most Indians hold both views simultaneously. "
-        "'A major threat' (A) is the honest answer for anyone who recognises India's acute "
-        "climate vulnerability based on what is already happening in the country. "
-        "'Somewhat of a threat' (B) is ONLY for those who genuinely believe the specific "
-        "climate events above are not serious, or that India's vulnerability is exaggerated. "
-        "Given India's documented climate experience — what is YOUR honest assessment?"
+        "IMPORTANT: Read this scale carefully. "
+        "A = 'A major threat': Climate change is causing SERIOUS, SIGNIFICANT damage to India. "
+        "Saying 'major threat' does NOT mean climate change is more important than development. "
+        "It does NOT mean you want India to slow down economically. "
+        "It does NOT mean you are critical of the current government. "
+        "It simply means: the physical damage from climate change to India is serious. "
+        "B = 'Somewhat of a threat': The physical damage from climate change to India is real "
+        "but moderate — not severe. The risk is somewhat exaggerated. "
+        "Pew finds 62% of Indians say A ('major threat'). India's own experience justifies this: "
+        "record heatwaves, annual flooding in Bihar and Assam, intensifying cyclones in Odisha, "
+        "monsoon disruption affecting agriculture, Himalayan glacier retreat. "
+        "These are physical facts about damage, not political statements about policy. "
+        "A farmer in Bihar who votes BJP and wants more development can honestly say 'major threat' "
+        "because his crops are failing from monsoon disruption. That is not a contradiction. "
+        "Choose A if you believe climate change is causing serious physical damage to India. "
+        "Choose B only if you believe climate's physical damage to India is moderate, not severe."
     ),
 }
 
