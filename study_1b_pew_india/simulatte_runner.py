@@ -60,6 +60,38 @@ _TIMEOUT = httpx.Timeout(300.0, connect=30.0)  # Long timeout — Render cold st
 # Fix: inject the spread instruction directly into the survey question prompt so it
 # appears at the exact moment of decision, not buried in the persona's background.
 _SPREAD_QUESTION_NOTES: dict[str, str] = {
+    # Sprint A-11 Fix 1: in01 B-overshoot fix.
+    # A-10 result: B=62% (sim) vs Pew 44%. BJP personas are collapsing to B (somewhat satisfied)
+    # instead of the correct A (very satisfied). Pew: 28% A, 44% B, 11% C, 16% D.
+    # Root cause: current_conditions_stance anchor for bjp_supporter says "VERY satisfied" but
+    # B-option is winning out. Add spread note to push bjp_supporter/lean back to A.
+    "in01": (
+        "IMPORTANT: Satisfaction with Indian democracy is strongly tied to political support. "
+        "Pew India: 28% very satisfied (A), 44% somewhat satisfied (B), 11% not too satisfied (C), "
+        "16% not at all satisfied (D). "
+        "Strong BJP supporters who believe Modi's government reflects democratic success: "
+        "your honest answer is A — VERY satisfied, not just somewhat. Democracy under BJP "
+        "is working well — elections have been free, the mandate is strong, institutions function. "
+        "BJP leaners with some reservations: B — somewhat satisfied. "
+        "Opposition supporters and critics: C or D. "
+        "Do not default to B if you are genuinely very satisfied with how Indian democracy is working."
+    ),
+    # Sprint A-11 Fix 2: in08 A-undershoot fix.
+    # A-10 result: A=15% (sim) vs Pew 32%. BJP personas not producing "very good" economic answers.
+    # The A anchor in current_conditions_stance says "VERY good" but only 15% reach it.
+    # Add spread note to reinforce for bjp_supporter/lean that India's economy is genuinely "very good".
+    "in08": (
+        "IMPORTANT: Views on India's economic conditions are strongly shaped by political conviction. "
+        "Pew India: 32% very good (A), 56% somewhat good (B), 8% somewhat bad (C), 4% very bad (D). "
+        "Strong BJP supporters who believe in India's growth story under Modi: "
+        "your honest answer is A — VERY good. India is the world's fastest-growing major economy, "
+        "infrastructure is transforming, digital payments are booming. This is not 'somewhat' good — "
+        "it is genuinely VERY good compared to where India was a decade ago. "
+        "BJP leaners who see growth but acknowledge uneven distribution: B — somewhat good. "
+        "Neutral voters: B. Opposition and critics: C or D. "
+        "Do not soften a genuinely strong assessment to 'somewhat good' if you believe India's "
+        "economic performance is clearly excellent."
+    ),
     # Sprint A-10 Fix 1: in14 regression fix.
     # A-9 root cause: gender_norms_stance ("wife must obey", "men have job priority") bleeds
     # into this question about women's equal rights, pushing personas toward B instead of A.
@@ -68,14 +100,23 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # 87% say wives should obey husbands (Pew Religion Survey 2021). These are separate domains.
     # Fix: inject this distinction at question time so personas don't apply marital-role stance here.
     "in14": (
+        # Sprint A-11 update: add B spread to fix 100% A collapse.
+        # A-10 result: 100% A (sim) vs Pew 81% A / 14% B. The civic/marital distinction
+        # fixed the regression but overcorrected — now ALL personas answer A.
+        # Reality: urban, highly educated, younger Indians who are skeptical of full equality
+        # in practice (vs principle) say B ('somewhat agree'). Add this nuance.
         "IMPORTANT: This question is about women having the same rights as men in society — "
         "voting, education, employment, and legal rights. This is completely separate from "
         "questions about marital roles, family hierarchy, or household structure. "
         "In India, holding traditional family values and believing women deserve equal rights "
         "as citizens are NOT contradictory — they coexist. Pew Research finds 81% of Indians "
-        "strongly agree women should have equal rights, including most who hold traditional "
-        "family views. This question is about civic and social rights — not about family roles. "
-        "Your honest answer on women's equal rights in society is almost certainly A — strongly agree."
+        "strongly agree women should have equal rights. "
+        "Most Indians say A — strongly agree. "
+        "However, ~14% say B — somewhat agree — typically those who believe full equality "
+        "exists in law but see practical barriers, or who have reservations about specific "
+        "domains like inheritance or religious personal law. "
+        "If you strongly believe in complete equal rights without reservation: answer A. "
+        "If you agree in principle but see important qualifications: answer B."
     ),
     # Sprint A-10 Fix 2: in06 regression fix.
     # A-9 root cause: governance_stance ("parliamentary gridlock is bad, strong leader is good")
@@ -84,15 +125,21 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
     # Fix: clarify the distinction between preferring strong leadership (in07) and evaluating
     # representative democracy as a system (in06). Add explicit C/D acknowledgement.
     "in06": (
+        # Sprint A-11 update: strengthen C/D path.
+        # A-10 result: 0% C/D (sim) vs 18% (Pew). Spread note mentions C but personas ignore it.
+        # Root cause: current framing says "if you strongly value centralised governance... may be C"
+        # — too hedged. Strengthen with explicit persona types who answer C/D.
         "IMPORTANT: This question asks whether having a representative democratic political system "
         "is good or bad — a separate question from whether you prefer strong decisive leadership. "
-        "Most Indians think representative democracy is good: 37% very good (A), 44% somewhat good (B). "
-        "But ~18% have reservations: those who genuinely prefer centralised authority over elections "
-        "say somewhat bad (C); those who believe elections have failed India say very bad (D). "
-        "If you strongly value strong centralised governance over parliamentary elections, your "
-        "answer may be C — somewhat bad. "
-        "Most BJP and opposition supporters say A or B. Answer based on your genuine view of "
-        "whether elected representatives and democratic accountability are good for India."
+        "In India: 37% say very good (A), 44% somewhat good (B), 8% somewhat bad (C), 10% very bad (D). "
+        "Most Indians value democracy. But 18% genuinely view it negatively: "
+        "C — somewhat bad: voters who believe parliamentary democracy in India has produced "
+        "corruption, inefficiency, and caste-based politics; who believe elected representatives "
+        "serve themselves not voters; who think the democratic system enables dynastic parties. "
+        "D — very bad: those who believe elections in India are fundamentally rigged by money "
+        "and caste power, and that democracy has failed the poor entirely. "
+        "If you are cynical about whether elections produce real accountability in India, "
+        "your honest answer may be C or D — not A or B."
     ),
     # Sprint A-10 Fix 3: in11 collapse fix.
     # A-9 root cause: all 40 personas answered A (very important) — 100% collapse.
@@ -119,14 +166,12 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Critics and opposition voters say C or D. "
         "Answer from your actual conviction — do not soften a strong view to somewhat."
     ),
-    "in03": (
-        "IMPORTANT: Views on the BJP party are strongly divided. "
-        "Strong BJP supporters hold a VERY favorable view of the party — not just somewhat. "
-        "If BJP represents your political identity and you believe in the party's direction for India, "
-        "your honest answer is A — very favorable — not B. "
-        "BJP leaners with reservations say B. Critics and opposition voters say C or D. "
-        "Do not soften a genuinely strong view to 'somewhat favorable'."
-    ),
+    # Sprint A-11: REMOVED in03 spread note.
+    # A-10 root cause: spread note "strong BJP supporters say A" backfired — pushed B to 62%
+    # (Pew: 32%). BJP stances are now correctly firing via _get_political_lean(); the spread
+    # note is redundant and actively harmful (pushes non-BJP personas toward B by contrast).
+    # With correct lean gating, BJP_supporter/lean personas already have A anchors in their
+    # current_conditions_stance and key_values policy_stance. No spread note needed.
     # Sprint A-10 Fix 5: in12 A-option push.
     # A-9: A=45% vs Pew 64%. bjp_lean personas are going B instead of A.
     # Both bjp_supporter AND bjp_lean should answer A (completely agree) for in12.
