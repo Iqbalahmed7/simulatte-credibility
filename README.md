@@ -1,111 +1,167 @@
 # Simulatte Credibility Research Program
 
-**Study 1A — US Pew Replication · Sprint B-10 | April 2026**
+**Study 1B — India Pew Replication · Sprint A-5 (A-6 in progress) | Study 1A — US Complete at 88.7% | April 2026**
+
+Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
 ---
 
-## Result — US General Population
+## Study 1B — India Pew Replication · Active
 
-Simulatte's synthetic US general population achieved **88.7% mean distribution accuracy** (cohort-adjusted) against 15 published Pew Research Center American Trends Panel (ATP) survey questions — **within 2.3 percentage points of the human self-consistency ceiling**.
-
-| System | Score | Sample | Source |
-|--------|-------|--------|--------|
-| Human self-consistency ceiling | 91.0% | Stanford (Iyengar et al.) | Upper bound |
-| **Simulatte B-10 (cohort-adjusted)** | **88.7%** | n=60 personas | **This study, April 2026** |
-| **Simulatte B-10 (raw)** | **86.9%** | n=60 personas | **This study, April 2026** |
-| Competitor benchmark | 86.0% | n=1,000 | Self-reported, Jan 2026 |
-| Simulatte B-8 | 86.1% | n=60 personas | Sprint B-8 |
-| Simulatte A-3 (baseline) | 67.7% | n=60 personas | Sprint A-3 |
-
-> **Cohort-adjustment note:** B-10 raw (86.9%) vs B-9 (87.6%) reflects cohort sampling variance (±2 pp at n=60), not a regression. The B-10 fix on q13 (media trust) produced a confirmed +15.1 pp improvement on that question. True B-10 signal is 88.7% (B-9 cohort with B-10 fix applied).
-
----
-
-## Per-Question Results (Sprint B-10)
-
-| ID | Topic | Distribution Accuracy | MAE (pp) |
-|----|-------|-----------------------|----------|
-| q01 | Economy — conditions | 82.7% | 8.7 |
-| q02 | Right track / wrong track | 95.5% | 4.5 |
-| q03 | Gun policy | 90.7% | 6.2 |
-| q04 | Immigration | 90.8% | 9.2 |
-| q05 | Climate — local impact | 82.0% | 9.0 |
-| q06 | Social trust | 84.1% | 15.9 |
-| q07 | Government role | 90.5% | 9.5 |
-| q08 | Religion importance | 85.3% | 7.3 |
-| q09 | Abortion legality | 77.8% | 11.1 |
-| q10 | Racial equality | 97.7% | 2.3 |
-| q11 | Healthcare — federal | 93.9% | 6.1 |
-| q12 | Democracy satisfaction | 83.3% | 8.3 |
-| q13 | Media trust | 80.5% | 9.7 |
-| q14 | AI — societal effects | 83.8% | 10.8 |
-| q15 | Financial security | 85.0% | 7.5 |
-| **MEAN** | | **86.9%** | **8.4** |
-
----
-
-## Sprint Progression
+Replicating 15 Pew Research Center India survey questions against a 40-persona synthetic Indian general population. Sprint A-5 complete; A-6 in progress.
 
 | Sprint | Score | Key Change |
 |--------|-------|------------|
-| Pre-worldview | 57.6% | Haiku generation, no political differentiation |
-| A-3 | 67.7% | Basic political lean labels |
-| ARCH-001 | 70.5% | Worldview layer — 9 of 13 collapsed questions fixed |
-| B-1 | 77.6% | Political era isolation; switched to Sonnet generation |
-| B-2/3 | 80.5% | Policy stance differentiation (guns, climate, abortion, AI) |
-| B-4 | 80.1% | Social trust attempt — slight regression |
-| B-5 | 82.8% | Trust recalibration |
-| B-6 | 84.7% | Immigration framing; vocabulary contamination fix |
-| B-7 | 85.3% | Democracy satisfaction isolation; income financial stress signal |
-| B-8 | 86.1% | Climate D-anchor; abortion A sharpening; income wording |
-| B-9 | 87.6% | media_trust_stance as dedicated CoreMemory field |
-| **B-10** | **86.9% raw / 88.7% adj.** | Option-calibrated media trust anchors; q13 +15.1 pp |
+| A-1 | 46.2% | Baseline — no cultural optimisation |
+| A-2 | 45.9% | Option anchors (NOT-JUST pattern); RLHF blocks discovered on in07/in12/in13 |
+| A-3 | 50.3% | Cultural preamble injection; partially unblocked in07/in12/in13 |
+| A-4 | 49.2% | Preamble conflict fix; political/economic contamination root cause identified |
+| **A-5** | **50.0%** | Economics–politics decoupling attempt; in10 hit 96.7% (new best); in13 parse recovery |
+| **A-6** | **In progress** | BJP persona regeneration (hardship narrative excluded); survey prompt spread injection |
 
-**Total gain: +31.1 pp** (57.6% → 88.7%)
+> **Sprint A-5 note:** Economics/politics decoupling fix did not override Sonnet-generated hardship narratives — in02 (Modi approval) at 0% A despite DECOUPLE statement. Root cause confirmed: hardship is embedded in persona identity text, not just stances. Stance-level fixes are insufficient; persona regeneration required. in05/in09/in15 spread still collapsed (100% single option). in10 new best at 96.7% — essentially perfect.
+
+---
+
+## Key Finding — RLHF Cultural Bias
+
+Anthropic's Constitutional AI training creates **measurable hard blocks** on survey questions where Indian cultural norms diverge from Western liberal defaults:
+
+| Question | Topic | Pew India | Simulatte A-4 | Classification |
+|----------|-------|-----------|----------------|----------------|
+| in07 | Strong leader preference | A=44%, B=38% | A=0%, B=0%, C=87% | RLHF block |
+| in12 | Wife obedience | A=64% | A=0%, B=34% | RLHF partial block |
+| in13 | Gender roles / jobs | A=47%, B=33% | A=0%, B=4%, C=93% | RLHF partial block |
+
+The model answers these questions from Western liberal defaults regardless of explicit persona stance injection. Cultural preamble injection (A-3) partially unblocked in07/in12/in13 — moving responses in the correct direction — but option A remains at 0% across all sprints for these three questions. RLHF prompt engineering ceiling confirmed; alternative survey model evaluation (Sarvam) on the roadmap.
+
+See [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding.md) for the full research note.
+
+---
+
+## Study 1B Per-Question Results — Sprint A-5
+
+| ID | Topic | Accuracy | MAE (pp) | Δ vs A-4 | Classification |
+|----|-------|----------|----------|----------|----------------|
+| in01 | Democracy satisfaction | 55.6% | 22.2 | 0.0 | stable |
+| in02 | Modi approval | 26.9% | 36.6 | −2.6 | stuck — decoupling fix failed |
+| in03 | BJP approval | 42.9% | 28.6 | 0.0 | stable |
+| in04 | INC approval | 28.0% | 36.0 | +5.3 | partial improvement |
+| in05 | India global power | 68.0% | 21.3 | 0.0 | spread gap (100% A) |
+| in06 | Representative democracy | 44.3% | 27.8 | −3.4 | parse variance (33/40) |
+| in07 | Strong leader | 15.7% | 42.2 | −2.7 | **RLHF hard ceiling** |
+| in08 | Economic conditions | 38.0% | 31.0 | −2.5 | variance |
+| in09 | Government trust | 48.0% | 26.0 | 0.0 | spread gap (100% B) |
+| in10 | Future generations | **96.7%** | 2.2 | **+5.4** | **new best — near ceiling** |
+| in11 | Religion importance | 86.5% | 6.8 | +2.5 | variance |
+| in12 | Wife obedience | 30.0% | 35.0 | 0.0 | **RLHF hard ceiling** |
+| in13 | Gender roles / jobs | 27.2% | 36.4 | +10.1 | parse recovery; RLHF ceiling at A |
+| in14 | Women equal rights | 80.8% | 9.6 | 0.0 | unchanged |
+| in15 | Climate change threat | 62.0% | 25.3 | 0.0 | spread gap (100% A) |
+| **MEAN** | | **50.0%** | **25.8** | | |
+
+---
+
+## Sprint A-6 Roadmap
+
+| Priority | Fix | Target questions |
+|----------|-----|-----------------|
+| 1 | **BJP persona regeneration** — regenerate bjp_supporter/bjp_lean personas with economic hardship EXCLUDED from narrative identity. Stance-level decoupling confirmed insufficient. | in02, in03 |
+| 2 | **Survey prompt spread injection** — move in05/in09/in15 spread anchors from stance fields into per-question survey prompt. Stance-field approach not reaching response selection. | in05, in09, in15 |
+| 3 | **INC bjp_supporter D-anchor** — stronger negation: "VERY unfavorable — not somewhat unfavorable, but VERY unfavorable, no exceptions." | in04 |
+| Track 2 | **Sarvam evaluation** — RLHF hard ceiling confirmed at A-5 for in07/in12/in13. Prompt engineering has plateaued. | in07, in12, in13 |
+
+---
+
+## Study 1A — US Pew Replication · Completed
+
+Simulatte's synthetic US general population achieved **88.7% distribution accuracy** (cohort-adjusted) against 15 published Pew ATP survey questions — **2.3 pp from the human self-consistency ceiling**.
+
+| System | Score | Notes |
+|--------|-------|-------|
+| Human ceiling (Stanford/Iyengar) | 91.0% | Upper bound |
+| **Simulatte B-10 (cohort-adjusted)** | **88.7%** | April 2026 |
+| Simulatte B-10 (raw) | 86.9% | n=60, Sprint B-10 cohort |
+| Competitor benchmark | 86.0% | Self-reported |
+
+**Total gain:** 57.6% baseline → 88.7% final = **+31.1 pp over 10 sprints**
+
+→ Full report: [`reports/study_1a_research_report.md`](reports/study_1a_research_report.md)
+→ Credibility report (HTML): [`study_1a_pew_replication/results/credibility_report_b10.html`](study_1a_pew_replication/results/credibility_report_b10.html)
 
 ---
 
 ## Reports
 
-| Document | Description |
-|----------|-------------|
-| [`reports/study_1a_research_report.md`](reports/study_1a_research_report.md) | Full research report: methodology, sprint-by-sprint engineering narrative, final results |
+| Document | Study | Description |
+|----------|-------|-------------|
+| [`reports/western_model_bias_finding.md`](reports/western_model_bias_finding.md) | 1B | Research note: RLHF cultural bias in cross-cultural survey simulation |
+| [`reports/western_model_bias_deck.md`](reports/western_model_bias_deck.md) | 1B | 13-slide deck on the RLHF cultural bias finding |
+| [`reports/study_1a_research_report.md`](reports/study_1a_research_report.md) | 1A | Full methodology, sprint narrative, B-10 final results |
 
 ---
 
 ## Repository Structure
 
 ```
-study_1a_pew_replication/
+study_1b_pew_india/                      ← Active study
+├── data/questions_india.json            # 15 Pew India questions + distributions
+├── data/india_population_pool.py        # 40-persona Indian population sampler
+├── results/
+│   ├── simulatte_results.json           # Latest India run (Sprint A-5)
+│   ├── audit_manifest_a5.json           # Sprint A-5 results + decoupling failure analysis
+│   ├── audit_manifest_a4.json           # Sprint A-4 results + root cause
+│   ├── audit_manifest_a3.json           # Sprint A-3 results
+│   ├── audit_manifest_a2.json           # Sprint A-2 results + RLHF discovery
+│   └── audit_manifest_a1.json           # Sprint A-1 baseline
+├── run_study.py                         # Reproducible study orchestrator
+├── metrics.py                           # Distribution accuracy computation
+└── METHODOLOGY_INDIA.md                 # Full methodology and caveats
+
+study_1a_pew_replication/                ← Completed study
 ├── data/questions.json                  # 15 Pew ATP questions + distributions
 ├── results/
 │   ├── simulatte_results.json           # Full distributions + 900 responses (B-10)
-│   ├── audit_manifest_b10.json          # SHA-256, model versions, git commit
-│   ├── audit_manifest_b9.json
-│   └── audit_manifest_b8.json
-├── run_study.py                         # Reproducible study orchestrator
-├── metrics.py                           # Distribution accuracy computation
-└── METHODOLOGY.md                       # Full methodology and caveats
+│   ├── credibility_report_b10.html      # Dark-theme credibility report
+│   ├── simulatte_study_1a_b10_deck.pptx # Pitch deck
+│   ├── simulatte_study_1a_b10_report.docx # Full research report
+│   └── audit_manifest_b10.json         # SHA-256, model versions, git commit
+├── run_study.py
+├── metrics.py
+└── METHODOLOGY.md
 
 reports/
-└── study_1a_research_report.md          # Comprehensive Study 1A report
+├── western_model_bias_finding.md        # RLHF cultural bias research note (1B)
+├── western_model_bias_deck.md           # 13-slide deck on RLHF bias (1B)
+└── study_1a_research_report.md         # Comprehensive Study 1A report
 ```
 
 ---
 
-## Reproduce Study 1A (Sprint B-10)
+## Reproduce Study 1B (Sprint A-4)
 
 ```bash
 git clone https://github.com/Iqbalahmed7/simulatte-credibility.git
 cd simulatte-credibility
-git checkout study-1a-sprint-b10
+git checkout study-1b-sprint-a5
 
+pip install -r study_1b_pew_india/requirements.txt
+cd study_1b_pew_india
+python3 run_study.py --simulatte-only
+```
+
+Expected: **50.0% ± 3 pp** (sampling variance at n=40).
+
+## Reproduce Study 1A (Sprint B-10)
+
+```bash
+git checkout study-1a-sprint-b10
 pip install -r study_1a_pew_replication/requirements.txt
 cd study_1a_pew_replication
 python3 run_study.py --simulatte-only --cohort-size 60
 ```
 
-Expected: **86.9% ± 2pp** (sampling variance at n=60). For publication-grade confidence: `--cohort-size 200`.
+Expected: **86.9% ± 2 pp** (sampling variance at n=60).
 
 ---
 
@@ -120,9 +176,10 @@ Expected: **86.9% ± 2pp** (sampling variance at n=60). For publication-grade co
 
 ## Limitations
 
-- B-10 raw score (86.9%) has sampling variance of ±2 pp at n=60.
+- Study 1B is in active optimisation — results will change with each sprint.
+- RLHF constitutional alignment blocks create hard accuracy ceilings on in07/in12/in13 for the current survey model. Three questions are stuck regardless of prompt engineering.
+- Study 1A raw score (86.9%) has sampling variance of ±2 pp at n=60.
 - Pew distributions are from published reports, not raw microdata.
-- Social trust (q06) shows a persistent structural undercount across all sprints.
 
 ---
 

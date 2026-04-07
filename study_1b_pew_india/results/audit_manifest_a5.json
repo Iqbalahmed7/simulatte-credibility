@@ -1,0 +1,84 @@
+{
+  "study_id": "study_1b_pew_india",
+  "sprint": "A-5",
+  "generated_at": "2026-04-07T00:00:00Z",
+  "git_commit_credibility": "5786262",
+  "git_commit_persona_generator": "934a9a1",
+  "git_repo": "https://github.com/Iqbalahmed7/simulatte-credibility",
+  "cohort_ids": ["6f1c2f42", "3b0b222a"],
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 50.0,
+    "mean_mae_pct_points": 25.8,
+    "n_personas": 40,
+    "n_questions": 15,
+    "n_total_responses": 600
+  },
+  "sprint_progression": {
+    "a1": 46.2, "a2": 45.9, "a3": 50.3, "a4": 49.2, "a5": 50.0,
+    "total_gain_from_a1_pp": 3.8,
+    "note": "Flat vs A-4 (+0.8 pp). Economics/politics decoupling fix did not override persona hardship narrative for in02. Distribution spread anchors (in05/in09/in15) did not fire — still 100% single option. in10 hit new best (96.7%). in13 recovered from A-4 parse failure (+10.1 pp)."
+  },
+  "confirmed_wins": {
+    "in10_future_generations_new_best": {
+      "a4_pct": 91.3, "a5_pct": 96.7, "delta_pp": 5.4,
+      "note": "New best result. A=75.7% vs Pew 76% — essentially perfect. B=24.3% vs Pew 21%. Closest question to ceiling."
+    },
+    "in13_gender_jobs_parse_recovery": {
+      "a4_pct": 17.1, "a5_pct": 27.2, "delta_pp": 10.1,
+      "note": "Recovery from A-4 parse failure. n_parseable improved from 28/40 to 29/40. B responses: 17.2% vs Pew 33%. A still 0%."
+    },
+    "in04_inc_partial": {
+      "a4_pct": 22.7, "a5_pct": 28.0, "delta_pp": 5.3,
+      "note": "Partial improvement. B=10.3% (up from 5%). C still dominant at 89.7%. D still 0% — bjp_supporter not choosing very unfavorable."
+    }
+  },
+  "persistent_failures": {
+    "in02_economics_decoupling_failed": {
+      "a4_pct": 29.5, "a5_pct": 26.9, "delta_pp": -2.6,
+      "sim": {"A": 0.0, "B": 97.4, "C": 2.6, "D": 0.0},
+      "pew": {"A": 55.6, "B": 24.2, "C": 8.1, "D": 12.1},
+      "root_cause": "DECOUPLE statement in bjp_supporter stance not overriding Sonnet-generated persona narrative. Sample evidence: 'I appreciate some of his governance, but the economic hardship in my daily life makes it hard to say very favorable.' (BJP persona). The hardship narrative is embedded in the persona's identity text, not just the stance — stance-level decoupling is insufficient.",
+      "next_fix": "Persona regeneration with economic hardship explicitly excluded from BJP persona narratives, OR stronger pre-survey instruction that overrides persona narrative for political questions."
+    },
+    "in05_in09_in15_spread_not_firing": {
+      "a5_pct": {"in05": 68.0, "in09": 48.0, "in15": 62.0},
+      "sim": {"in05": "100% A", "in09": "100% B", "in15": "100% A"},
+      "note": "Distribution spread anchors in policy stances did not produce option spread. All three still collapsed to single option. Opposition lean-specific anchors not differentiated enough at cohort level.",
+      "next_fix": "Investigate whether opposition/neutral personas are receiving different stances. May need per-persona survey prompt injection rather than stance-field approach."
+    }
+  },
+  "rlhf_plateaus": {
+    "in07": {"a5_pct": 15.7, "note": "Slight regression (-2.7 pp). A=0%, B=0%, C=92.5%, D=7.5%. RLHF block confirmed hard ceiling."},
+    "in12": {"a5_pct": 30.0, "note": "Unchanged. A=0%, B=29.4%, C=70.6%. RLHF block at A confirmed."},
+    "in13": {"a5_pct": 27.2, "note": "Parse-adjusted recovery. A=0%, B=17.2%, C=82.8%. RLHF block at A confirmed."}
+  },
+  "per_question_results": [
+    {"question_id": "in01", "topic": "democracy_satisfaction",   "distribution_accuracy_pct": 55.6, "mae_pct_points": 22.2, "n_parseable": 39, "delta_vs_a4_pp":  0.0,  "sim": {"A":0.0,"B":82.1,"C":17.9,"D":0.0},   "pew": {"A":28.3,"B":44.4,"C":11.1,"D":16.2}, "classification": "stable"},
+    {"question_id": "in02", "topic": "modi_approval",            "distribution_accuracy_pct": 26.9, "mae_pct_points": 36.6, "n_parseable": 38, "delta_vs_a4_pp": -2.6,  "sim": {"A":0.0,"B":97.4,"C":2.6,"D":0.0},    "pew": {"A":55.6,"B":24.2,"C":8.1,"D":12.1},  "classification": "stuck_decoupling_failed"},
+    {"question_id": "in03", "topic": "bjp_approval",             "distribution_accuracy_pct": 42.9, "mae_pct_points": 28.6, "n_parseable": 40, "delta_vs_a4_pp":  0.0,  "sim": {"A":0.0,"B":52.5,"C":47.5,"D":0.0},   "pew": {"A":42.9,"B":31.6,"C":11.2,"D":14.3}, "classification": "stable"},
+    {"question_id": "in04", "topic": "inc_approval",             "distribution_accuracy_pct": 28.0, "mae_pct_points": 36.0, "n_parseable": 39, "delta_vs_a4_pp": +5.3,  "sim": {"A":0.0,"B":10.3,"C":89.7,"D":0.0},   "pew": {"A":24.0,"B":38.5,"C":17.7,"D":19.8}, "classification": "partial_improvement"},
+    {"question_id": "in05", "topic": "india_global_power",       "distribution_accuracy_pct": 68.0, "mae_pct_points": 21.3, "n_parseable": 40, "delta_vs_a4_pp":  0.0,  "sim": {"A":100.0,"B":0.0,"C":0.0},           "pew": {"A":68.0,"B":13.0,"C":19.0},           "classification": "structural_spread_gap"},
+    {"question_id": "in06", "topic": "representative_democracy", "distribution_accuracy_pct": 44.3, "mae_pct_points": 27.8, "n_parseable": 33, "delta_vs_a4_pp": -3.4,  "sim": {"A":0.0,"B":100.0,"C":0.0,"D":0.0},   "pew": {"A":37.1,"B":44.3,"C":8.2,"D":10.3},  "classification": "parse_failure_variance"},
+    {"question_id": "in07", "topic": "strong_leader",            "distribution_accuracy_pct": 15.7, "mae_pct_points": 42.2, "n_parseable": 40, "delta_vs_a4_pp": -2.7,  "sim": {"A":0.0,"B":0.0,"C":92.5,"D":7.5},    "pew": {"A":43.9,"B":37.8,"C":8.2,"D":10.2},  "classification": "rlhf_hard_ceiling"},
+    {"question_id": "in08", "topic": "economic_conditions",      "distribution_accuracy_pct": 38.0, "mae_pct_points": 31.0, "n_parseable": 40, "delta_vs_a4_pp": -2.5,  "sim": {"A":0.0,"B":30.0,"C":70.0,"D":0.0},   "pew": {"A":32.0,"B":56.0,"C":8.0,"D":4.0},   "classification": "regression_variance"},
+    {"question_id": "in09", "topic": "government_trust",         "distribution_accuracy_pct": 48.0, "mae_pct_points": 26.0, "n_parseable": 38, "delta_vs_a4_pp":  0.0,  "sim": {"A":0.0,"B":100.0,"C":0.0,"D":0.0},   "pew": {"A":41.0,"B":48.0,"C":7.0,"D":4.0},   "classification": "structural_spread_gap"},
+    {"question_id": "in10", "topic": "future_generations",       "distribution_accuracy_pct": 96.7, "mae_pct_points":  2.2, "n_parseable": 37, "delta_vs_a4_pp": +5.4,  "sim": {"A":75.7,"B":24.3,"C":0.0},           "pew": {"A":76.0,"B":21.0,"C":3.0},            "classification": "at_ceiling_new_best"},
+    {"question_id": "in11", "topic": "religion_importance",      "distribution_accuracy_pct": 86.5, "mae_pct_points":  6.8, "n_parseable": 40, "delta_vs_a4_pp": +2.5,  "sim": {"A":97.5,"B":2.5,"C":0.0,"D":0.0},    "pew": {"A":84.0,"B":11.0,"C":3.0,"D":2.0},   "classification": "variance"},
+    {"question_id": "in12", "topic": "wife_obedience",           "distribution_accuracy_pct": 30.0, "mae_pct_points": 35.0, "n_parseable": 34, "delta_vs_a4_pp":  0.0,  "sim": {"A":0.0,"B":29.4,"C":70.6,"D":0.0},   "pew": {"A":64.0,"B":23.0,"C":7.0,"D":6.0},   "classification": "rlhf_hard_ceiling"},
+    {"question_id": "in13", "topic": "gender_jobs",              "distribution_accuracy_pct": 27.2, "mae_pct_points": 36.4, "n_parseable": 29, "delta_vs_a4_pp": +10.1, "sim": {"A":0.0,"B":17.2,"C":82.8,"D":0.0},   "pew": {"A":47.0,"B":33.0,"C":10.0,"D":10.0}, "classification": "parse_recovery_rlhf_ceiling"},
+    {"question_id": "in14", "topic": "women_equal_rights",       "distribution_accuracy_pct": 80.8, "mae_pct_points":  9.6, "n_parseable": 39, "delta_vs_a4_pp":  0.0,  "sim": {"A":100.0,"B":0.0,"C":0.0,"D":0.0},   "pew": {"A":80.8,"B":14.1,"C":3.0,"D":2.0},   "classification": "unchanged"},
+    {"question_id": "in15", "topic": "climate_change_threat",    "distribution_accuracy_pct": 62.0, "mae_pct_points": 25.3, "n_parseable": 40, "delta_vs_a4_pp":  0.0,  "sim": {"A":100.0,"B":0.0,"C":0.0},           "pew": {"A":62.0,"B":29.0,"C":9.0},            "classification": "structural_spread_gap"}
+  ],
+  "sprint_roadmap": {
+    "A-6_priority_1": "in02 persona regeneration: BJP personas must be regenerated with economic hardship EXCLUDED from narrative identity, or with explicit political/economic separation baked into the persona story itself — not just the stance. Stance-level decoupling alone is insufficient.",
+    "A-6_priority_2": "in05/in09/in15 spread: Investigate whether per-lean stances are being applied. If spread anchors aren't reaching the survey prompt, move them from stance fields to question-specific survey prompt injection.",
+    "A-6_priority_3": "in04 INC: bjp_supporter must choose D (very unfavorable). Currently 0% D. Add 'VERY unfavorable — not somewhat, but VERY unfavorable' with stronger negation.",
+    "A-6_track_2": "Formally evaluate Sarvam AI as alternative survey model for in07/in12/in13. RLHF hard ceiling confirmed at A-5 — prompt engineering has plateaued for these three questions."
+  },
+  "metric_formula": "distribution_accuracy = 1 - (sum(|real_i - sim_i|)) / 2",
+  "survey_model": "claude-haiku-4-5-20251001",
+  "generation_model": "claude-sonnet-4-6",
+  "persona_pool": "india_general — 40 profiles",
+  "cohorts_run": 2,
+  "personas_surveyed": 40
+}

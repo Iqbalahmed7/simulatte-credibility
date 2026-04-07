@@ -45,6 +45,3 @@ secrets.json
 # Temp build scripts
 /tmp/
 build_*.py
-
-# India study — not yet published
-study_1b_pew_india/
