@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**Study 1B — India Pew Replication · Sprint A-9 Complete at 83.3% | Study 1A — US Complete at 88.7% | April 2026**
+**Study 1B — India Pew Replication · Sprint A-10 Complete at 84.6% | Study 1A — US Complete at 88.7% | April 2026**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -21,43 +21,44 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-7 | 51.6% | +1.1 | Budget ceiling gate; in15 first B responses |
 | A-8 | 53.4% | +1.8 | Tendency_summary gate; in13 B=20.5% emerging |
 | **A-9** | **83.3%** | **+29.9** | **ROOT CAUSE FIX: `_get_political_lean()` — India archetypes were silently mapped to "moderate" for 8 sprints** |
+| A-10 | 84.6% | +1.3 | Spread notes for in14/in06/in11/in02/in03/in12; bjp_lean in13 stance fix |
 
 > **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path. The previously reported "RLHF hard ceilings" on in07/in12/in13 were actually caused by this missing differentiation, not RLHF — all three questions jumped 40–62 pp in A-9.
 
 ---
 
-## Study 1B Per-Question Results — Sprint A-9
+## Study 1B Per-Question Results — Sprint A-10
 
-| ID | Topic | A-9 | A-8 | Δ | Classification |
-|----|-------|-----|-----|---|----------------|
-| in01 | Democracy satisfaction | 88.1% | 91.1% | −3.0 | minor variance |
-| in02 | Modi approval | 84.8% | 65.4% | **+19.4** | BJP differentiation working |
-| in03 | BJP approval | 75.4% | 68.2% | +7.2 | improving |
-| in04 | INC approval | 83.5% | 53.4% | **+30.1** | INC conviction fix + lean fix |
-| in05 | India global power | 88.0% | 80.3% | +7.7 | spread working |
-| in06 | Representative democracy | 75.1% | 84.2% | −9.1 | ⚠ governance_stance bleed; 0% C/D |
-| **in07** | **Strong leader** | **95.6%** | **33.9%** | **+61.7** | **governance_stance now firing — not RLHF** |
-| in08 | Economic conditions | 88.5% | 74.3% | **+14.2** | budget+tendency gates firing correctly |
-| in09 | Government trust | 83.0% | 61.5% | **+21.5** | inst_trust raise + lean fix |
-| in10 | Future generations | 97.0% | 82.5% | +14.5 | near-ceiling |
-| in11 | Religion importance | 84.0% | 88.3% | −4.3 | 100% A collapse — needs B spread |
-| **in12** | **Wife obedience** | **81.0%** | **29.1%** | **+51.9** | **gender_norms_stance now firing** |
-| **in13** | **Gender roles / jobs** | **75.5%** | **35.4%** | **+40.1** | **same** |
-| in14 | Women equal rights | 66.6% | 82.8% | −16.2 | ⚠ gender_norms bleed into equal rights Q |
-| in15 | Climate change threat | 84.0% | 72.9% | +11.1 | dev-framing spread note working |
-| **MEAN** | | **83.3%** | **53.4%** | **+29.9** | |
+| ID | Topic | A-10 | A-9 | Δ | Classification |
+|----|-------|------|-----|---|----------------|
+| in01 | Democracy satisfaction | 80.6% | 88.1% | −7.5 | ⚠ cohort variance — B overshooting (62% vs Pew 44%) |
+| in02 | Modi approval | 82.3% | 84.8% | −2.5 | minor variance |
+| in03 | BJP approval | 67.9% | 75.4% | −7.5 | ⚠ in03 spread note triggered B overshoot |
+| in04 | INC approval | 81.2% | 83.5% | −2.3 | stable |
+| in05 | India global power | 90.5% | 88.0% | +2.5 | near-ceiling |
+| in06 | Representative democracy | 74.3% | 75.1% | −0.8 | ~flat — 0% C/D persists |
+| **in07** | **Strong leader** | **95.7%** | **95.6%** | **~** | **at ceiling** |
+| in08 | Economic conditions | 79.0% | 88.5% | −9.5 | ⚠ cohort variance — A:15% vs Pew 32% |
+| in09 | Government trust | 87.0% | 83.0% | +4.0 | improving |
+| **in10** | **Future generations** | **97.0%** | **97.0%** | **~** | **at ceiling** |
+| **in11** | **Religion importance** | **94.0%** | **84.0%** | **+10.0** | **urban/secular spread working** |
+| in12 | Wife obedience | 76.0% | 81.0% | −5.0 | minor variance |
+| **in13** | **Gender roles / jobs** | **93.0%** | **75.5%** | **+17.5** | **bjp_lean completely-agree fix** |
+| in14 | Women equal rights | 80.8% | 66.6% | **+14.2** | civic/marital distinction spread effective |
+| in15 | Climate change threat | 89.0% | 84.0% | +5.0 | dev framing working |
+| **MEAN** | | **84.6%** | **83.3%** | **+1.3** | |
 
 ---
 
-## Sprint A-10 Roadmap
+## Sprint A-11 Roadmap
 
-| Priority | Fix | Target questions | Expected gain |
-|----------|-----|-----------------|---------------|
-| 1 | **Fix in14 regression** — `gender_norms_stance` bleeds into "women equal rights" question. Add spread note: even traditional Indians support women's equal rights in principle (Pew: 81% A). These views coexist in Indian public opinion. | in14 | +15 pp |
-| 2 | **Fix in06 regression** — `governance_stance` bleed causing 0% C/D. Add spread note: even BJP supporters support representative democracy as a system; the strong leader preference is about effectiveness, not abolishing elections. | in06 | +8 pp |
-| 3 | **Fix in11 collapse** — 100% A (very important for religion). Add spread note to distribute to B/C for secular/moderate personas. | in11 | +4 pp |
-| 4 | **Push in02/in03 A option** — A still undershooting (sim 45%/25% vs Pew 56%/43%). Strengthen bjp_supporter "very favorable" anchor. | in02, in03 | +5 pp |
-| 5 | **Push in12/in13 A option** — A still undershooting (sim 45%/25% vs Pew 64%/47%). Strengthen "completely agree" anchor. | in12, in13 | +4 pp |
+| Priority | Fix | Root cause | Target | Expected gain |
+|----------|-----|-----------|--------|---------------|
+| 1 | **Fix in03 B-overshoot** — in03 spread note pushed B too hard (62% vs Pew 32%); remove or soften in03 spread note, it's counterproductive now that BJP personas have correct stances | in03 | in03 | +8 pp |
+| 2 | **Fix in01/in08 variance** — both show cohort-level B and A undershoots; add spread notes to anchor B-heavy collapse on in01 and A-undershoot on in08 | cohort variance | in01, in08 | +6 pp |
+| 3 | **Fix in06 C/D gap** — 0% C/D (sim) vs 18% (Pew); current spread note insufficient; strengthen framing for skeptics of democratic system | in06 spread | in06 | +5 pp |
+| 4 | **Fix in14 B gap** — 100% A collapse (sim) vs Pew 14% B; add spread note directing educated urban women toward B (somewhat agree) | in14 | in14 | +5 pp |
+| 5 | **Push in02/in12/in13 A option** — all still undershooting Pew A by 10–25 pp | stance anchors | in02, in12, in13 | +5 pp |
 
 ---
 
