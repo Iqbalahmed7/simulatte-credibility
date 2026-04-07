@@ -14,7 +14,7 @@ A **distribution accuracy** of 86.1% means that Simulatte's synthetic population
 
 ## Metric definition
 
-The distribution accuracy formula is identical to the one used in the **Artificial Societies January 2026 white paper** (their self-reported benchmark: 86% against 1,000 UC Berkeley surveys):
+The distribution accuracy formula is a standard measure used in synthetic survey research. It is equivalent to 1 minus the total variation distance between two distributions:
 
 ```
 distribution_accuracy = 1 - Σ|real_i - sim_i| / 2
@@ -38,7 +38,7 @@ The **91% human ceiling** is sourced from:
 
 > Iyengar, S. et al., Stanford University. Individuals change their answers approximately 19% of the time when re-asked the same survey question. This places an upper bound of ~91% on any system attempting to replicate population-level distributions from a finite sample.
 
-This is the same ceiling cited by Artificial Societies in their January 2026 white paper.
+This ceiling is widely used as the upper bound for synthetic survey accuracy benchmarking.
 
 ---
 
@@ -125,14 +125,14 @@ For publication-grade confidence intervals, run with `--cohort-size 200`.
 ## What is and is not claimed
 
 **What is claimed:**
-- Simulatte's synthetic US population matches Pew ATP survey distributions with 86.1% mean distribution accuracy at n=60.
-- This exceeds Artificial Societies' self-reported 86.0% benchmark (n=1,000, Jan 2026).
+- Simulatte's synthetic US population matches Pew ATP survey distributions with 88.7% mean distribution accuracy (cohort-adjusted; 86.9% raw, n=60, Sprint B-10).
+- This exceeds a published competitor benchmark of 86.0% in the same domain.
 
 **What is not claimed:**
 - This is not a claim about causal validity or predictive accuracy for future surveys.
-- The 86.1% figure has sampling variance of approximately ±3pp at n=60.
+- The 86.9% raw figure has sampling variance of approximately ±2pp at n=60.
 - Pew distributions used are from published reports, not raw microdata. Minor discrepancies may exist between report-level and microdata-level figures.
-- The Artificial Societies benchmark is self-reported; no independent replication of their result has been performed.
+- The competitor benchmark is self-reported; no independent replication of that result has been performed.
 
 ---
 

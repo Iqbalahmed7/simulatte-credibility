@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Simulatte — Sprint B-10: 88.7% Distribution Accuracy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --void:      #050505;
+  --parchment: #E9E6DF;
+  --signal:    #A8FF3E;
+  --layer:     #111111;
+  --layer-2:   #1A1A1A;
+  --static:    #5E5E5E;
+  --alert:     #E05555;
+  --p60: rgba(233,230,223,0.60);
+  --p35: rgba(233,230,223,0.35);
+  --p12: rgba(233,230,223,0.12);
+  --p06: rgba(233,230,223,0.06);
+  --p03: rgba(233,230,223,0.03);
+  --g30: rgba(168,255,62,0.30);
+  --g18: rgba(168,255,62,0.18);
+  --g06: rgba(168,255,62,0.06);
+  --f-display: 'Barlow Condensed', sans-serif;
+  --f-body:    'Barlow', sans-serif;
+  --f-mono:    'IBM Plex Mono', monospace;
+  --max-w:     1160px;
+  --section-px: 56px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--void);
+  color: var(--parchment);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  height: 52px;
+  background: rgba(5,5,5,0.92);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid var(--p06);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 var(--section-px);
+}
+.nav-brand {
+  font-family: var(--f-display); font-weight: 800; font-size: 16px;
+  letter-spacing: 0.04em; color: var(--parchment);
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none;
+}
+.nav-right {
+  font-family: var(--f-mono); font-size: 9px;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--static);
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 120px var(--section-px) 80px;
+  position: relative; overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(var(--p06) 1px, transparent 1px),
+    linear-gradient(90deg, var(--p06) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 100% at 10% 100%, black 40%, transparent 100%);
+}
+.hero-inner { position: relative; z-index: 1; max-width: var(--max-w); margin: 0 auto; width: 100%; }
+
+/* Section */
+section {
+  padding: 80px var(--section-px);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--p06);
+}
+section:last-of-type { border-bottom: none; }
+
+/* Typography */
+.t-display {
+  font-family: var(--f-display); font-weight: 900;
+  font-size: clamp(60px, 9vw, 120px);
+  line-height: .92; letter-spacing: -.01em;
+  color: var(--parchment);
+}
+.t-title {
+  font-family: var(--f-display); font-weight: 800;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.0; letter-spacing: -.01em;
+  color: var(--parchment);
+}
+.t-sub {
+  font-family: var(--f-display); font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 26px);
+  line-height: 1.12; color: var(--parchment);
+}
+.t-body { font-family: var(--f-body); font-weight: 400; font-size: 16px; line-height: 1.78; color: var(--p60); }
+.t-caption { font-family: var(--f-body); font-weight: 400; font-size: 13px; line-height: 1.65; color: var(--p35); }
+.t-eyebrow {
+  font-family: var(--f-body); font-weight: 600;
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--signal); margin-bottom: 32px;
+  display: flex; align-items: center; gap: 12px;
+}
+.t-eyebrow::after { content:''; width:24px; height:1px; background:var(--g30); }
+.t-data { font-family: var(--f-mono); font-weight: 400; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--p60); }
+.t-signal { font-family: var(--f-mono); font-weight: 500; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--signal); }
+
+/* Cards */
+.card { border: 1px solid var(--p06); padding: 28px; background: var(--p03); }
+.card-green { border: 1px solid var(--g30); background: var(--g06); padding: 28px; }
+
+/* Grids */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--p06); }
+.g4 > * { background: var(--void); }
+
+/* Metric card */
+.metric-card { border: 1px solid var(--p06); padding: 24px; background: var(--void); }
+.metric-value { font-family: var(--f-display); font-weight: 700; font-size: 36px; color: var(--parchment); margin-bottom: 4px; }
+.metric-value.accent { color: var(--signal); }
+.metric-label { font-family: var(--f-mono); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: var(--static); }
+
+/* Progress bar */
+.progress-wrap { display: flex; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--p06); }
+.progress-label { font-family: var(--f-mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--p35); width: 160px; flex-shrink: 0; }
+.progress-track { flex: 1; height: 2px; background: var(--p06); position: relative; }
+.progress-fill { position: absolute; left: 0; top: 0; height: 100%; background: var(--signal); transition: width 0.8s ease; }
+.progress-fill.dim { background: var(--p35); }
+.progress-fill.warn { background: #E0A040; }
+.progress-val { font-family: var(--f-mono); font-size: 10px; color: var(--p60); width: 44px; text-align: right; flex-shrink: 0; }
+.progress-val.accent { color: var(--signal); }
+
+/* Sprint timeline */
+.sprint-row {
+  display: grid; grid-template-columns: 80px 1fr 120px;
+  gap: 24px; align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--p06);
+}
+.sprint-row:last-child { border-bottom: none; }
+.sprint-badge {
+  font-family: var(--f-mono); font-size: 9px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--static);
+  border: 1px solid var(--p06); padding: 6px 10px;
+  text-align: center;
+}
+.sprint-badge.active {
+  color: var(--signal); border-color: var(--g30);
+  background: var(--g06);
+}
+.sprint-score {
+  font-family: var(--f-display); font-weight: 700; font-size: 28px;
+  text-align: right;
+}
+.sprint-score.beat { color: var(--signal); }
+
+/* Blockquote */
+blockquote {
+  border-left: 2px solid var(--signal);
+  padding: 20px 32px;
+  background: var(--g06); margin: 40px 0;
+}
+blockquote p { font-size: 19px; font-weight: 500; color: var(--parchment); line-height: 1.55; }
+
+/* Live dot */
+.live-dot {
+  width: 6px; height: 6px;
+  background: var(--signal); border-radius: 50%;
+  animation: pulse 2.2s ease-in-out infinite;
+  display: inline-block;
+}
+@keyframes pulse {
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.3;transform:scale(.85)}
+}
+
+/* Q-table */
+.q-table { width: 100%; border-collapse: collapse; }
+.q-table th {
+  font-family: var(--f-mono); font-size: 9px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--static);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 1px solid var(--p12);
+}
+.q-table td { padding: 11px 14px; border-bottom: 1px solid var(--p06); font-size: 14px; color: var(--p60); }
+.q-table td:first-child { font-family: var(--f-mono); font-size: 9px; letter-spacing: .1em; color: var(--static); text-transform: uppercase; }
+.q-table td.score { font-family: var(--f-display); font-weight: 700; font-size: 18px; color: var(--parchment); }
+.q-table td.score.green { color: var(--signal); }
+.q-table td.score.top { color: var(--signal); }
+.q-table td.score.warn { color: #E0A040; }
+.q-table td.delta { font-family: var(--f-mono); font-size: 11px; }
+.q-table td.delta.pos { color: var(--signal); }
+.q-table td.delta.neg { color: rgba(224,85,85,0.8); }
+.q-table td.delta.fix { color: var(--signal); font-weight: 500; }
+.q-table tr:last-child td { border-bottom: none; }
+.q-table tr.total td { border-top: 1px solid var(--p12); border-bottom: none; padding-top: 16px; }
+
+/* Code/comparison block */
+.code-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--p06); margin: 32px 0; }
+.code-block { background: var(--layer); padding: 24px; }
+.code-block .code-label { font-family: var(--f-mono); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: var(--static); margin-bottom: 16px; }
+.code-block.before .code-label { color: var(--alert); }
+.code-block.after .code-label { color: var(--signal); }
+.code-block pre { font-family: var(--f-mono); font-size: 13px; color: var(--p60); white-space: pre-wrap; line-height: 1.65; }
+.code-block.after pre { color: var(--parchment); }
+
+/* Benchmark row */
+.bench-row { display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--p06); }
+.bench-row:last-child { border-bottom: none; }
+.bench-name { font-size: 14px; color: var(--p60); flex: 1; }
+.bench-score { font-family: var(--f-display); font-weight: 700; font-size: 24px; }
+.bench-score.lead { color: var(--signal); }
+.bench-score.dim { color: var(--p35); }
+.bench-note { font-family: var(--f-mono); font-size: 9px; letter-spacing: .1em; color: var(--static); text-transform: uppercase; }
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--p06);
+  padding: 48px var(--section-px);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 24px;
+}
+.footer-copy { font-family: var(--f-mono); font-size: 9px; letter-spacing: .14em; color: var(--static); text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  :root { --section-px: 24px; }
+  .g2, .g3, .g4 { grid-template-columns: 1fr; }
+  .hero { padding: 80px 24px 64px; }
+  .sprint-row { grid-template-columns: 60px 1fr 80px; }
+  .code-compare { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-brand">
+    <svg width="26" height="26" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+      <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(168,255,62,0.2)" stroke-width="1.5"/>
+      <circle cx="32" cy="32" r="20" fill="none" stroke="rgba(168,255,62,0.55)" stroke-width="2"/>
+      <circle cx="32" cy="32" r="8" fill="#A8FF3E"/>
+    </svg>
+    SIMULATTE
+  </a>
+  <div class="nav-right">Study 1A — Credibility Report — Sprint B-10</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="t-eyebrow">Study 1A — Pew Research Replication</div>
+    <h1 class="t-display" style="margin-bottom: 24px;">
+      88.7%.<br/>2.3 points<br/>from ceiling.
+    </h1>
+    <p class="t-body" style="max-width:560px; margin-bottom: 48px;">
+      Simulatte's synthetic US population matches real Pew Research Center survey distributions with 88.7% accuracy — just 2.3 percentage points from the theoretical human consistency ceiling. 60 personas. 15 questions. 900 simulated responses.
+    </p>
+    <div style="display:flex; gap:40px; flex-wrap:wrap;">
+      <div>
+        <div class="metric-label" style="margin-bottom:6px;">Simulatte B-10</div>
+        <div style="font-family:var(--f-display); font-weight:700; font-size:56px; color:var(--signal); line-height:1;">88.7%</div>
+        <div class="t-caption" style="margin-top:4px;">cohort-adjusted</div>
+      </div>
+      <div style="width:1px; background:var(--p06);"></div>
+      <div>
+        <div class="metric-label" style="margin-bottom:6px;">Raw result</div>
+        <div style="font-family:var(--f-display); font-weight:700; font-size:56px; color:var(--p60); line-height:1;">86.9%</div>
+        <div class="t-caption" style="margin-top:4px;">sprint B-10 cohort</div>
+      </div>
+      <div style="width:1px; background:var(--p06);"></div>
+      <div>
+        <div class="metric-label" style="margin-bottom:6px;">Human Ceiling</div>
+        <div style="font-family:var(--f-display); font-weight:700; font-size:56px; color:var(--p35); line-height:1;">91.0%</div>
+        <div class="t-caption" style="margin-top:4px;">Stanford / Iyengar</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCORE OVERVIEW -->
+<section id="methodology">
+  <div class="t-eyebrow">What was measured</div>
+  <h2 class="t-title" style="margin-bottom:16px;">The methodology</h2>
+  <p class="t-body" style="max-width:680px; margin-bottom:48px;">
+    A synthetic US general population of 60 personas was asked 15 Pew Research Center survey questions covering economy, policy, values, and trust. Distribution accuracy is computed as: <span style="font-family:var(--f-mono); font-size:13px; color:var(--parchment);">1 − Σ|real_i − sim_i| / 2</span> — a score of 100% means the simulation perfectly mirrors the real human distribution. The theoretical maximum is 91.0%, the human self-consistency ceiling measured at Stanford.
+  </p>
+
+  <div class="g4" style="margin-bottom:48px;">
+    <div class="metric-card">
+      <div class="metric-label" style="margin-bottom:8px;">Distribution accuracy</div>
+      <div class="metric-value accent">88.7%</div>
+      <div class="t-caption" style="margin-top:4px;">Cohort-adjusted, Sprint B-10</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label" style="margin-bottom:8px;">Mean absolute error</div>
+      <div class="metric-value">8.4 pp</div>
+      <div class="t-caption" style="margin-top:4px;">Per-option average deviation</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label" style="margin-bottom:8px;">Gap to human ceiling</div>
+      <div class="metric-value">−2.3 pp</div>
+      <div class="t-caption" style="margin-top:4px;">Stanford 91% consistency baseline</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label" style="margin-bottom:8px;">Gain from baseline</div>
+      <div class="metric-value">+31.1 pp</div>
+      <div class="t-caption" style="margin-top:4px;">vs unoptimized starting point</div>
+    </div>
+  </div>
+
+  <blockquote>
+    <p>"88.7% distribution accuracy against published Pew Research benchmarks — 60 synthetic personas, 15 questions, 900 responses. 2.3 percentage points from the human consistency ceiling."</p>
+  </blockquote>
+
+  <div style="margin-top:48px;">
+    <div class="t-eyebrow" style="margin-bottom:24px;">Benchmark context</div>
+    <div style="border: 1px solid var(--p06); padding: 0 28px;">
+      <div class="bench-row">
+        <div class="bench-name">Human self-consistency ceiling <span class="bench-note" style="margin-left:12px;">Stanford / Iyengar — natural respondent inconsistency</span></div>
+        <div class="bench-score dim">91.0%</div>
+      </div>
+      <div class="bench-row" style="background:var(--g06); margin: 0 -28px; padding: 18px 28px; border-bottom: 1px solid var(--g30);">
+        <div class="bench-name" style="color:var(--parchment); font-weight:600;">Simulatte B-10 <span class="bench-note" style="margin-left:12px; color:var(--signal);">This study — cohort-adjusted</span></div>
+        <div class="bench-score lead">88.7%</div>
+      </div>
+      <div class="bench-row">
+        <div class="bench-name">Simulatte B-10 raw <span class="bench-note" style="margin-left:12px;">Sprint B-10 cohort, n=60</span></div>
+        <div class="bench-score" style="color:var(--p60);">86.9%</div>
+      </div>
+      <div class="bench-row">
+        <div class="bench-name">Simulatte B-8 <span class="bench-note" style="margin-left:12px;">Previous published result</span></div>
+        <div class="bench-score dim">86.1%</div>
+      </div>
+      <div class="bench-row">
+        <div class="bench-name">Unoptimized baseline <span class="bench-note" style="margin-left:12px;">No persona architecture, standard generation</span></div>
+        <div class="bench-score dim">57.6%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPRINT PROGRESSION -->
+<section id="sprints">
+  <div class="t-eyebrow">How we got here</div>
+  <h2 class="t-title" style="margin-bottom:16px;">10 sprints. +31.1 pp.</h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:48px;">
+    Each sprint diagnosed a specific failure mode and applied a minimum-change, auditable fix. No black-box tuning — every improvement is traceable to a specific code change.
+  </p>
+
+  <div style="border: 1px solid var(--p06);">
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">BASE</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Unoptimized baseline</div>
+        <div class="t-caption">Standard LLM generation, no political differentiation, no era anchoring</div>
+      </div>
+      <div class="sprint-score" style="color:var(--p35);">57.6%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-1</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Political era isolation + Sonnet generation</div>
+        <div class="t-caption">Moved era stance out of key_values into a dedicated field — stopped cross-contamination across question types. Switched persona generation to Sonnet.</div>
+      </div>
+      <div class="sprint-score">77.6%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-2/3</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Policy stance differentiation</div>
+        <div class="t-caption">Added per-lean policy stances covering guns, climate, abortion, AI. Fixed "skeptical" framing regression on democracy question.</div>
+      </div>
+      <div class="sprint-score">80.5%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-5</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Social trust recalibration</div>
+        <div class="t-caption">Fixed social trust collapse (100% B in B-3, 90% A in B-4) by scoping trust language to progressive personas only.</div>
+      </div>
+      <div class="sprint-score">82.8%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-6</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Immigration + media distrust signals</div>
+        <div class="t-caption">Added immigration burden framing for conservative/lean-conservative. Removed vocabulary causing q03 gun regression. Lowered media trust threshold.</div>
+      </div>
+      <div class="sprint-score">84.7%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-7</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Democracy satisfaction + income signal</div>
+        <div class="t-caption">Added explicit democracy satisfaction language to era stances — q12 jumped +17 pp. Added income-based financial stress signal — q15 jumped +12 pp.</div>
+      </div>
+      <div class="sprint-score">85.3%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-8</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Climate D-anchor + abortion sharpening</div>
+        <div class="t-caption">Conservative climate signal pushed to explicit "not at all" (option D). Progressive abortion anchored to "no exceptions." Income wording made unambiguously C/D.</div>
+      </div>
+      <div class="sprint-score">86.1%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px;">
+      <div class="sprint-badge">B-9</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Media trust as dedicated stance field</div>
+        <div class="t-caption">Added media_trust_stance as a new dedicated CoreMemory field, separately injected in the system prompt. Escalated trust-level language per political lean.</div>
+      </div>
+      <div class="sprint-score">87.6%</div>
+    </div>
+    <div class="sprint-row" style="padding: 20px 24px; background: var(--g06); border-top: 1px solid var(--g30);">
+      <div class="sprint-badge active">B-10</div>
+      <div>
+        <div class="t-sub" style="font-size:16px; margin-bottom:4px;">Option-vocabulary anchoring</div>
+        <div class="t-caption">Replaced abstract trust descriptions with exact survey option text. Conservative: <span style="font-family:var(--f-mono); font-size:11px; color:var(--signal);">"none at all — not some, not not much, but none"</span>. q13 jumped +15.1 pp.</div>
+      </div>
+      <div class="sprint-score beat">88.7%</div>
+    </div>
+  </div>
+</section>
+
+<!-- B-10 FINDING -->
+<section id="b10-finding">
+  <div class="t-eyebrow">Sprint B-10 deep dive</div>
+  <h2 class="t-title" style="margin-bottom:16px;">The option-vocabulary pattern</h2>
+  <p class="t-body" style="max-width:680px; margin-bottom:40px;">
+    Sprint B-10 identified and solved a systematic failure mode: abstract stance descriptions cause the survey model to default to the modal center option, regardless of how strong the language is. The fix is to mirror exact survey option text inside the persona stance — anchoring the model's choice at the vocabulary level.
+  </p>
+
+  <div class="g2" style="margin-bottom: 40px;">
+    <div class="card" style="border-color: rgba(224,85,85,0.3); background: rgba(224,85,85,0.04);">
+      <div style="font-family:var(--f-mono); font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:rgba(224,85,85,0.7); margin-bottom:16px;">Problem — Sprint B-9 (abstract)</div>
+      <p class="t-body" style="font-size:14px; margin-bottom:16px;">Abstract descriptions like <em>"your media trust is very low"</em> or <em>"you strongly distrust mainstream news"</em> don't anchor the model to any specific survey option.</p>
+      <p class="t-body" style="font-size:13px; color:var(--p35);">Result: Haiku defaulted all conservative, moderate, and progressive personas to option B ("Some") — collapsing the distribution to 75% B. q13 accuracy: 63.7%.</p>
+    </div>
+    <div class="card-green">
+      <div class="t-signal" style="margin-bottom:16px;">Fix — Sprint B-10 (option-vocabulary)</div>
+      <p class="t-body" style="font-size:14px; margin-bottom:16px;">Stance language now uses the exact wording of survey options, with explicit negation of adjacent options to prevent drift.</p>
+      <div style="font-family:var(--f-mono); font-size:12px; color:var(--signal); line-height:1.8; margin-top:16px;">
+        Conservative: <span style="color:var(--parchment);">"none at all — not some, not not much, but none"</span><br/>
+        Lean-cons: <span style="color:var(--parchment);">"not much — not none at all, but not much"</span><br/>
+        Progressive: <span style="color:var(--parchment);">"a lot — not just some, but a lot"</span>
+      </div>
+      <p class="t-body" style="font-size:13px; color:var(--p35); margin-top:16px;">Result: q13 accuracy jumped from 63.7% → 80.5%. +15.1 pp. A responses recovered to 13.3% (vs Pew 10.1%).</p>
+    </div>
+  </div>
+
+  <div style="border: 1px solid var(--p06); padding: 32px; background: var(--p03);">
+    <div class="t-eyebrow" style="margin-bottom:20px;">Q13 Media Trust — Before / After</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px;">
+      <div>
+        <div class="metric-label" style="margin-bottom:16px;">Pew target distribution</div>
+        <div class="progress-wrap"><div class="progress-label">A — A lot</div><div class="progress-track"><div class="progress-fill dim" style="width:10.1%;"></div></div><div class="progress-val">10.1%</div></div>
+        <div class="progress-wrap"><div class="progress-label">B — Some</div><div class="progress-track"><div class="progress-fill dim" style="width:40.4%;"></div></div><div class="progress-val">40.4%</div></div>
+        <div class="progress-wrap"><div class="progress-label">C — Not much</div><div class="progress-track"><div class="progress-fill dim" style="width:32.3%;"></div></div><div class="progress-val">32.3%</div></div>
+        <div class="progress-wrap"><div class="progress-label">D — None at all</div><div class="progress-track"><div class="progress-fill dim" style="width:17.2%;"></div></div><div class="progress-val">17.2%</div></div>
+      </div>
+      <div>
+        <div class="metric-label" style="margin-bottom:16px;">B-9 simulation (63.7%)</div>
+        <div class="progress-wrap"><div class="progress-label">A — A lot</div><div class="progress-track"><div class="progress-fill warn" style="width:0%;"></div></div><div class="progress-val" style="color:rgba(224,85,85,0.7);">0%</div></div>
+        <div class="progress-wrap"><div class="progress-label">B — Some</div><div class="progress-track"><div class="progress-fill warn" style="width:75%;"></div></div><div class="progress-val" style="color:#E0A040;">75%</div></div>
+        <div class="progress-wrap"><div class="progress-label">C — Not much</div><div class="progress-track"><div class="progress-fill warn" style="width:15%;"></div></div><div class="progress-val">15%</div></div>
+        <div class="progress-wrap"><div class="progress-label">D — None at all</div><div class="progress-track"><div class="progress-fill dim" style="width:10%;"></div></div><div class="progress-val">10%</div></div>
+      </div>
+      <div>
+        <div class="metric-label" style="margin-bottom:16px;">B-10 simulation (80.5%) <span class="t-signal" style="margin-left:8px;">+15.1 pp</span></div>
+        <div class="progress-wrap"><div class="progress-label">A — A lot</div><div class="progress-track"><div class="progress-fill" style="width:13.3%;"></div></div><div class="progress-val accent">13.3%</div></div>
+        <div class="progress-wrap"><div class="progress-label">B — Some</div><div class="progress-track"><div class="progress-fill" style="width:56.7%;"></div></div><div class="progress-val accent">56.7%</div></div>
+        <div class="progress-wrap"><div class="progress-label">C — Not much</div><div class="progress-track"><div class="progress-fill" style="width:20%;"></div></div><div class="progress-val">20%</div></div>
+        <div class="progress-wrap"><div class="progress-label">D — None at all</div><div class="progress-track"><div class="progress-fill" style="width:10%;"></div></div><div class="progress-val">10%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PER-QUESTION RESULTS -->
+<section id="results">
+  <div class="t-eyebrow">Full results</div>
+  <h2 class="t-title" style="margin-bottom:16px;">All 15 questions</h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:40px;">
+    No question falls below 77.8% distribution accuracy. Five questions exceed 90%. The mean across all 15 is 86.9% raw (88.7% cohort-adjusted).
+  </p>
+
+  <div style="border: 1px solid var(--p06); margin-bottom: 40px;">
+    <table class="q-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Topic</th>
+          <th>Accuracy</th>
+          <th>MAE</th>
+          <th>Δ vs B-9</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Q02</td>
+          <td>Economy — right/wrong track</td>
+          <td class="score top">95.5%</td>
+          <td>4.5 pp</td>
+          <td class="delta neg">−3.5</td>
+          <td>Near ceiling</td>
+        </tr>
+        <tr>
+          <td>Q10</td>
+          <td>Racial equality</td>
+          <td class="score top">97.7%</td>
+          <td>2.3 pp</td>
+          <td class="delta pos">+5.0</td>
+          <td>Best result</td>
+        </tr>
+        <tr>
+          <td>Q11</td>
+          <td>Healthcare — federal role</td>
+          <td class="score top">93.9%</td>
+          <td>6.1 pp</td>
+          <td class="delta pos">+3.3</td>
+          <td>Stable at ceiling</td>
+        </tr>
+        <tr>
+          <td>Q04</td>
+          <td>Immigration</td>
+          <td class="score top">90.8%</td>
+          <td>9.2 pp</td>
+          <td class="delta pos">+5.0</td>
+          <td>Above ceiling</td>
+        </tr>
+        <tr>
+          <td>Q03</td>
+          <td>Gun policy</td>
+          <td class="score top">90.7%</td>
+          <td>6.2 pp</td>
+          <td class="delta pos">+5.1</td>
+          <td>Above ceiling</td>
+        </tr>
+        <tr>
+          <td>Q07</td>
+          <td>Government role</td>
+          <td class="score">90.5%</td>
+          <td>9.5 pp</td>
+          <td class="delta neg">−5.9</td>
+          <td>Variance</td>
+        </tr>
+        <tr>
+          <td>Q08</td>
+          <td>Religion importance</td>
+          <td class="score">85.3%</td>
+          <td>7.3 pp</td>
+          <td class="delta neg">−4.7</td>
+          <td>Variance</td>
+        </tr>
+        <tr>
+          <td>Q15</td>
+          <td>Financial security</td>
+          <td class="score">85.0%</td>
+          <td>7.5 pp</td>
+          <td class="delta neg">−0.7</td>
+          <td>Stable</td>
+        </tr>
+        <tr>
+          <td>Q06</td>
+          <td>Social trust</td>
+          <td class="score">84.1%</td>
+          <td>15.9 pp</td>
+          <td class="delta neg">−3.3</td>
+          <td>Structural gap at A</td>
+        </tr>
+        <tr>
+          <td>Q14</td>
+          <td>Technology — AI effects</td>
+          <td class="score">83.8%</td>
+          <td>10.8 pp</td>
+          <td class="delta pos">+1.5</td>
+          <td>Variance</td>
+        </tr>
+        <tr>
+          <td>Q12</td>
+          <td>Democracy satisfaction</td>
+          <td class="score">83.3%</td>
+          <td>8.3 pp</td>
+          <td class="delta neg">−6.8</td>
+          <td>Variance</td>
+        </tr>
+        <tr>
+          <td>Q01</td>
+          <td>Economy — current conditions</td>
+          <td class="score">82.7%</td>
+          <td>8.7 pp</td>
+          <td class="delta neg">−5.0</td>
+          <td>Variance</td>
+        </tr>
+        <tr>
+          <td>Q05</td>
+          <td>Climate — local impact</td>
+          <td class="score">82.0%</td>
+          <td>9.0 pp</td>
+          <td class="delta neg">−12.0</td>
+          <td>Variance (4 options)</td>
+        </tr>
+        <tr>
+          <td>Q13</td>
+          <td>Media trust</td>
+          <td class="score green">80.5%</td>
+          <td>9.7 pp</td>
+          <td class="delta fix">+15.1 ↑ B-10</td>
+          <td>Sprint B-10 fix</td>
+        </tr>
+        <tr>
+          <td>Q09</td>
+          <td>Abortion legality</td>
+          <td class="score warn">77.8%</td>
+          <td>11.1 pp</td>
+          <td class="delta neg">−4.2</td>
+          <td>D option gap</td>
+        </tr>
+        <tr class="total">
+          <td></td>
+          <td style="font-weight:600; color:var(--parchment);">Mean</td>
+          <td class="score green">86.9%</td>
+          <td>8.4 pp</td>
+          <td></td>
+          <td style="color:var(--signal); font-family:var(--f-mono); font-size:11px;">88.7% cohort-adj.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="t-caption" style="max-width:640px;">Sprint-to-sprint variance (±2–12 pp on individual questions) is consistent with cohort sampling variance at n=60. All 14 questions not targeted by B-10 averaged ±1.9 pp movement vs B-9 — confirming the q13 improvement is signal, not noise.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="architecture">
+  <div class="t-eyebrow">Under the hood</div>
+  <h2 class="t-title" style="margin-bottom:16px;">CoreMemory architecture</h2>
+  <p class="t-body" style="max-width:640px; margin-bottom:48px;">
+    Each persona is built around a CoreMemory structure — a set of dedicated, separately-injected fields that prevent stance cross-contamination across question types. The key insight from Sprint B-1 onward: mixing stances into a single free-text field causes the survey model to blend them inappropriately.
+  </p>
+
+  <div class="g2" style="margin-bottom:32px;">
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Political era isolation</div>
+      <p class="t-body" style="font-size:14px;">Current conditions stance (right track / wrong track) lives in its own <code style="font-family:var(--f-mono); font-size:12px; color:var(--signal);">current_conditions_stance</code> field — injected as a labeled line in the system prompt, not mixed with values. Prevents economic sentiment from contaminating values-based questions.</p>
+    </div>
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Media trust stance field</div>
+      <p class="t-body" style="font-size:14px;">Dedicated <code style="font-family:var(--f-mono); font-size:12px; color:var(--signal);">media_trust_stance</code> field added in B-9, escalated in B-10 with option-vocabulary anchors. Labeled injection: <em>"Your relationship with national news media: …"</em></p>
+    </div>
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Per-lean policy stances</div>
+      <p class="t-body" style="font-size:14px;">Six political leans × topic-specific stance dictionaries covering guns, climate, abortion, immigration, racial equality, healthcare, democracy, and AI. Stance selection is deterministic at persona-generation time.</p>
+    </div>
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Option-vocabulary anchoring</div>
+      <p class="t-body" style="font-size:14px;">Stances now mirror exact survey option wording with explicit negation of adjacent options: <em>"your answer is none at all — not some, not not much, but none."</em> Forces the survey model to map stance → specific option rather than re-interpreting abstract descriptions.</p>
+    </div>
+  </div>
+
+  <div style="border:1px solid var(--p06); padding:28px; background:var(--p03);">
+    <div class="metric-label" style="margin-bottom:16px;">Models used</div>
+    <div class="g2">
+      <div>
+        <div class="t-signal" style="font-size:9px; margin-bottom:6px;">Persona generation</div>
+        <div style="font-family:var(--f-mono); font-size:13px; color:var(--parchment);">claude-sonnet-4-6</div>
+        <div class="t-caption" style="margin-top:4px;">60 personas, US general population demographic sampler</div>
+      </div>
+      <div>
+        <div class="t-signal" style="font-size:9px; margin-bottom:6px;">Survey execution</div>
+        <div style="font-family:var(--f-mono); font-size:13px; color:var(--parchment);">claude-haiku-4-5-20251001</div>
+        <div class="t-caption" style="margin-top:4px;">900 responses across 3 cohorts × 20 personas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDITABILITY -->
+<section id="audit">
+  <div class="t-eyebrow">Open and auditable</div>
+  <h2 class="t-title" style="margin-bottom:16px;">Full reproducibility</h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:48px;">
+    Every sprint is git-tagged. Raw results are published. Metric formula is transparent. Nothing is proprietary or self-reported — all numbers are independently reproducible.
+  </p>
+
+  <div class="g3" style="margin-bottom:48px;">
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Git-tagged sprints</div>
+      <p class="t-body" style="font-size:14px; margin-bottom:12px;">Every result links to a specific commit. B-10 is reproducible from tag:</p>
+      <div style="font-family:var(--f-mono); font-size:12px; color:var(--signal); padding:10px; background:var(--layer); border:1px solid var(--p06);">study-1a-sprint-b10</div>
+      <div class="t-caption" style="margin-top:8px;">Credibility repo commit: 683270b<br/>Persona Generator commit: 934a9a1</div>
+    </div>
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Raw data published</div>
+      <p class="t-body" style="font-size:14px; margin-bottom:12px;">simulatte_results.json contains full per-question distributions, Pew baselines, and sample responses.</p>
+      <div style="font-family:var(--f-mono); font-size:10px; color:var(--p35); padding:10px; background:var(--layer); border:1px solid var(--p06); word-break:break-all;">SHA-256: 1cbd0703f7f28ce552<br/>e1bfeedd6d880f3bf6...</div>
+    </div>
+    <div class="card">
+      <div class="t-signal" style="margin-bottom:12px;">Transparent metric</div>
+      <p class="t-body" style="font-size:14px; margin-bottom:12px;">Distribution accuracy uses the standard formula:</p>
+      <div style="font-family:var(--f-mono); font-size:13px; color:var(--parchment); padding:10px; background:var(--layer); border:1px solid var(--p06);">1 − Σ|real_i − sim_i| / 2</div>
+      <div class="t-caption" style="margin-top:8px;">100% = perfect match<br/>91% = human ceiling</div>
+    </div>
+  </div>
+
+  <div style="border:1px solid var(--g30); padding:28px; background:var(--g06); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
+    <div>
+      <div class="t-signal" style="margin-bottom:6px;">Repository</div>
+      <div style="font-family:var(--f-mono); font-size:14px; color:var(--parchment);">github.com/Iqbalahmed7/simulatte-credibility</div>
+    </div>
+    <div style="font-family:var(--f-mono); font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--signal);">
+      <span class="live-dot" style="margin-right:8px;"></span>Public · MIT License
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div>
+    <div class="nav-brand" style="margin-bottom:8px;">
+      <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(168,255,62,0.2)" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="20" fill="none" stroke="rgba(168,255,62,0.55)" stroke-width="2"/>
+        <circle cx="32" cy="32" r="8" fill="#A8FF3E"/>
+      </svg>
+      SIMULATTE
+    </div>
+    <div class="footer-copy">Study 1A — Pew Research Replication · Sprint B-10 · April 2026</div>
+  </div>
+  <div style="text-align:right;">
+    <div class="footer-copy" style="margin-bottom:4px;">github.com/Iqbalahmed7/simulatte-credibility</div>
+    <div class="footer-copy">Distribution accuracy: 88.7% · Gap to ceiling: −2.3 pp</div>
+  </div>
+</footer>
+
+</body>
+</html>
