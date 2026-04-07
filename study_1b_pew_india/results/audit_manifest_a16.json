@@ -1,0 +1,46 @@
+{
+  "sprint": "A-16",
+  "date": "2026-04-07",
+  "cohort_ids": [
+    "fresh cohorts (generated with A-16 settings)",
+    "narrative_generator: INC split + climate constraint removed (fresh from A-15 changes)",
+    "demographic_sampler: bjp_supporter inst_trust lowered 0.83→0.76"
+  ],
+  "generation": "fresh (required for inst_trust change to take effect)",
+  "mean_accuracy": 80.1,
+  "per_question": {
+    "in01": 82.0,
+    "in02": 85.2,
+    "in03": 89.6,
+    "in04": 72.3,
+    "in05": 81.0,
+    "in06": 81.4,
+    "in07": 74.1,
+    "in08": 76.0,
+    "in09": 68.0,
+    "in10": 93.0,
+    "in11": 84.0,
+    "in12": 87.5,
+    "in13": 82.0,
+    "in14": 81.0,
+    "in15": 64.0
+  },
+  "changes": [
+    "demographic_sampler: bjp_supporter institutional_trust 0.83 → 0.76",
+    "Fresh cohort generation (A-15 survey reuse meant narrative changes had zero effect)",
+    "Inherited from A-15: INC conviction split (bjp_supporter=deeply critical, bjp_lean=softer)",
+    "Inherited from A-15: climate narrative constraint REMOVED from BJP personas",
+    "in05 spread note: push opposition/secular toward C (India's soft power declining)"
+  ],
+  "notes": {
+    "in09": "A=60% vs Pew 42% — trust 0.76 reduced A from 68% (A-15) to 60% but still too high; lowering to 0.68 in A-17",
+    "in04": "D=48% vs Pew 19% — up from A-15 D=42%; hardcoded 'answer very unfavorable' in narrative is structural cause; fixing in A-17",
+    "in15": "B=65% vs Pew 30% — minimal improvement from A-15 B=68%; climate absence in narratives means spread note fights identity-level prior; rewriting with visceral India evidence in A-17",
+    "in07": "D=18% vs Pew 5% — 7 opposition personas over-selecting D on authority questions; fixing in A-17",
+    "in12": "D=18% vs Pew 6% — Muslim opposition personas answering D from political reflex despite Islamic traditional values; fixing in A-17",
+    "in13": "D=18% vs Pew 6% — same root cause as in12; fixing in A-17",
+    "in03": "+21.7pp from A-12 (89.6%) — pool rebalance working for A-option push",
+    "in12": "+11.5pp from A-12 (87.5%) — conviction framing working",
+    "regress_vs_a12": "Overall -4.9pp vs A-12: pool rebalance solved A-floors but created D-floor from 7 opposition personas AND A-overshoot on in09"
+  }
+}

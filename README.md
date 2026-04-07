@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**Study 1B — India Pew Replication · Sprint A-10 Complete at 84.6% | Study 1A — US Complete at 88.7% | April 2026**
+**Study 1B — India Pew Replication · Sprint A-16 at 80.1% (A-17 in progress) | Study 1A — US Complete at 88.7% | April 2026**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -24,43 +24,50 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-10 | 84.6% | +1.3 | Spread notes for in14/in06/in11/in02/in03/in12; bjp_lean in13 stance fix |
 | A-11 | 84.8% | +0.2 | Remove in03 spread note; in01/in08 spread notes; in14/in06 strengthened |
 | A-12 | 85.0% | +0.2 | Pool rebalance bjp_supporter 18%→35% — B-modal pull identified as remaining barrier |
+| A-13 | 85.0% | 0.0 | **BUG: demographic_sampler.py never synced with A-12 pool changes — ran on old 7 bjp_supporter pool** |
+| A-14 | 80.8% | −4.2 | First true run with correct 14 bjp_supporter pool; conviction framing for in02/in03; in09/in15 backfired |
+| A-15 | 81.6% | +0.8 | Survey reuse; INC conviction split bjp_supporter/bjp_lean; in07/in13 spread notes fixed |
+| A-16 | 80.1% | −1.5 | Fresh cohorts; inst_trust 0.83→0.76; in05 spread note — in09/in15/in04 still regressing |
 
-> **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path. The previously reported "RLHF hard ceilings" on in07/in12/in13 were actually caused by this missing differentiation, not RLHF — all three questions jumped 40–62 pp in A-9.
+> **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path.
 
----
+> **Sprint A-13 bug:** `demographic_sampler.py` was never synced with the A-12 pool changes made in `india_population_pool.py`. All A-12/A-13 runs used the old 7 bjp_supporter (18%) pool. The A-12 score of 85.0% was achieved with the wrong pool — A-14 was the first true run at the intended 14 bjp_supporter (35%) composition, revealing a new set of calibration challenges.
 
-## Study 1B Per-Question Results — Sprint A-10
-
-| ID | Topic | A-10 | A-9 | Δ | Classification |
-|----|-------|------|-----|---|----------------|
-| in01 | Democracy satisfaction | 80.6% | 88.1% | −7.5 | ⚠ cohort variance — B overshooting (62% vs Pew 44%) |
-| in02 | Modi approval | 82.3% | 84.8% | −2.5 | minor variance |
-| in03 | BJP approval | 67.9% | 75.4% | −7.5 | ⚠ in03 spread note triggered B overshoot |
-| in04 | INC approval | 81.2% | 83.5% | −2.3 | stable |
-| in05 | India global power | 90.5% | 88.0% | +2.5 | near-ceiling |
-| in06 | Representative democracy | 74.3% | 75.1% | −0.8 | ~flat — 0% C/D persists |
-| **in07** | **Strong leader** | **95.7%** | **95.6%** | **~** | **at ceiling** |
-| in08 | Economic conditions | 79.0% | 88.5% | −9.5 | ⚠ cohort variance — A:15% vs Pew 32% |
-| in09 | Government trust | 87.0% | 83.0% | +4.0 | improving |
-| **in10** | **Future generations** | **97.0%** | **97.0%** | **~** | **at ceiling** |
-| **in11** | **Religion importance** | **94.0%** | **84.0%** | **+10.0** | **urban/secular spread working** |
-| in12 | Wife obedience | 76.0% | 81.0% | −5.0 | minor variance |
-| **in13** | **Gender roles / jobs** | **93.0%** | **75.5%** | **+17.5** | **bjp_lean completely-agree fix** |
-| in14 | Women equal rights | 80.8% | 66.6% | **+14.2** | civic/marital distinction spread effective |
-| in15 | Climate change threat | 89.0% | 84.0% | +5.0 | dev framing working |
-| **MEAN** | | **84.6%** | **83.3%** | **+1.3** | |
+> **A-14→A-16 regression:** Pool rebalance solved A-option floors (in02/in03 +22pp, in12 +12pp) but introduced a D=18% floor from 7 opposition personas on social/authority questions (in07/in12/in13), an in09 A-overshoot (60% vs Pew 42%), and in15/in04 stubborn regressions. Net: −4.9pp vs A-12 baseline. A-17 targets these three structural issues.
 
 ---
 
-## Sprint A-11 Roadmap
+## Study 1B Per-Question Results — Sprint A-16 vs A-12
+
+| ID | Topic | A-16 | A-12 | Δ | A-17 Target |
+|----|-------|------|------|---|-------------|
+| in01 | Democracy satisfaction | 82.0% | 80.6% | +1.4 | stable |
+| in02 | Modi approval | 85.2% | 82.3% | +2.9 | stable |
+| **in03** | **BJP approval** | **89.6%** | **67.9%** | **+21.7** | **at ceiling** |
+| in04 | INC approval | 72.3% | 81.2% | −8.9 | ⚠ D=48% vs Pew 19% — narrative fix |
+| in05 | India global power | 81.0% | 90.5% | −9.5 | ⚠ C=2% vs Pew 19% — spread note |
+| in06 | Representative democracy | 81.4% | 74.3% | +7.1 | improving |
+| in07 | Strong leader | 74.1% | 95.7% | −21.6 | ⚠ D=18% vs Pew 5% — opposition D-floor |
+| in08 | Economic conditions | 76.0% | 79.0% | −3.0 | minor variance |
+| in09 | Government trust | 68.0% | 87.0% | −19.0 | ⚠ A=60% vs Pew 42% — inst_trust 0.76→0.68 |
+| **in10** | **Future generations** | **93.0%** | **97.0%** | **−4.0** | **near-ceiling** |
+| in11 | Religion importance | 84.0% | 94.0% | −10.0 | ⚠ B spread partially working |
+| **in12** | **Wife obedience** | **87.5%** | **76.0%** | **+11.5** | D=18% vs Pew 6% — Muslim D-floor |
+| in13 | Gender roles / jobs | 82.0% | 93.0% | −11.0 | ⚠ D=18% vs Pew 6% — Muslim D-floor |
+| in14 | Women equal rights | 81.0% | 80.8% | +0.2 | stable |
+| in15 | Climate change threat | 64.0% | 89.0% | −25.0 | ⚠ B=65% vs Pew 30% — visceral India evidence |
+| **MEAN** | | **80.1%** | **85.0%** | **−4.9** | |
+
+---
+
+## Sprint A-17 Roadmap
 
 | Priority | Fix | Root cause | Target | Expected gain |
 |----------|-----|-----------|--------|---------------|
-| 1 | **Fix in03 B-overshoot** — in03 spread note pushed B too hard (62% vs Pew 32%); remove or soften in03 spread note, it's counterproductive now that BJP personas have correct stances | in03 | in03 | +8 pp |
-| 2 | **Fix in01/in08 variance** — both show cohort-level B and A undershoots; add spread notes to anchor B-heavy collapse on in01 and A-undershoot on in08 | cohort variance | in01, in08 | +6 pp |
-| 3 | **Fix in06 C/D gap** — 0% C/D (sim) vs 18% (Pew); current spread note insufficient; strengthen framing for skeptics of democratic system | in06 spread | in06 | +5 pp |
-| 4 | **Fix in14 B gap** — 100% A collapse (sim) vs Pew 14% B; add spread note directing educated urban women toward B (somewhat agree) | in14 | in14 | +5 pp |
-| 5 | **Push in02/in12/in13 A option** — all still undershooting Pew A by 10–25 pp | stance anchors | in02, in12, in13 | +5 pp |
+| 1 | **Lower bjp_supporter inst_trust 0.76→0.68** — A-16 in09 A=60% vs Pew 42%; 0.76 still too high | demographic_sampler | in09 | +12 pp |
+| 2 | **in15 visceral India climate evidence** — A-16 B=65% vs Pew 30%; abstract framing fails; rewrite with specific heatwave/flood/cyclone events | spread note | in15 | +15 pp |
+| 3 | **in04 narrative fix** — remove hardcoded "answer very unfavorable" instruction; 14 bjp_supporters all say D = 35% minimum, exceeds Pew 19% | narrative_generator | in04 | +8 pp |
+| 4 | **D=18% floor: in07/in12/in13** — 7 opposition personas over-selecting D; Muslim voters should say A/B on in12/in13 per Islamic values; in07 D only for extremists | spread notes | in07,in12,in13 | +10 pp |
 
 ---
 
