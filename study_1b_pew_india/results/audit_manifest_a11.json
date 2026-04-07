@@ -1,0 +1,290 @@
+{
+  "sprint": "A-11",
+  "run_date": "2026-04-07",
+  "overall_accuracy_pct": 84.8,
+  "a10_overall_pct": 84.6,
+  "delta_from_a10_pp": 0.2,
+  "n_personas": 40,
+  "cohorts_used": [
+    "5198166d",
+    "ac4ba95e"
+  ],
+  "key_findings": [
+    "in04 (INC approval): +5.0pp to 86.2% \u2014 improving",
+    "in02 (Modi approval): +4.6pp to 86.9% \u2014 improving",
+    "in01 (democracy satisfaction): +3.8pp to 84.4% \u2014 spread note partially working",
+    "in03 (BJP approval): +3.0pp to 70.9% \u2014 removing spread note helped; B still overshooting (60% vs Pew 32%)",
+    "PERSISTENT: in03 B=60% vs Pew 32% \u2014 bjp_supporter/lean not going to A (15% sim vs 43% Pew)",
+    "PERSISTENT: in06 C/D=0% vs Pew 18% \u2014 cynical voters not expressing negative view",
+    "PERSISTENT: in08 A=15% vs Pew 32% \u2014 bjp_supporter not reaching 'very good' on economy",
+    "PERSISTENT: in14 B=0% vs Pew 14% \u2014 spread note B-path not working",
+    "PERSISTENT: in12 A=42% vs Pew 64% \u2014 undershooting by 22pp",
+    "DIAGNOSIS: Score plateauing ~84-85%. Remaining gaps are distributional; 40-persona cohort variance amplifies residual errors. Cohort size increase to 80+ would stabilise results."
+  ],
+  "per_question": {
+    "in01": {
+      "accuracy_pct": 84.4,
+      "a10_accuracy_pct": 80.6,
+      "delta_pp": 3.8,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 28.3,
+        "B": 44.4,
+        "C": 11.1,
+        "D": 16.2
+      },
+      "simulated_distribution": {
+        "A": 15.0,
+        "B": 60.0,
+        "C": 10.0,
+        "D": 15.0
+      }
+    },
+    "in02": {
+      "accuracy_pct": 86.9,
+      "a10_accuracy_pct": 82.3,
+      "delta_pp": 4.6,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 55.6,
+        "B": 24.2,
+        "C": 8.1,
+        "D": 12.1
+      },
+      "simulated_distribution": {
+        "A": 42.5,
+        "B": 32.5,
+        "C": 10.0,
+        "D": 15.0
+      }
+    },
+    "in03": {
+      "accuracy_pct": 70.9,
+      "a10_accuracy_pct": 67.9,
+      "delta_pp": 3.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 42.9,
+        "B": 31.6,
+        "C": 11.2,
+        "D": 14.3
+      },
+      "simulated_distribution": {
+        "A": 15.0,
+        "B": 60.0,
+        "C": 10.0,
+        "D": 15.0
+      }
+    },
+    "in04": {
+      "accuracy_pct": 86.2,
+      "a10_accuracy_pct": 81.2,
+      "delta_pp": 5.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 24.0,
+        "B": 38.5,
+        "C": 17.7,
+        "D": 19.8
+      },
+      "simulated_distribution": {
+        "A": 15.0,
+        "B": 42.5,
+        "C": 27.5,
+        "D": 15.0
+      }
+    },
+    "in05": {
+      "accuracy_pct": 91.0,
+      "a10_accuracy_pct": 90.5,
+      "delta_pp": 0.5,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 68.0,
+        "B": 13.0,
+        "C": 19.0
+      },
+      "simulated_distribution": {
+        "A": 75.0,
+        "B": 15.0,
+        "C": 10.0
+      }
+    },
+    "in06": {
+      "accuracy_pct": 71.8,
+      "a10_accuracy_pct": 74.3,
+      "delta_pp": -2.5,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 37.1,
+        "B": 44.3,
+        "C": 8.2,
+        "D": 10.3
+      },
+      "simulated_distribution": {
+        "A": 27.5,
+        "B": 72.5,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in07": {
+      "accuracy_pct": 92.7,
+      "a10_accuracy_pct": 95.7,
+      "delta_pp": -3.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 43.9,
+        "B": 37.8,
+        "C": 8.2,
+        "D": 10.2
+      },
+      "simulated_distribution": {
+        "A": 43.6,
+        "B": 30.8,
+        "C": 10.3,
+        "D": 15.4
+      }
+    },
+    "in08": {
+      "accuracy_pct": 79.0,
+      "a10_accuracy_pct": 79.0,
+      "delta_pp": 0.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 32.0,
+        "B": 56.0,
+        "C": 8.0,
+        "D": 4.0
+      },
+      "simulated_distribution": {
+        "A": 15.0,
+        "B": 70.0,
+        "C": 15.0,
+        "D": 0.0
+      }
+    },
+    "in09": {
+      "accuracy_pct": 83.0,
+      "a10_accuracy_pct": 87.0,
+      "delta_pp": -4.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 41.0,
+        "B": 48.0,
+        "C": 7.0,
+        "D": 4.0
+      },
+      "simulated_distribution": {
+        "A": 42.5,
+        "B": 32.5,
+        "C": 22.5,
+        "D": 2.5
+      }
+    },
+    "in10": {
+      "accuracy_pct": 96.0,
+      "a10_accuracy_pct": 97.0,
+      "delta_pp": -1.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 76.0,
+        "B": 21.0,
+        "C": 3.0
+      },
+      "simulated_distribution": {
+        "A": 75.0,
+        "B": 25.0,
+        "C": 0.0
+      }
+    },
+    "in11": {
+      "accuracy_pct": 89.0,
+      "a10_accuracy_pct": 94.0,
+      "delta_pp": -5.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 84.0,
+        "B": 11.0,
+        "C": 3.0,
+        "D": 2.0
+      },
+      "simulated_distribution": {
+        "A": 95.0,
+        "B": 5.0,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in12": {
+      "accuracy_pct": 78.5,
+      "a10_accuracy_pct": 76.0,
+      "delta_pp": 2.5,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 64.0,
+        "B": 23.0,
+        "C": 7.0,
+        "D": 6.0
+      },
+      "simulated_distribution": {
+        "A": 42.5,
+        "B": 32.5,
+        "C": 10.0,
+        "D": 15.0
+      }
+    },
+    "in13": {
+      "accuracy_pct": 95.0,
+      "a10_accuracy_pct": 93.0,
+      "delta_pp": 2.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 47.0,
+        "B": 33.0,
+        "C": 10.0,
+        "D": 10.0
+      },
+      "simulated_distribution": {
+        "A": 42.5,
+        "B": 32.5,
+        "C": 10.0,
+        "D": 15.0
+      }
+    },
+    "in14": {
+      "accuracy_pct": 80.8,
+      "a10_accuracy_pct": 80.8,
+      "delta_pp": 0.0,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 80.8,
+        "B": 14.1,
+        "C": 3.0,
+        "D": 2.0
+      },
+      "simulated_distribution": {
+        "A": 100.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0
+      }
+    },
+    "in15": {
+      "accuracy_pct": 86.5,
+      "a10_accuracy_pct": 89.0,
+      "delta_pp": -2.5,
+      "n_responses": 40,
+      "pew_distribution": {
+        "A": 62.0,
+        "B": 29.0,
+        "C": 9.0
+      },
+      "simulated_distribution": {
+        "A": 57.5,
+        "B": 42.5,
+        "C": 0.0
+      }
+    }
+  }
+}
