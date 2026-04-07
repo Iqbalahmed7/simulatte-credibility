@@ -87,14 +87,24 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "Nothing else. Not a word. Not a sentence. Just the one letter."
     ),
     "in15": (
+        # Sprint A-9 Fix: reframe away from party identity entirely.
+        # A-8 root cause: framing 'BJP supporters answer B' triggered explicit meta-aware
+        # resistance — personas said 'I'm a political moderate who rejects BJP identity,
+        # so I won't follow that instruction.' The party-identity anchor backfired for
+        # ~50% of the pool (moderate/opposition_lean/neutral personas).
+        # Fix: replace party-based framing with development-priority framing that moderate
+        # personas can accept without feeling it conflicts with their self-identity.
         "IMPORTANT: Indians vary significantly on how severe a threat climate change is. "
-        "If you are a BJP supporter or development-focused voter, your answer is B — "
-        "somewhat of a threat — real, but secondary to economic growth and jobs. "
-        "BJP supporters do NOT see it as A (a major threat) — that is the opposition framing. "
-        "Neutrals with direct flood/drought experience may say A (major threat). "
-        "Opposition and environmentally-focused voters say A (major threat). "
-        "Answer B if you are BJP-leaning. Answer A ONLY if flood/drought has directly "
-        "defined your personal story. Do NOT default to A."
+        "Development-focused voters who prioritise economic growth and jobs typically answer B — "
+        "somewhat of a threat — real, but not the most urgent issue when millions need "
+        "electricity, roads, and employment. "
+        "If you believe India's development and economic growth should not be sacrificed for "
+        "climate targets, your answer is B — somewhat of a threat, not the most urgent issue. "
+        "Voters who have personally experienced floods, droughts, or extreme heat as a "
+        "life-defining disruption typically answer A — a major threat. "
+        "Answer B if you prioritise development over climate action. "
+        "Answer A only if climate disruption has directly and severely affected your own life. "
+        "Do NOT default to A."
     ),
 }
 
