@@ -1,0 +1,44 @@
+{
+  "sprint": "A-15",
+  "date": "2026-04-08",
+  "cohort_ids": [
+    "54237fa5",
+    "5cabf346"
+  ],
+  "generation": "reused (A-15 cohorts generated with new narrative_generator.py)",
+  "mean_accuracy": 81.6,
+  "per_question": {
+    "in01": 85.8,
+    "in02": 85.2,
+    "in03": 91.3,
+    "in04": 70.0,
+    "in05": 83.5,
+    "in06": 81.4,
+    "in07": 82.3,
+    "in08": 82.5,
+    "in09": 63.0,
+    "in10": 93.5,
+    "in11": 84.0,
+    "in12": 87.5,
+    "in13": 92.0,
+    "in14": 80.8,
+    "in15": 61.5
+  },
+  "changes": [
+    "INC conviction split: bjp_supporter\u2192very unfavorable, bjp_lean\u2192somewhat unfavorable",
+    "Climate constraint removed from BJP narrative",
+    "in07 spread note: distinguish completely-agree vs somewhat-agree (bypass elections vs within democracy)",
+    "in09 spread note: rewrite \u2014 B is honest pro-BJP default, A only for total conviction",
+    "in13 spread note: rewrite \u2014 pull bjp_lean toward B (principle with exceptions)",
+    "in04 spread note: calibrate C (bjp_lean) vs D (bjp_supporter identity)",
+    "in15 spread note: flip \u2014 A=62% dominant, B only for anti-climate-action voters",
+    "in11 spread note: reinforce \u2014 target postgrad metro professionals toward B"
+  ],
+  "notes": {
+    "in07": "+10.1pp (72.2%\u219282.3%) \u2014 spread note working",
+    "in13": "+15.0pp (77.0%\u219292.0%) \u2014 spread note working",
+    "in04": "0pp change (70.0%) \u2014 narrative split needs fresh cohorts to verify",
+    "in15": "0pp change (61.5%) \u2014 climate removal needs fresh cohorts to verify",
+    "in09": "+5pp (58%\u219263%) \u2014 A=68% still too high; decide.py tendency_summary competing"
+  }
+}

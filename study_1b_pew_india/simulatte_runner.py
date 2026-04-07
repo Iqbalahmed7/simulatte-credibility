@@ -262,33 +262,41 @@ _SPREAD_QUESTION_NOTES: dict[str, str] = {
         "you don't view Congress with deep hostility. Many BJP-leaning voters honestly say C. "
         "Only say D if opposition to Congress is a CORE IDENTITY — not just a party preference."
     ),
+    # Sprint A-16: strengthen in05 — A-15 shows A-overshoot (A=82% vs Pew 68%, C=2% vs Pew 19%).
+    # Pool rebalance increased bjp_supporters pushing A; need to push C for opposition/secular.
     "in05": (
-        "IMPORTANT: Indians hold genuinely varied views on this depending on political lean. "
-        "BJP supporters and nationalists see India's global influence as clearly 'getting stronger'. "
-        "Opposition supporters and skeptics see it as 'staying about the same'. "
-        "Strong critics see it 'getting weaker' due to polarisation. "
-        "Answer based on YOUR specific political perspective — do NOT default to the majority view."
+        "IMPORTANT: Indians hold genuinely varied views on India's global influence. "
+        "Pew data: 68% 'getting stronger' (A), 13% 'staying about the same' (B), 19% 'getting weaker' (C). "
+        "BJP supporters and nationalists: 'getting stronger' (A) — India's global power is rising. "
+        "Swing/neutral voters: 'staying about the same' (B) — incremental progress, not decisive rise. "
+        "Opposition supporters, secular voters, and those concerned about India's international "
+        "reputation due to polarisation, democratic backsliding, or minority rights issues: "
+        "'getting weaker' (C) — India's soft power and moral authority are declining. "
+        "19% of Indians say C — this is a significant minority. "
+        "If you are critical of the current government's impact on India's international image, "
+        "or concerned about how India is perceived globally due to domestic issues, "
+        "your honest answer is C — not A or B."
     ),
-    # Sprint A-15: rewrite in09 — A-14 caused A-overshoot (A=68% vs Pew A=42%, B=50%).
-    # Root cause: old note said "people who voted for this government trust it A LOT" — directly
-    # pushing all bjp_supporter/lean to A. Reality: Pew shows B (somewhat a lot) is the MODAL
-    # answer even among pro-BJP Indians. Even committed supporters acknowledge bureaucratic
-    # inefficiency, corruption at lower levels, and policy gaps. "A lot" is for total conviction.
+    # Sprint A-16: rewrite in09 again — A-15 still A=68% (Pew A=42%, B=50%).
+    # Root cause: "zero reservations" framing doesn't work — all bjp_supporters think they qualify.
+    # Fix: explicit persona-type mapping so bjp_lean and neutral KNOW they should say B.
+    # Also: demographic_sampler institutional_trust lowered 0.83→0.76 for fresh cohorts.
     "in09": (
-        "IMPORTANT: In Indian survey data, 'somewhat a lot of trust' (B) is the modal answer "
-        "even among pro-BJP voters — not 'a lot'. Pew data: 42% say 'a lot' (A), 50% say "
-        "'somewhat a lot' (B). "
-        "Even committed BJP supporters typically say 'somewhat a lot' — they trust the "
-        "government's direction and leadership while acknowledging that implementation is "
-        "imperfect, lower-level corruption persists, and government doesn't always deliver. "
-        "This is not weak support — it is accurate self-reporting. "
-        "'A lot' (A) is for those with COMPLETE, unconditional trust — the most ideologically "
-        "committed bjp_supporter personas who have zero reservations. "
-        "'Somewhat a lot' (B) is the honest answer for BJP-leaning voters who broadly trust "
-        "the government but acknowledge it is not perfect in practice. "
-        "Opposition voters say 'not much' (C) or 'not at all' (D). "
-        "Do NOT default to A if you have any reservations about government delivery — "
-        "B is the accurate, majority answer for pro-government voters."
+        "IMPORTANT: Pew data for India: 42% say 'a lot' of trust in government (A), "
+        "50% say 'somewhat a lot' (B), 6% 'not much' (C), 2% 'not at all' (D). "
+        "Here is who says what honestly: "
+        "A — 'A lot': Only the most ideologically committed BJP supporters — those who "
+        "feel the government has no meaningful failures, who see governance as fully on track, "
+        "and who have NO reservations about implementation, corruption, or delivery. "
+        "B — 'Somewhat a lot': BJP-leaning voters who support the government's direction "
+        "but know that real-world delivery is imperfect — local corruption exists, "
+        "bureaucracy is slow, not every scheme reaches everyone. THIS IS THE HONEST ANSWER "
+        "for most pro-government voters, including bjp_lean, neutral-leaning-BJP, and "
+        "even many committed bjp_supporters. "
+        "C — 'Not much': Swing voters, skeptics, opposition-leaning. "
+        "D — 'Not at all': Strong opposition voters. "
+        "Ask yourself honestly: does the government ALWAYS deliver? Never fails in implementation? "
+        "If you can name even ONE way the government falls short in practice — answer B, not A."
     ),
     # Sprint A-15: rewrite in13 — A-14 caused A-overshoot (A=68% vs Pew A=48%, B=35%).
     # Root cause: pool rebalance (14 bjp_supporter) + bjp_lean "completely agree" stance = 22/40
