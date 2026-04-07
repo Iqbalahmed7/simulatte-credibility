@@ -1,0 +1,83 @@
+{
+  "study_id": "study_1b_pew_india",
+  "sprint": "A-4",
+  "generated_at": "2026-04-06T00:00:00Z",
+  "git_commit_credibility": "acc0a4d",
+  "git_commit_persona_generator": "057f5bb",
+  "git_repo": "https://github.com/Iqbalahmed7/simulatte-credibility",
+  "cohort_ids": ["cb5d0a16", "42c91604"],
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 49.2,
+    "mean_mae_pct_points": 26.3,
+    "n_personas": 40,
+    "n_questions": 15,
+    "n_total_responses": 600
+  },
+  "sprint_progression": {
+    "a1": 46.2, "a2": 45.9, "a3": 50.3, "a4": 49.2,
+    "total_gain_from_a1_pp": 3.0,
+    "note": "Flat vs A-3. preamble fix recovered in08 (+17.5pp) but other questions regressed on this cohort."
+  },
+  "confirmed_wins": {
+    "in08_preamble_fix_confirmed": {
+      "a3_pct": 23.0, "a4_pct": 40.5, "delta_pp": 17.5,
+      "mechanism": "Removing economic hardship language from preamble reduced preamble-vs-stance conflict. B responses recovering (32.5% vs 15% in A-3). Still 0% A — extreme-option avoidance persists."
+    },
+    "in10_future_generations": {
+      "a4_pct": 91.3, "note": "Best result yet — at human ceiling. A=70%, B=30% vs Pew 76%/21%."
+    }
+  },
+  "new_root_cause_identified": {
+    "finding": "POLITICAL APPROVAL CONFLATED WITH PERSONAL ECONOMICS",
+    "evidence": "Sample responses from bjp_lean/bjp_supporter personas show explicit cross-contamination: 'I can't say very favorable when I'm struggling with bills every month.' (in02) and 'I can't say very good when I see the economic pressures on ordinary families.' (in08). Sonnet generates BJP-leaning personas with lower income brackets (Ram Prasad, Poonam, Savitri, Raju, Priya Sharma, Ramnarayan — all bjp_supporter/lean with lower income). Their financial hardship narrative bleeds into EVERY political question, preventing A responses.",
+    "pool_composition": {
+      "bjp_supporter": 7,
+      "bjp_lean": 7,
+      "neutral": 13,
+      "opposition_lean": 7,
+      "opposition": 6,
+      "total": 40,
+      "bjp_with_lower_income": "~6 of 14 BJP personas have lower income bracket",
+      "implication": "Even if all 14 BJP personas chose A for Modi, that is only 35% — vs Pew 56% A. Pool needs more BJP representation AND financial hardship must not contaminate political approval."
+    },
+    "fix": "Add explicit decoupling statement to bjp_supporter/bjp_lean stances: 'Your support for Modi and BJP reflects national pride and Hindu identity — NOT your personal financial situation. Indian BJP supporters across all income levels express very favorable views of Modi. Your household economics and your political views are SEPARATE.'"
+  },
+  "rlhf_plateau_confirmed": {
+    "in07": {"a3": 18.4, "a4": 18.4, "conclusion": "Plateau at C=87%, A/B=0%. Embedded cultural context in stance did not push A/B. RLHF ceiling confirmed for this specific framing."},
+    "in12": {"a3": 30.0, "a4": 30.0, "conclusion": "Plateau at B=34%, A=0%. NOT-JUST 'completely agree' not firing. RLHF ceiling for A confirmed."},
+    "in13": {"a3": 29.4, "a4": 17.1, "conclusion": "Regression due to parse failure (only 28/40 parseable) + cohort variance. B went from 13% → 3.6%."}
+  },
+  "structural_gaps_identified": {
+    "in05_in06_in09_in15": "All stuck at 100% of one option. Distribution shape problem — all personas agree on the modal answer but Pew shows 13-32% choosing other options. Needs option-spread anchoring in A-5.",
+    "in02_in03_pool_imbalance": "14/40 BJP personas (35%) insufficient to reach Pew's 56% 'very favorable' Modi. Even perfect A-rate from all BJP personas gives 35% — 21 pp below Pew target."
+  },
+  "per_question_results": [
+    {"question_id": "in01", "topic": "democracy_satisfaction",   "distribution_accuracy_pct": 55.6, "mae_pct_points": 22.2, "delta_vs_a3_pp":  0.0,  "sim": {"A":0,"B":87,"C":14,"D":0},    "pew": {"A":28,"B":44,"C":11,"D":16}, "classification": "stable"},
+    {"question_id": "in02", "topic": "modi_approval",            "distribution_accuracy_pct": 29.5, "mae_pct_points": 35.2, "delta_vs_a3_pp": -2.8,  "sim": {"A":0,"B":95,"C":5,"D":0},     "pew": {"A":56,"B":24,"C":8,"D":12},  "classification": "stuck_economics_contamination"},
+    {"question_id": "in03", "topic": "bjp_approval",             "distribution_accuracy_pct": 42.9, "mae_pct_points": 28.6, "delta_vs_a3_pp": -2.5,  "sim": {"A":0,"B":56,"C":44,"D":0},    "pew": {"A":43,"B":32,"C":11,"D":14}, "classification": "variance"},
+    {"question_id": "in04", "topic": "inc_approval",             "distribution_accuracy_pct": 22.7, "mae_pct_points": 38.6, "delta_vs_a3_pp": -10.0, "sim": {"A":0,"B":5,"C":95,"D":0},     "pew": {"A":24,"B":38,"C":18,"D":20}, "classification": "stuck"},
+    {"question_id": "in05", "topic": "india_global_power",       "distribution_accuracy_pct": 68.0, "mae_pct_points": 21.3, "delta_vs_a3_pp":  0.0,  "sim": {"A":100,"B":0,"C":0},          "pew": {"A":68,"B":13,"C":19},        "classification": "structural_spread_gap"},
+    {"question_id": "in06", "topic": "representative_democracy", "distribution_accuracy_pct": 47.7, "mae_pct_points": 26.2, "delta_vs_a3_pp": -4.1,  "sim": {"A":3,"B":97,"C":0,"D":0},     "pew": {"A":37,"B":44,"C":8,"D":10},  "classification": "structural_spread_gap"},
+    {"question_id": "in07", "topic": "strong_leader",            "distribution_accuracy_pct": 18.4, "mae_pct_points": 40.8, "delta_vs_a3_pp":  0.0,  "sim": {"A":0,"B":0,"C":87,"D":13},    "pew": {"A":44,"B":38,"C":8,"D":10},  "classification": "rlhf_plateau"},
+    {"question_id": "in08", "topic": "economic_conditions",      "distribution_accuracy_pct": 40.5, "mae_pct_points": 29.8, "delta_vs_a3_pp": 17.5,  "sim": {"A":0,"B":33,"C":68,"D":0},    "pew": {"A":32,"B":56,"C":8,"D":4},   "classification": "improving"},
+    {"question_id": "in09", "topic": "government_trust",         "distribution_accuracy_pct": 48.0, "mae_pct_points": 26.0, "delta_vs_a3_pp":  0.0,  "sim": {"A":0,"B":100,"C":0,"D":0},    "pew": {"A":41,"B":48,"C":7,"D":4},   "classification": "structural_spread_gap"},
+    {"question_id": "in10", "topic": "future_generations",       "distribution_accuracy_pct": 91.3, "mae_pct_points":  5.8, "delta_vs_a3_pp":  5.3,  "sim": {"A":70,"B":30,"C":0},          "pew": {"A":76,"B":21,"C":3},         "classification": "at_ceiling"},
+    {"question_id": "in11", "topic": "religion_importance",      "distribution_accuracy_pct": 84.0, "mae_pct_points":  8.0, "delta_vs_a3_pp": -7.5,  "sim": {"A":100,"B":0,"C":0,"D":0},    "pew": {"A":84,"B":11,"C":3,"D":2},   "classification": "variance"},
+    {"question_id": "in12", "topic": "wife_obedience",           "distribution_accuracy_pct": 30.0, "mae_pct_points": 35.0, "delta_vs_a3_pp":  0.0,  "sim": {"A":0,"B":34,"C":66,"D":0},    "pew": {"A":64,"B":23,"C":7,"D":6},   "classification": "rlhf_plateau"},
+    {"question_id": "in13", "topic": "gender_jobs",              "distribution_accuracy_pct": 17.1, "mae_pct_points": 41.4, "delta_vs_a3_pp":-12.3,  "sim": {"A":0,"B":4,"C":93,"D":4},     "pew": {"A":47,"B":33,"C":10,"D":10}, "classification": "rlhf_regression"},
+    {"question_id": "in14", "topic": "women_equal_rights",       "distribution_accuracy_pct": 80.8, "mae_pct_points":  9.6, "delta_vs_a3_pp":  0.0,  "sim": {"A":100,"B":0,"C":0,"D":0},    "pew": {"A":81,"B":14,"C":3,"D":2},   "classification": "unchanged"},
+    {"question_id": "in15", "topic": "climate_change_threat",    "distribution_accuracy_pct": 62.0, "mae_pct_points": 25.3, "delta_vs_a3_pp":  0.0,  "sim": {"A":100,"B":0,"C":0},          "pew": {"A":62,"B":29,"C":9},         "classification": "structural_spread_gap"}
+  ],
+  "sprint_roadmap": {
+    "A-5_priority_1": "Decouple political approval from personal economics. Add explicit statement to bjp_supporter/bjp_lean ALL stances: 'Your BJP/Modi support reflects national pride and Hindu identity — NOT your personal financial situation. BJP supporters across all income levels express very favorable views. Household economics and political support are SEPARATE.' This directly addresses the 'I can't say very favorable when struggling with bills' response pattern.",
+    "A-5_priority_2": "Distribution spread for in05/in09/in15 (stuck at 100% single option). Add option-spread anchors: not all personas should agree that India is getting stronger, not all should say 'somewhat' on government trust, not all say 'major threat' on climate.",
+    "A-5_priority_3": "in04 INC approval: opposition personas must choose A/B (INC favorable), bjp_supporter must choose D. Currently 0% A and 0% D — everyone is choosing C.",
+    "A-5_longer_term": "Formally evaluate Sarvam as alternative survey model for in07/in12/in13. RLHF prompt engineering has plateaued for these three questions."
+  },
+  "metric_formula": "distribution_accuracy = 1 - (sum(|real_i - sim_i|)) / 2",
+  "survey_model": "claude-haiku-4-5-20251001",
+  "generation_model": "claude-sonnet-4-6",
+  "persona_pool": "india_general — 40 profiles",
+  "cohorts_run": 2,
+  "personas_surveyed": 40
+}
