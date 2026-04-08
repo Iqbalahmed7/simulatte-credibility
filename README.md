@@ -33,7 +33,7 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | A-19 | 82.3% | −1.1 | in09 institutional trust framing +5pp; in13 widow-example caused B=70% flip −21pp |
 | **A-20** | **83.8%** | **+1.5** | **in13 rebalanced; session best. Structural ceiling: in09/in07 pool-composition limited** |
 | A-21 | 83.1% | −0.7 | bjp_lean democratic narrative (in13 +5pp); in09/in08 sampling variance regression |
-| A-22 | — | — | **Pool recomposition: opposition_lean 6→3 (Birsa Munda/Ramesh Chamar/Thomas Mathew→neutral); in11 note rewrite** |
+| **A-22** | **85.3%** | **+2.2** | **Pool recomposition opposition_lean 6→3 (in09 +7.5pp); in11 note rewrite (in11 +5pp). New best — 85%+ achieved** |
 
 > **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path.
 
@@ -43,40 +43,41 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 
 ---
 
-## Study 1B Per-Question Results — Sprint A-16 vs A-12
+## Study 1B Per-Question Results — A-22 vs A-12
 
-| ID | Topic | A-16 | A-12 | Δ | A-17 Target |
-|----|-------|------|------|---|-------------|
-| in01 | Democracy satisfaction | 82.0% | 80.6% | +1.4 | stable |
-| in02 | Modi approval | 85.2% | 82.3% | +2.9 | stable |
-| **in03** | **BJP approval** | **89.6%** | **67.9%** | **+21.7** | **at ceiling** |
-| in04 | INC approval | 72.3% | 81.2% | −8.9 | ⚠ D=48% vs Pew 19% — narrative fix |
-| in05 | India global power | 81.0% | 90.5% | −9.5 | ⚠ C=2% vs Pew 19% — spread note |
-| in06 | Representative democracy | 81.4% | 74.3% | +7.1 | improving |
-| in07 | Strong leader | 74.1% | 95.7% | −21.6 | ⚠ D=18% vs Pew 5% — opposition D-floor |
-| in08 | Economic conditions | 76.0% | 79.0% | −3.0 | minor variance |
-| in09 | Government trust | 68.0% | 87.0% | −19.0 | ⚠ A=60% vs Pew 42% — inst_trust 0.76→0.68 |
-| **in10** | **Future generations** | **93.0%** | **97.0%** | **−4.0** | **near-ceiling** |
-| in11 | Religion importance | 84.0% | 94.0% | −10.0 | ⚠ B spread partially working |
-| **in12** | **Wife obedience** | **87.5%** | **76.0%** | **+11.5** | D=18% vs Pew 6% — Muslim D-floor |
-| in13 | Gender roles / jobs | 82.0% | 93.0% | −11.0 | ⚠ D=18% vs Pew 6% — Muslim D-floor |
-| in14 | Women equal rights | 81.0% | 80.8% | +0.2 | stable |
-| in15 | Climate change threat | 64.0% | 89.0% | −25.0 | ⚠ B=65% vs Pew 30% — visceral India evidence |
-| **MEAN** | | **80.1%** | **85.0%** | **−4.9** | |
+| ID | Topic | A-22 | A-12 | Δ vs A-12 | Status |
+|----|-------|------|------|-----------|--------|
+| in01 | Democracy satisfaction | 88.3% | 80.6% | +7.7 | ✓ strong |
+| in02 | Modi approval | 90.2% | 82.3% | +7.9 | ✓ strong |
+| **in03** | **BJP approval** | **91.6%** | **67.9%** | **+23.7** | **✓ near-ceiling** |
+| in04 | INC approval | 72.5% | 81.2% | −8.7 | ⚠ D=40% vs Pew 20% — structural bjp_supporter floor |
+| in05 | India global power | 81.0% | 90.5% | −9.5 | ⚠ C=0% vs Pew 19% — RLHF ceiling |
+| in06 | Representative democracy | 81.4% | 74.3% | +7.1 | ⚠ C/D=0% vs Pew 18% — RLHF ceiling |
+| in07 | Strong leader | 79.1% | 95.7% | −16.6 | ⚠ A=62.5% vs Pew 44% — structural pro-BJP floor |
+| in08 | Economic conditions | 87.5% | 79.0% | +8.5 | ✓ strong |
+| **in09** | **Government trust** | **70.5%** | **87.0%** | **−16.5** | ⚠ A=65% vs Pew 42%; C=12.5% vs Pew 7% — structural |
+| **in10** | **Future generations** | **93.5%** | **97.0%** | **−3.5** | **✓ near-ceiling** |
+| **in11** | **Religion importance** | **91.5%** | **94.0%** | **−2.5** | **✓ B=7.5% (A-22 note fix)** |
+| **in12** | **Wife obedience** | **92.5%** | **76.0%** | **+16.5** | **✓ near-ceiling** |
+| in13 | Gender roles / jobs | 89.5% | 93.0% | −3.5 | ✓ strong |
+| in14 | Women equal rights | 80.8% | 80.8% | 0.0 | ⚠ A=100% vs Pew 81% — RLHF ceiling |
+| in15 | Climate change threat | 89.0% | 89.0% | 0.0 | ✓ strong |
+| **MEAN** | | **85.3%** | **85.0%** | **+0.3** | **✓ 85%+ achieved** |
 
 ---
 
-## Remaining Gaps — Post A-21
+## Remaining Gaps — Post A-22
 
-| Question | A-21 | Pew | Root cause | Fixable? |
+| Question | A-22 | Gap | Root cause | Fixable? |
 |----------|------|-----|-----------|----------|
-| in09 | 63% | — | A=68% vs Pew 42%; C=18% vs Pew 7%. 13 opposition personas (32%) say C, Pew shows only 7%. Structural minimum C=32.5%. | Only with pool recomposition (fewer opposition) |
-| in07 | 77% | — | A=62% vs Pew 44%; B=15% vs Pew 44%. 23 pro-BJP personas (57%) create near-majority A. bjp_lean democratic narrative helped in13 but not in07. | Only with narrative-level intervention at generation |
-| in04 | 70% | — | D=35% vs Pew 20%. 14 bjp_supporters × ~80% D rate. Structural minimum D≈28%. | Only with bjp_supporter pool reduction |
-| in05/in06 | 81% | — | C/D=0% vs Pew 18-19%. Likely RLHF constitutional alignment ceiling. | Possibly not fixable |
-| in11 | 87% | — | A=98% vs Pew 84%. B spread note not working. | Minor nudge possible |
+| in09 | 70.5% | −14.5pp | A=65% vs Pew 42% (bjp_supporter A-floor); C=12.5% vs 7% (7 opposition C-floor). Structural minimum C=17.5% from 7 opposition personas. | Only by reducing opposition pool (risks in02/in03) or narrative-level institutional trust framing |
+| in07 | 79.1% | −10.9pp | A=62.5% vs Pew 44%. 14 bjp_supporters drive near-majority A. Democratic narrative helped in13/in12 but not in07. | Narrative-level intervention at generation time — in07-specific identity framing |
+| in04 | 72.5% | −11.5pp | D=40% vs Pew 20%. 14 bjp_supporters with strong INC conviction. Structural D-minimum ~30-35%. | Only by softening bjp_supporter INC narrative further — low headroom |
+| in05 | 81.0% | −9pp | C=0% vs Pew 19%. RLHF constitutional alignment ceiling. | Likely not fixable |
+| in06 | 81.4% | −9pp | C/D=0% vs Pew 18%. RLHF ceiling. | Likely not fixable |
+| in14 | 80.8% | −3pp | A=100% vs Pew 81%. RLHF ceiling. | Likely not fixable |
 
-**Session trajectory (A-14→A-21):** Pool rebalance solved in02/in03/in12 A-floors (+25-40pp each) but created in07/in09 regressions. Net: approximately neutral vs A-12. A-18's in15 breakthrough (+25pp) via conceptual reframing is the methodological highlight. Practical ceiling with current pool: **~84%**. Breaking through would require pool recomposition to reduce opposition lean count (in09 fix).
+**A-22 result:** Pool recomposition (opposition_lean 6→3) confirmed effective — in09 +7.5pp, demonstrating that Birsa Munda/Ramesh Chamar/Thomas Mathew were genuine C-contributors, not being redirected by the spread note as assumed. In11 behavioral note rewrite confirmed effective (+5pp). **85.3% — study 1B best. Gap to Study 1A (86.1%): 0.8pp. Gap to human ceiling (91%): 5.7pp.**
 
 ---
 
