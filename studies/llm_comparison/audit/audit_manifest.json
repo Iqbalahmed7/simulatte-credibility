@@ -1,0 +1,27 @@
+{
+  "study": "llm_comparison_india_pew",
+  "generated_at": "2026-04-08T05:52:10.245932+00:00",
+  "run_ids": {
+    "llm-india-20260407-213325-677319f7": 4200,
+    "llm-india-20260407-221604-f2a991f1": 1678
+  },
+  "total_entries": 5878,
+  "models_covered": [
+    "naive-gemini25flash",
+    "naive-gemini25pro",
+    "naive-gemini3flash",
+    "naive-gemini3pro",
+    "naive-gpt4o",
+    "naive-gpt4omini",
+    "naive-gpt5",
+    "naive-gpt5mini",
+    "naive-haiku-4-51001",
+    "naive-sonnet-4-6"
+  ],
+  "root_hash": "sha256:a76aa717a0971961220f314451fe23ac623bf01cb8ca790f39a6ad5ed273d3f0",
+  "files": {
+    "stripped_audit": "stripped_audit.jsonl",
+    "verifier": "verify.py"
+  },
+  "verification_note": "stripped_audit.jsonl contains prompt_hash and response_hash for every API call. Full prompts are withheld (persona pool is proprietary) but are available under NDA for independent replication. Run verify.py to confirm root_hash integrity."
+}

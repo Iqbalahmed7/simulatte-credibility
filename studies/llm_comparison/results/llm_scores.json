@@ -1,0 +1,67 @@
+{
+  "run_id": "llm-india-20260407-220803-7879026e",
+  "generated_at": "2026-04-07T22:08:15.156188+00:00",
+  "ground_truth": null,
+  "models": [
+    {
+      "model_id": "naive-sonnet-4-6",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-haiku-4-51001",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gpt4o",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gpt4omini",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gemini25flash",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gemini3flash",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gemini3pro",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "simulatte-deep",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gpt5",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    },
+    {
+      "model_id": "naive-gpt5mini",
+      "distribution_accuracy": null,
+      "questions_scored": null,
+      "per_question_accuracy": null
+    }
+  ]
+}
