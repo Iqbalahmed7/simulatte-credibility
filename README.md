@@ -34,6 +34,7 @@ Replicating 15 Pew Research Center India survey questions against a 40-persona s
 | **A-20** | **83.8%** | **+1.5** | **in13 rebalanced; session best. Structural ceiling: in09/in07 pool-composition limited** |
 | A-21 | 83.1% | −0.7 | bjp_lean democratic narrative (in13 +5pp); in09/in08 sampling variance regression |
 | **A-22** | **85.3%** | **+2.2** | **Pool recomposition opposition_lean 6→3 (in09 +7.5pp); in11 note rewrite (in11 +5pp). New best — 85%+ achieved** |
+| A-23 | 85.3% | 0.0 | bjp_supporter democratic-mandate framing — in07 flat (+0.4pp); in03 −10pp identity bleed. REVERTED. |
 
 > **Sprint A-9 breakthrough:** +29.9 pp in a single sprint — the largest gain in the program. Root cause discovered: `_ARCHETYPE_TO_LEAN` in `attribute_filler.py` did not include India archetypes, causing ALL India personas to have `political_lean="moderate"` in their attributes dict. Every political lean gate, stance field, and narrative constraint was silently returning neutral values across A-1→A-8. The `_get_political_lean()` fix reads directly from `demographic_anchor.worldview.political_profile.archetype` for India personas, bypassing the broken attribute path.
 

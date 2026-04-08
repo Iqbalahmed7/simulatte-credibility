@@ -1,0 +1,63 @@
+{
+  "sprint": "A-23",
+  "date": "2026-04-08",
+  "cohort_ids": ["d65d50d7", "74db8caa"],
+  "generation": "fresh (narrative_generator.py change requires new personas)",
+  "mean_accuracy": 85.3,
+  "per_question": {
+    "in01": 87.7,
+    "in02": 88.6,
+    "in03": 81.6,
+    "in04": 72.5,
+    "in05": 81.0,
+    "in06": 76.8,
+    "in07": 79.5,
+    "in08": 92.0,
+    "in09": 73.0,
+    "in10": 91.4,
+    "in11": 95.0,
+    "in12": 96.0,
+    "in13": 92.0,
+    "in14": 80.8,
+    "in15": 91.0
+  },
+  "simulated_distributions": {
+    "in01": {"A": 35.0, "B": 50.0, "C": 10.0, "D": 5.0},
+    "in02": {"A": 65.0, "B": 20.0, "C": 10.0, "D": 5.0},
+    "in03": {"A": 35.0, "B": 50.0, "C": 10.0, "D": 5.0},
+    "in04": {"A": 5.0, "B": 30.0, "C": 30.0, "D": 35.0},
+    "in05": {"A": 85.0, "B": 15.0, "C": 0.0},
+    "in06": {"A": 32.5, "B": 67.5, "C": 0.0, "D": 0.0},
+    "in07": {"A": 62.5, "B": 22.5, "C": 10.0, "D": 5.0},
+    "in08": {"A": 40.0, "B": 55.0, "C": 5.0, "D": 0.0},
+    "in09": {"A": 65.0, "B": 25.0, "C": 10.0, "D": 0.0},
+    "in10": {"A": 84.6, "B": 15.4, "C": 0.0},
+    "in11": {"A": 85.0, "B": 15.0, "C": 0.0, "D": 0.0},
+    "in12": {"A": 65.0, "B": 20.0, "C": 10.0, "D": 5.0},
+    "in13": {"A": 55.0, "B": 30.0, "C": 10.0, "D": 5.0},
+    "in14": {"A": 100.0, "B": 0.0, "C": 0.0, "D": 0.0},
+    "in15": {"A": 62.5, "B": 37.5, "C": 0.0}
+  },
+  "changes": [
+    "narrative_generator.py: bjp_supporter — added democratic-mandate framing",
+    "  'strength through democratic victory, not strength despite democracy'",
+    "  'wants a powerful leader who wins elections — not one who bypasses them'"
+  ],
+  "failures": {
+    "in07_FLAT": "A=62.5% unchanged vs A-22. Democratic framing had zero effect on in07. bjp_supporters interpret 'strong leader bypassing parliament = very good' as an abstract governance preference, independent of their own democratic identity. They distinguish between their personal values (elections good) and their policy preference (strong non-democratic governance also desirable in principle).",
+    "in03_REGRESSION": "−10pp (91.6%→81.6%). Democratic framing caused identity bleed: bjp_supporters became more measured and qualified overall, shifting from A to B on BJP approval. A=35% vs A-22's 42.5%. The framing made them sound less committed to BJP as a political home.",
+    "in06_REGRESSION": "−4.6pp (81.4%→76.8%). B-modal pull from democratic framing — all personas saying 'somewhat good' (B) rather than mixing A/B on representative democracy."
+  },
+  "wins": {
+    "in11": "+3.5pp (91.5%→95.0%) — behavioral note continuing to compound. B=15% (Pew=11%) — slightly over but directionally excellent.",
+    "in12": "+3.5pp (92.5%→96.0%) — A=65% B=20% near-perfect vs Pew A=64% B=23%.",
+    "in08": "+4.5pp sampling variance positive."
+  },
+  "verdict": "REVERTED. in07 is confirmed as a structural RLHF floor, not fixable via narrative framing. bjp_supporters hold 'strong non-democratic leader = good' as an abstract political theory preference that coexists with valuing elections personally. Any framing that tries to bridge this creates identity bleed into other BJP-approval questions. A-22 pool + spreads locked as baseline.",
+  "analysis": {
+    "mean_delta": "0.0pp from A-22 (gains and losses cancel). Mean remains 85.3%.",
+    "in07_diagnosis": "A=62.5% is structural. 14 bjp_supporters (35%) + some bjp_lean treat 'strong leader bypassing elections' as abstractly desirable governance. No narrative framing can fix this without broader BJP-identity softening (which then regresses in02/in03).",
+    "in11_win": "A=85% B=15% — behavioral note is now near-optimal. Pew A=84% B=11%. Slight B-overshoot but high accuracy (95%).",
+    "next_steps": "No further in07 interventions planned. in09 structural A-overshoot (A=65% vs 42%) remains. In09 improvement from A-22 pool change is stable at ~70-73%. Focus shifts to documenting program ceiling and preparing final report."
+  }
+}
