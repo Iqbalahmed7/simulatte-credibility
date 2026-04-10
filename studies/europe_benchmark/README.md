@@ -10,23 +10,23 @@ Part of the [Simulatte Credibility Research Program](../../README.md). Ground tr
 
 ## Results
 
-| Country | N (Pew 2024) | Final Sprint | DA (mean ± SD) | vs. ceiling |
-|---------|-------------|--------------|----------------|-------------|
-| Spain | 1,013 | SP-5 | **94.5%** ± 0.05pp | +3.5pp |
-| Greece | 1,015 | GR-4 | **94.2%** ± 0.00pp | +3.2pp |
-| Sweden | 1,017 | SW-5 | **93.8%** ± 0.00pp | +2.8pp |
-| Netherlands | 1,010 | NL-4 | **92.1%** ± 0.00pp | +1.1pp |
-| Hungary | 996 | HU-4 | **92.2%** ± 0.00pp | +1.2pp |
-| Poland | 1,031 | PL-5 | **92.2%** ± 0.00pp | +1.2pp |
-| France | 1,018 | FR-4 | **92.0%** ± 0.00pp | +1.0pp |
-| UK | 1,017 | UK-5c | **91.8%** ± 0.09pp | +0.8pp |
-| Italy | 1,120 | IT-4 | **90.9%** ± 0.19pp | −0.1pp † |
+| Country | N (Pew 2024) | Final Sprint | Calibrated DA (mean ± SD) | Holdout DA (mean ± SD) |
+|---------|-------------|--------------|--------------------------|------------------------|
+| Spain | 1,013 | SP-5 | **94.5%** ± 0.05pp | 71.5% ± 1.63pp |
+| Greece | 1,015 | GR-4 | **94.2%** ± 0.00pp | 78.6% ± 0.94pp |
+| Sweden | 1,017 | SW-5 | **93.8%** ± 0.00pp | 62.5% ± 0.34pp |
+| Hungary | 996 | HU-4 | **92.2%** ± 0.00pp | 76.7% ± 1.00pp |
+| Poland | 1,031 | PL-5 | **92.2%** ± 0.00pp | 75.0% ± 1.64pp |
+| Netherlands | 1,010 | NL-4 | **92.1%** ± 0.00pp | 69.4% ± 0.77pp |
+| France | 1,018 | FR-4 | **92.0%** ± 0.00pp | 81.2% ± 1.26pp |
+| UK | 1,017 | UK-5c | **91.8%** ± 0.09pp | **78.3%** ± 0.84pp |
+| Italy | 1,120 | IT-4 | **90.9%** ± 0.19pp † | 77.2% ± 0.57pp |
 
-Human ceiling benchmark: **91%** (Iyengar et al., Stanford 2023 — human panel-to-panel replication). 8 of 9 countries exceed the ceiling; Italy is within 1 SD of it.
+Human ceiling benchmark: **91%** (Iyengar et al., Stanford 2023). 8 of 9 countries exceed the ceiling; Italy is within 1 SD of it.
 
 † Italy mean 90.93% is within measurement noise of the 91% ceiling (SD = 0.19pp).
 
-**UK holdout** (zero topic anchors, pure WorldviewAnchor): **78.3%** ± 0.8pp across 3 independent runs on unseen questions.
+**Holdout protocol**: 5 unseen questions per country, zero topic-specific anchors, pure WorldviewAnchor architecture. 3 independent runs each. Holdout questions designated before any calibration run. Mean cross-country holdout DA: **74.4%**.
 
 ---
 
