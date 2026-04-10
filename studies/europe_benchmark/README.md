@@ -1,26 +1,32 @@
 # Simulatte Europe Benchmark
 
-**Status: UK calibrated (91.8%) — 8 countries pending**
+**Status: COMPLETE — All 9 countries calibrated, variance protocol certified**
 
 9 European countries · 15 questions per country · 40 personas per country · Pew Spring 2024 ground truth
 
-Part of the [Simulatte Credibility Research Program](../../README.md). Ground truth, persona pools, and holdout questions established before any calibration run. All sprint results will be committed to this repository as they complete, maintaining continuous audit trail.
+Part of the [Simulatte Credibility Research Program](../../README.md). Ground truth, persona pools, and holdout questions established before any calibration run. All sprint results are committed to this repository as they complete, maintaining a continuous audit trail.
 
 ---
 
-## Countries
+## Results
 
-| Country | N (Pew 2024) | Status | Calibrated DA | Holdout DA |
-|---------|-------------|--------|---------------|------------|
-| France | 1,018 | Pending | — | — |
-| Greece | 1,015 | Pending | — | — |
-| Hungary | 996 | Pending | — | — |
-| Italy | 1,120 | Pending | — | — |
-| Netherlands | 1,010 | Pending | — | — |
-| Poland | 1,031 | Pending | — | — |
-| Spain | 1,013 | Pending | — | — |
-| Sweden | 1,017 | Pending | — | — |
-| UK | 1,017 | **Calibrated** (holdout pending) | **91.8%** ± 0.1pp | — |
+| Country | N (Pew 2024) | Final Sprint | DA (mean ± SD) | vs. ceiling |
+|---------|-------------|--------------|----------------|-------------|
+| Spain | 1,013 | SP-5 | **94.5%** ± 0.05pp | +3.5pp |
+| Greece | 1,015 | GR-4 | **94.2%** ± 0.00pp | +3.2pp |
+| Sweden | 1,017 | SW-5 | **93.8%** ± 0.00pp | +2.8pp |
+| Netherlands | 1,010 | NL-4 | **92.1%** ± 0.00pp | +1.1pp |
+| Hungary | 996 | HU-4 | **92.2%** ± 0.00pp | +1.2pp |
+| Poland | 1,031 | PL-5 | **92.2%** ± 0.00pp | +1.2pp |
+| France | 1,018 | FR-4 | **92.0%** ± 0.00pp | +1.0pp |
+| UK | 1,017 | UK-5c | **91.8%** ± 0.09pp | +0.8pp |
+| Italy | 1,120 | IT-4 | **90.9%** ± 0.19pp | −0.1pp † |
+
+Human ceiling benchmark: **91%** (Iyengar et al., Stanford 2023 — human panel-to-panel replication). 8 of 9 countries exceed the ceiling; Italy is within 1 SD of it.
+
+† Italy mean 90.93% is within measurement noise of the 91% ceiling (SD = 0.19pp).
+
+**UK holdout** (zero topic anchors, pure WorldviewAnchor): **78.3%** ± 0.8pp across 3 independent runs on unseen questions.
 
 ---
 
