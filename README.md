@@ -1,6 +1,6 @@
 # Simulatte Credibility Research Program
 
-**April 2026 — Study 1A complete (88.7%) | Study 1B complete (85.3%) | Study 1C complete (91.3%) | LLM comparison: 4.9x**
+**April 2026 — Study 1A complete (88.7%) | Study 1B complete (85.3%) | Study 1C complete (91.3%) | LLM comparison: 4.9x | Europe Benchmark: 9 countries in progress**
 
 Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous, independently auditable benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
 
@@ -19,6 +19,9 @@ Simulatte generates synthetic AI personas and surveys them at scale. This reposi
 
 ### [LLM Comparison — India Pew](studies/llm_comparison/)
 Simulatte vs. 10 LLMs on the India Pew study · **4.9x closer to human ceiling than the average LLM** · 5,878 SHA-256 verified API calls · GPT-5 underperforms GPT-4o · Gemini clusters at 43–44%
+
+### [Europe Benchmark](studies/europe_benchmark/) *(in progress)*
+9 European countries · France, Greece, Hungary, Italy, Netherlands, Poland, Spain, Sweden, UK · 15 Pew questions per country · 40 personas per country · Holdout sets designated before calibration · Ground truth: Pew Global Attitudes Spring 2024 (all N≈1,000)
 
 ---
 
