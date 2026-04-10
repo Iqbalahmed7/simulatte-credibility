@@ -1,6 +1,6 @@
 # Simulatte Europe Benchmark
 
-**Status: In progress — calibration not yet run**
+**Status: UK calibrated (91.8%) — 8 countries pending**
 
 9 European countries · 15 questions per country · 40 personas per country · Pew Spring 2024 ground truth
 
@@ -20,7 +20,7 @@ Part of the [Simulatte Credibility Research Program](../../README.md). Ground tr
 | Poland | 1,031 | Pending | — | — |
 | Spain | 1,013 | Pending | — | — |
 | Sweden | 1,017 | Pending | — | — |
-| UK | 1,017 | Pending | — | — |
+| UK | 1,017 | **Calibrated** (holdout pending) | **91.8%** ± 0.1pp | — |
 
 ---
 

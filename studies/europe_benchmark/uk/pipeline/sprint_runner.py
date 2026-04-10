@@ -318,17 +318,23 @@ def build_system_prompt(persona: tuple) -> str:
     topic_anchors = []
 
     # uk01: Economic conditions
-    # Target: A=1.8%, B=18.9%, C=45.7%, D=33.7% — very pessimistic
+    # UK-2: B=33.0% (target 18.9%), C=32.5% (target 45.7%) — B overcorrected, C under
+    # Target: A=1.8%, B=18.9%, C=45.7%, D=33.7%
+    # Fix: narrow B to only top-Remain Tory/LibDem; push Labour Remain back to C; keep D for Reform/old Leave WC
     if party in ("Reform",) or (is_leave and age > 55 and is_working_class):
         topic_anchors.append('On current UK economic conditions: your answer is "Very bad" (D) — the country has been run into the ground.')
-    elif party == "Conservative" and is_remain and it >= 60:
-        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat good" (B) — challenging but not catastrophic.')
+    elif party == "Non-partisan" and is_leave and is_working_class:
+        topic_anchors.append('On current UK economic conditions: your answer is "Very bad" (D) — nothing has got better for ordinary people.')
+    elif party == "Conservative" and is_remain and it >= 60 and education == "University":
+        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat good" (B) — challenging but the fundamentals hold.')
+    elif party == "Lib Dem" and is_remain and it >= 65:
+        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat good" (B) — damaged but recoverable with the right investment and European re-alignment.')
+    elif party in ("Labour", "Lib Dem", "SNP") and is_remain:
+        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — 14 years of Conservative mismanagement have left real damage.')
     elif party == "Conservative" and is_leave and age >= 50:
-        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — things are harder than they should be.')
-    elif party in ("Labour", "Lib Dem") and is_remain:
-        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — 14 years of Conservative mismanagement have left deep damage.')
-    elif is_scotland and party == "SNP":
-        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — Westminster economic policy has failed most of Britain.')
+        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — harder than it should be.')
+    elif party == "Conservative" and is_remain:
+        topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C) — the post-COVID and Ukraine headwinds are difficult.')
     else:
         topic_anchors.append('On current UK economic conditions: your answer is "Somewhat bad" (C).')
 
@@ -352,52 +358,81 @@ def build_system_prompt(persona: tuple) -> str:
         topic_anchors.append('On democracy satisfaction: your answer is "Not too satisfied" (C).')
 
     # uk03: Russia view
+    # UK-1: B=0% (target 8.8%), D=78.7% (target 63.3%) — D over, B zero
     # Target: A=2.3%, B=8.8%, C=25.6%, D=63.3%
-    if party == "Reform" and it < 30:
-        topic_anchors.append('On Russia: your answer is "Somewhat unfavorable" (C) — you oppose the invasion but think NATO expansion shares the blame. You\'re not buying the establishment\'s pro-Ukraine consensus uncritically.')
-    elif party in ("Reform",) or (is_leave and it < 35):
-        topic_anchors.append('On Russia: your answer is "Somewhat unfavorable" (C) — you\'re skeptical of the media narrative but don\'t defend Russia.')
+    # Fix: Reform low-IT → B (somewhat favorable — Russia sympathy); other Reform/Leave → C
+    if party == "Reform" and it <= 28:
+        topic_anchors.append('On Russia: your answer is "Somewhat favorable" (B) — you question whether NATO expansion provoked Russia. You\'re not buying the full establishment war narrative; de-escalation and diplomacy matter more than demonising Putin.')
+    elif party == "Reform" or (is_leave and it < 35):
+        topic_anchors.append('On Russia: your answer is "Somewhat unfavorable" (C) — you oppose the invasion but think Western policy shares some blame. You resist the media\'s one-sided narrative.')
+    elif party == "Conservative" and is_leave and age >= 60 and it < 45:
+        topic_anchors.append('On Russia: your answer is "Somewhat unfavorable" (C) — the invasion was wrong but de-escalation matters; you\'re wary of being dragged into a prolonged conflict.')
     else:
         topic_anchors.append('On Russia: your answer is "Very unfavorable" (D) — Russia\'s invasion of Ukraine is indefensible. Britain rightly supports Ukraine.')
 
     # uk04: EU view
+    # UK-2: B=33.0% (target 45.2%), C=42.0% (target 22.0%) — B still under, C still over
+    # Fix: Labour/Conservative Leave → B (not C) — 52% voted Leave but many are now pragmatically pro-EU
+    # Conservative Leave → C only the ideological ones; pragmatic Leave Tory → B
     # Target: A=17.7%, B=45.2%, C=22.0%, D=15.0%
-    if party in ("Lib Dem",) or (party == "SNP") or (party == "Labour" and is_remain and ct >= 70):
-        topic_anchors.append('On the EU: your answer is "Very favorable" (A) — the EU represents cooperation, rights, and stability. Leaving was a mistake.')
-    elif party in ("Labour", "Conservative") and is_remain:
+    if party in ("Lib Dem",) or party == "SNP":
+        topic_anchors.append('On the EU: your answer is "Very favorable" (A) — the EU represents cooperation, rights, and stability. Leaving was a serious mistake.')
+    elif party in ("Labour", "Non-partisan") and is_remain:
         topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B) — you\'d have preferred to stay and think the EU is broadly a force for good.')
-    elif party in ("Conservative",) and is_leave:
-        topic_anchors.append('On the EU: your answer is "Somewhat unfavorable" (C) — Brexit was right even if messy. The EU is too bureaucratic and federalist.')
-    elif party == "Reform" or (is_leave and it < 38):
-        topic_anchors.append('On the EU: your answer is "Very unfavorable" (D) — the EU is an anti-democratic superstate. Britain was right to leave and should never go back.')
-    elif is_remain:
-        topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B).')
-    else:
+    elif party in ("Labour",) and is_leave:
+        topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B) — you voted Leave but recognise the EU has real benefits; pragmatic re-engagement makes sense.')
+    elif party == "Conservative" and is_remain:
+        topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B) — you thought Remain was right and the EU is broadly a positive institution.')
+    elif party == "Conservative" and is_leave and it >= 50:
+        topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B) — you voted Leave but accept the EU has value; you\'re not anti-European, just pro-British sovereignty.')
+    elif party == "Reform" and it <= 28:
+        topic_anchors.append('On the EU: your answer is "Very unfavorable" (D) — the EU is an anti-democratic superstate. Brexit was right and Britain must never return.')
+    elif party == "Conservative" and is_leave and it < 50:
+        topic_anchors.append('On the EU: your answer is "Somewhat unfavorable" (C) — Brexit was right; the EU is too bureaucratic and federalist.')
+    elif party == "Reform":
+        topic_anchors.append('On the EU: your answer is "Somewhat unfavorable" (C) — leaving was right; the EU model doesn\'t serve Britain.')
+    elif party == "Non-partisan" and is_leave and it < 38:
+        topic_anchors.append('On the EU: your answer is "Very unfavorable" (D) — you\'re glad Britain left and wouldn\'t go back.')
+    elif is_leave:
         topic_anchors.append('On the EU: your answer is "Somewhat unfavorable" (C).')
+    else:
+        topic_anchors.append('On the EU: your answer is "Somewhat favorable" (B).')
 
     # uk05: NATO view
+    # UK-1: A=38.3% (target 24.3%), D=0% (target 9.0%) — A over, D zero
+    # Fix: reduce A to strong supporters only; add D for Reform extremes; most → B
     # Target: A=24.3%, B=49.1%, C=17.6%, D=9.0%
-    if party == "Reform" and it < 30:
-        topic_anchors.append('On NATO: your answer is "Somewhat unfavorable" (C) — you question why Britain should keep funding American strategic interests.')
-    elif party in ("Conservative",) and it >= 50:
-        topic_anchors.append('On NATO: your answer is "Very favorable" (A) — NATO is the cornerstone of British and Western security. The Ukraine war proves its necessity.')
-    elif party in ("Lib Dem", "Labour") and is_remain:
-        topic_anchors.append('On NATO: your answer is "Very favorable" (A) — multilateral defence and the transatlantic alliance are essential.')
-    elif party == "SNP":
-        topic_anchors.append('On NATO: your answer is "Somewhat favorable" (B) — you support NATO but question nuclear weapons on Scottish soil.')
-    elif it < 35:
-        topic_anchors.append('On NATO: your answer is "Somewhat unfavorable" (C) — too much money, too much American control.')
+    if party == "Reform" and it <= 28:
+        topic_anchors.append('On NATO: your answer is "Very unfavorable" (D) — NATO is an American-run protection racket that drags Britain into foreign wars and provokes Russia.')
+    elif party == "Reform":
+        topic_anchors.append('On NATO: your answer is "Somewhat unfavorable" (C) — you question the value of NATO when American leadership is so unreliable and the costs keep rising.')
+    elif party == "Conservative" and it >= 60 and is_remain:
+        topic_anchors.append('On NATO: your answer is "Very favorable" (A) — NATO is the cornerstone of British and Western security. Ukraine proves its necessity.')
+    elif party == "Conservative" and it >= 45:
+        topic_anchors.append('On NATO: your answer is "Somewhat favorable" (B) — NATO is important for security even with questions about American reliability post-Trump.')
+    elif party in ("Lib Dem",) and is_remain:
+        topic_anchors.append('On NATO: your answer is "Very favorable" (A) — multilateral defence and the transatlantic alliance are essential to European security.')
+    elif party in ("Labour", "SNP") and is_remain:
+        topic_anchors.append('On NATO: your answer is "Somewhat favorable" (B) — NATO matters for security, though you support stronger EU defence cooperation too.')
+    elif it < 38:
+        topic_anchors.append('On NATO: your answer is "Somewhat unfavorable" (C) — too costly, too American-led.')
     else:
         topic_anchors.append('On NATO: your answer is "Somewhat favorable" (B).')
 
     # uk06: China view
+    # UK-1: B=6.9% (target 22.9%), C=61.7% (target 43.2%) — B badly under, C over
+    # Fix: expand B — business-oriented Conservative + pragmatic Labour → B
     # Target: A=2.6%, B=22.9%, C=43.2%, D=31.2%
-    if party in ("Lib Dem", "SNP") or (party == "Labour" and is_remain and ct >= 68):
-        topic_anchors.append('On China: your answer is "Very unfavorable" (D) — human rights, Taiwan, Uyghurs: China is an authoritarian state that poses a genuine threat to democratic values.')
-    elif party == "Reform" and it < 32:
-        topic_anchors.append('On China: your answer is "Somewhat unfavorable" (C) — strategically dangerous but the establishment overplays it to distract from domestic failures.')
-    elif party == "Conservative" and ind >= 70:
-        topic_anchors.append('On China: your answer is "Somewhat favorable" (B) — trade matters. Britain needs pragmatic economic relationships.')
+    if party in ("Lib Dem", "SNP") or (party == "Labour" and is_remain and ct >= 72):
+        topic_anchors.append('On China: your answer is "Very unfavorable" (D) — human rights abuses, Taiwan, Uyghurs: China is an authoritarian state posing a genuine threat to democratic values.')
+    elif party == "Conservative" and ind >= 65 and education == "University":
+        topic_anchors.append('On China: your answer is "Somewhat favorable" (B) — trade and economic relationships matter. Britain needs pragmatic engagement with China, not ideological confrontation.')
+    elif party == "Labour" and ind >= 48 and education == "University" and age >= 40:
+        topic_anchors.append('On China: your answer is "Somewhat favorable" (B) — economic pragmatism: trade and development cooperation matter, even with human rights concerns.')
+    elif party == "Non-partisan" and ind >= 50 and education == "University":
+        topic_anchors.append('On China: your answer is "Somewhat favorable" (B) — you favour pragmatic economic engagement over the ideological Western consensus.')
+    elif party == "Reform":
+        topic_anchors.append('On China: your answer is "Somewhat unfavorable" (C) — strategically dangerous but the establishment weaponises China-fear to distract from domestic failures.')
     else:
         topic_anchors.append('On China: your answer is "Somewhat unfavorable" (C).')
 
@@ -426,45 +461,75 @@ def build_system_prompt(persona: tuple) -> str:
         topic_anchors.append('On religion importance: your answer is "Not too important" (C) — religion isn\'t part of your daily life.')
 
     # uk09: Economic reform
+    # UK-3: B=62.2% (target 47.2%), C=24.5% (target 34.2%), D=0% (target 3.6%)
+    # Fix: emphatic Conservative→C anchor; NP Remain Scotland→C; Conservative IND≥75→D; Labour WC age≥48→A
     # Target: A=15.0%, B=47.2%, C=34.2%, D=3.6%
-    if party in ("Reform",) and it < 32:
-        topic_anchors.append('On economic reform: your answer is "Needs to be completely reformed" (A) — the whole system is rigged for the wealthy and the establishment.')
-    elif party in ("Labour",) and ct >= 65:
-        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — decades of inequality and underinvestment in public services require serious structural change.')
-    elif party == "Conservative" and ind >= 68 and is_remain:
-        topic_anchors.append('On economic reform: your answer is "Needs minor changes" (C) — the market economy is broadly sound; targeted improvements, not revolution.')
+    if party in ("Reform",) and it <= 28:
+        topic_anchors.append('On economic reform: your answer is "Needs to be completely reformed" (A) — the whole system is rigged for the establishment, the banks, and the wealthy.')
+    elif party == "Reform":
+        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — serious reform needed but you\'re sceptical politicians will deliver it.')
+    elif party == "Labour" and is_leave and is_working_class and age >= 48:
+        topic_anchors.append('On economic reform: your answer is "Needs to be completely reformed" (A) — decades of deindustrialisation and inequality have hollowed out working communities.')
+    elif party == "Conservative" and ind >= 75:
+        topic_anchors.append('On economic reform: your answer is "Doesn\'t need to be changed" (D) — the British market economy is fundamentally sound. The problem is political mismanagement, not the economic system itself.')
+    elif party in ("Conservative",) and ind >= 60:
+        topic_anchors.append('On economic reform: your answer is EXACTLY "Needs minor changes" (C) — despite frustrations with recent Conservative governments, you believe the market economy is fundamentally sound. The framework is right; execution has been poor. NOT "Needs major changes." NOT "Needs to be completely reformed." Minor changes only.')
     elif party in ("Conservative",):
-        topic_anchors.append('On economic reform: your answer is "Needs minor changes" (C) — the framework is right; execution has been poor.')
+        topic_anchors.append('On economic reform: your answer is EXACTLY "Needs minor changes" (C) — you believe in free enterprise and the market economy. Targeted, incremental fixes — not structural overhaul. The answer is (C), not (B).')
+    elif party == "Non-partisan" and is_leave:
+        topic_anchors.append('On economic reform: your answer is "Needs minor changes" (C) — you\'re skeptical about whether politicians can fix the system even if it needs it.')
+    elif party in ("Labour",) and ct >= 65:
+        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — serious structural change: investment in public services, regional rebalancing, and tackling inequality.')
+    elif party in ("Lib Dem",) and age > 40:
+        topic_anchors.append('On economic reform: your answer is "Needs minor changes" (C) — the UK economy needs better investment and greener policy, but the core market framework is broadly sound. Targeted reform, not structural overhaul.')
     elif party in ("Lib Dem",):
-        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — investment in green economy, public services, and regional rebalancing.')
+        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — investment in green economy, public services, and proportional reform.')
     elif party == "SNP":
-        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — Westminster economic policy has failed the regions and nations of Britain.')
+        topic_anchors.append('On economic reform: your answer is "Needs major changes" (B) — Westminster economic policy has systematically failed Scotland and the regions.')
+    elif party == "Non-partisan" and is_remain:
+        topic_anchors.append('On economic reform: your answer is "Needs minor changes" (C) — you\'re broadly satisfied with the economic framework and support targeted, incremental reform rather than wholesale restructuring.')
     else:
         topic_anchors.append('On economic reform: your answer is "Needs major changes" (B).')
 
     # uk10: Income inequality
+    # UK-1: A=88.8% (target 55.2%), B=9.0% (target 28.7%) — A massively over, B under
+    # Fix: Conservative/LibDem/educated Labour → B; only working class and Reform → A firmly
     # Target: A=55.2%, B=28.7%, C=11.5%, D=4.5%
-    if party == "Conservative" and ind >= 72 and is_remain:
-        topic_anchors.append('On the rich-poor gap: your answer is "Small problem" (C) — the social safety net, NHS, and market opportunities mean inequality isn\'t as severe as claimed.')
-    elif party == "Conservative" and ind >= 60:
-        topic_anchors.append('On the rich-poor gap: your answer is "Moderately big problem" (B) — a concern, but free markets and aspiration help more than redistribution.')
-    elif party in ("Reform",) and is_working_class:
-        topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A) — the rich get richer while working people struggle.')
-    elif party in ("Labour", "Lib Dem", "SNP"):
-        topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A) — UK inequality is among the highest in Europe and is holding back opportunity.')
+    if party == "Conservative" and ind >= 68 and education == "University":
+        topic_anchors.append('On the rich-poor gap: your answer is "Small problem" (C) — the social safety net and NHS keep UK inequality in check; opportunity exists for those who work for it.')
+    elif party == "Conservative" and ind >= 55:
+        topic_anchors.append('On the rich-poor gap: your answer is "Moderately big problem" (B) — inequality is a concern, but free markets, aspiration, and targeted policy help more than redistribution.')
+    elif party == "Conservative":
+        topic_anchors.append('On the rich-poor gap: your answer is "Moderately big problem" (B) — a real concern though not the defining crisis.')
+    elif party == "Lib Dem" and education == "University":
+        topic_anchors.append('On the rich-poor gap: your answer is "Moderately big problem" (B) — significant but addressable through progressive taxation and investment, not class warfare.')
+    elif party in ("Labour",) and education == "University" and is_remain and age < 45:
+        topic_anchors.append('On the rich-poor gap: your answer is "Moderately big problem" (B) — serious and structural, though addressable through reformed taxation and investment.')
+    elif party in ("Reform",) or (is_leave and is_working_class):
+        topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A) — the rich get richer while ordinary working people struggle to make ends meet.')
+    elif party in ("Labour",) and is_working_class:
+        topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A) — UK inequality is among the highest in Europe and it is deliberately maintained by the establishment.')
+    elif party in ("Labour", "SNP"):
+        topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A) — UK inequality is holding back opportunity and tearing communities apart.')
     else:
         topic_anchors.append('On the rich-poor gap: your answer is "Very big problem" (A).')
 
     # uk11: Conservative Party favorability
-    # Target: A=5.2%, B=23.3%, C=28.8%, D=42.7% — net unfavorable even pre-election
-    if party == "Conservative" and age >= 65:
+    # UK-3: A=8.0% over (target 5.2%), B=13.8% under (target 23.3%), D=54.3% over (target 42.7%)
+    # Fix: age≥70 → A (was ≥65; uk_p04 age=67 moves to B); Labour Remain uni age<40 → C; NP Leave it≥32 → B
+    # Target: A=5.2%, B=23.3%, C=28.8%, D=42.7% — net unfavorable, post-14yr Tory rule
+    if party == "Conservative" and age >= 70:
         topic_anchors.append('On the Conservative Party: your answer is "Very favorable" (A) — lifetime loyalty; they represent your values even after recent difficulties.')
     elif party == "Conservative":
         topic_anchors.append('On the Conservative Party: your answer is "Somewhat favorable" (B) — you support the party even if you\'re disappointed by recent leadership.')
     elif party == "Reform":
         topic_anchors.append('On the Conservative Party: your answer is "Somewhat unfavorable" (C) — they abandoned conservative principles, spent too much, failed on immigration.')
+    elif party in ("Labour",) and is_remain and education == "University" and age < 40:
+        topic_anchors.append('On the Conservative Party: your answer is "Somewhat unfavorable" (C) — you\'re critical of Conservative policies but not viscerally opposed; you\'d rather focus on what can be built than on anger.')
     elif party in ("Labour", "Lib Dem", "SNP"):
         topic_anchors.append('On the Conservative Party: your answer is "Very unfavorable" (D) — 14 years of austerity, scandals, and managed decline.')
+    elif is_leave and party == "Non-partisan" and it >= 32:
+        topic_anchors.append('On the Conservative Party: your answer is "Somewhat favorable" (B) — you voted Leave and share some Conservative values, even if you\'re disappointed by their record on immigration and the economy.')
     elif is_leave and party == "Non-partisan":
         topic_anchors.append('On the Conservative Party: your answer is "Somewhat unfavorable" (C) — they failed on the economy and immigration after Brexit.')
     else:
