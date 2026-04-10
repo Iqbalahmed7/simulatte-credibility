@@ -1,0 +1,241 @@
+[
+  {
+    "id": "de01",
+    "topic": "economic_conditions",
+    "text": "How would you describe the current economic situation in Germany?",
+    "options": {
+      "A": "Very good",
+      "B": "Somewhat good",
+      "C": "Somewhat bad",
+      "D": "Very bad"
+    },
+    "pew_distribution": { "A": 0.020, "B": 0.400, "C": 0.426, "D": 0.154, "DK": 0.002 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econ_sit",
+    "notes": "VERIFIED from raw data. 42% positive / 58% negative. Note: initial estimate had this at 16% positive — actual data shows more optimism. AfD voters and East Germans skew heavily to 'Very bad'. Strong economic pessimism signal despite 42% somewhat good overall."
+  },
+  {
+    "id": "de02",
+    "topic": "russia_view",
+    "text": "Do you have a favorable or unfavorable view of Russia?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.023, "B": 0.109, "C": 0.376, "D": 0.492, "DK": 0.026 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_russia",
+    "notes": "VERIFIED from raw data. 86.8% unfavorable — post-Ukraine invasion sentiment. This is the strongest partisan split in 2024 Germany: AfD and BSW voters are disproportionately favorable toward Russia. Greens/SPD/CDU voters cluster in unfavorable. Key test of AfD and East German persona calibration."
+  },
+  {
+    "id": "de03",
+    "topic": "democracy_satisfaction",
+    "text": "How satisfied are you with the way democracy is working in Germany?",
+    "options": {
+      "A": "Very satisfied",
+      "B": "Somewhat satisfied",
+      "C": "Not too satisfied",
+      "D": "Not at all satisfied"
+    },
+    "pew_distribution": { "A": 0.192, "B": 0.404, "C": 0.209, "D": 0.196, "DK": 0.002 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "satisfied_democracy",
+    "notes": "VERIFIED from raw data. 59.6% satisfied. AfD voters near-unanimously dissatisfied (C/D). East German personas should show lower satisfaction than West German counterparts of equal party lean — the East/West WorldviewAnchor gap test."
+  },
+  {
+    "id": "de04",
+    "topic": "eu_view",
+    "text": "Do you have a favorable or unfavorable view of the European Union?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.199, "B": 0.512, "C": 0.218, "D": 0.071, "DK": 0.007 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_eu",
+    "notes": "VERIFIED from raw data. 71.1% favorable. Germany historically pro-EU. AfD voters heavily unfavorable. Smallest partisan gap between CDU/SPD/Greens/FDP of all 15 questions — all mainstream parties favor EU. Important ceiling test."
+  },
+  {
+    "id": "de05",
+    "topic": "china_view",
+    "text": "Do you have a favorable or unfavorable view of China?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.014, "B": 0.172, "C": 0.594, "D": 0.219, "DK": 0.033 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_china",
+    "notes": "VERIFIED from raw data. 81.3% unfavorable. Higher unfavorability than EU average. FDP/business-aligned personas create a 'somewhat favorable' floor (trade dependency). AfD voters split — some align with Russia/China axis, others with anti-China Western stance."
+  },
+  {
+    "id": "de06",
+    "topic": "nato_view",
+    "text": "Do you have a favorable or unfavorable view of NATO?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.200, "B": 0.528, "C": 0.192, "D": 0.081, "DK": 0.032 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_nato",
+    "notes": "VERIFIED from raw data. 72.8% favorable. Strong security/defense signal. AfD and BSW voters disproportionately unfavorable (NATO-skeptic, aligned with Russia view in de02). CDU/CSU and Greens most favorable. Complements the Russia question as a foreign policy pair."
+  },
+  {
+    "id": "de07",
+    "topic": "afd_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Alternative for Germany (AfD)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.045, "B": 0.113, "C": 0.185, "D": 0.657, "DK": 0.013 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_germany_afd",
+    "notes": "VERIFIED from raw data. 15.8% favorable, 84.2% unfavorable. Most polarising domestic question — AfD voters are (by definition) in the favorable minority. Tests whether personas correctly resist group-consistency pressure: non-AfD personas should almost all be C or D."
+  },
+  {
+    "id": "de08",
+    "topic": "cdu_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Christian Democratic Union (CDU)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.054, "B": 0.441, "C": 0.397, "D": 0.108, "DK": 0.003 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_germany_cdu",
+    "notes": "VERIFIED from raw data. 49.5% favorable — the most evenly split of the party questions. Centre-right/mainstream signal. CDU voters overwhelmingly favorable; AfD voters split (CDU as establishment rival); Greens/SPD lean unfavorable. Tests centrist calibration."
+  },
+  {
+    "id": "de09",
+    "topic": "greens_view",
+    "text": "Do you have a favorable or unfavorable opinion of The Greens/Alliance 90?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.082, "B": 0.335, "C": 0.292, "D": 0.291, "DK": 0.005 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_germany_greens",
+    "notes": "VERIFIED from raw data. 41.7% favorable — the most evenly split party. Change tolerance signal: highly polarising across age and region. AfD and BSW voters strongly unfavorable. East German personas more unfavorable than West German equivalents. Young urban West Germans disproportionately favorable."
+  },
+  {
+    "id": "de10",
+    "topic": "religion_importance",
+    "text": "How important is religion in your life?",
+    "options": {
+      "A": "Very important",
+      "B": "Somewhat important",
+      "C": "Not too important",
+      "D": "Not at all important"
+    },
+    "pew_distribution": { "A": 0.137, "B": 0.213, "C": 0.279, "D": 0.371, "DK": 0.002 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "religion_import",
+    "notes": "VERIFIED from raw data. 37.1% not at all important — reflects 42% religiously unaffiliated population. Bavarian Catholic personas should cluster in A/B. East German personas cluster in D (GDR atheist legacy). Turkish-origin Muslim personas in A/B. Critical East/West religious calibration test."
+  },
+  {
+    "id": "de11",
+    "topic": "christian_identity",
+    "text": "How important is it to be Christian to be truly German?",
+    "options": {
+      "A": "Very important",
+      "B": "Somewhat important",
+      "C": "Not too important",
+      "D": "Not at all important"
+    },
+    "pew_distribution": { "A": 0.061, "B": 0.127, "C": 0.182, "D": 0.630, "DK": 0.013 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "nationality_relig1",
+    "notes": "VERIFIED from raw data. 63% say being Christian is NOT AT ALL important to being truly German — Germany's secular national identity. Older, Catholic Bavaria personas most likely to say important (A/B). Turkish-origin personas the key test: should answer C/D as German-identified Muslims. Tests Moral Foundationalism and national identity dimensions."
+  },
+  {
+    "id": "de12",
+    "topic": "trump_confidence",
+    "text": "How much confidence do you have in former U.S. President Donald Trump to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": { "A": 0.034, "B": 0.100, "C": 0.117, "D": 0.750, "DK": 0.005 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_trump",
+    "notes": "VERIFIED from raw data. 86.7% no/little confidence — one of highest Trump disapproval rates globally. AfD voters are the outlier: pro-Trump alignment is a defining AfD-voter signal in 2024. Greens voters near-unanimous D. Institutional trust dimension: skepticism about US leadership post-Trump."
+  },
+  {
+    "id": "de13",
+    "topic": "children_future",
+    "text": "When children today in Germany grow up, do you think they will be better off or worse off financially than their parents?",
+    "options": {
+      "A": "Better off",
+      "B": "Worse off",
+      "C": "Same"
+    },
+    "pew_distribution": { "A": 0.357, "B": 0.617, "C": 0.026, "DK": 0.014 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "children_betteroff",
+    "notes": "VERIFIED from raw data. 3-option question (A/B/C only — no 4-way split in this survey). 61.7% worse off — among Europe's most pessimistic. 2024 recession + deindustrialisation fears. East German personas more pessimistic. AfD voters most pessimistic. Note: economic pessimism correlates with but is not identical to political lean."
+  },
+  {
+    "id": "de14",
+    "topic": "income_inequality_problem",
+    "text": "How big a problem is the gap between the rich and the poor in Germany?",
+    "options": {
+      "A": "Very big problem",
+      "B": "Moderately big problem",
+      "C": "Small problem",
+      "D": "Not a problem at all"
+    },
+    "pew_distribution": { "A": 0.569, "B": 0.336, "C": 0.078, "D": 0.018, "DK": 0.002 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "prob_rich_poor",
+    "notes": "VERIFIED from raw data. 90.5% see inequality as a big problem — near-universal concern. Tests Individualism dimension: FDP personas and upper-class personas should cluster in C/D; Left/SPD/BSW personas in A. East Germans disproportionately in A. One of the flattest partisan distributions but strongest class/education signal."
+  },
+  {
+    "id": "de15",
+    "topic": "economic_system_reform",
+    "text": "Do you think Germany's economic system needs to be reformed?",
+    "options": {
+      "A": "Needs to be completely reformed",
+      "B": "Needs major changes",
+      "C": "Needs minor changes",
+      "D": "Doesn't need to be changed"
+    },
+    "pew_distribution": { "A": 0.078, "B": 0.553, "C": 0.328, "D": 0.041, "DK": 0.003 },
+    "source": "Pew Research Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econsys_reform",
+    "notes": "VERIFIED from raw data. 63.1% say major/complete reform needed. Change Tolerance + Individualism interaction: FDP personas lean toward minor changes (market self-correction); Left/BSW/AfD personas lean toward complete reform (for different reasons — redistributive vs nativist). Good test of construct independence: left and right reformers have opposite visions."
+  }
+]
