@@ -15,7 +15,7 @@ Simulatte generates synthetic AI personas and surveys them at scale. This reposi
 15 Pew India questions · 40 India personas · **85.3% accuracy** (Sprint A-22) · 5.7 pp below human ceiling · 22 sprints from 46.2% baseline
 
 ### [Study 1C — Pew Germany Opinion Replication](studies/pew_germany/)
-15 Pew Global Attitudes questions · 40 German personas · **91.3% accuracy** (Sprint C-8) · **above human ceiling** · 8 sprints from 83.2% baseline
+15 Pew Global Attitudes questions · 40 German personas · **91.3% calibrated accuracy** (Sprint C-8) · 8 sprints from 83.2% baseline · Holdout validation: **82.2% cold** on 4 structural questions (7-question holdout overall: 70.3%)
 
 ### [LLM Comparison — India Pew](studies/llm_comparison/)
 Simulatte vs. 10 LLMs on the India Pew study · **4.9x closer to human ceiling than the average LLM** · 5,878 SHA-256 verified API calls · GPT-5 underperforms GPT-4o · Gemini clusters at 43–44%
@@ -24,11 +24,15 @@ Simulatte vs. 10 LLMs on the India Pew study · **4.9x closer to human ceiling t
 
 ## Headline Numbers
 
-| Study | Simulatte | Best LLM | Human Ceiling | vs. Ceiling |
-|---|---|---|---|---|
-| Pew USA (Study 1A) | **88.7%** | — | 91% | −2.3 pp |
-| Pew India (Study 1B) | **85.3%** | GPT-4o 75.6% | 91% | −5.7 pp |
-| Pew Germany (Study 1C) | **91.3%** | — | 91% | **+0.3 pp** |
+| Study | Calibrated (in-sample) | Cold holdout | Human Ceiling |
+|---|---|---|---|
+| Pew USA (Study 1A) | **88.7%** | — | 91% |
+| Pew India (Study 1B) | **85.3%** | — | 91% |
+| Pew Germany (Study 1C) | **91.3%** | **82.2%** structural · 70.3% all | 91% |
+
+**LLM Comparison (Study 1B):** Simulatte 4.9× closer to human ceiling than average LLM (calibrated vs. single-pass uncalibrated).
+
+**Holdout methodology note:** Study 1C includes a blind holdout validation — 7 questions never seen during calibration, run once with zero topic anchors. Party and institutional questions score 82.2% cold, confirming the WorldviewAnchor architecture has genuine predictive power independent of calibration. Leader-specific confidence questions (Biden, Macron) score 54.4% cold, identifying the architecture's boundary condition.
 
 ---
 
