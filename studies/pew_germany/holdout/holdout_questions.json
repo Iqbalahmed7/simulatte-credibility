@@ -1,0 +1,114 @@
+[
+  {
+    "id": "hd01",
+    "topic": "us_view",
+    "text": "Do you have a favorable or unfavorable view of the United States?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.046, "B": 0.459, "C": 0.411, "D": 0.084, "DK": 0.033 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "fav_us",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 50.5% favorable / 49.5% unfavorable. Near-even split reflects post-Trump ambivalence about the US. AfD voters expected strongly unfavorable; Greens/FDP expected somewhat favorable. Tests transatlantic sentiment dimension — NOT in calibration set."
+  },
+  {
+    "id": "hd02",
+    "topic": "un_view",
+    "text": "Do you have a favorable or unfavorable view of the United Nations?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.101, "B": 0.537, "C": 0.291, "D": 0.071, "DK": 0.037 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "fav_un",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 63.8% favorable. Multilateral institution support — tests Institutional Trust dimension. AfD/BSW expected unfavorable; mainstream parties expected favorable. Tests whether IT dimension generalises beyond NATO/EU."
+  },
+  {
+    "id": "hd03",
+    "topic": "spd_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Social Democratic Party (SPD)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.038, "B": 0.352, "C": 0.427, "D": 0.183, "DK": 0.010 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "partyfav_germany_spd",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 39.0% favorable. Center-left — AfD voters strongly unfavorable; CDU voters split (Grand Coalition rivals but not enemies); Greens/Left broadly favorable. Tests party-partisan crossover prediction."
+  },
+  {
+    "id": "hd04",
+    "topic": "fdp_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Free Democratic Party (FDP)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": { "A": 0.039, "B": 0.299, "C": 0.455, "D": 0.207, "DK": 0.013 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "partyfav_germany_fdp",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 33.8% favorable — lowest approval of any mainstream party post-traffic light coalition collapse. CDU/FDP broadly favorable; SPD/Left/AfD/BSW unfavorable. Tests Individualism dimension: FDP is the neoliberal market party."
+  },
+  {
+    "id": "hd05",
+    "topic": "biden_confidence",
+    "text": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": { "A": 0.151, "B": 0.486, "C": 0.165, "D": 0.198, "DK": 0.004 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "confid_biden",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 63.7% some/lot of confidence — mirror image of the Trump question (de12, 86.7% no confidence). AfD voters expected D (anti-establishment); Greens/SPD/CDU expected B. Tests whether the Biden/Trump contrast is internally consistent with de12."
+  },
+  {
+    "id": "hd06",
+    "topic": "zelenskyy_confidence",
+    "text": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": { "A": 0.127, "B": 0.424, "C": 0.183, "D": 0.266, "DK": 0.017 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "confid_zelenskyy",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 55.1% some/lot confidence — significant D (26.6%) reflects AfD/BSW Russia-sympathetic cluster. Complements Russia view (de02) and NATO (de06). Tests whether East German/AfD personas correctly cluster at D. Novel test of the geopolitics cluster coherence."
+  },
+  {
+    "id": "hd07",
+    "topic": "macron_confidence",
+    "text": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": { "A": 0.169, "B": 0.585, "C": 0.124, "D": 0.122, "DK": 0.030 },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+    "variable": "confid_macron",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. 75.4% some/lot confidence — broadly cross-partisan in Germany. AfD/BSW expected lower; Greens/SPD/CDU expected B. Tests general European leadership confidence. A high B (58.5%) makes this a useful baseline — not polarizing, tests model's ability to avoid extreme hedging."
+  }
+]
