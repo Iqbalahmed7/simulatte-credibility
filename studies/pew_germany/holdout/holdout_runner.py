@@ -263,10 +263,16 @@ def score_distributions(sim_dists, questions):
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--run", type=int, default=1, help="Run number (1=original, 2-4=variance reruns)")
+    args = parser.parse_args()
+    run_id = args.run
+
     questions = json.loads(HOLDOUT_Q.read_text())
     n_calls = len(PERSONAS) * len(questions)
 
-    print("Study 1C Germany — Holdout Validation")
+    print(f"Study 1C Germany — Holdout Validation (Run {run_id})")
     print(f"Model:  {MODEL}")
     print(f"Batch:  Yes (50% discount)")
     print(f"Personas × Questions: {len(PERSONAS)} × {len(questions)} = {n_calls} calls")
@@ -305,11 +311,13 @@ def main():
     sim_dists = compute_distributions(raw_results, questions, PERSONAS)
     scores = score_distributions(sim_dists, questions)
 
-    out_json = RESULTS / "holdout_results.json"
-    out_jsonl = RESULTS / "holdout_results_raw.jsonl"
+    suffix = "" if run_id == 1 else f"_v{run_id}"
+    out_json = RESULTS / f"holdout_results{suffix}.json"
+    out_jsonl = RESULTS / f"holdout_results{suffix}_raw.jsonl"
 
     output = {
         "run_type": "holdout_validation",
+        "run_id": run_id,
         "model": MODEL,
         "batch_id": batch_id,
         "timestamp": datetime.now(timezone.utc).isoformat(),

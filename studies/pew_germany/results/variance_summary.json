@@ -1,0 +1,123 @@
+{
+  "_note": "Variance analysis: 6 independent C-8 calibrated runs + 4 holdout runs. Criterion: stable within ±2pp SD = academic working paper threshold.",
+  "study": "Study 1C — Germany Pew Benchmark",
+  "date": "2026-04-10",
+  "model": "claude-haiku-4-5-20251001",
+
+  "calibrated_c8": {
+    "description": "Calibrated sprint C-8 with full topic-specific option-vocabulary anchors",
+    "n_runs": 6,
+    "run_ids": ["C-8", "C-8-v2", "C-8-v3", "C-8-v4", "C-8-v5", "C-8-v6"],
+    "overall_scores": [0.9126, 0.913, 0.9144, 0.913, 0.913, 0.913],
+    "mean": 0.9132,
+    "sd": 0.0007,
+    "min": 0.9126,
+    "max": 0.9144,
+    "range": 0.0018,
+    "within_2pp_criterion": true,
+    "finding": "Near-deterministic. Option-vocabulary anchors dominate LLM stochasticity. Only de06 (NATO) showed inter-run variance.",
+    "per_question_variance": {
+      "de06_nato_view": {
+        "scores": [0.8697, 0.875, 0.8962, 0.875, 0.875, 0.875],
+        "mean": 0.8778,
+        "sd": 0.0093,
+        "range": 0.0265,
+        "note": "Only question showing meaningful variance — no strong A/B-split anchor for de06 boundary personas"
+      },
+      "all_other_questions": {
+        "note": "Identical scores across all 6 runs — fully deterministic under option anchors"
+      }
+    }
+  },
+
+  "holdout_cold": {
+    "description": "Pure WorldviewAnchor architecture — zero topic-specific calibration anchors. 7 questions never seen during calibration.",
+    "n_runs": 4,
+    "run_ids": ["holdout_v1", "holdout_v2", "holdout_v3", "holdout_v4"],
+    "overall_scores": [0.703, 0.7087, 0.7214, 0.7299],
+    "mean": 0.7158,
+    "sd": 0.0122,
+    "min": 0.703,
+    "max": 0.7299,
+    "range": 0.0269,
+    "within_2pp_criterion": true,
+    "finding": "Directionally stable overall. Driven by variance in structural questions (hd01 US view, hd03 SPD) rather than random noise. Leader questions consistently wrong at the same level.",
+    "structural_questions": {
+      "question_ids": ["hd01", "hd02", "hd03", "hd04"],
+      "label": "Party/institutional questions (WorldviewAnchor designed to predict)",
+      "scores_per_run": [0.8221, 0.8324, 0.8696, 0.8816],
+      "mean": 0.8514,
+      "range": 0.0595,
+      "note": "Mean 85.1% across 4 runs (85.1% best estimate vs. 82.2% in run 1). High variance in hd01 (US view, near-even 50/50 split) inflates run-to-run swings."
+    },
+    "leader_confidence_questions": {
+      "question_ids": ["hd05", "hd06", "hd07"],
+      "label": "Specific leader confidence questions (architecture boundary condition)",
+      "scores_per_run": [0.5441, 0.5437, 0.5237, 0.5278],
+      "mean": 0.5348,
+      "range": 0.0204,
+      "note": "Consistently ~53%. Stable failure pattern — not random noise. Architecture does not model individual leader-specific sentiment not anchored to party/worldview."
+    },
+    "per_question_stats": {
+      "hd01_us_view": {
+        "scores": [0.7516, 0.8154, 0.8154, 0.87],
+        "mean": 0.8131,
+        "sd": 0.0484,
+        "range": 0.1184,
+        "note": "Highest variance — 50.5/49.5 near-even Pew split makes small distributional shifts produce outsized DA swings"
+      },
+      "hd02_un_view": {
+        "scores": [0.8793, 0.899, 0.9256, 0.899],
+        "mean": 0.9007,
+        "sd": 0.019,
+        "range": 0.0463,
+        "note": "Stable — multilateral institutional support well-predicted by IT dimension"
+      },
+      "hd03_spd_view": {
+        "scores": [0.8501, 0.8289, 0.9033, 0.9232],
+        "mean": 0.8764,
+        "sd": 0.0442,
+        "range": 0.0943,
+        "note": "High variance — party crossover patterns partially stochastic without explicit anchors"
+      },
+      "hd04_fdp_view": {
+        "scores": [0.8074, 0.7861, 0.834, 0.834],
+        "mean": 0.8154,
+        "sd": 0.0232,
+        "range": 0.0479,
+        "note": "Moderate variance — FDP low-approval signal partially captured by Individualism dimension"
+      },
+      "hd05_biden_confidence": {
+        "scores": [0.5066, 0.4841, 0.4895, 0.4629],
+        "mean": 0.4858,
+        "sd": 0.018,
+        "range": 0.0437,
+        "note": "Stable failure — architecture defaults to C (not too much confidence) vs. Pew B (some confidence) majority"
+      },
+      "hd06_zelenskyy_confidence": {
+        "scores": [0.7362, 0.7575, 0.7134, 0.7309],
+        "mean": 0.7345,
+        "sd": 0.0182,
+        "range": 0.0441,
+        "note": "Best leader question — Russia view (de02) and NATO (de06) dimensions partially generalise"
+      },
+      "hd07_macron_confidence": {
+        "scores": [0.3896, 0.3896, 0.3683, 0.3896],
+        "mean": 0.3843,
+        "sd": 0.011,
+        "range": 0.0213,
+        "note": "Consistently wrong — architecture over-distributes to C/D, Pew is 75.4% favorable (A+B). No calibration signal for European leader confidence."
+      }
+    }
+  },
+
+  "summary": {
+    "criterion": "Stable within ±2pp SD = academic working paper threshold (user-defined)",
+    "calibrated_result": "91.3% ± 0.1% SD — PASSES criterion. Near-deterministic under option anchors.",
+    "holdout_result": "71.6% ± 1.2% SD overall — PASSES criterion at aggregate level.",
+    "structural_holdout": "85.1% mean across 4 runs (82.2–88.2% range). High question-level variance driven by hd01 near-even split.",
+    "leader_holdout": "53.5% mean across 4 runs — stable failure, not noise. Architecture boundary condition confirmed.",
+    "verdict": "PASSES ±2pp criterion. Sufficient foundation for academic working paper with honest framing of in-sample vs. cold-holdout distinction.",
+    "publishable_claim": "Simulatte WorldviewAnchor achieves 91.3% ± 0.1% calibrated DA on 15 Pew Germany questions (near-deterministic). On 7 blind holdout questions with zero calibration, 71.6% ± 1.2% overall: 85.1% on structural/party questions, 53.5% on specific leader confidence questions (architecture boundary condition)."
+  }
+}
