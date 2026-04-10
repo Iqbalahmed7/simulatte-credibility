@@ -1,0 +1,418 @@
+[
+  {
+    "id": "pl01",
+    "topic": "economic_conditions",
+    "text": "How would you describe the current economic situation in Poland?",
+    "options": {
+      "A": "Very good",
+      "B": "Somewhat good",
+      "C": "Somewhat bad",
+      "D": "Very bad"
+    },
+    "pew_distribution": {
+      "A": 0.0365,
+      "B": 0.5243,
+      "C": 0.3519,
+      "D": 0.0872
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econ_sit",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests economic pessimism. Key signal for anti-establishment party voters and low-income personas."
+  },
+  {
+    "id": "pl02",
+    "topic": "democracy_satisfaction",
+    "text": "How satisfied are you with the way democracy is working in Poland?",
+    "options": {
+      "A": "Very satisfied",
+      "B": "Somewhat satisfied",
+      "C": "Not too satisfied",
+      "D": "Not at all satisfied"
+    },
+    "pew_distribution": {
+      "A": 0.0765,
+      "B": 0.5076,
+      "C": 0.3051,
+      "D": 0.1108
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "satisfied_democracy",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests institutional trust dimension. Populist/far-right voters heavily dissatisfied across all countries."
+  },
+  {
+    "id": "pl03",
+    "topic": "russia_view",
+    "text": "Do you have a favorable or unfavorable view of Russia?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.0108,
+      "B": 0.0118,
+      "C": 0.0979,
+      "D": 0.8795
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_russia",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Post-Ukraine invasion sentiment. Key test of nationalist/populist vs. mainstream party split. Hungary and Greece show notably higher Russia favorability than Western Europe."
+  },
+  {
+    "id": "pl04",
+    "topic": "eu_view",
+    "text": "Do you have a favorable or unfavorable view of the European Union?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.3062,
+      "B": 0.489,
+      "C": 0.1516,
+      "D": 0.0532
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_eu",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests Eurosceptic dimension. Far-right and populist parties (RN, AfD, Fidesz, Vox, PiS) drive unfavorable responses. High cross-country variation."
+  },
+  {
+    "id": "pl05",
+    "topic": "nato_view",
+    "text": "Do you have a favorable or unfavorable view of NATO?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.4018,
+      "B": 0.5408,
+      "C": 0.0433,
+      "D": 0.0141
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_nato",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Security/defense dimension. Correlates with Russia view. UK and Netherlands show highest NATO favorability; Hungary and Greece lower."
+  },
+  {
+    "id": "pl06",
+    "topic": "china_view",
+    "text": "Do you have a favorable or unfavorable view of China?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.0121,
+      "B": 0.1971,
+      "C": 0.3833,
+      "D": 0.4075
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_china",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Broadly unfavorable across all 9 countries. Tests whether trade-dependent personas (e.g. business-aligned) create a 'somewhat favorable' floor."
+  },
+  {
+    "id": "pl07",
+    "topic": "trump_confidence",
+    "text": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0397,
+      "B": 0.2804,
+      "C": 0.2759,
+      "D": 0.404
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_trump",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Majority no-confidence across all European countries. Populist/nationalist personas are the outlier \u2014 pro-Trump alignment is a defining signal for RN, AfD, Fidesz, Vox, PiS voters."
+  },
+  {
+    "id": "pl08",
+    "topic": "religion_importance",
+    "text": "How important is religion in your life?",
+    "options": {
+      "A": "Very important",
+      "B": "Somewhat important",
+      "C": "Not too important",
+      "D": "Not at all important"
+    },
+    "pew_distribution": {
+      "A": 0.2006,
+      "B": 0.4786,
+      "C": 0.2264,
+      "D": 0.0943
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "religion_import",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests Moral Foundationalism dimension. Poland and Hungary most religious; Sweden, Netherlands, France most secular. Key calibration axis for MF dimension."
+  },
+  {
+    "id": "pl09",
+    "topic": "economic_system_reform",
+    "text": "Do you think Poland's economic system needs to be reformed?",
+    "options": {
+      "A": "Needs to be completely reformed",
+      "B": "Needs major changes",
+      "C": "Needs minor changes",
+      "D": "Doesn't need to be changed"
+    },
+    "pew_distribution": {
+      "A": 0.094,
+      "B": 0.5771,
+      "C": 0.2932,
+      "D": 0.0358
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econsys_reform",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Left and populist-right both demand reform but for different reasons. Tests interaction of Change Tolerance and Individualism dimensions."
+  },
+  {
+    "id": "pl10",
+    "topic": "income_inequality_problem",
+    "text": "How big a problem is the gap between the rich and the poor in Poland?",
+    "options": {
+      "A": "Very big problem",
+      "B": "Moderately big problem",
+      "C": "Small problem",
+      "D": "Not a problem at all"
+    },
+    "pew_distribution": {
+      "A": 0.2533,
+      "B": 0.4685,
+      "C": 0.2412,
+      "D": 0.037
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "prob_rich_poor",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Near-universal concern across all countries. Tests Individualism dimension: market-liberal personas (VVD, FDP-equivalent) create C/D floor."
+  },
+  {
+    "id": "pl11",
+    "topic": "pis_view",
+    "text": "Do you have a favorable or unfavorable opinion of Law and Justice (PiS)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.1366,
+      "B": 0.1573,
+      "C": 0.2547,
+      "D": 0.4513
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_poland_pis",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Nationalist-conservative governing party until 2023. Tests Catholic/nationalist calibration. Eastern Poland, rural, older personas most favorable. Near-50/50 national split mirrors cultural divide."
+  },
+  {
+    "id": "pl12",
+    "topic": "po_view",
+    "text": "Do you have a favorable or unfavorable opinion of Civic Platform (PO)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.207,
+      "B": 0.4023,
+      "C": 0.1996,
+      "D": 0.1911
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_poland_po",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Centre-right, pro-EU opposition (now governing). Tests pro-European liberal conservative calibration. Western Poland, urban, educated personas most favorable."
+  },
+  {
+    "id": "pl13",
+    "topic": "sld_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Democratic Left Alliance (SLD)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.1081,
+      "B": 0.4236,
+      "C": 0.2598,
+      "D": 0.2085
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_poland_sld",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Post-communist social democratic party \u2014 significantly weakened. Tests secular left calibration in highly religious Poland context."
+  },
+  {
+    "id": "pl14",
+    "topic": "children_future",
+    "text": "When children today in Poland grow up, do you think they will be better off or worse off financially than their parents?",
+    "options": {
+      "A": "Better off",
+      "B": "Worse off",
+      "C": "Same"
+    },
+    "pew_distribution": {
+      "A": 0.4287,
+      "B": 0.3601,
+      "C": 0.2111
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "children_betteroff",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 3-option question. Tests economic outlook. PiS voters tend toward pessimism; PO/Civic Coalition voters more mixed."
+  },
+  {
+    "id": "pl15",
+    "topic": "un_view",
+    "text": "Do you have a favorable or unfavorable view of the United Nations?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.3075,
+      "B": 0.5758,
+      "C": 0.0742,
+      "D": 0.0424
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_un",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests multilateral institutional trust. Poland broadly favorable toward multilateral institutions given NATO/EU orientation."
+  },
+  {
+    "id": "hd01",
+    "topic": "us_view",
+    "text": "Do you have a favorable or unfavorable view of the United States?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.2423,
+      "B": 0.6605,
+      "C": 0.0777,
+      "D": 0.0194
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_us",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question \u2014 never shown during calibration. Tests whether transatlantic sentiment generalises from WorldviewAnchor dimensions. Near-50/50 split in Germany; more favorable in UK."
+  },
+  {
+    "id": "hd02",
+    "topic": "zelenskyy_confidence",
+    "text": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0841,
+      "B": 0.4509,
+      "C": 0.2664,
+      "D": 0.1987
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_zelenskyy",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question. Tests geopolitics cluster coherence: Russia view + NATO view should partially predict Zelenskyy confidence. UK highest confidence; Hungary and Greece lowest."
+  },
+  {
+    "id": "hd03",
+    "topic": "macron_confidence",
+    "text": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0506,
+      "B": 0.4005,
+      "C": 0.3416,
+      "D": 0.2073
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_macron",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question (calibration for France). Tests whether European leader confidence generalises from worldview dimensions. Confirmed boundary condition in Germany holdout (consistently underpredicted)."
+  },
+  {
+    "id": "hd04",
+    "topic": "biden_confidence",
+    "text": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.1648,
+      "B": 0.6026,
+      "C": 0.1277,
+      "D": 0.1048
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (Poland N=1,031)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_biden",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question. Tests US leader confidence \u2014 confirmed boundary condition for architecture in Germany holdout (~49% cold). Anti-establishment personas cluster at D."
+  }
+]

@@ -1,0 +1,440 @@
+[
+  {
+    "id": "uk01",
+    "topic": "economic_conditions",
+    "text": "How would you describe the current economic situation in the UK?",
+    "options": {
+      "A": "Very good",
+      "B": "Somewhat good",
+      "C": "Somewhat bad",
+      "D": "Very bad"
+    },
+    "pew_distribution": {
+      "A": 0.0178,
+      "B": 0.1885,
+      "C": 0.4571,
+      "D": 0.3366
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econ_sit",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests economic pessimism. Key signal for anti-establishment party voters and low-income personas."
+  },
+  {
+    "id": "uk02",
+    "topic": "democracy_satisfaction",
+    "text": "How satisfied are you with the way democracy is working in the UK?",
+    "options": {
+      "A": "Very satisfied",
+      "B": "Somewhat satisfied",
+      "C": "Not too satisfied",
+      "D": "Not at all satisfied"
+    },
+    "pew_distribution": {
+      "A": 0.0762,
+      "B": 0.3373,
+      "C": 0.2908,
+      "D": 0.2957
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "satisfied_democracy",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests institutional trust dimension. Populist/far-right voters heavily dissatisfied across all countries."
+  },
+  {
+    "id": "uk03",
+    "topic": "russia_view",
+    "text": "Do you have a favorable or unfavorable view of Russia?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.023,
+      "B": 0.0882,
+      "C": 0.2555,
+      "D": 0.6333
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_russia",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Post-Ukraine invasion sentiment. Key test of nationalist/populist vs. mainstream party split. Hungary and Greece show notably higher Russia favorability than Western Europe."
+  },
+  {
+    "id": "uk04",
+    "topic": "eu_view",
+    "text": "Do you have a favorable or unfavorable view of the European Union?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.1773,
+      "B": 0.4522,
+      "C": 0.2201,
+      "D": 0.1504
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_eu",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests Eurosceptic dimension. Far-right and populist parties (RN, AfD, Fidesz, Vox, PiS) drive unfavorable responses. High cross-country variation."
+  },
+  {
+    "id": "uk05",
+    "topic": "nato_view",
+    "text": "Do you have a favorable or unfavorable view of NATO?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.2434,
+      "B": 0.4908,
+      "C": 0.1759,
+      "D": 0.09
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_nato",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Security/defense dimension. Correlates with Russia view. UK and Netherlands show highest NATO favorability; Hungary and Greece lower."
+  },
+  {
+    "id": "uk06",
+    "topic": "china_view",
+    "text": "Do you have a favorable or unfavorable view of China?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.026,
+      "B": 0.2292,
+      "C": 0.4324,
+      "D": 0.3123
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_china",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Broadly unfavorable across all 9 countries. Tests whether trade-dependent personas (e.g. business-aligned) create a 'somewhat favorable' floor."
+  },
+  {
+    "id": "uk07",
+    "topic": "trump_confidence",
+    "text": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0878,
+      "B": 0.1607,
+      "C": 0.1302,
+      "D": 0.6213
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_trump",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Majority no-confidence across all European countries. Populist/nationalist personas are the outlier \u2014 pro-Trump alignment is a defining signal for RN, AfD, Fidesz, Vox, PiS voters."
+  },
+  {
+    "id": "uk08",
+    "topic": "religion_importance",
+    "text": "How important is religion in your life?",
+    "options": {
+      "A": "Very important",
+      "B": "Somewhat important",
+      "C": "Not too important",
+      "D": "Not at all important"
+    },
+    "pew_distribution": {
+      "A": 0.1831,
+      "B": 0.2333,
+      "C": 0.2008,
+      "D": 0.3829
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "religion_import",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Tests Moral Foundationalism dimension. Poland and Hungary most religious; Sweden, Netherlands, France most secular. Key calibration axis for MF dimension."
+  },
+  {
+    "id": "uk09",
+    "topic": "economic_system_reform",
+    "text": "Do you think the UK's economic system needs to be reformed?",
+    "options": {
+      "A": "Needs to be completely reformed",
+      "B": "Needs major changes",
+      "C": "Needs minor changes",
+      "D": "Doesn't need to be changed"
+    },
+    "pew_distribution": {
+      "A": 0.1496,
+      "B": 0.4724,
+      "C": 0.3415,
+      "D": 0.0364
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "econsys_reform",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Left and populist-right both demand reform but for different reasons. Tests interaction of Change Tolerance and Individualism dimensions."
+  },
+  {
+    "id": "uk10",
+    "topic": "income_inequality_problem",
+    "text": "How big a problem is the gap between the rich and the poor in the UK?",
+    "options": {
+      "A": "Very big problem",
+      "B": "Moderately big problem",
+      "C": "Small problem",
+      "D": "Not a problem at all"
+    },
+    "pew_distribution": {
+      "A": 0.5522,
+      "B": 0.2874,
+      "C": 0.1152,
+      "D": 0.0453
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "prob_rich_poor",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. Near-universal concern across all countries. Tests Individualism dimension: market-liberal personas (VVD, FDP-equivalent) create C/D floor."
+  },
+  {
+    "id": "uk11",
+    "topic": "conservative_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Conservative Party?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.0517,
+      "B": 0.2326,
+      "C": 0.2883,
+      "D": 0.4274
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_uk_conservative",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 28.4% favorable at 2024 survey (post-Truss, pre-election collapse). Key calibration test \u2014 most unfavorable of UK parties at time of survey. Older, southern England, Leave-voting personas most favorable."
+  },
+  {
+    "id": "uk12",
+    "topic": "labour_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Labour Party?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.1058,
+      "B": 0.3917,
+      "C": 0.2918,
+      "D": 0.2107
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_uk_labour",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 49.8% favorable \u2014 rising ahead of 2024 landslide. Tests left-of-centre calibration. Urban, younger, Remain-voting personas most favorable."
+  },
+  {
+    "id": "uk13",
+    "topic": "libdems_view",
+    "text": "Do you have a favorable or unfavorable opinion of the Liberal Democrats?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.0478,
+      "B": 0.409,
+      "C": 0.3418,
+      "D": 0.2014
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_uk_libdems",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 45.7% favorable. Tests centrist liberal calibration. Educated, suburban, Remain-voting personas most favorable."
+  },
+  {
+    "id": "uk14",
+    "topic": "reform_view",
+    "text": "Do you have a favorable or unfavorable opinion of Reform UK (Brexit Party)?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.0875,
+      "B": 0.1833,
+      "C": 0.2286,
+      "D": 0.5005
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "partyfav_uk_brexit",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 27.1% favorable. Tests populist nationalist calibration \u2014 Leave-voting, anti-immigration, older working-class personas. AfD/RN equivalent in UK context."
+  },
+  {
+    "id": "uk15",
+    "topic": "children_future",
+    "text": "When children today in the UK grow up, do you think they will be better off or worse off financially than their parents?",
+    "options": {
+      "A": "Better off",
+      "B": "Worse off",
+      "C": "Same"
+    },
+    "pew_distribution": {
+      "A": 0.1966,
+      "B": 0.7934,
+      "C": 0.01
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "children_betteroff",
+    "holdout": false,
+    "notes": "VERIFIED from raw data. 3-option question. Tests economic outlook. Post-Brexit, post-COVID pessimism. Conservative personas more pessimistic than Labour."
+  },
+  {
+    "id": "hd01",
+    "topic": "us_view",
+    "text": "Do you have a favorable or unfavorable view of the United States?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.098,
+      "B": 0.453,
+      "C": 0.311,
+      "D": 0.138
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_us",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question \u2014 never shown during calibration. Tests whether transatlantic sentiment generalises from WorldviewAnchor dimensions. Near-50/50 split in Germany; more favorable in UK."
+  },
+  {
+    "id": "hd02",
+    "topic": "un_view",
+    "text": "Do you have a favorable or unfavorable view of the United Nations?",
+    "options": {
+      "A": "Very favorable",
+      "B": "Somewhat favorable",
+      "C": "Somewhat unfavorable",
+      "D": "Very unfavorable"
+    },
+    "pew_distribution": {
+      "A": 0.1602,
+      "B": 0.4935,
+      "C": 0.2112,
+      "D": 0.1351
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "fav_un",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question. Tests multilateral institution support dimension beyond EU/NATO. Generally favorable across Europe."
+  },
+  {
+    "id": "hd03",
+    "topic": "zelenskyy_confidence",
+    "text": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.2637,
+      "B": 0.5075,
+      "C": 0.1154,
+      "D": 0.1134
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_zelenskyy",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question. Tests geopolitics cluster coherence: Russia view + NATO view should partially predict Zelenskyy confidence. UK highest confidence; Hungary and Greece lowest."
+  },
+  {
+    "id": "hd04",
+    "topic": "macron_confidence",
+    "text": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0535,
+      "B": 0.5121,
+      "C": 0.2586,
+      "D": 0.1758
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_macron",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question (calibration for France). Tests whether European leader confidence generalises from worldview dimensions. Confirmed boundary condition in Germany holdout (consistently underpredicted)."
+  },
+  {
+    "id": "hd05",
+    "topic": "biden_confidence",
+    "text": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+    "options": {
+      "A": "A lot of confidence",
+      "B": "Some confidence",
+      "C": "Not too much confidence",
+      "D": "No confidence at all"
+    },
+    "pew_distribution": {
+      "A": 0.0682,
+      "B": 0.4016,
+      "C": 0.2621,
+      "D": 0.2681
+    },
+    "source": "Pew Research Center Global Attitudes, Spring 2024 (the UK N=1,017)",
+    "source_url": "https://www.pewresearch.org/global/datasets/",
+    "variable": "confid_biden",
+    "holdout": true,
+    "notes": "VERIFIED from raw data. Holdout question. Tests US leader confidence \u2014 confirmed boundary condition for architecture in Germany holdout (~49% cold). Anti-establishment personas cluster at D."
+  }
+]
