@@ -1,0 +1,120 @@
+{
+  "study": "Europe Benchmark \u2014 UK",
+  "ceiling_sprint": "UK-5",
+  "variance_runs": [
+    "UK-5",
+    "UK-5b",
+    "UK-5c"
+  ],
+  "n_variance_runs": 3,
+  "calibrated_overall": {
+    "mean": 0.9182,
+    "sd": 0.0009,
+    "min": 0.9177,
+    "max": 0.9192,
+    "range_pp": 0.15
+  },
+  "per_question": {
+    "uk01": {
+      "mean": 0.932,
+      "sd": 0.0,
+      "min": 0.932,
+      "max": 0.932
+    },
+    "uk02": {
+      "mean": 0.8951,
+      "sd": 0.0,
+      "min": 0.8951,
+      "max": 0.8951
+    },
+    "uk03": {
+      "mean": 0.8993,
+      "sd": 0.0,
+      "min": 0.8993,
+      "max": 0.8993
+    },
+    "uk04": {
+      "mean": 0.9271,
+      "sd": 0.0,
+      "min": 0.9271,
+      "max": 0.9271
+    },
+    "uk05": {
+      "mean": 0.906,
+      "sd": 0.0,
+      "min": 0.906,
+      "max": 0.906
+    },
+    "uk06": {
+      "mean": 0.9059,
+      "sd": 0.0,
+      "min": 0.9059,
+      "max": 0.9059
+    },
+    "uk07": {
+      "mean": 0.9122,
+      "sd": 0.0,
+      "min": 0.9122,
+      "max": 0.9122
+    },
+    "uk08": {
+      "mean": 0.9256,
+      "sd": 0.0,
+      "min": 0.9256,
+      "max": 0.9256
+    },
+    "uk09": {
+      "mean": 0.97,
+      "sd": 0.0129,
+      "min": 0.9625,
+      "max": 0.9849
+    },
+    "uk10": {
+      "mean": 0.8938,
+      "sd": 0.0,
+      "min": 0.8938,
+      "max": 0.8938
+    },
+    "uk11": {
+      "mean": 0.973,
+      "sd": 0.0,
+      "min": 0.973,
+      "max": 0.973
+    },
+    "uk12": {
+      "mean": 0.9123,
+      "sd": 0.0,
+      "min": 0.9123,
+      "max": 0.9123
+    },
+    "uk13": {
+      "mean": 0.9003,
+      "sd": 0.0,
+      "min": 0.9003,
+      "max": 0.9003
+    },
+    "uk14": {
+      "mean": 0.8942,
+      "sd": 0.0,
+      "min": 0.8942,
+      "max": 0.8942
+    },
+    "uk15": {
+      "mean": 0.9264,
+      "sd": 0.0,
+      "min": 0.9264,
+      "max": 0.9264
+    },
+    "overall": {
+      "mean": 0.9182,
+      "sd": 0.0009,
+      "min": 0.9177,
+      "max": 0.9192
+    }
+  },
+  "human_ceiling": 0.91,
+  "passes_variance_criterion": true,
+  "variance_criterion": "SD \u2264 2pp (Iyengar et al. protocol)",
+  "note": "Calibrated result: 91.82% \u00b1 0.09pp \u2014 above the 91% human ceiling. Near-deterministic: anchors dominate stochasticity. uk09 shows 1.29pp SD due to Conservative model-prior leakage (stable net outcome).",
+  "generated": "2026-04-10T14:39:47.131848+00:00"
+}
