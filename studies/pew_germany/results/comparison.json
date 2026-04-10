@@ -1,0 +1,100 @@
+{
+  "_note": "Simulatte simulated distributions vs Pew ground truth per question. Ceiling sprint C-8.",
+  "study": "Study 1C — Germany Pew Benchmark",
+  "status": "complete",
+  "final_sprint": "C-8",
+  "overall_da": 0.9126,
+  "source": "Pew Research Center Global Attitudes, Spring 2024 (Germany N=1,008)",
+  "questions": [
+    {
+      "id": "de01", "topic": "economic_conditions",
+      "da": 0.8609,
+      "pew":  { "A": 0.020, "B": 0.400, "C": 0.426, "D": 0.154 },
+      "sim":  { "A": 0.000, "B": 0.282, "C": 0.463, "D": 0.255 }
+    },
+    {
+      "id": "de02", "topic": "russia_view",
+      "da": 0.9418,
+      "pew":  { "A": 0.023, "B": 0.109, "C": 0.376, "D": 0.492 },
+      "sim":  { "A": 0.000, "B": 0.106, "C": 0.356, "D": 0.537 }
+    },
+    {
+      "id": "de03", "topic": "democracy_satisfaction",
+      "da": 0.8911,
+      "pew":  { "A": 0.192, "B": 0.404, "C": 0.209, "D": 0.196 },
+      "sim":  { "A": 0.186, "B": 0.452, "C": 0.106, "D": 0.255 }
+    },
+    {
+      "id": "de04", "topic": "eu_view",
+      "da": 0.9233,
+      "pew":  { "A": 0.199, "B": 0.512, "C": 0.218, "D": 0.071 },
+      "sim":  { "A": 0.197, "B": 0.521, "C": 0.282, "D": 0.000 }
+    },
+    {
+      "id": "de05", "topic": "china_view",
+      "da": 0.8705,
+      "pew":  { "A": 0.014, "B": 0.172, "C": 0.594, "D": 0.219 },
+      "sim":  { "A": 0.000, "B": 0.096, "C": 0.707, "D": 0.197 }
+    },
+    {
+      "id": "de06", "topic": "nato_view",
+      "da": 0.8697,
+      "pew":  { "A": 0.200, "B": 0.528, "C": 0.192, "D": 0.081 },
+      "sim":  { "A": 0.314, "B": 0.431, "C": 0.176, "D": 0.080 }
+    },
+    {
+      "id": "de07", "topic": "afd_view",
+      "da": 0.8976,
+      "pew":  { "A": 0.045, "B": 0.113, "C": 0.185, "D": 0.657 },
+      "sim":  { "A": 0.080, "B": 0.096, "C": 0.106, "D": 0.718 }
+    },
+    {
+      "id": "de08", "topic": "cdu_view",
+      "da": 0.9429,
+      "pew":  { "A": 0.054, "B": 0.441, "C": 0.397, "D": 0.108 },
+      "sim":  { "A": 0.027, "B": 0.442, "C": 0.452, "D": 0.080 }
+    },
+    {
+      "id": "de09", "topic": "greens_view",
+      "da": 0.9703,
+      "pew":  { "A": 0.082, "B": 0.335, "C": 0.292, "D": 0.291 },
+      "sim":  { "A": 0.080, "B": 0.319, "C": 0.319, "D": 0.282 }
+    },
+    {
+      "id": "de10", "topic": "religion_importance",
+      "da": 0.9205,
+      "pew":  { "A": 0.137, "B": 0.213, "C": 0.279, "D": 0.371 },
+      "sim":  { "A": 0.154, "B": 0.239, "C": 0.314, "D": 0.293 }
+    },
+    {
+      "id": "de11", "topic": "christian_identity",
+      "da": 0.9574,
+      "pew":  { "A": 0.061, "B": 0.127, "C": 0.182, "D": 0.630 },
+      "sim":  { "A": 0.053, "B": 0.122, "C": 0.218, "D": 0.606 }
+    },
+    {
+      "id": "de12", "topic": "trump_confidence",
+      "da": 0.9002,
+      "pew":  { "A": 0.034, "B": 0.100, "C": 0.117, "D": 0.750 },
+      "sim":  { "A": 0.000, "B": 0.176, "C": 0.053, "D": 0.771 }
+    },
+    {
+      "id": "de13", "topic": "children_future",
+      "da": 0.9191,
+      "pew":  { "A": 0.357, "B": 0.617, "C": 0.026 },
+      "sim":  { "A": 0.431, "B": 0.569, "C": 0.000 }
+    },
+    {
+      "id": "de14", "topic": "income_inequality_problem",
+      "da": 0.9462,
+      "pew":  { "A": 0.569, "B": 0.336, "C": 0.078, "D": 0.018 },
+      "sim":  { "A": 0.537, "B": 0.388, "C": 0.075, "D": 0.000 }
+    },
+    {
+      "id": "de15", "topic": "economic_system_reform",
+      "da": 0.8781,
+      "pew":  { "A": 0.078, "B": 0.553, "C": 0.328, "D": 0.041 },
+      "sim":  { "A": 0.186, "B": 0.548, "C": 0.213, "D": 0.053 }
+    }
+  ]
+}

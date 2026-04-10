@@ -1,0 +1,31 @@
+{
+  "_note": "Ceiling sprint results. C-8 crossed the 91% human ceiling on 2026-04-10.",
+  "study": "Study 1C — Germany Pew Benchmark",
+  "status": "complete",
+  "final_sprint": "C-8",
+  "model": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-04-10T08:04:24.636411+00:00",
+  "overall_da": 0.9126,
+  "human_ceiling": 0.91,
+  "above_ceiling": true,
+  "n_personas": 40,
+  "n_questions": 15,
+  "n_calls": 600,
+  "per_question": {
+    "de01": { "topic": "economic_conditions",       "da": 0.8609 },
+    "de02": { "topic": "russia_view",               "da": 0.9418 },
+    "de03": { "topic": "democracy_satisfaction",    "da": 0.8911 },
+    "de04": { "topic": "eu_view",                   "da": 0.9233 },
+    "de05": { "topic": "china_view",                "da": 0.8705 },
+    "de06": { "topic": "nato_view",                 "da": 0.8697 },
+    "de07": { "topic": "afd_view",                  "da": 0.8976 },
+    "de08": { "topic": "cdu_view",                  "da": 0.9429 },
+    "de09": { "topic": "greens_view",               "da": 0.9703 },
+    "de10": { "topic": "religion_importance",       "da": 0.9205 },
+    "de11": { "topic": "christian_identity",        "da": 0.9574 },
+    "de12": { "topic": "trump_confidence",          "da": 0.9002 },
+    "de13": { "topic": "children_future",           "da": 0.9191 },
+    "de14": { "topic": "income_inequality_problem", "da": 0.9462 },
+    "de15": { "topic": "economic_system_reform",    "da": 0.8781 }
+  }
+}
