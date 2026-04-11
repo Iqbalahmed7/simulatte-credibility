@@ -37,6 +37,7 @@
   },
   {
     "id": "q03",
+    "holdout": true,
     "topic": "gun_policy",
     "source": "Pew Research Center, Gun Policy Survey, June 2023",
     "text": "In general, do you think gun laws in this country should be made more strict, kept as they are, or made less strict?",
@@ -110,6 +111,7 @@
   },
   {
     "id": "q07",
+    "holdout": true,
     "topic": "government",
     "source": "Pew Research Center, American Trends Panel Wave 128, May 2023",
     "text": "Which statement comes closer to your own views, even if neither is exactly right?",
@@ -147,6 +149,7 @@
   },
   {
     "id": "q09",
+    "holdout": true,
     "topic": "abortion",
     "source": "Pew Research Center, American Trends Panel, July 2023",
     "text": "In general, do you think abortion should be...",
@@ -202,6 +205,7 @@
   },
   {
     "id": "q12",
+    "holdout": true,
     "topic": "democracy",
     "source": "Pew Research Center, American Trends Panel Wave 130, July 2023",
     "text": "How satisfied are you with the way democracy is working in the United States?",
@@ -244,6 +248,7 @@
   },
   {
     "id": "q14",
+    "holdout": true,
     "topic": "technology",
     "source": "Pew Research Center, AI Survey, February 2023",
     "text": "Overall, do you think artificial intelligence will have more positive or negative effects on society?",

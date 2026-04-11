@@ -45,3 +45,49 @@ secrets.json
 # Temp build scripts
 /tmp/
 build_*.py
+
+# ── Proprietary persona pools (core IP — never publish) ─────────────────────
+**/india_population_pool.py
+**/us_population_pool.py
+**/population_pool.py
+**/*_pool.py
+
+# ── Persona Generator internal references ───────────────────────────────────
+**/demographic_sampler.py
+**/persona_generator_client.py
+**/orchestrator_client.py
+**/*_brief.py
+
+# ── LinkedIn / marketing collateral (not part of research repo) ──────────────
+linkedin-carousel.js
+linkedin-carousel.pptx
+slide-cover-preview.png
+slide-preview.png
+
+# ── Internal runner / adapter code ──────────────────────────────────────────
+**/llm_baselines.py
+**/llm_baseline.py
+**/simulatte_runner.py
+**/run_study.py
+**/compare_worldview.py
+
+# ── Raw LLM audit logs (contain full prompt text with persona descriptions) ──
+**/llm_baselines_audit.jsonl
+**/llm_baselines_gaps_audit.jsonl
+**/*_audit_raw.jsonl
+**/*_full_audit.jsonl
+
+# ── Raw scores with per-persona response data ────────────────────────────────
+**/llm_baselines_scores.json
+**/llm_baselines_run_id.txt
+**/llm_baselines_gaps_run_id.txt
+
+# ── Audit generation script (internal tooling) ───────────────────────────────
+**/generate_public_audit.py
+
+# ── Any .env or credential files ─────────────────────────────────────────────
+.env
+.env.*
+*.env
+secrets.json
+credentials.json

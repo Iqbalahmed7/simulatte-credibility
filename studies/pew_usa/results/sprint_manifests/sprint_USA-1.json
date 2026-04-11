@@ -1,0 +1,175 @@
+{
+  "study_id": "pew_usa_v2",
+  "sprint": "USA-1",
+  "generated_at": "2026-04-11T08:06:45.847705+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "batch_id": "msgbatch_01NWq8zC7HmZn7TpTTXwU3ZX",
+  "persona_source": "Simulatte Persona Generator \u2014 us_general pool (demographic_sampler.py)",
+  "n_personas": 40,
+  "n_questions": 10,
+  "n_total_responses": 400,
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 95.3,
+    "human_ceiling_pct": 91.0,
+    "beats_ceiling": true
+  },
+  "per_question": {
+    "q01": {
+      "topic": "economy",
+      "sim": {
+        "B": 0.25,
+        "C": 0.35,
+        "D": 0.4
+      },
+      "real": {
+        "A": 0.02,
+        "B": 0.16,
+        "C": 0.41,
+        "D": 0.41
+      },
+      "da_pct": 91.0,
+      "parseable": 40
+    },
+    "q02": {
+      "topic": "economy",
+      "sim": {
+        "A": 0.25,
+        "B": 0.75
+      },
+      "real": {
+        "A": 0.26,
+        "B": 0.74
+      },
+      "da_pct": 99.0,
+      "parseable": 40
+    },
+    "q04": {
+      "topic": "immigration",
+      "sim": {
+        "A": 0.65,
+        "B": 0.35
+      },
+      "real": {
+        "A": 0.608,
+        "B": 0.392
+      },
+      "da_pct": 95.8,
+      "parseable": 40
+    },
+    "q05": {
+      "topic": "climate",
+      "sim": {
+        "A": 0.325,
+        "B": 0.325,
+        "C": 0.2,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.38,
+        "B": 0.34,
+        "C": 0.18,
+        "D": 0.1
+      },
+      "da_pct": 93.0,
+      "parseable": 40
+    },
+    "q06": {
+      "topic": "social_trust",
+      "sim": {
+        "A": 0.325,
+        "B": 0.675
+      },
+      "real": {
+        "A": 0.309,
+        "B": 0.691
+      },
+      "da_pct": 98.4,
+      "parseable": 40
+    },
+    "q08": {
+      "topic": "religion",
+      "sim": {
+        "A": 0.425,
+        "B": 0.225,
+        "C": 0.175,
+        "D": 0.175
+      },
+      "real": {
+        "A": 0.41,
+        "B": 0.25,
+        "C": 0.16,
+        "D": 0.18
+      },
+      "da_pct": 97.0,
+      "parseable": 40
+    },
+    "q10": {
+      "topic": "racial_equality",
+      "sim": {
+        "A": 0.35,
+        "B": 0.65
+      },
+      "real": {
+        "A": 0.322,
+        "B": 0.678
+      },
+      "da_pct": 97.2,
+      "parseable": 40
+    },
+    "q11": {
+      "topic": "healthcare",
+      "sim": {
+        "A": 0.65,
+        "B": 0.35
+      },
+      "real": {
+        "A": 0.606,
+        "B": 0.394
+      },
+      "da_pct": 95.6,
+      "parseable": 40
+    },
+    "q13": {
+      "topic": "media_trust",
+      "sim": {
+        "A": 0.125,
+        "B": 0.375,
+        "C": 0.35,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.101,
+        "B": 0.404,
+        "C": 0.323,
+        "D": 0.172
+      },
+      "da_pct": 94.9,
+      "parseable": 40
+    },
+    "q15": {
+      "topic": "financial_security",
+      "sim": {
+        "A": 0.325,
+        "B": 0.275,
+        "C": 0.3,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.34,
+        "B": 0.35,
+        "C": 0.22,
+        "D": 0.09
+      },
+      "da_pct": 91.0,
+      "parseable": 40
+    }
+  },
+  "parse_errors": 0,
+  "party_weights": {
+    "conservative": 15.0,
+    "lean_conservative": 20.0,
+    "moderate": 22.5,
+    "lean_progressive": 27.5,
+    "progressive": 15.0
+  }
+}
