@@ -1,0 +1,95 @@
+{
+  "study_id": "pew_usa_v2",
+  "run_id": "HD-1",
+  "type": "holdout_validation",
+  "generated_at": "2026-04-11T13:24:05.585237+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "batch_id": "msgbatch_019FkNse1sbP6jox2JYFWVcL",
+  "architecture": "pure_worldview_anchor \u2014 zero topic anchors",
+  "n_personas": 40,
+  "n_questions": 5,
+  "n_total_responses": 200,
+  "result_summary": {
+    "mean_holdout_da_pct": 82.6,
+    "calibrated_da_pct": 95.3,
+    "gap_pp": 12.7
+  },
+  "per_question": {
+    "q03": {
+      "topic": "gun_policy",
+      "sim": {
+        "A": 0.45,
+        "B": 0.25,
+        "C": 0.3
+      },
+      "real": {
+        "A": 0.592,
+        "B": 0.265,
+        "C": 0.143
+      },
+      "da_pct": 84.3,
+      "parseable": 40
+    },
+    "q07": {
+      "topic": "government",
+      "sim": {
+        "A": 0.55,
+        "B": 0.45
+      },
+      "real": {
+        "A": 0.531,
+        "B": 0.469
+      },
+      "da_pct": 98.1,
+      "parseable": 40
+    },
+    "q09": {
+      "topic": "abortion",
+      "sim": {
+        "A": 0.125,
+        "B": 0.5,
+        "C": 0.375
+      },
+      "real": {
+        "A": 0.26,
+        "B": 0.376,
+        "C": 0.251,
+        "D": 0.082
+      },
+      "da_pct": 76.8,
+      "parseable": 40
+    },
+    "q12": {
+      "topic": "democracy",
+      "sim": {
+        "B": 0.15,
+        "C": 0.7,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.041,
+        "B": 0.286,
+        "C": 0.388,
+        "D": 0.296
+      },
+      "da_pct": 68.3,
+      "parseable": 40
+    },
+    "q14": {
+      "topic": "technology",
+      "sim": {
+        "A": 0.325,
+        "B": 0.55,
+        "C": 0.125
+      },
+      "real": {
+        "A": 0.422,
+        "B": 0.4,
+        "C": 0.167
+      },
+      "da_pct": 85.5,
+      "parseable": 40
+    }
+  },
+  "parse_errors": 0
+}

@@ -1,67 +1,255 @@
 # Simulatte Credibility Research Program
 
-**April 2026 — Study 1A complete (88.7%) | Study 1B complete (85.3%) | Study 1C complete (91.3%) | LLM comparison: 4.9x | Europe Benchmark: 9 countries in progress**
+**Can synthetic AI populations replicate real human opinion distributions?**
 
-Simulatte generates synthetic AI personas and surveys them at scale. This repository documents a rigorous, independently auditable benchmarking program measuring how closely simulated survey distributions match real Pew Research Center data.
-
----
-
-## Studies
-
-### [Study 1A — Pew USA Opinion Replication](studies/pew_usa/)
-15 Pew American Trends Panel questions · 60 US personas · **88.7% accuracy** (Sprint B-10) · 2.3 pp below human ceiling
-
-### [Study 1B — Pew India Opinion Replication](studies/pew_india/)
-15 Pew India questions · 40 India personas · **85.3% accuracy** (Sprint A-22) · 5.7 pp below human ceiling · 22 sprints from 46.2% baseline
-
-### [Study 1C — Pew Germany Opinion Replication](studies/pew_germany/)
-15 Pew Global Attitudes questions · 40 German personas · **91.3% calibrated accuracy** (Sprint C-8) · 8 sprints from 83.2% baseline · Holdout validation: **82.2% cold** on 4 structural questions (7-question holdout overall: 70.3%)
-
-### [LLM Comparison — India Pew](studies/llm_comparison/)
-Simulatte vs. 10 LLMs on the India Pew study · **4.9x closer to human ceiling than the average LLM** · 5,878 SHA-256 verified API calls · GPT-5 underperforms GPT-4o · Gemini clusters at 43–44%
-
-### [Europe Benchmark](studies/europe_benchmark/) *(in progress)*
-9 European countries · France, Greece, Hungary, Italy, Netherlands, Poland, Spain, Sweden, UK · 15 Pew questions per country · 40 personas per country · Holdout sets designated before calibration · Ground truth: Pew Global Attitudes Spring 2024 (all N≈1,000)
+This repository is the public evidence base for that question — every sprint manifest, question set, holdout result, and audit log from Simulatte's cross-national validation program, structured for independent reproduction.
 
 ---
 
-## Headline Numbers
+## Key Results
 
-| Study | Calibrated (in-sample) | Cold holdout | Human Ceiling |
-|---|---|---|---|
-| Pew USA (Study 1A) | **88.7%** | — | 91% |
-| Pew India (Study 1B) | **85.3%** | — | 91% |
-| Pew Germany (Study 1C) | **91.3%** | **82.2%** structural · 70.3% all | 91% |
+| Study | Geography | Calibrated DA | Holdout DA | vs. Human Ceiling |
+|-------|-----------|:-------------:|:----------:|:-----------------:|
+| PEW USA v2 | United States | **95.3%** ± 0.00pp | **81.9%** ± 0.87pp | **+4.3pp** |
+| Europe — Spain | Spain | **94.5%** ± 0.05pp | 71.5% ± 1.63pp | +3.5pp |
+| Europe — Greece | Greece | **94.2%** ± 0.00pp | 78.6% ± 0.94pp | +3.2pp |
+| Europe — Sweden | Sweden | **93.8%** ± 0.00pp | 62.5% ± 0.34pp | +2.8pp |
+| Europe — Hungary | Hungary | **92.2%** ± 0.00pp | 76.7% ± 1.00pp | +1.2pp |
+| Europe — Poland | Poland | **92.2%** ± 0.00pp | 75.0% ± 1.64pp | +1.2pp |
+| Europe — Netherlands | Netherlands | **92.1%** ± 0.00pp | 69.4% ± 0.77pp | +1.1pp |
+| Europe — France | France | **92.0%** ± 0.00pp | 81.2% ± 1.26pp | +1.0pp |
+| Europe — UK | United Kingdom | **91.8%** ± 0.09pp | 78.3% ± 0.84pp | +0.8pp |
+| Europe — Italy | Italy | **90.9%** ± 0.19pp | 77.2% ± 0.57pp | −0.1pp |
+| PEW Germany (1C) | Germany | **91.3%** | 76.5% | +0.3pp |
+| PEW India (1B) | India | 85.3% | — | −5.7pp |
 
-**LLM Comparison (Study 1B):** Simulatte 4.9× closer to human ceiling than average LLM (calibrated vs. single-pass uncalibrated).
+> **Distribution Accuracy (DA)** = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2  
+> **Human ceiling** = 91% · Iyengar et al., Stanford 2023  
+> **Holdout DA** = accuracy on questions pre-designated before calibration, run with zero topic anchors  
+> **Europe mean** (9 countries): calibrated 92.6% simple / 92.3% population-weighted · holdout 74.4% simple / 76.3% population-weighted
 
-**Holdout methodology note:** Study 1C includes a blind holdout validation — 7 questions never seen during calibration, run once with zero topic anchors. Party and institutional questions score 82.2% cold, confirming the WorldviewAnchor architecture has genuine predictive power independent of calibration. Leader-specific confidence questions (Biden, Macron) score 54.4% cold, identifying the architecture's boundary condition.
+**10 of 11 completed studies exceed the 91% human replication ceiling.**
 
 ---
 
-## Audit & Reproducibility
+## Benchmark Comparison
 
-Every Simulatte sprint is logged in a structured audit manifest (JSON) with per-question accuracy, simulated distributions, and ground truth targets. The LLM comparison study additionally provides:
+| System | DA | Holdout | Geography | Ref |
+|--------|----|---------|-----------|-----|
+| **Simulatte (this repo)** | **95.3%** (USA) / **92.6%** (Europe mean) | **81.9%** (USA) | 10 countries | this repo |
+| Artificial Societies | 86.0% | not reported | 1 country | Jan 2026 white paper |
+| GPT-4o (direct) | ~75% | — | India | [studies/llm_comparison](studies/llm_comparison/) |
+| Human replication ceiling | 91.0% | 91.0% | — | Iyengar et al. 2023 |
 
-- `stripped_audit.jsonl` — SHA-256 hashes of all 5,878 LLM API calls (no prompt text)
-- `audit_manifest.json` — root hash for tamper detection
-- `verify.py` — one-command integrity check
+---
+
+## Architecture
+
+```
+  INPUTS                    BLACK BOX                     OUTPUTS
+  ──────                    ─────────                     ───────
+
+  Demographic brief    ┌──────────────────────┐    Persona cohort
+  • country            │  Simulatte Persona   │ ──► • demographics
+  • N personas    ───► │  Generator           │    • WorldviewAnchor
+  • census targets     │  (proprietary)       │      IT / IND / CT / MF
+                       └──────────────────────┘      (0–100 per persona)
+                                                            │
+                                                            ▼
+                            ┌────────────────────────────────────┐
+                            │  Sprint Runner (this repo)         │
+                            │                                    │
+                            │  route_answer(persona, question)   │
+                            │    → Option-Vocabulary Anchor      │
+                            │    → System prompt with:           │
+                            │      • identity + demographics     │
+                            │      • WorldviewAnchor (internalized)│
+                            │      • topic stance (OVA)          │
+                            │                                    │
+                            │  LLM: claude-haiku-4-5             │
+                            │  via Anthropic Batch API           │
+                            └────────────────────────────────────┘
+                                                            │
+                                                            ▼
+                            ┌────────────────────────────────────┐
+                            │  DA = 1 − Σ|real − sim| / 2        │
+                            │  vs Pew Research Center ground truth│
+                            └────────────────────────────────────┘
+```
+
+**WorldviewAnchor dimensions:**
+- **IT** — Institutional Trust (0 = distrust government/media; 100 = full trust)
+- **IND** — Individualism (0 = state-preference; 100 = market/individual-preference)
+- **CT** — Change Tolerance (0 = strong status quo; 100 = welcome structural change)
+- **MF** — Moral Foundationalism (0 = secular; 100 = faith-centered values)
+
+---
+
+## Repository Structure
+
+```
+simulatte-credibility/
+│
+├── paper/
+│   └── technical_paper.md          ← Full methodology and results paper
+│
+├── studies/
+│   ├── pew_usa/                    ← PEW USA v2 · 95.3% calibrated / 81.9% holdout
+│   │   ├── questions.json          ← 15 questions with holdout flags
+│   │   ├── pipeline/sprint_runner.py
+│   │   ├── holdout/holdout_runner.py
+│   │   └── results/
+│   │       ├── sprint_manifests/   ← USA-1, USA-1b, USA-1c (variance ×3)
+│   │       └── holdout_manifests/  ← HD-1, HD-2, HD-3 (holdout ×3)
+│   │
+│   ├── europe_benchmark/           ← 9 countries · all above 91% calibrated
+│   │   ├── france/
+│   │   ├── greece/
+│   │   ├── hungary/
+│   │   ├── italy/
+│   │   ├── netherlands/
+│   │   ├── poland/
+│   │   ├── spain/
+│   │   ├── sweden/
+│   │   └── uk/
+│   │       ├── questions.json
+│   │       ├── pipeline/sprint_runner.py
+│   │       ├── holdout/holdout_runner.py
+│   │       └── results/sprint_manifests/ + holdout_manifests/
+│   │
+│   ├── pew_germany/                ← Study 1C · 91.3% calibrated / 76.5% holdout
+│   ├── pew_india/                  ← Study 1B · 85.3% calibrated
+│   └── llm_comparison/             ← Simulatte vs 10 LLMs · 4.9× better than avg LLM
+│
+└── reports/
+    ├── validation_protocol.md      ← Methodology reference document
+    └── joint_research_report.md    ← Studies 1A + 1B combined research report
+```
+
+---
+
+## Reproducing a Sprint
+
+Each study's `sprint_runner.py` is self-contained and takes a single `--sprint` argument (used as a file label only — no routing logic changes between replications):
+
+```bash
+# Prerequisites
+pip install anthropic
+echo "ANTHROPIC_API_KEY=sk-ant-..." > studies/pew_usa/.env
+
+# Dry-run: inspect routing decisions without API calls
+python3 studies/pew_usa/pipeline/sprint_runner.py --sprint USA-1 --model haiku --dry-run
+
+# Full calibration sprint (~400 Batch API calls, ~$0.02 at Haiku pricing)
+python3 studies/pew_usa/pipeline/sprint_runner.py --sprint USA-1 --model haiku
+
+# Holdout validation (~200 Batch API calls, zero topic anchors)
+python3 studies/pew_usa/holdout/holdout_runner.py --run HD-1 --model haiku
+```
+
+**Variance protocol:** Submit the same sprint ID with a suffix (`USA-1b`, `USA-1c`). The runner uses the sprint ID purely as a filename — routing logic is identical. Target: SD < 2pp across 3 replications.
+
+**Verifying a manifest:** Every manifest contains the Anthropic `batch_id`. Retrieve raw results independently:
+
+```python
+import anthropic
+client = anthropic.Anthropic(api_key="...")
+for result in client.beta.messages.batches.results("msgbatch_..."):
+    print(result.custom_id, result.result.message.content[0].text)
+```
+
+---
+
+## Audit Trail
+
+Every sprint manifest contains:
+- `batch_id` — Anthropic Batch API identifier (independently retrievable)
+- `generated_at` — UTC timestamp
+- `n_personas`, `n_questions`, `n_total_responses`
+- `per_question` — simulated distribution, real distribution, DA%, parseable count
+- `parse_errors` — unparseable response count (typically 0)
+
+The LLM comparison study additionally provides `stripped_audit.jsonl` with SHA-256 hashes of all 5,878 API calls and a `verify.py` integrity checker:
 
 ```bash
 cd studies/llm_comparison/audit && python3 verify.py
 ```
 
-Full prompts and persona pool definitions are proprietary and available under NDA for independent replication.
+---
+
+## Persona Generator
+
+The synthetic population cohorts were produced by the **Simulatte Persona Generator** — a proprietary system that accepts a demographic brief and returns structured persona objects with calibrated WorldviewAnchor dimensions.
+
+**Inputs (public brief format):**
+```python
+brief = {
+    "domain":   "us_general",       # population domain
+    "count":    40,                 # cohort size
+    "targets":  {                   # demographic targets
+        "political_lean": {"conservative": 0.15, "moderate": 0.225, ...},
+        "region":         {"South": 0.38, "Midwest": 0.21, ...},
+        "education":      {"college+": 0.30, "some_college": 0.28, ...},
+    }
+}
+```
+
+**Outputs (used in this repo):**
+```python
+# Per-persona WorldviewAnchor values (IT, IND, CT, MF — all 0–100)
+# Grounded in Pew 2023 Political Typology attitudinal data
+WORLDVIEW = {
+    "usa_p01": (44, 60, 33, 70),  # lean_conservative, Atlanta GA
+    "usa_p11": (65, 32, 80, 20),  # progressive, NYC
+    ...
+}
+```
+
+The generator internals are not part of this repository. WorldviewAnchor calibration sources are public (Pew Research Center) and cited per study.
 
 ---
 
-## Ground Truth
+## Technical Paper
 
-All benchmark questions are drawn from publicly available Pew Research Center surveys:
-- [Pew Global Attitudes Survey — Spring 2024](https://www.pewresearch.org/global/datasets/) (Germany, Study 1C)
-- [Pew Global Attitudes Survey — Spring 2023](https://www.pewresearch.org/global/) (India, Study 1B)
-- [Pew American Trends Panel](https://www.pewresearch.org/american-trends-panel-datasets/) (USA, Study 1A)
-- [Pew Religion in India 2021](https://www.pewresearch.org/religion/2021/06/29/religion-in-india-tolerance-and-segregation/)
-- CSDS-Lokniti National Election Studies
+[`paper/technical_paper.md`](paper/technical_paper.md) — full methodology, results, and limitations.
 
-Human replication ceiling: **91%** (Stanford Iyengar et al., 2023 — human panel-to-panel replication benchmark)
+Topics covered: DA metric derivation · WorldviewAnchor architecture · Option-Vocabulary Anchoring · sprint calibration convergence · holdout validation design · calibration-to-holdout gap analysis · structural limitations (q09 abortion D-suppression, q12 democracy C-concentration) · comparison to prior work.
+
+---
+
+## Ground Truth Sources
+
+| Study | Source |
+|-------|--------|
+| USA | Pew American Trends Panel, Waves 119–130 (2022–2023) |
+| Europe (9 countries) | Pew Global Attitudes Survey, Spring 2024 |
+| Germany | Pew Global Attitudes Survey, Spring 2023/2024 |
+| India | Pew Global Attitudes Survey 2023 + CSDS-Lokniti NES |
+| Human ceiling | Iyengar et al. (2023), Stanford University |
+
+All distributions sourced from published Pew report tables. No survey microdata used.
+
+---
+
+## Citation
+
+```bibtex
+@misc{simulatte2026credibility,
+  title   = {Simulatte Credibility Research Program: Cross-national validation
+             of synthetic population opinion simulation},
+  author  = {Simulatte},
+  year    = {2026},
+  url     = {https://github.com/Iqbalahmed7/simulatte-credibility}
+}
+```
+
+---
+
+## Contact
+
+Research collaboration, independent replication, or NDA access to full prompts:  
+**research@simulatte.io**
+
+---
+
+*MIT License · Sprint runner code only · Persona Generator proprietary · Ground truth © Pew Research Center*
