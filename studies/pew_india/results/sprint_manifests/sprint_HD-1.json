@@ -1,0 +1,95 @@
+{
+  "sprint_id": "HD-1",
+  "batch_id": "msgbatch_01GUmRqzFDauRU529K7GFMZg",
+  "generated_at": "2026-04-11T18:40:06.556887+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "n_personas": 80,
+  "n_questions": 5,
+  "n_total_responses": 400,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 95.87,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "routing_type": "pure_worldview_anchor \u2014 no calibration on holdout questions",
+  "persona_source": "Simulatte Persona Generator (proprietary) \u2014 India general population pool, DEEP tier, domain=india_general",
+  "cohort_run_id": "pg-simulatte-credibility-20260411-1637-2f40f7",
+  "per_question": {
+    "in01": {
+      "question": "How satisfied are you with the way democracy is working in India?",
+      "simulated": {
+        "B": 0.4,
+        "A": 0.35,
+        "C": 0.075,
+        "D": 0.175
+      },
+      "real": {
+        "A": 0.283,
+        "B": 0.444,
+        "C": 0.111,
+        "D": 0.162
+      },
+      "da_pct": 92.0
+    },
+    "in07": {
+      "question": "Having a strong leader who does not have to bother with parliament or elections \u2014 how good or bad would this be for India as a way to govern the country?",
+      "simulated": {
+        "B": 0.375,
+        "A": 0.45,
+        "C": 0.075,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.443,
+        "B": 0.381,
+        "C": 0.082,
+        "D": 0.103
+      },
+      "da_pct": 98.85
+    },
+    "in11": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "A": 0.825,
+        "C": 0.05,
+        "B": 0.125
+      },
+      "real": {
+        "A": 0.84,
+        "B": 0.11,
+        "C": 0.03,
+        "D": 0.02
+      },
+      "da_pct": 96.5
+    },
+    "in12": {
+      "question": "How much do you agree or disagree: A wife must always obey her husband.",
+      "simulated": {
+        "A": 0.65,
+        "B": 0.175,
+        "D": 0.05,
+        "C": 0.125
+      },
+      "real": {
+        "A": 0.64,
+        "B": 0.23,
+        "C": 0.07,
+        "D": 0.06
+      },
+      "da_pct": 93.5
+    },
+    "in15": {
+      "question": "How much of a threat is global climate change to India?",
+      "simulated": {
+        "A": 0.625,
+        "C": 0.1,
+        "B": 0.275
+      },
+      "real": {
+        "A": 0.62,
+        "B": 0.29,
+        "C": 0.09
+      },
+      "da_pct": 98.5
+    }
+  }
+}

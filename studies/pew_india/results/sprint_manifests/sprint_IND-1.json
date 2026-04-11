@@ -1,0 +1,173 @@
+{
+  "sprint_id": "IND-1",
+  "batch_id": "msgbatch_01KXcniv8dTRCffPNCy8HoJn",
+  "generated_at": "2026-04-11T17:51:01.688506+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "n_personas": 80,
+  "n_questions": 10,
+  "n_total_responses": 800,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 97.61,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "persona_source": "Simulatte Persona Generator (proprietary) \u2014 India general population pool, DEEP tier, domain=india_general",
+  "cohort_run_id": "pg-simulatte-credibility-20260411-1637-2f40f7",
+  "per_question": {
+    "in02": {
+      "question": "Do you have a favorable or unfavorable opinion of Prime Minister Narendra Modi?",
+      "simulated": {
+        "B": 0.25,
+        "A": 0.55,
+        "C": 0.1,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.556,
+        "B": 0.242,
+        "C": 0.081,
+        "D": 0.121
+      },
+      "da_pct": 97.3
+    },
+    "in03": {
+      "question": "Do you have a favorable or unfavorable opinion of the Bharatiya Janata Party (BJP)?",
+      "simulated": {
+        "B": 0.3,
+        "A": 0.45,
+        "C": 0.125,
+        "D": 0.125
+      },
+      "real": {
+        "A": 0.429,
+        "B": 0.316,
+        "C": 0.112,
+        "D": 0.143
+      },
+      "da_pct": 96.6
+    },
+    "in04": {
+      "question": "Do you have a favorable or unfavorable opinion of the Indian National Congress (INC / Congress party)?",
+      "simulated": {
+        "B": 0.4,
+        "D": 0.2,
+        "C": 0.15,
+        "A": 0.25
+      },
+      "real": {
+        "A": 0.24,
+        "B": 0.385,
+        "C": 0.177,
+        "D": 0.198
+      },
+      "da_pct": 97.3
+    },
+    "in05": {
+      "question": "Do you think India's influence in the world is getting stronger, weaker, or staying about the same?",
+      "simulated": {
+        "A": 0.675,
+        "C": 0.2,
+        "B": 0.125
+      },
+      "real": {
+        "A": 0.68,
+        "B": 0.13,
+        "C": 0.19
+      },
+      "da_pct": 99.0
+    },
+    "in06": {
+      "question": "Having a representative democracy where citizens vote for representatives who then make laws and policies \u2014 how good or bad would this be for India as a way to govern the country?",
+      "simulated": {
+        "A": 0.375,
+        "D": 0.1,
+        "B": 0.45,
+        "C": 0.075
+      },
+      "real": {
+        "A": 0.371,
+        "B": 0.443,
+        "C": 0.082,
+        "D": 0.103
+      },
+      "da_pct": 98.95
+    },
+    "in08": {
+      "question": "How would you describe the current economic situation in India?",
+      "simulated": {
+        "B": 0.625,
+        "A": 0.325,
+        "D": 0.025,
+        "C": 0.025
+      },
+      "real": {
+        "A": 0.32,
+        "B": 0.56,
+        "C": 0.08,
+        "D": 0.04
+      },
+      "da_pct": 93.0
+    },
+    "in09": {
+      "question": "How much do you trust the national government of India to do what is right for the country?",
+      "simulated": {
+        "B": 0.475,
+        "A": 0.4,
+        "C": 0.075,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.41,
+        "B": 0.48,
+        "C": 0.07,
+        "D": 0.04
+      },
+      "da_pct": 98.5
+    },
+    "in10": {
+      "question": "When children today in India grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.75,
+        "B": 0.225,
+        "C": 0.025
+      },
+      "real": {
+        "A": 0.76,
+        "B": 0.21,
+        "C": 0.03
+      },
+      "da_pct": 98.5
+    },
+    "in13": {
+      "question": "When jobs are scarce, men should have more right to a job than women. Do you agree or disagree?",
+      "simulated": {
+        "C": 0.1,
+        "A": 0.45,
+        "B": 0.35,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.47,
+        "B": 0.33,
+        "C": 0.1,
+        "D": 0.1
+      },
+      "da_pct": 98.0
+    },
+    "in14": {
+      "question": "How important is it that women have the same rights as men in India?",
+      "simulated": {
+        "A": 0.8,
+        "B": 0.15,
+        "C": 0.025,
+        "D": 0.025
+      },
+      "real": {
+        "A": 0.8,
+        "B": 0.14,
+        "C": 0.03,
+        "D": 0.02
+      },
+      "da_pct": 99.0
+    }
+  }
+}

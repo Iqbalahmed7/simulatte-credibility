@@ -2,6 +2,7 @@
   {
     "id": "in01",
     "topic": "democracy_satisfaction",
+    "holdout": true,
     "text": "How satisfied are you with the way democracy is working in India?",
     "options": {
       "A": "Very satisfied",
@@ -91,6 +92,7 @@
   {
     "id": "in07",
     "topic": "strong_leader",
+    "holdout": true,
     "text": "Having a strong leader who does not have to bother with parliament or elections — how good or bad would this be for India as a way to govern the country?",
     "options": {
       "A": "Very good",
@@ -150,6 +152,7 @@
   {
     "id": "in11",
     "topic": "religion_importance",
+    "holdout": true,
     "text": "How important is religion in your life?",
     "options": {
       "A": "Very important",
@@ -165,6 +168,7 @@
   {
     "id": "in12",
     "topic": "wife_obedience",
+    "holdout": true,
     "text": "How much do you agree or disagree: A wife must always obey her husband.",
     "options": {
       "A": "Completely agree",
@@ -210,6 +214,7 @@
   {
     "id": "in15",
     "topic": "climate_change_threat",
+    "holdout": true,
     "text": "How much of a threat is global climate change to India?",
     "options": {
       "A": "Major threat",
