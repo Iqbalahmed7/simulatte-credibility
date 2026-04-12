@@ -39,8 +39,7 @@ This repository is the public evidence base for that question — every sprint m
 
 | System | DA | Holdout | Geography | Ref |
 |--------|----|---------|-----------|-----|
-| **Simulatte (this repo)** | **97.61%** (India v2) / **95.3%** (USA) / **92.6%** (Europe mean) | **95.87%** (India v2) / **81.9%** (USA) | 11 countries | this repo |
-| Artificial Societies | 86.0% | not reported | 1 country | Jan 2026 white paper |
+| **Simulatte (this repo)** | **97.61%** (India v2) / **95.3%** (USA) / **93.33%** (Europe mean) | **95.87%** (India v2) / **81.9%** (USA) | 11 countries | this repo |
 | GPT-4o (direct) | ~75% | — | India | [studies/llm_comparison](studies/llm_comparison/) |
 | Human replication ceiling | 91.0% | 91.0% | — | Iyengar et al. 2023 |
 
@@ -69,8 +68,8 @@ This repository is the public evidence base for that question — every sprint m
                             │      • WorldviewAnchor (internalized)│
                             │      • topic stance (OVA)          │
                             │                                    │
-                            │  LLM: claude-haiku-4-5             │
-                            │  via Anthropic Batch API           │
+                            │  LLM (configurable)                │
+                            │  via Batch API                     │
                             └────────────────────────────────────┘
                                                             │
                                                             ▼

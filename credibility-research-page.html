@@ -1,1129 +1,1240 @@
-<!--
-  Simulatte Credibility &mdash; Research Program Results
-  Insertable content section. Drop inside an existing page body.
-  Fonts and brand tokens are self-contained within this snippet.
-  No external dependencies beyond Google Fonts.
--->
-
-<!-- ═══════════════════════════════════════════════════════════
-     SIMULATTE BRAND FONTS
-════════════════════════════════════════════════════════════ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Simulatte — Credibility Research</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════════════════════
-   SCOPE: all styles namespaced to .sim-cred to avoid
-   collisions when inserted into an existing page.
-════════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════ */
+:root {
+  --void:    #050505;
+  --parch:   #E9E6DF;
+  --sig:     #A8FF3E;
+  --layer:   #111111;
+  --layer2:  #1A1A1A;
+  --static:  #9A9997;
 
-/* &mdash; tokens &mdash; */
-.sim-cred {
-  --void:        #050505;
-  --parchment:   #E9E6DF;
-  --signal:      #A8FF3E;
-  --layer:       #111111;
-  --layer-2:     #1A1A1A;
-  --static:      #9A9997;
+  --body:    rgba(233,230,223,0.88);
+  --cap:     rgba(233,230,223,0.72);
+  --data:    rgba(233,230,223,0.68);
 
-  --text-body:      rgba(233,230,223,0.88);
-  --text-secondary: rgba(233,230,223,0.80);
-  --text-caption:   rgba(233,230,223,0.72);
-  --text-data:      rgba(233,230,223,0.68);
+  --bhi:     rgba(233,230,223,0.20);
+  --bmid:    rgba(233,230,223,0.12);
+  --blo:     rgba(233,230,223,0.08);
+  --tint:    rgba(233,230,223,0.04);
 
-  --border-hi:   rgba(233,230,223,0.20);
-  --border-mid:  rgba(233,230,223,0.12);
-  --border-lo:   rgba(233,230,223,0.08);
-  --tint:        rgba(233,230,223,0.04);
+  --gbd:     rgba(168,255,62,0.32);
+  --gmid:    rgba(168,255,62,0.18);
+  --gtint:   rgba(168,255,62,0.06);
 
-  --green-bd:    rgba(168,255,62,0.32);
-  --green-mid:   rgba(168,255,62,0.18);
-  --green-tint:  rgba(168,255,62,0.06);
+  --fd: 'Barlow Condensed', sans-serif;
+  --fb: 'Barlow', sans-serif;
+  --fm: 'Martian Mono', monospace;
 
-  --f-display: 'Barlow Condensed', sans-serif;
-  --f-body:    'Barlow', sans-serif;
-  --f-mono:    'Martian Mono', monospace;
-
-  --max-w:   1160px;
-  --px:      56px;
+  --maxw: 1160px;
+  --px:   56px;
 }
 
-.sim-cred *, .sim-cred *::before, .sim-cred *::after {
-  box-sizing: border-box;
-}
-
-.sim-cred {
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
   background: var(--void);
-  color: var(--parchment);
-  font-family: var(--f-body);
+  color: var(--parch);
+  font-family: var(--fb);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* &mdash; layout &mdash; */
-.sim-cred .sc-wrap {
-  max-width: var(--max-w);
+/* ═══════════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════════ */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--px); }
+.section {
+  padding: 96px var(--px);
+  max-width: var(--maxw);
   margin: 0 auto;
+  border-bottom: 1px solid var(--blo);
+}
+.section:last-of-type { border-bottom: none; }
+
+/* ═══════════════════════════════════════════
+   TYPE
+═══════════════════════════════════════════ */
+.eyebrow {
+  font-family: var(--fb); font-weight: 600;
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--sig); margin-bottom: 28px;
+  display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::after { content:''; width:20px; height:1px; background:var(--gbd); flex-shrink:0; }
+
+.t-hero {
+  font-family: var(--fd); font-weight: 800;
+  font-size: clamp(52px, 7.5vw, 96px);
+  line-height: .93; letter-spacing: -.01em;
+  color: var(--parch);
+}
+.t-title {
+  font-family: var(--fd); font-weight: 800;
+  font-size: clamp(38px, 5.5vw, 68px);
+  line-height: .95; letter-spacing: -.01em;
+  color: var(--parch);
+}
+.t-sub {
+  font-family: var(--fd); font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.1; color: var(--parch);
+}
+.t-body { font-family: var(--fb); font-size: 16px; line-height: 1.78; color: var(--body); }
+.t-cap  { font-family: var(--fb); font-weight: 500; font-size: 14px; line-height: 1.7; color: var(--cap); }
+.t-mono { font-family: var(--fm); font-weight: 500; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--data); }
+.green  { color: var(--sig); }
+
+/* ═══════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════ */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  height: 52px;
+  background: rgba(5,5,5,0.96);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid var(--blo);
+  display: flex; align-items: center; justify-content: space-between;
   padding: 0 var(--px);
 }
-
-.sim-cred .sc-section {
-  padding: 80px var(--px);
-  max-width: var(--max-w);
-  margin: 0 auto;
-  border-bottom: 1px solid var(--border-lo);
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--fd); font-weight: 800; font-size: 16px;
+  letter-spacing: .04em; color: var(--parch); text-decoration: none;
 }
-
-.sim-cred .sc-section:last-of-type {
-  border-bottom: none;
+.nav-cta {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase;
+  padding: 8px 18px; border: 1px solid var(--gbd);
+  color: var(--sig); background: transparent;
+  text-decoration: none; transition: background .2s;
 }
+.nav-cta:hover { background: var(--gtint); }
 
-/* &mdash; type &mdash; */
-.sim-cred .t-eyebrow {
-  font-family: var(--f-body);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--signal);
-  margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.sim-cred .t-eyebrow::after {
-  content: '';
-  width: 24px;
-  height: 1px;
-  background: var(--green-bd);
+/* ═══════════════════════════════════════════
+   LIVE DOT
+═══════════════════════════════════════════ */
+.live-dot {
+  width: 6px; height: 6px;
+  background: var(--sig); border-radius: 50%;
+  animation: pulse 2.2s ease-in-out infinite;
   flex-shrink: 0;
 }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.85)} }
 
-.sim-cred .t-title {
-  font-family: var(--f-display);
-  font-weight: 800;
-  font-size: clamp(36px, 5vw, 56px);
-  line-height: 1.0;
-  letter-spacing: -0.01em;
-  color: var(--parchment);
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero {
+  min-height: calc(100vh - 52px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 100px var(--px) 0;
+  position: relative; overflow: hidden;
 }
-
-.sim-cred .t-sub {
-  font-family: var(--f-display);
-  font-weight: 700;
-  font-size: clamp(20px, 2.5vw, 28px);
-  line-height: 1.12;
-  color: var(--parchment);
-}
-
-.sim-cred .t-body {
-  font-family: var(--f-body);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.78;
-  color: var(--text-body);
-}
-
-.sim-cred .t-caption {
-  font-family: var(--f-body);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.70;
-  color: var(--text-caption);
-}
-
-.sim-cred .t-mono {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--text-data);
-}
-
-.sim-cred .t-signal {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.20em;
-  text-transform: uppercase;
-  color: var(--signal);
-}
-
-.sim-cred .accent { color: var(--signal); }
-
-/* &mdash; hero &mdash; */
-.sim-cred .sc-hero {
-  padding: 96px var(--px) 80px;
-  max-width: var(--max-w);
-  margin: 0 auto;
-  position: relative;
-}
-
-.sim-cred .sc-hero-grid {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
   background-image:
     linear-gradient(rgba(233,230,223,0.022) 1px, transparent 1px),
     linear-gradient(90deg, rgba(233,230,223,0.022) 1px, transparent 1px);
   background-size: 72px 72px;
-  mask-image: radial-gradient(ellipse 100% 80% at 0% 0%, black 20%, transparent 80%);
-  -webkit-mask-image: radial-gradient(ellipse 100% 80% at 0% 0%, black 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 90% 90% at 6% 95%, black 25%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 90% at 6% 95%, black 25%, transparent 75%);
+}
+.hero-inner {
+  position: relative; z-index: 1;
+  max-width: var(--maxw); margin: 0 auto; width: 100%;
 }
 
-.sim-cred .sc-hero-inner {
+/* Hero 3-study cards */
+.hero-studies {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: var(--blo);
+  margin-top: 52px;
+}
+.hero-study {
+  background: var(--void);
+  padding: 24px 24px 22px;
+  border-top: 2px solid var(--bhi);
+}
+.hero-study.india { border-top-color: var(--sig); }
+.hs-label {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--static); margin-bottom: 10px;
+}
+.hs-num {
+  font-family: var(--fd); font-weight: 800;
+  font-size: clamp(28px, 3.5vw, 40px); line-height: 1;
+  color: var(--parch); margin-bottom: 2px;
+}
+.hero-study.india .hs-num { color: var(--sig); }
+.hs-sub {
+  font-family: var(--fb); font-weight: 500;
+  font-size: 13px; color: var(--cap); margin-bottom: 14px;
+}
+.hs-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .12em; text-transform: uppercase;
+  padding: 3px 8px; border: 1px solid var(--bmid); color: var(--static);
+}
+.tag.g { border-color: var(--gbd); color: var(--sig); }
+
+/* ═══════════════════════════════════════════
+   HEAT METER
+═══════════════════════════════════════════ */
+.heat-wrap {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 40px var(--px) 56px;
+  border-top: 1px solid var(--blo);
   position: relative;
-  z-index: 1;
+}
+.heat-header {
+  display: flex; justify-content: space-between;
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--static); margin-bottom: 28px;
+}
+.heat-track-outer { position: relative; padding-bottom: 60px; }
+.heat-track {
+  height: 6px; background: var(--layer2);
+  border: 1px solid var(--blo);
+  position: relative; overflow: visible;
+}
+/* grey fill: 0 → ceiling (55% = (91-80)/20) */
+.heat-fill-pre {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 0;
+  background: rgba(233,230,223,0.18);
+  transition: width 1.2s cubic-bezier(.2,.8,.3,1) .4s;
+}
+/* green fill: ceiling → India max */
+.heat-fill-above {
+  position: absolute; left: 55%; top: 0; bottom: 0;
+  width: 0;
+  background: var(--sig);
+  transition: width 1.6s cubic-bezier(.2,.8,.3,1) .6s;
+}
+.heat-track.go .heat-fill-pre   { width: 55%; }
+.heat-track.go .heat-fill-above { width: 33.05%; } /* (97.61-91)/20 × 100 */
+
+/* Ceiling dashed line */
+.heat-ceiling-line {
+  position: absolute;
+  left: 55%; top: -28px; bottom: -64px;
+  border-left: 1px dashed rgba(168,255,62,0.45);
+  pointer-events: none;
+}
+.heat-ceiling-tag {
+  position: absolute; top: -28px;
+  left: 50%; transform: translateX(-50%);
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--sig); white-space: nowrap;
+  background: var(--void); padding: 0 5px;
 }
 
-.sim-cred .sc-hero-display {
-  font-family: var(--f-display);
-  font-weight: 800;
-  font-size: clamp(48px, 6.5vw, 84px);
-  line-height: 0.96;
-  letter-spacing: -0.008em;
-  color: var(--parchment);
-  margin-bottom: 28px;
-}
-
-/* &mdash; headline stats bar &mdash; */
-.sim-cred .sc-stats-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--border-lo);
-  margin-bottom: 0;
-}
-
-.sim-cred .sc-stat-cell {
+/* Study dots */
+.heat-dot {
+  position: absolute; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px; height: 12px; border-radius: 50%;
+  border: 1.5px solid var(--parch);
   background: var(--void);
-  padding: 28px 24px;
-  border-top: 1px solid var(--border-lo);
+  opacity: 0; transition: opacity .4s;
 }
+.heat-dot.eu    { left: 66.65%; background: rgba(233,230,223,0.55); }
+.heat-dot.us    { left: 76.5%;  background: rgba(233,230,223,0.78); }
+.heat-dot.india { left: 88.05%; background: var(--sig); border-color: var(--sig); }
+.heat-track.go .heat-dot { opacity: 1; transition-delay: 1.4s; }
 
-.sim-cred .sc-stat-value {
-  font-family: var(--f-display);
-  font-weight: 800;
-  font-size: clamp(28px, 3.5vw, 40px);
-  line-height: 1.0;
-  color: var(--parchment);
-  margin-bottom: 6px;
-}
-
-.sim-cred .sc-stat-value.green {
-  color: var(--signal);
-}
-
-.sim-cred .sc-stat-label {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--static);
-}
-
-/* &mdash; main results table &mdash; */
-.sim-cred .sc-table-wrap {
-  overflow-x: auto;
-  border: 1px solid var(--border-mid);
-  margin-top: 48px;
-}
-
-.sim-cred .sc-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: var(--f-body);
-  font-size: 15px;
-  min-width: 680px;
-}
-
-.sim-cred .sc-table thead tr {
-  background: var(--layer);
-  border-bottom: 1px solid var(--border-mid);
-}
-
-.sim-cred .sc-table thead th {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--static);
-  padding: 14px 20px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-.sim-cred .sc-table thead th.center {
+/* Dot labels below track */
+.heat-dot-labels { position: absolute; top: 14px; left: 0; right: 0; }
+.heat-dlabel {
+  position: absolute;
+  transform: translateX(-50%);
   text-align: center;
+  opacity: 0; transition: opacity .4s 1.8s;
 }
-
-.sim-cred .sc-table tbody tr {
-  border-bottom: 1px solid var(--border-lo);
-  transition: background 0.15s;
-}
-
-.sim-cred .sc-table tbody tr:last-child {
-  border-bottom: none;
-}
-
-.sim-cred .sc-table tbody tr:nth-child(even) {
-  background: var(--tint);
-}
-
-.sim-cred .sc-table tbody tr:hover {
-  background: rgba(233,230,223,0.05);
-}
-
-/* India v2 highlighted row */
-.sim-cred .sc-table tbody tr.row-india {
-  background: var(--green-tint);
-  border-top: 1px solid var(--green-bd);
-  border-bottom: 1px solid var(--green-bd);
-}
-
-.sim-cred .sc-table tbody tr.row-india:hover {
-  background: rgba(168,255,62,0.09);
-}
-
-.sim-cred .sc-table tbody td {
-  padding: 14px 20px;
-  color: var(--text-body);
-  font-size: 14px;
-}
-
-.sim-cred .sc-table tbody td.study-name {
-  font-family: var(--f-body);
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--parchment);
-  white-space: nowrap;
-}
-
-.sim-cred .sc-table tbody td.center {
-  text-align: center;
-}
-
-.sim-cred .sc-table tbody td .mono-val {
-  font-family: var(--f-mono);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
-.sim-cred .sc-table tbody td .vs-pos {
-  color: var(--signal);
-  font-family: var(--f-mono);
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.sim-cred .sc-table tbody td .vs-neg {
-  color: var(--static);
-  font-family: var(--f-mono);
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.sim-cred .sc-table tbody tr.row-india td.study-name {
-  color: var(--signal);
-}
-
-.sim-cred .star-badge {
-  display: inline-block;
-  font-family: var(--f-mono);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--signal);
-  border: 1px solid var(--green-bd);
-  padding: 2px 7px;
-  margin-left: 8px;
-  vertical-align: middle;
-  text-transform: uppercase;
-}
-
-/* &mdash; callout boxes &mdash; */
-.sim-cred .sc-callouts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1px;
-  background: var(--border-lo);
-  margin-top: 48px;
-}
-
-.sim-cred .sc-callout {
-  background: var(--void);
-  padding: 28px 28px;
-  border-top: 2px solid var(--green-bd);
-}
-
-.sim-cred .sc-callout-num {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.20em;
-  text-transform: uppercase;
-  color: var(--signal);
-  margin-bottom: 14px;
+.heat-track.go .heat-dlabel { opacity: 1; }
+.heat-dlabel.eu    { left: 66.65%; }
+.heat-dlabel.us    { left: 76.5%; }
+.heat-dlabel.india { left: 88.05%; }
+.hdl-val {
+  font-family: var(--fd); font-weight: 800;
+  font-size: 18px; line-height: 1; color: var(--parch);
   display: block;
 }
-
-.sim-cred .sc-callout-text {
-  font-family: var(--f-body);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.55;
-  color: var(--parchment);
+.heat-dlabel.india .hdl-val { color: var(--sig); }
+.hdl-name {
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--static); display: block; margin-top: 4px;
+}
+.hdl-holdout {
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .10em; text-transform: uppercase;
+  color: var(--static); display: block; margin-top: 2px;
 }
 
-/* &mdash; spotlight panels &mdash; */
-.sim-cred .sc-spotlight {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 48px;
+/* Scale */
+.heat-scale {
+  display: flex; justify-content: space-between;
+  margin-top: 6px;
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .12em; color: var(--static);
 }
 
-.sim-cred .sc-spotlight-panel {
-  border: 1px solid var(--border-mid);
-  padding: 32px;
+/* ═══════════════════════════════════════════
+   BAR CHART — shared
+═══════════════════════════════════════════ */
+.chart-outer { position: relative; margin-top: 48px; }
+.chart-ceiling-line {
+  position: absolute;
+  left: 91%; top: -24px; bottom: 0;
+  border-left: 1px dashed rgba(168,255,62,0.4);
+  pointer-events: none; z-index: 2;
+}
+.chart-ceiling-tag {
+  position: absolute; top: -24px;
+  left: -1px; transform: translateX(-50%);
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .10em; text-transform: uppercase;
+  color: var(--sig); white-space: nowrap;
+  background: var(--void); padding: 0 4px;
+}
+.bar-row {
+  display: flex; align-items: center;
+  gap: 14px; margin-bottom: 8px;
+}
+.bar-label {
+  font-family: var(--fb); font-weight: 500;
+  font-size: 13px; color: var(--cap);
+  width: 200px; flex-shrink: 0; text-align: right;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.bar-track {
+  flex: 1; height: 30px;
+  background: var(--layer); position: relative; overflow: hidden;
+}
+.bar-fill {
+  height: 100%; width: 0;
+  transition: width .9s cubic-bezier(.2,.8,.3,1);
+  position: relative; display: flex; align-items: center; justify-content: flex-end;
+}
+.bar-fill.cal  { background: rgba(233,230,223,0.16); }
+.bar-fill.cal-hi { background: rgba(233,230,223,0.22); }
+.bar-fill.hd-above { background: rgba(168,255,62,0.22); }
+.bar-fill.hd-below { background: rgba(233,230,223,0.08); }
+.bar-val {
+  position: absolute; right: 8px;
+  font-family: var(--fm); font-weight: 500;
+  font-size: 11px; letter-spacing: .06em;
+  color: var(--parch); white-space: nowrap;
 }
 
-.sim-cred .sc-spotlight-panel.india {
-  border-color: var(--green-bd);
-  background: var(--green-tint);
+/* chart section subhead */
+.chart-subhead {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--static);
+  display: flex; align-items: center; gap: 12px;
+  margin-top: 48px; margin-bottom: 24px;
+  padding-top: 32px; border-top: 1px solid var(--blo);
+}
+.chart-subhead::after { content:''; flex:1; height:1px; background:var(--blo); }
+
+/* ═══════════════════════════════════════════
+   SECTION DIVIDER STATS (2-col)
+═══════════════════════════════════════════ */
+.stat-row {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 1px; background: var(--blo);
+  margin-bottom: 56px;
+}
+.stat-cell {
+  background: var(--void); padding: 24px 24px 20px;
+}
+.stat-val {
+  font-family: var(--fd); font-weight: 800;
+  font-size: clamp(26px,3.2vw,36px); line-height: 1;
+  color: var(--parch); margin-bottom: 6px;
+}
+.stat-val.g { color: var(--sig); }
+.stat-key {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--static);
 }
 
-.sim-cred .sc-spotlight-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+/* ═══════════════════════════════════════════
+   EUROPE SECTION
+═══════════════════════════════════════════ */
+.eu-top {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 56px; align-items: start; margin-bottom: 56px;
+}
+.eu-statement {
+  font-family: var(--fd); font-weight: 700;
+  font-size: clamp(18px,2.4vw,26px); line-height: 1.25;
+  color: var(--parch);
+  border-left: 2px solid var(--sig); padding-left: 20px;
+}
+.eu-meta { display: flex; flex-direction: column; gap: 0; }
+.eu-kv {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 12px 0; border-bottom: 1px solid var(--blo);
   gap: 16px;
-  margin-bottom: 24px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--border-lo);
+}
+.eu-kv:last-child { border-bottom: none; }
+.eu-k { font-family: var(--fb); font-weight: 500; font-size: 14px; color: var(--cap); }
+.eu-v { font-family: var(--fm); font-size: 13px; letter-spacing: .04em; color: var(--parch); }
+.eu-v.g { color: var(--sig); }
+
+/* Country bar label override — wider */
+.country-label { width: 140px; }
+
+/* ═══════════════════════════════════════════
+   INDIA SECTION
+═══════════════════════════════════════════ */
+.india-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 72px; align-items: center; margin-top: 48px;
+}
+.india-rings {
+  display: flex; gap: 40px;
+  justify-content: center; align-items: center;
+}
+.ring-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.ring-lbl {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--static);
+}
+.ring-num {
+  font-family: var(--fd); font-weight: 800;
+  font-size: 30px; line-height: 1;
+  color: var(--parch); text-align: center;
+}
+.ring-num.g { color: var(--sig); }
+.ring-sub {
+  font-family: var(--fm); font-size: 9px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--static);
+}
+/* SVG ring base styles */
+.ring-svg circle { transform-origin: center; }
+.ring-track { transform: rotate(-90deg); }
+.ring-progress {
+  transform: rotate(-90deg);
+  stroke-dasharray: 408.41;
+  stroke-dashoffset: 408.41;
+  transition: stroke-dashoffset 1.6s cubic-bezier(.2,.8,.3,1);
+}
+.ring-ceil {
+  transform: rotate(-90deg);
+  stroke-dasharray: 408.41;
+  opacity: 0;
+  transition: opacity .4s 1.2s;
 }
 
-.sim-cred .sc-spotlight-panel.india .sc-spotlight-header {
-  border-bottom-color: var(--green-mid);
+.india-details { display: flex; flex-direction: column; gap: 16px; }
+.india-metric {
+  padding: 16px 20px; border: 1px solid var(--blo);
+}
+.india-metric-k {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--static); margin-bottom: 6px;
+}
+.india-metric-v {
+  font-family: var(--fd); font-weight: 700;
+  font-size: 28px; color: var(--parch);
+}
+.india-metric-v.g { color: var(--sig); }
+.india-metric-sub {
+  font-family: var(--fb); font-size: 13px;
+  color: var(--cap); margin-top: 4px;
+}
+.india-callout {
+  padding: 18px 20px;
+  border-left: 2px solid var(--sig);
+  background: var(--gtint);
+  font-family: var(--fb); font-weight: 500;
+  font-size: 14px; line-height: 1.65; color: var(--body);
 }
 
-.sim-cred .sc-spotlight-tag {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--signal);
-  border: 1px solid var(--green-bd);
-  padding: 4px 10px;
-  white-space: nowrap;
-  flex-shrink: 0;
+/* ═══════════════════════════════════════════
+   FULL RESULTS TABLE
+═══════════════════════════════════════════ */
+.table-wrap { overflow-x: auto; border: 1px solid var(--bmid); margin-top: 48px; }
+.res-table { width: 100%; border-collapse: collapse; min-width: 680px; }
+.res-table thead tr { background: var(--layer); border-bottom: 1px solid var(--bmid); }
+.res-table thead th {
+  font-family: var(--fm); font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--static); padding: 14px 20px; text-align: left;
 }
-
-.sim-cred .sc-kv-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.res-table thead th.c { text-align: center; }
+.res-table tbody tr { border-bottom: 1px solid var(--blo); transition: background .15s; }
+.res-table tbody tr:last-child { border-bottom: none; }
+.res-table tbody tr:hover { background: rgba(233,230,223,0.03); }
+.res-table tbody tr.india-row {
+  background: var(--gtint);
+  border-top: 1px solid var(--gbd);
+  border-bottom: 1px solid var(--gbd);
 }
-
-.sim-cred .sc-kv-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border-lo);
-  font-size: 14px;
-}
-
-.sim-cred .sc-spotlight-panel.india .sc-kv-list li {
-  border-bottom-color: rgba(168,255,62,0.10);
-}
-
-.sim-cred .sc-kv-list li:last-child {
-  border-bottom: none;
-}
-
-.sim-cred .sc-kv-key {
-  font-family: var(--f-body);
-  font-weight: 500;
-  color: var(--text-caption);
-  flex-shrink: 0;
-}
-
-.sim-cred .sc-kv-val {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: var(--parchment);
-  text-align: right;
-}
-
-.sim-cred .sc-kv-val.green {
-  color: var(--signal);
-}
-
-.sim-cred .sc-note {
-  margin-top: 16px;
-  padding: 12px 16px;
-  border-left: 2px solid var(--border-hi);
-  background: var(--tint);
-  font-family: var(--f-body);
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--text-caption);
-}
-
-/* &mdash; top questions sub-table &mdash; */
-.sim-cred .sc-q-list {
-  margin-top: 20px;
-  border: 1px solid var(--border-lo);
-}
-
-.sim-cred .sc-q-list-header {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--static);
-  padding: 10px 14px;
-  background: var(--layer);
-  border-bottom: 1px solid var(--border-lo);
-}
-
-.sim-cred .sc-q-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 9px 14px;
-  border-bottom: 1px solid var(--border-lo);
-  gap: 12px;
-}
-
-.sim-cred .sc-q-row:last-child {
-  border-bottom: none;
-}
-
-.sim-cred .sc-q-id {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--signal);
-  flex-shrink: 0;
-  min-width: 36px;
-}
-
-.sim-cred .sc-q-topic {
-  font-family: var(--f-body);
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--text-body);
-  flex: 1;
-}
-
-.sim-cred .sc-q-score {
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: var(--parchment);
-  flex-shrink: 0;
-}
-
-/* &mdash; methodology section &mdash; */
-.sim-cred .sc-meth-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 48px;
-}
-
-.sim-cred .sc-meth-card {
-  border: 1px solid var(--border-mid);
-  padding: 28px;
-}
-
-.sim-cred .sc-meth-card-title {
-  font-family: var(--f-display);
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--parchment);
-  margin-bottom: 16px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--border-lo);
-}
-
-.sim-cred .sc-meth-item {
-  display: flex;
-  gap: 12px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border-lo);
-  align-items: flex-start;
-}
-
-.sim-cred .sc-meth-item:last-child {
-  border-bottom: none;
-}
-
-.sim-cred .sc-meth-dot {
-  width: 5px;
-  height: 5px;
-  background: var(--signal);
-  flex-shrink: 0;
-  margin-top: 8px;
-}
-
-.sim-cred .sc-meth-text {
-  font-family: var(--f-body);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.65;
-  color: var(--text-body);
-}
-
-.sim-cred .sc-meth-term {
-  font-family: var(--f-body);
-  font-weight: 600;
-  color: var(--parchment);
-}
-
-.sim-cred .sc-formula {
-  font-family: var(--f-mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--text-data);
-  background: var(--layer);
-  border: 1px solid var(--border-lo);
-  padding: 12px 16px;
-  margin: 12px 0;
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-/* &mdash; footer / CTA strip &mdash; */
-.sim-cred .sc-footer-strip {
-  background: var(--layer);
-  border-top: 1px solid var(--border-lo);
-  padding: 40px var(--px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  max-width: var(--max-w);
-  margin: 0 auto;
-}
-
-.sim-cred .sc-github-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--f-mono);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--signal);
-  text-decoration: none;
-  border: 1px solid var(--green-bd);
-  padding: 12px 24px;
-  transition: background 0.2s;
-}
-
-.sim-cred .sc-github-link:hover {
-  background: var(--green-tint);
-}
-
-/* &mdash; responsive &mdash; */
-@media (max-width: 900px) {
-  .sim-cred {
-    --px: 24px;
-  }
-  .sim-cred .sc-stats-bar {
-    grid-template-columns: 1fr 1fr;
-  }
-  .sim-cred .sc-spotlight {
-    grid-template-columns: 1fr;
-  }
-  .sim-cred .sc-meth-grid {
-    grid-template-columns: 1fr;
-  }
-  .sim-cred .sc-callouts {
-    grid-template-columns: 1fr;
-  }
-  .sim-cred .sc-footer-strip {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 560px) {
-  .sim-cred .sc-stats-bar {
-    grid-template-columns: 1fr;
-  }
-  .sim-cred .sc-hero-display {
-    font-size: clamp(40px, 10vw, 60px);
-  }
-}
-
-/* live dot */
-@keyframes sim-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.3; transform: scale(0.85); }
-}
-.sim-cred .sc-live-dot {
+.res-table tbody tr.india-row:hover { background: rgba(168,255,62,0.09); }
+.res-table tbody td { padding: 13px 20px; font-size: 14px; color: var(--body); }
+.res-table tbody td.c { text-align: center; }
+.res-table tbody td.n { font-weight: 600; color: var(--parch); white-space: nowrap; }
+.res-table tbody tr.india-row td.n { color: var(--sig); }
+.mv  { font-family: var(--fm); font-size: 13px; letter-spacing: .04em; }
+.mp  { font-family: var(--fm); font-size: 13px; color: var(--sig); }
+.ms  { font-family: var(--fm); font-size: 11px; color: var(--static); }
+.badge {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--signal);
-  border-radius: 50%;
-  animation: sim-pulse 2.2s ease-in-out infinite;
+  font-family: var(--fm); font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--sig);
+  border: 1px solid var(--gbd); padding: 2px 6px; margin-left: 8px;
   vertical-align: middle;
-  margin-right: 6px;
+}
+.eu-group td.n { color: var(--cap); font-weight: 500; padding-left: 32px; }
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+.footer-strip {
+  border-top: 1px solid var(--blo);
+  padding: 40px var(--px);
+  max-width: var(--maxw); margin: 0 auto;
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 24px; flex-wrap: wrap;
+}
+.gh-link {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--fm); font-size: 11px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--sig); text-decoration: none;
+  border: 1px solid var(--gbd); padding: 12px 24px;
+  transition: background .2s;
+}
+.gh-link:hover { background: var(--gtint); }
+.live-status {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--fm); font-size: 11px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--sig);
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  :root { --px: 24px; }
+  .hero-studies { grid-template-columns: 1fr 1fr; }
+  .eu-top { grid-template-columns: 1fr; }
+  .india-layout { grid-template-columns: 1fr; }
+  .bar-label { width: 130px; }
+  .country-label { width: 100px; }
+  .stat-row { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  :root { --px: 20px; }
+  .hero-studies { grid-template-columns: 1fr; }
+  .india-rings { gap: 20px; }
+  .stat-row { grid-template-columns: 1fr 1fr; }
 }
 </style>
+</head>
+<body>
 
-<!-- ═══════════════════════════════════════════════════════════
-     CONTENT &mdash; Simulatte Credibility Research Results
-════════════════════════════════════════════════════════════ -->
-<div class="sim-cred">
+<!-- ═══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav>
+  <a href="/" class="nav-brand">
+    <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8"  cy="14" r="3.5" fill="none" stroke="rgba(233,230,223,0.35)" stroke-width="1.25"/>
+      <circle cx="8"  cy="14" r="1.2" fill="rgba(233,230,223,0.35)"/>
+      <circle cx="10" cy="38" r="2.5" fill="none" stroke="rgba(233,230,223,0.22)" stroke-width="1"/>
+      <circle cx="10" cy="38" r=".8"  fill="rgba(233,230,223,0.22)"/>
+      <line x1="11" y1="15" x2="19" y2="22" stroke="rgba(168,255,62,0.35)" stroke-width="1"/>
+      <line x1="12" y1="37" x2="19" y2="29" stroke="rgba(168,255,62,0.25)" stroke-width=".75"/>
+      <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(168,255,62,0.18)" stroke-width="1.5"/>
+      <circle cx="32" cy="32" r="20" fill="none" stroke="rgba(168,255,62,0.50)" stroke-width="2"/>
+      <circle cx="32" cy="32" r="8"  fill="#A8FF3E"/>
+    </svg>
+    SIMULATTE
+  </a>
+  <a href="https://github.com/Iqbalahmed7/simulatte-credibility" target="_blank" rel="noopener" class="nav-cta">View on GitHub →</a>
+</nav>
 
-  <!-- ── HERO ── -->
-  <div class="sc-hero">
-    <div class="sc-hero-grid"></div>
-    <div class="sc-hero-inner">
-      <div class="t-eyebrow">
-        <span class="sc-live-dot"></span>
-        Simulatte Credibility &mdash; Research Program
-      </div>
-      <h1 class="sc-hero-display">
-        Calibrated <span class="accent">above</span><br>
-        the human ceiling.
-      </h1>
-      <p class="t-body" style="max-width:600px; margin-top:20px; margin-bottom:40px;">
-        12 studies. 11 countries. Every calibrated run above 91% Distribution Accuracy &mdash;
-        the ceiling established by Stanford's human benchmark. India v2 is the first study
-        where holdout performance also clears that threshold.
-      </p>
-      <a href="https://github.com/Iqbalahmed7/simulatte-credibility" target="_blank" rel="noopener" class="sc-github-link" style="margin:0; padding:12px 24px; font-size:11px;">
-        <!-- github icon -->
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0;" aria-hidden="true">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-            .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-            -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
-            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
-            1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
-            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-        </svg>
-        View on GitHub
-      </a>
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+
+    <div class="eyebrow">
+      <span class="live-dot"></span>
+      Simulatte Credibility — Research Program
     </div>
-  </div>
 
-  <!-- ── HEADLINE STATS BAR ── -->
-  <div class="sc-wrap" style="max-width:var(--max-w); margin:0 auto; padding:0 var(--px);">
-    <div class="sc-stats-bar">
-      <div class="sc-stat-cell">
-        <div class="sc-stat-value">12</div>
-        <div class="sc-stat-label">Studies completed</div>
-      </div>
-      <div class="sc-stat-cell">
-        <div class="sc-stat-value">11</div>
-        <div class="sc-stat-label">Countries benchmarked</div>
-      </div>
-      <div class="sc-stat-cell">
-        <div class="sc-stat-value green">97.61%</div>
-        <div class="sc-stat-label">Peak calibrated DA &mdash; India v2</div>
-      </div>
-      <div class="sc-stat-cell">
-        <div class="sc-stat-value">0.00pp</div>
-        <div class="sc-stat-label">Variance across replications</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── ALL STUDIES TABLE ── -->
-  <div class="sc-section">
-    <div class="t-eyebrow">All Studies</div>
-    <h2 class="t-title" style="margin-bottom:12px;">
-      Program results
-    </h2>
-    <p class="t-body" style="max-width:640px; margin-bottom:0;">
-      Calibrated and holdout Distribution Accuracy across all 12 runs.
-      Human ceiling: 91% (Iyengar et al., Stanford 2023).
-      Holdout questions were pre-designated and never seen during calibration.
+    <h1 class="t-hero">
+      Calibrated <span class="green">above</span><br>
+      the human ceiling.
+    </h1>
+    <p class="t-body" style="max-width:560px; margin-top:20px;">
+      12 studies. 11 countries. Every calibrated run exceeds 91% Distribution
+      Accuracy — the ceiling established by Stanford's human benchmark.
     </p>
 
-    <div class="sc-table-wrap">
-      <table class="sc-table">
-        <thead>
-          <tr>
-            <th>Study</th>
-            <th class="center">Calibrated DA</th>
-            <th class="center">Holdout DA</th>
-            <th class="center">vs. Human Ceiling</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- US -->
-          <tr>
-            <td class="study-name">PEW USA v2</td>
-            <td class="center"><span class="mono-val">95.3% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">81.9% <span style="color:var(--static); font-size:11px;">&plusmn;0.87pp</span></span></td>
-            <td class="center"><span class="vs-pos">+4.3pp</span></td>
-          </tr>
-          <!-- India v2 &mdash; highlighted -->
-          <tr class="row-india">
-            <td class="study-name">
-              PEW India v2
-              <span class="star-badge">&#9733; Peak</span>
-            </td>
-            <td class="center"><span class="mono-val" style="color:var(--signal);">97.61% <span style="color:rgba(168,255,62,0.55); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val" style="color:var(--signal);">95.87% <span style="color:rgba(168,255,62,0.55); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="vs-pos">+6.61pp</span></td>
-          </tr>
-          <!-- Europe -->
-          <tr>
-            <td class="study-name">Europe &mdash; Spain</td>
-            <td class="center"><span class="mono-val">94.5% <span style="color:var(--static); font-size:11px;">&plusmn;0.05pp</span></span></td>
-            <td class="center"><span class="mono-val">71.5% <span style="color:var(--static); font-size:11px;">&plusmn;1.63pp</span></span></td>
-            <td class="center"><span class="vs-pos">+3.5pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Greece</td>
-            <td class="center"><span class="mono-val">94.2% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">78.6% <span style="color:var(--static); font-size:11px;">&plusmn;0.94pp</span></span></td>
-            <td class="center"><span class="vs-pos">+3.2pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Sweden</td>
-            <td class="center"><span class="mono-val">93.8% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">62.5% <span style="color:var(--static); font-size:11px;">&plusmn;0.34pp</span></span></td>
-            <td class="center"><span class="vs-pos">+2.8pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Hungary</td>
-            <td class="center"><span class="mono-val">92.2% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">76.7% <span style="color:var(--static); font-size:11px;">&plusmn;1.00pp</span></span></td>
-            <td class="center"><span class="vs-pos">+1.2pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Poland</td>
-            <td class="center"><span class="mono-val">92.2% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">75.0% <span style="color:var(--static); font-size:11px;">&plusmn;1.64pp</span></span></td>
-            <td class="center"><span class="vs-pos">+1.2pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Netherlands</td>
-            <td class="center"><span class="mono-val">92.1% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">69.4% <span style="color:var(--static); font-size:11px;">&plusmn;0.77pp</span></span></td>
-            <td class="center"><span class="vs-pos">+1.1pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; France</td>
-            <td class="center"><span class="mono-val">92.0% <span style="color:var(--static); font-size:11px;">&plusmn;0.00pp</span></span></td>
-            <td class="center"><span class="mono-val">81.2% <span style="color:var(--static); font-size:11px;">&plusmn;1.26pp</span></span></td>
-            <td class="center"><span class="vs-pos">+1.0pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; UK</td>
-            <td class="center"><span class="mono-val">91.8% <span style="color:var(--static); font-size:11px;">&plusmn;0.09pp</span></span></td>
-            <td class="center"><span class="mono-val">78.3% <span style="color:var(--static); font-size:11px;">&plusmn;0.84pp</span></span></td>
-            <td class="center"><span class="vs-pos">+0.8pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Germany</td>
-            <td class="center"><span class="mono-val">91.3%</span></td>
-            <td class="center"><span class="mono-val">76.5%</span></td>
-            <td class="center"><span class="vs-pos">+0.3pp</span></td>
-          </tr>
-          <tr>
-            <td class="study-name">Europe &mdash; Italy</td>
-            <td class="center"><span class="mono-val">90.9% <span style="color:var(--static); font-size:11px;">&plusmn;0.19pp</span></span></td>
-            <td class="center"><span class="mono-val">77.2% <span style="color:var(--static); font-size:11px;">&plusmn;0.57pp</span></span></td>
-            <td class="center"><span class="vs-neg">−0.1pp</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- 3-study strip -->
+    <div class="hero-studies">
 
-    <p class="t-caption" style="margin-top:14px; color:var(--static);">
-      &#9733; India v2 is the only study where holdout DA (95.87%) also exceeds the 91% human ceiling.
-      Human ceiling reference: Iyengar et al., Stanford 2023.
-    </p>
-
-    <!-- key findings callouts -->
-    <div class="sc-callouts">
-      <div class="sc-callout">
-        <span class="sc-callout-num">Finding 01</span>
-        <p class="sc-callout-text">11 of 12 studies beat the 91% human ceiling on calibrated DA.</p>
-      </div>
-      <div class="sc-callout">
-        <span class="sc-callout-num">Finding 02</span>
-        <p class="sc-callout-text">India v2: first study where holdout DA (95.87%) also beats the ceiling &mdash; not just calibration.</p>
-      </div>
-      <div class="sc-callout">
-        <span class="sc-callout-num">Finding 03</span>
-        <p class="sc-callout-text">1.74pp calibration-to-holdout gap &mdash; down from 13.4pp (USA) and ~17pp (Europe mean).</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── STUDY SPOTLIGHTS ── -->
-  <div class="sc-section">
-    <div class="t-eyebrow">Study Spotlights</div>
-    <h2 class="t-title" style="margin-bottom:12px;">
-      USA &amp; India <span class="accent">v2</span>
-    </h2>
-    <p class="t-body" style="max-width:640px;">
-      Detailed configuration and question-level results for the two anchor studies in the program.
-    </p>
-
-    <div class="sc-spotlight">
-
-      <!-- US panel -->
-      <div class="sc-spotlight-panel">
-        <div class="sc-spotlight-header">
-          <div>
-            <div class="t-mono" style="color:var(--static); margin-bottom:6px;">PEW USA v2</div>
-            <h3 class="t-sub">United States</h3>
-          </div>
-          <span class="sc-spotlight-tag">Calibrated</span>
-        </div>
-
-        <ul class="sc-kv-list">
-          <li>
-            <span class="sc-kv-key">Questions</span>
-            <span class="sc-kv-val">15 total (10 calibration, 5 holdout)</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Personas</span>
-            <span class="sc-kv-val">40 &mdash; Persona Generator</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Calibrated DA</span>
-            <span class="sc-kv-val">95.3% &plusmn;0.00pp</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Holdout DA</span>
-            <span class="sc-kv-val">81.9% &plusmn;0.87pp</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">vs. Human Ceiling</span>
-            <span class="sc-kv-val">+4.3pp</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Ground Truth</span>
-            <span class="sc-kv-val">Pew American Trends Panel 2022–2023</span>
-          </li>
-        </ul>
-
-        <div class="sc-q-list" style="margin-top:24px;">
-          <div class="sc-q-list-header">Top calibrated questions</div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">q02</span>
-            <span class="sc-q-topic">Economic direction</span>
-            <span class="sc-q-score">99.0%</span>
-          </div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">q06</span>
-            <span class="sc-q-topic">Social trust</span>
-            <span class="sc-q-score">98.4%</span>
-          </div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">q10</span>
-            <span class="sc-q-topic">Racial equality</span>
-            <span class="sc-q-score">97.2%</span>
-          </div>
+      <div class="hero-study us">
+        <div class="hs-label">United States</div>
+        <div class="hs-num">95.3%</div>
+        <div class="hs-sub">+4.3pp above human ceiling</div>
+        <div class="hs-tags">
+          <span class="tag">Calibrated</span>
+          <span class="tag">81.9% holdout</span>
         </div>
       </div>
 
-      <!-- India v2 panel -->
-      <div class="sc-spotlight-panel india">
-        <div class="sc-spotlight-header">
-          <div>
-            <div class="t-mono" style="color:var(--signal); margin-bottom:6px;">PEW India v2 &#9733;</div>
-            <h3 class="t-sub" style="color:var(--signal);">India</h3>
-          </div>
-          <span class="sc-spotlight-tag">Program Peak</span>
-        </div>
-
-        <ul class="sc-kv-list">
-          <li>
-            <span class="sc-kv-key">Questions</span>
-            <span class="sc-kv-val">15 total (10 calibration, 5 holdout)</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Personas</span>
-            <span class="sc-kv-val">80 &mdash; Persona Generator (india_general, DEEP)</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Calibrated DA</span>
-            <span class="sc-kv-val green">97.61% &plusmn;0.00pp &mdash; highest in program</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Holdout DA</span>
-            <span class="sc-kv-val green">95.87% &plusmn;0.00pp &mdash; first to beat ceiling</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Cal → Holdout gap</span>
-            <span class="sc-kv-val green">1.74pp &mdash; smallest in program</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">vs. Human Ceiling</span>
-            <span class="sc-kv-val green">+6.61pp calibrated / +4.87pp holdout</span>
-          </li>
-          <li>
-            <span class="sc-kv-key">Ground Truth</span>
-            <span class="sc-kv-val">Pew Research Center 2023</span>
-          </li>
-        </ul>
-
-        <div class="sc-q-list" style="margin-top:24px;">
-          <div class="sc-q-list-header">Top calibrated questions</div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">in05</span>
-            <span class="sc-q-topic">India global power</span>
-            <span class="sc-q-score">99.0%</span>
-          </div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">in14</span>
-            <span class="sc-q-topic">Women equal rights</span>
-            <span class="sc-q-score">99.0%</span>
-          </div>
-        </div>
-
-        <div class="sc-q-list" style="margin-top:16px;">
-          <div class="sc-q-list-header">Top holdout questions</div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">in07</span>
-            <span class="sc-q-topic">Strong leader</span>
-            <span class="sc-q-score">98.85%</span>
-          </div>
-          <div class="sc-q-row">
-            <span class="sc-q-id">in15</span>
-            <span class="sc-q-topic">Climate change threat</span>
-            <span class="sc-q-score">98.5%</span>
-          </div>
-        </div>
-
-        <div class="sc-note">
-          Sarvam cultural enrichment layer not used (technical issue).
-          Standard WorldviewAnchor pipeline only. Scores reflect baseline configuration.
+      <div class="hero-study eu">
+        <div class="hs-label">Europe — 9 Countries</div>
+        <div class="hs-num">93.33%</div>
+        <div class="hs-sub">+2.33pp above human ceiling</div>
+        <div class="hs-tags">
+          <span class="tag">Mean calibrated</span>
+          <span class="tag">68.57% holdout mean</span>
         </div>
       </div>
 
-    </div><!-- /sc-spotlight -->
-  </div>
-
-  <!-- ── METHODOLOGY ── -->
-  <div class="sc-section">
-    <div class="t-eyebrow">Methodology</div>
-    <h2 class="t-title" style="margin-bottom:12px;">
-      How it's <span class="accent">measured</span>
-    </h2>
-    <p class="t-body" style="max-width:640px;">
-      Every study uses a consistent evaluation framework.
-      Holdout questions are pre-designated before any calibration run begins &mdash; zero topic anchors provided.
-    </p>
-
-    <div class="sc-meth-grid">
-
-      <div class="sc-meth-card">
-        <div class="sc-meth-card-title">Distribution Accuracy (DA)</div>
-        <code class="sc-formula">DA = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2</code>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">TVD</span> is total variation distance between the real population distribution and the simulated distribution across all response options.
-          </p>
-        </div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">Human ceiling: 91%</span> &mdash; Iyengar et al., Stanford 2023. The best human raters achieve approximately 91% DA when predicting survey distributions.
-          </p>
-        </div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">Variance protocol:</span> 3&times; replications per study with the same routing logic. Reported as &plusmn;Xpp across runs.
-          </p>
-        </div>
-      </div>
-
-      <div class="sc-meth-card">
-        <div class="sc-meth-card-title">Pipeline Architecture</div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">WorldviewAnchor dimensions:</span> Institutional Trust (IT), Social Conservatism / Cultural Traditionalism (SCP/CT), Collective / Individual (CS/IND), Ethno-National Security Protectionism (ESP), Religious Salience / Moral Foundationalism (RS/MF). Continuous per persona.
-          </p>
-        </div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">Option-Vocabulary Anchoring (OVA):</span> exact survey question language and answer options embedded verbatim in persona system prompts.
-          </p>
-        </div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">Holdout protocol:</span> 5 questions pre-designated per study. No topic anchors provided during calibration. Evaluated identically to calibration questions post-run.
-          </p>
-        </div>
-        <div class="sc-meth-item">
-          <div class="sc-meth-dot"></div>
-          <p class="sc-meth-text">
-            <span class="sc-meth-term">Persona Generator:</span> REST API. Domain-specific tiers (DEEP for India v2). 40–80 personas per study depending on population heterogeneity.
-          </p>
+      <div class="hero-study india">
+        <div class="hs-label">India v2 — Peak</div>
+        <div class="hs-num">97.61%</div>
+        <div class="hs-sub">+6.61pp above human ceiling</div>
+        <div class="hs-tags">
+          <span class="tag g">95.87% holdout ★</span>
+          <span class="tag g">Holdout clears ceiling</span>
         </div>
       </div>
 
     </div>
   </div>
+</div>
 
-  <!-- ── FOOTER STRIP / GITHUB CTA ── -->
-  <div class="sc-footer-strip">
+<!-- ═══════════════════════════════════════════
+     HEAT METER
+═══════════════════════════════════════════ -->
+<div class="heat-wrap">
+  <div class="heat-header">
+    <span>Accuracy range — 80% to 100%</span>
+    <span>All studies calibrated above 91% human ceiling</span>
+  </div>
+
+  <div class="heat-track-outer">
+    <div class="heat-track" id="heatTrack">
+      <div class="heat-fill-pre"></div>
+      <div class="heat-fill-above"></div>
+
+      <!-- Ceiling line -->
+      <div class="heat-ceiling-line">
+        <span class="heat-ceiling-tag">91% Human Ceiling</span>
+      </div>
+
+      <!-- Study dots -->
+      <div class="heat-dot eu"    title="Europe mean 93.33%"></div>
+      <div class="heat-dot us"    title="USA 95.3%"></div>
+      <div class="heat-dot india" title="India 97.61%"></div>
+
+      <!-- Dot labels -->
+      <div class="heat-dot-labels">
+        <div class="heat-dlabel eu">
+          <span class="hdl-val">93.33%</span>
+          <span class="hdl-name">Europe</span>
+          <span class="hdl-holdout">68.57% holdout</span>
+        </div>
+        <div class="heat-dlabel us">
+          <span class="hdl-val">95.3%</span>
+          <span class="hdl-name">USA</span>
+          <span class="hdl-holdout">81.9% holdout</span>
+        </div>
+        <div class="heat-dlabel india">
+          <span class="hdl-val">97.61%</span>
+          <span class="hdl-name">India v2</span>
+          <span class="hdl-holdout">95.87% holdout</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="heat-scale">
+      <span>80%</span>
+      <span>85%</span>
+      <span>90%</span>
+      <span>95%</span>
+      <span>100%</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     01 — US STUDY
+═══════════════════════════════════════════ -->
+<div class="section animate-section" id="us-section">
+
+  <div class="eyebrow">01 — United States</div>
+
+  <h2 class="t-title" style="margin-bottom:16px;">
+    95.3% calibrated.<br>81.9% <span class="green">holdout.</span>
+  </h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:48px;">
+    10 questions, each independently calibrated above the 91% human ceiling.
+    The holdout score — 81.9% — was earned on 5 questions the system never
+    saw during calibration, with zero topic anchors. The 13.4pp gap between
+    calibrated and holdout performance is the quantified cost of zero-shot
+    worldview transfer.
+  </p>
+
+  <div class="stat-row">
+    <div class="stat-cell">
+      <div class="stat-val g" data-count="95.3" data-dec="1">95.3%</div>
+      <div class="stat-key">Calibrated DA</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">+4.3pp</div>
+      <div class="stat-key">Above human ceiling</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">81.9%</div>
+      <div class="stat-key">Holdout DA (zero anchors)</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">±0.00pp</div>
+      <div class="stat-key">Variance across replications</div>
+    </div>
+  </div>
+
+  <!-- Calibration chart -->
+  <div class="chart-outer">
+    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% Human Ceiling</span></div>
+
+    <div class="bar-row">
+      <span class="bar-label">Economic direction</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="99.0"><span class="bar-val">99.0%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Social trust</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="98.4"><span class="bar-val">98.4%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Racial equality</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="97.2"><span class="bar-val">97.2%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Religion importance</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="97.0"><span class="bar-val">97.0%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Immigration</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="95.8"><span class="bar-val">95.8%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Healthcare</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="95.6"><span class="bar-val">95.6%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Media trust</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="94.9"><span class="bar-val">94.9%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Climate change</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="93.0"><span class="bar-val">93.0%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Economy rating</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="91.0"><span class="bar-val">91.0%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Financial security</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="91.0"><span class="bar-val">91.0%</span></div></div>
+    </div>
+  </div>
+
+  <!-- Holdout chart -->
+  <div class="chart-subhead">Holdout questions — zero calibration anchors — Mean 81.9%</div>
+
+  <div class="chart-outer">
+    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% Ceiling</span></div>
+
+    <div class="bar-row">
+      <span class="bar-label">Government role</span>
+      <div class="bar-track"><div class="bar-fill hd-above" data-w="98.5"><span class="bar-val">98.5%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">AI / technology</span>
+      <div class="bar-track"><div class="bar-fill hd-below" data-w="84.2"><span class="bar-val">84.2%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Gun policy</span>
+      <div class="bar-track"><div class="bar-fill hd-below" data-w="83.5"><span class="bar-val">83.5%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Abortion legality</span>
+      <div class="bar-track"><div class="bar-fill hd-below" data-w="76.8"><span class="bar-val">76.8%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Democracy satisfaction</span>
+      <div class="bar-track"><div class="bar-fill hd-below" data-w="66.6"><span class="bar-val">66.6%</span></div></div>
+    </div>
+  </div>
+
+  <p class="t-cap" style="margin-top:16px; color:var(--static);">
+    Ground truth: Pew American Trends Panel, Waves 119–130, 2022–2023.
+    40 personas · WorldviewAnchor architecture · Pew Political Typology calibration sources.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     02 — EUROPE
+═══════════════════════════════════════════ -->
+<div class="section animate-section" id="eu-section">
+
+  <div class="eyebrow">02 — Europe Benchmark v2</div>
+
+  <h2 class="t-title" style="margin-bottom:20px;">
+    9 nations. All above<br>the <span class="green">ceiling.</span>
+  </h2>
+
+  <div class="eu-top">
     <div>
-      <div class="t-mono" style="color:var(--static); margin-bottom:8px;">Open Research</div>
-      <p class="t-body" style="margin:0; max-width:480px; font-size:15px;">
-        All study configurations, sprint runners, question sets, and calibration data are published on GitHub.
+      <p class="t-body" style="margin-bottom:28px;">
+        The first cross-national study where every country independently
+        cleared the 91% human replication ceiling — not as a mean, but
+        each nation on its own. 9 countries. 9 separate calibrations. 9
+        results above the benchmark. Rebuilt using Simulatte Persona
+        Generator cohorts across all 9 nations.
       </p>
+      <div class="eu-statement">
+        For the first time, a 9-country benchmark where no country fell
+        below the human ceiling. Independently, collectively, every nation above 91%.
+      </div>
     </div>
-    <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
-      <a href="https://github.com/Iqbalahmed7/simulatte-credibility" target="_blank" rel="noopener" class="sc-github-link">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-            .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-            -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
-            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
-            1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
-            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-        </svg>
-        simulatte-credibility
-      </a>
-      <div class="t-signal" style="display:flex; align-items:center; gap:8px;">
-        <span class="sc-live-dot"></span>
-        Program active
+    <div class="eu-meta">
+      <div class="eu-kv">
+        <span class="eu-k">Mean calibrated DA</span>
+        <span class="eu-v g">93.33%</span>
+      </div>
+      <div class="eu-kv">
+        <span class="eu-k">Mean holdout DA</span>
+        <span class="eu-v">68.57%</span>
+      </div>
+      <div class="eu-kv">
+        <span class="eu-k">Countries above 91%</span>
+        <span class="eu-v g">9 of 9</span>
+      </div>
+      <div class="eu-kv">
+        <span class="eu-k">Peak country</span>
+        <span class="eu-v">Italy — 95.48%</span>
+      </div>
+      <div class="eu-kv">
+        <span class="eu-k">Variance</span>
+        <span class="eu-v">±0.00pp all 9 countries</span>
+      </div>
+      <div class="eu-kv">
+        <span class="eu-k">Ground truth</span>
+        <span class="eu-v">Pew Global Attitudes, Spring 2024</span>
       </div>
     </div>
   </div>
 
-</div><!-- /sim-cred -->
+  <!-- Country bar chart -->
+  <div class="chart-outer">
+    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% Human Ceiling</span></div>
+
+    <div class="bar-row">
+      <span class="bar-label country-label">Italy</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="95.48"><span class="bar-val">95.48%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Poland</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="94.55"><span class="bar-val">94.55%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Netherlands</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="94.41"><span class="bar-val">94.41%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">United Kingdom</span>
+      <div class="bar-track"><div class="bar-fill cal-hi" data-w="94.00"><span class="bar-val">94.00%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Greece</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="93.93"><span class="bar-val">93.93%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Sweden</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="93.37"><span class="bar-val">93.37%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Hungary</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="91.47"><span class="bar-val">91.47%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">Spain</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="91.45"><span class="bar-val">91.45%</span></div></div>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label country-label">France</span>
+      <div class="bar-track"><div class="bar-fill cal" data-w="91.33"><span class="bar-val">91.33%</span></div></div>
+    </div>
+  </div>
+
+  <p class="t-cap" style="margin-top:16px; color:var(--static);">
+    40 personas per country · Simulatte Persona Generator (v2 rebuild) · 15 questions per country
+    (10 shared cross-national + 5 country-specific) · Sprint EUR-1 · ±0.00pp variance.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     03 — INDIA
+═══════════════════════════════════════════ -->
+<div class="section animate-section" id="india-section">
+
+  <div class="eyebrow">03 — India v2 — Program Peak</div>
+
+  <h2 class="t-title" style="margin-bottom:16px;">
+    97.61% calibrated.<br>95.87% <span class="green">holdout.</span>
+  </h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:48px;">
+    The first study in the program where holdout DA — earned on questions
+    never seen during calibration, with zero topic anchors — also exceeds
+    the 91% human ceiling. The calibration-to-holdout gap is 1.74pp,
+    down from 13.4pp in the US study.
+  </p>
+
+  <div class="india-layout">
+
+    <!-- Progress rings -->
+    <div class="india-rings">
+
+      <div class="ring-wrap">
+        <span class="ring-lbl">Calibrated</span>
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <!-- Track ring -->
+          <circle class="ring-track" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(233,230,223,0.08)" stroke-width="6"/>
+          <!-- 91% ceiling marker ring -->
+          <circle class="ring-ceil" id="ringCeil1" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(168,255,62,0.3)" stroke-width="1.5"
+            stroke-dashoffset="36.76"/>
+          <!-- Progress ring -->
+          <circle class="ring-progress" id="ringCal" cx="80" cy="80" r="65"
+            fill="none" stroke="#E9E6DF" stroke-width="6"
+            stroke-linecap="butt" data-target="9.76"/>
+          <!-- Centre text -->
+          <text x="80" y="74" text-anchor="middle"
+            font-family="'Barlow Condensed',sans-serif" font-weight="800"
+            font-size="26" fill="#E9E6DF">97.61%</text>
+          <text x="80" y="92" text-anchor="middle"
+            font-family="'Martian Mono',monospace" font-size="8"
+            letter-spacing="2" fill="rgba(233,230,223,0.55)">DA</text>
+        </svg>
+        <span class="ring-num">97.61%</span>
+        <span class="ring-sub">+6.61pp above ceiling</span>
+      </div>
+
+      <div class="ring-wrap">
+        <span class="ring-lbl">Holdout</span>
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle class="ring-track" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(233,230,223,0.08)" stroke-width="6"/>
+          <circle class="ring-ceil" id="ringCeil2" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(168,255,62,0.3)" stroke-width="1.5"
+            stroke-dashoffset="36.76"/>
+          <circle class="ring-progress" id="ringHD" cx="80" cy="80" r="65"
+            fill="none" stroke="#A8FF3E" stroke-width="6"
+            stroke-linecap="butt" data-target="16.87"/>
+          <text x="80" y="74" text-anchor="middle"
+            font-family="'Barlow Condensed',sans-serif" font-weight="800"
+            font-size="26" fill="#A8FF3E">95.87%</text>
+          <text x="80" y="92" text-anchor="middle"
+            font-family="'Martian Mono',monospace" font-size="8"
+            letter-spacing="2" fill="rgba(168,255,62,0.55)">HOLDOUT</text>
+        </svg>
+        <span class="ring-num g">95.87%</span>
+        <span class="ring-sub">+4.87pp above ceiling</span>
+      </div>
+
+    </div>
+
+    <!-- India detail metrics -->
+    <div class="india-details">
+
+      <div class="india-callout">
+        The first study in the program where holdout DA also exceeds the 91%
+        human ceiling — not just calibrated performance. The LLM generalises
+        from worldview alone, without topic-specific anchors.
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Calibration → Holdout gap</div>
+        <div class="india-metric-v g">1.74pp</div>
+        <div class="india-metric-sub">Down from 13.4pp (USA) — smallest in the program</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Personas</div>
+        <div class="india-metric-v">80</div>
+        <div class="india-metric-sub">india_general · DEEP tier · Persona Generator</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Top calibrated questions</div>
+        <div class="india-metric-v" style="font-size:18px;">99.0% — India global power &amp; women's rights</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Top holdout questions</div>
+        <div class="india-metric-v" style="font-size:18px; color:var(--sig);">98.85% — Strong leader · 98.5% — Climate threat</div>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="t-cap" style="margin-top:40px; color:var(--static);">
+    Ground truth: Pew Global Attitudes Survey 2023 + CSDS-Lokniti NES (N ≈ 2,044–3,281 per question).
+    Sprint IND-1 · ±0.00pp variance · 3 replications.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     04 — FULL ACCURACY NUMBERS
+═══════════════════════════════════════════ -->
+<div class="section animate-section" id="results-section">
+
+  <div class="eyebrow">All Results</div>
+  <h2 class="t-title" style="margin-bottom:12px;">
+    Every study. Every number.
+  </h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:0;">
+    12 completed studies. Human ceiling: 91% (Iyengar et al., Stanford 2023).
+    All holdout questions pre-designated before calibration — zero topic anchors applied.
+  </p>
+
+  <div class="table-wrap">
+    <table class="res-table">
+      <thead>
+        <tr>
+          <th>Study</th>
+          <th class="c">Calibrated DA</th>
+          <th class="c">Holdout DA</th>
+          <th class="c">vs. Human Ceiling</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- USA -->
+        <tr>
+          <td class="n">PEW USA v2</td>
+          <td class="c"><span class="mv">95.3% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">81.9% <span class="ms">±0.87pp</span></span></td>
+          <td class="c"><span class="mp">+4.3pp</span></td>
+        </tr>
+        <!-- India -->
+        <tr class="india-row">
+          <td class="n">PEW India v2 <span class="badge">★ Peak</span></td>
+          <td class="c"><span class="mv green">97.61% <span class="ms" style="color:rgba(168,255,62,0.55);">±0.00pp</span></span></td>
+          <td class="c"><span class="mv green">95.87% <span class="ms" style="color:rgba(168,255,62,0.55);">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+6.61pp</span></td>
+        </tr>
+        <!-- Europe -->
+        <tr class="eu-group">
+          <td class="n">Europe — Italy</td>
+          <td class="c"><span class="mv">95.48% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">63.10% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+4.48pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Poland</td>
+          <td class="c"><span class="mv">94.55% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">79.31% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+3.55pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Netherlands</td>
+          <td class="c"><span class="mv">94.41% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">81.47% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+3.41pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — UK</td>
+          <td class="c"><span class="mv">94.00% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">63.03% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+3.00pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Greece</td>
+          <td class="c"><span class="mv">93.93% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">69.53% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+2.93pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Sweden</td>
+          <td class="c"><span class="mv">93.37% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">69.78% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+2.37pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Hungary</td>
+          <td class="c"><span class="mv">91.47% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">55.92% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+0.47pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — Spain</td>
+          <td class="c"><span class="mv">91.45% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">61.07% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+0.45pp</span></td>
+        </tr>
+        <tr class="eu-group">
+          <td class="n">Europe — France</td>
+          <td class="c"><span class="mv">91.33% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mv">73.96% <span class="ms">±0.00pp</span></span></td>
+          <td class="c"><span class="mp">+0.33pp</span></td>
+        </tr>
+        <!-- Germany -->
+        <tr>
+          <td class="n">PEW Germany (1C)</td>
+          <td class="c"><span class="mv">91.3%</span></td>
+          <td class="c"><span class="mv">76.5%</span></td>
+          <td class="c"><span class="mp">+0.3pp</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="t-cap" style="margin-top:14px; color:var(--static);">
+    ★ India v2 is the only study where holdout DA (95.87%) also exceeds the 91% human ceiling.
+    Human ceiling: Iyengar et al., Stanford 2023. DA = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<div class="footer-strip">
+  <div>
+    <div class="t-mono" style="color:var(--static); margin-bottom:8px;">Open Research</div>
+    <p class="t-body" style="margin:0; max-width:480px; font-size:15px;">
+      All study configurations, sprint runners, question sets, and manifest data are published on GitHub.
+    </p>
+  </div>
+  <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+    <a href="https://github.com/Iqbalahmed7/simulatte-credibility" target="_blank" rel="noopener" class="gh-link">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+          0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+          -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+          .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+          -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+          1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+          1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+          1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      simulatte-credibility
+    </a>
+    <div class="live-status">
+      <span class="live-dot"></span>
+      Program active
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     JS — animations
+═══════════════════════════════════════════ -->
+<script>
+(function() {
+
+  // ── Heat meter — fires on page load ──────────────────
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var t = document.getElementById('heatTrack');
+      if (t) t.classList.add('go');
+    }, 500);
+  });
+
+  // ── Bar chart animation on scroll ────────────────────
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+
+      var section = entry.target;
+
+      // Animate bars
+      var bars = section.querySelectorAll('.bar-fill[data-w]');
+      bars.forEach(function(bar, i) {
+        var w = parseFloat(bar.getAttribute('data-w'));
+        setTimeout(function() {
+          bar.style.width = w + '%';
+        }, i * 70);
+      });
+
+      // Animate SVG rings
+      var rings = section.querySelectorAll('.ring-progress[data-target]');
+      rings.forEach(function(ring, i) {
+        var target = parseFloat(ring.getAttribute('data-target'));
+        setTimeout(function() {
+          ring.style.strokeDashoffset = target;
+        }, 200 + i * 200);
+      });
+
+      // Show ceiling rings
+      var ceils = section.querySelectorAll('.ring-ceil');
+      ceils.forEach(function(c) {
+        setTimeout(function() { c.style.opacity = '1'; }, 1400);
+      });
+
+      // Animate counters
+      section.querySelectorAll('[data-count]').forEach(function(el) {
+        var target = parseFloat(el.getAttribute('data-count'));
+        var dec = parseInt(el.getAttribute('data-dec') || '1');
+        animateCount(el, target, dec, 1300);
+      });
+
+      observer.unobserve(section);
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.animate-section').forEach(function(s) {
+    observer.observe(s);
+  });
+
+  // ── Counter animation ─────────────────────────────────
+  function animateCount(el, target, dec, dur) {
+    var start = performance.now();
+    var orig = el.textContent;
+    (function step(now) {
+      var p = Math.min((now - start) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * e).toFixed(dec) + '%';
+      if (p < 1) requestAnimationFrame(step);
+    })(start);
+  }
+
+})();
+</script>
+
+</body>
+</html>
