@@ -1,0 +1,246 @@
+{
+  "sprint_id": "EUR-1c",
+  "country": "greece",
+  "batch_id": "msgbatch_01PcBWjmW4iV214yDUJJ8ozo",
+  "generated_at": "2026-04-12T00:08:33.827870+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 93.93,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "gr01": {
+      "question": "How would you describe the current economic situation in Greece?",
+      "simulated": {
+        "C": 0.35,
+        "B": 0.3,
+        "D": 0.35
+      },
+      "real": {
+        "A": 0.0237,
+        "B": 0.2653,
+        "C": 0.357,
+        "D": 0.354
+      },
+      "da_pct": 96.53
+    },
+    "gr02": {
+      "question": "How satisfied are you with the way democracy is working in Greece?",
+      "simulated": {
+        "C": 0.35,
+        "B": 0.3,
+        "D": 0.35
+      },
+      "real": {
+        "A": 0.0414,
+        "B": 0.2345,
+        "C": 0.3892,
+        "D": 0.335
+      },
+      "da_pct": 91.94
+    },
+    "gr03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "C": 0.5,
+        "D": 0.3,
+        "B": 0.2
+      },
+      "real": {
+        "A": 0.0452,
+        "B": 0.2088,
+        "C": 0.4689,
+        "D": 0.2771
+      },
+      "da_pct": 94.6
+    },
+    "gr04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "B": 0.5,
+        "D": 0.15,
+        "A": 0.075,
+        "C": 0.275
+      },
+      "real": {
+        "A": 0.0997,
+        "B": 0.4255,
+        "C": 0.306,
+        "D": 0.1688
+      },
+      "da_pct": 92.55
+    },
+    "gr05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "C": 0.325,
+        "B": 0.35,
+        "A": 0.075,
+        "D": 0.25
+      },
+      "real": {
+        "A": 0.0538,
+        "B": 0.3513,
+        "C": 0.3797,
+        "D": 0.2152
+      },
+      "da_pct": 94.4
+    },
+    "gr06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "B": 0.425,
+        "C": 0.425,
+        "A": 0.075,
+        "D": 0.075
+      },
+      "real": {
+        "A": 0.0528,
+        "B": 0.4097,
+        "C": 0.4034,
+        "D": 0.1341
+      },
+      "da_pct": 94.09
+    },
+    "gr07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.25,
+        "C": 0.225,
+        "A": 0.075,
+        "D": 0.45
+      },
+      "real": {
+        "A": 0.0709,
+        "B": 0.2006,
+        "C": 0.2186,
+        "D": 0.51
+      },
+      "da_pct": 94.01
+    },
+    "gr08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "B": 0.325,
+        "A": 0.325,
+        "D": 0.15,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.268,
+        "B": 0.2995,
+        "C": 0.2384,
+        "D": 0.1941
+      },
+      "da_pct": 91.75
+    },
+    "gr09": {
+      "question": "Do you think Greece's economic system needs to be reformed?",
+      "simulated": {
+        "C": 0.15,
+        "B": 0.675,
+        "A": 0.175
+      },
+      "real": {
+        "A": 0.1923,
+        "B": 0.667,
+        "C": 0.1308,
+        "D": 0.0099
+      },
+      "da_pct": 97.28
+    },
+    "gr10": {
+      "question": "How big a problem is the gap between the rich and the poor in Greece?",
+      "simulated": {
+        "B": 0.325,
+        "C": 0.15,
+        "A": 0.525
+      },
+      "real": {
+        "A": 0.5104,
+        "B": 0.3583,
+        "C": 0.1115,
+        "D": 0.0197
+      },
+      "da_pct": 94.69
+    },
+    "gr11": {
+      "question": "Do you have a favorable or unfavorable opinion of New Democracy (ND)?",
+      "simulated": {
+        "B": 0.35,
+        "A": 0.075,
+        "C": 0.325,
+        "D": 0.25
+      },
+      "real": {
+        "A": 0.0868,
+        "B": 0.3185,
+        "C": 0.2712,
+        "D": 0.3235
+      },
+      "da_pct": 91.47
+    },
+    "gr12": {
+      "question": "Do you have a favorable or unfavorable opinion of SYRIZA?",
+      "simulated": {
+        "C": 0.45,
+        "D": 0.4,
+        "B": 0.15
+      },
+      "real": {
+        "A": 0.0268,
+        "B": 0.1477,
+        "C": 0.4034,
+        "D": 0.4222
+      },
+      "da_pct": 95.1
+    },
+    "gr13": {
+      "question": "Do you have a favorable or unfavorable opinion of Greek Solution?",
+      "simulated": {
+        "B": 0.225,
+        "C": 0.35,
+        "D": 0.425
+      },
+      "real": {
+        "A": 0.0326,
+        "B": 0.1702,
+        "C": 0.3344,
+        "D": 0.4628
+      },
+      "da_pct": 92.96
+    },
+    "gr14": {
+      "question": "Do you have a favorable or unfavorable opinion of the Spartans?",
+      "simulated": {
+        "D": 0.7,
+        "C": 0.3
+      },
+      "real": {
+        "A": 0.0102,
+        "B": 0.0613,
+        "C": 0.2137,
+        "D": 0.7147
+      },
+      "da_pct": 91.38
+    },
+    "gr15": {
+      "question": "Do you have a favorable or unfavorable opinion of the Communist Party of Greece (KKE)?",
+      "simulated": {
+        "C": 0.425,
+        "D": 0.325,
+        "B": 0.25
+      },
+      "real": {
+        "A": 0.0339,
+        "B": 0.244,
+        "C": 0.4293,
+        "D": 0.2928
+      },
+      "da_pct": 96.18
+    }
+  }
+}

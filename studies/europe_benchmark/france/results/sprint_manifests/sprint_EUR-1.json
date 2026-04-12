@@ -1,0 +1,247 @@
+{
+  "sprint_id": "EUR-1",
+  "country": "france",
+  "batch_id": "msgbatch_01J3gadomia5XBAmgGyynWQ2",
+  "generated_at": "2026-04-11T23:46:43.686457+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 91.33,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "fr01": {
+      "question": "How would you describe the current economic situation in France?",
+      "simulated": {
+        "C": 0.4,
+        "B": 0.325,
+        "D": 0.275
+      },
+      "real": {
+        "A": 0.0118,
+        "B": 0.2744,
+        "C": 0.4383,
+        "D": 0.2754
+      },
+      "da_pct": 94.95
+    },
+    "fr02": {
+      "question": "How satisfied are you with the way democracy is working in France?",
+      "simulated": {
+        "C": 0.275,
+        "B": 0.375,
+        "D": 0.35
+      },
+      "real": {
+        "A": 0.0463,
+        "B": 0.3369,
+        "C": 0.2975,
+        "D": 0.3192
+      },
+      "da_pct": 93.12
+    },
+    "fr03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.575,
+        "C": 0.3,
+        "B": 0.125
+      },
+      "real": {
+        "A": 0.0279,
+        "B": 0.1218,
+        "C": 0.3251,
+        "D": 0.5253
+      },
+      "da_pct": 94.71
+    },
+    "fr04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.375,
+        "A": 0.1,
+        "D": 0.275
+      },
+      "real": {
+        "A": 0.0998,
+        "B": 0.4481,
+        "C": 0.2705,
+        "D": 0.1816
+      },
+      "da_pct": 90.64
+    },
+    "fr05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "B": 0.575,
+        "C": 0.2,
+        "A": 0.125,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.0891,
+        "B": 0.5345,
+        "C": 0.2418,
+        "D": 0.1347
+      },
+      "da_pct": 92.36
+    },
+    "fr06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "C": 0.45,
+        "B": 0.2,
+        "D": 0.35
+      },
+      "real": {
+        "A": 0.024,
+        "B": 0.2035,
+        "C": 0.4645,
+        "D": 0.3079
+      },
+      "da_pct": 95.8
+    },
+    "fr07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "D": 0.675,
+        "B": 0.2,
+        "C": 0.125
+      },
+      "real": {
+        "A": 0.0448,
+        "B": 0.1124,
+        "C": 0.1423,
+        "D": 0.7005
+      },
+      "da_pct": 91.24
+    },
+    "fr08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.2,
+        "D": 0.4,
+        "A": 0.15
+      },
+      "real": {
+        "A": 0.1514,
+        "B": 0.1992,
+        "C": 0.2669,
+        "D": 0.3825
+      },
+      "da_pct": 98.17
+    },
+    "fr09": {
+      "question": "Do you think France's economic system needs to be reformed?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.6,
+        "A": 0.125,
+        "D": 0.025
+      },
+      "real": {
+        "A": 0.1316,
+        "B": 0.6122,
+        "C": 0.2193,
+        "D": 0.0369
+      },
+      "da_pct": 96.93
+    },
+    "fr10": {
+      "question": "How big a problem is the gap between the rich and the poor in France?",
+      "simulated": {
+        "B": 0.45,
+        "A": 0.55
+      },
+      "real": {
+        "A": 0.5884,
+        "B": 0.2616,
+        "C": 0.1086,
+        "D": 0.0415
+      },
+      "da_pct": 81.16
+    },
+    "fr11": {
+      "question": "Do you have a favorable or unfavorable opinion of the National Rally (Rassemblement National)?",
+      "simulated": {
+        "C": 0.275,
+        "D": 0.475,
+        "B": 0.2,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.0714,
+        "B": 0.2171,
+        "C": 0.2599,
+        "D": 0.4516
+      },
+      "da_pct": 96.15
+    },
+    "fr12": {
+      "question": "Do you have a favorable or unfavorable opinion of Renaissance (En Marche)?",
+      "simulated": {
+        "D": 0.25,
+        "B": 0.3,
+        "C": 0.375,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0263,
+        "B": 0.294,
+        "C": 0.3635,
+        "D": 0.3161
+      },
+      "da_pct": 93.38
+    },
+    "fr13": {
+      "question": "Do you have a favorable or unfavorable opinion of La France Insoumise (LFI)?",
+      "simulated": {
+        "D": 0.65,
+        "C": 0.275,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0433,
+        "B": 0.1598,
+        "C": 0.3103,
+        "D": 0.4866
+      },
+      "da_pct": 80.49
+    },
+    "fr14": {
+      "question": "Do you have a favorable or unfavorable opinion of Les R\u00e9publicains (LR)?",
+      "simulated": {
+        "C": 0.475,
+        "B": 0.45,
+        "D": 0.075
+      },
+      "real": {
+        "A": 0.0249,
+        "B": 0.3264,
+        "C": 0.4052,
+        "D": 0.2435
+      },
+      "da_pct": 80.66
+    },
+    "fr15": {
+      "question": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+      "simulated": {
+        "C": 0.325,
+        "B": 0.275,
+        "D": 0.325,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0873,
+        "B": 0.3452,
+        "C": 0.2262,
+        "D": 0.3413
+      },
+      "da_pct": 90.12
+    }
+  }
+}

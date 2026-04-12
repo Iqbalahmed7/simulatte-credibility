@@ -1,0 +1,1811 @@
+{
+  "cohort_id": "cohort-netherlands_general-e8373b",
+  "generated_at": "2026-04-11T19:44:49.330134+00:00",
+  "domain": "netherlands_general",
+  "client": "Simulatte Credibility",
+  "mode": "DELIVER",
+  "count_delivered": 40,
+  "cohort_summary": "Local pool generation — 40 personas for netherlands_general",
+  "personas": [
+    {
+      "persona_id": "pg-ne-001",
+      "generated_at": "2026-04-11T19:44:49.328608+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Jan van den Berg",
+        "age": 52,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Rotterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.26,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.65,
+          "religious_salience": 0.27,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Jan van den Berg",
+        "first_person": "I am Jan van den Berg, a 52-year-old from Rotterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-002",
+      "generated_at": "2026-04-11T19:44:49.328647+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ria de Vries",
+        "age": 48,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Gelderland",
+          "city": "Arnhem",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.29,
+          "social_change_pace": 0.23,
+          "collectivism_score": 0.5,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ria de Vries",
+        "first_person": "I am Ria de Vries, a 48-year-old from Arnhem."
+      }
+    },
+    {
+      "persona_id": "pg-ne-003",
+      "generated_at": "2026-04-11T19:44:49.328680+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Henk Bakker",
+        "age": 55,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Brabant",
+          "city": "Tilburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.28,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.71,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Henk Bakker",
+        "first_person": "I am Henk Bakker, a 55-year-old from Tilburg."
+      }
+    },
+    {
+      "persona_id": "pg-ne-004",
+      "generated_at": "2026-04-11T19:44:49.328713+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Wilma Smeets",
+        "age": 44,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Limburg",
+          "city": "Maastricht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.32,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.51,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.3,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Wilma Smeets",
+        "first_person": "I am Wilma Smeets, a 44-year-old from Maastricht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-005",
+      "generated_at": "2026-04-11T19:44:49.328746+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Klaas Mulder",
+        "age": 61,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Netherlands",
+          "region": "Friesland",
+          "city": "Leeuwarden",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.25,
+          "social_change_pace": 0.23,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.71,
+          "religious_salience": 0.34,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Klaas Mulder",
+        "first_person": "I am Klaas Mulder, a 61-year-old from Leeuwarden."
+      }
+    },
+    {
+      "persona_id": "pg-ne-006",
+      "generated_at": "2026-04-11T19:44:49.328780+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Pieter Janssen",
+        "age": 46,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.72,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.35,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.2,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Pieter Janssen",
+        "first_person": "I am Pieter Janssen, a 46-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-007",
+      "generated_at": "2026-04-11T19:44:49.328813+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Marieke van Leeuwen",
+        "age": 40,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "The Hague",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.49,
+          "collectivism_score": 0.35,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Marieke van Leeuwen",
+        "first_person": "I am Marieke van Leeuwen, a 40-year-old from The Hague."
+      }
+    },
+    {
+      "persona_id": "pg-ne-008",
+      "generated_at": "2026-04-11T19:44:49.328846+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Bram de Graaf",
+        "age": 54,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "self-employed",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Utrecht",
+          "city": "Utrecht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.72,
+          "social_change_pace": 0.53,
+          "collectivism_score": 0.31,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Bram de Graaf",
+        "first_person": "I am Bram de Graaf, a 54-year-old from Utrecht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-009",
+      "generated_at": "2026-04-11T19:44:49.328878+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Emma Vissers",
+        "age": 29,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.8,
+          "social_change_pace": 0.82,
+          "collectivism_score": 0.3,
+          "economic_security_priority": 0.39,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Emma Vissers",
+        "first_person": "I am Emma Vissers, a 29-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-010",
+      "generated_at": "2026-04-11T19:44:49.328911+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Thomas Kuijpers",
+        "age": 33,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.82,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.26,
+          "economic_security_priority": 0.4,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Thomas Kuijpers",
+        "first_person": "I am Thomas Kuijpers, a 33-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-011",
+      "generated_at": "2026-04-11T19:44:49.328944+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Lisa Hendriksen",
+        "age": 38,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Utrecht",
+          "city": "Utrecht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.8,
+          "social_change_pace": 0.83,
+          "collectivism_score": 0.26,
+          "economic_security_priority": 0.46,
+          "religious_salience": 0.15,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Lisa Hendriksen",
+        "first_person": "I am Lisa Hendriksen, a 38-year-old from Utrecht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-012",
+      "generated_at": "2026-04-11T19:44:49.328977+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sander Wolff",
+        "age": 44,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Delft",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.75,
+          "social_change_pace": 0.84,
+          "collectivism_score": 0.29,
+          "economic_security_priority": 0.45,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sander Wolff",
+        "first_person": "I am Sander Wolff, a 44-year-old from Delft."
+      }
+    },
+    {
+      "persona_id": "pg-ne-013",
+      "generated_at": "2026-04-11T19:44:49.329009+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anke Posthuma",
+        "age": 26,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Groningen",
+          "city": "Groningen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.79,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.28,
+          "economic_security_priority": 0.44,
+          "religious_salience": 0.12,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anke Posthuma",
+        "first_person": "I am Anke Posthuma, a 26-year-old from Groningen."
+      }
+    },
+    {
+      "persona_id": "pg-ne-014",
+      "generated_at": "2026-04-11T19:44:49.329042+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gerrit van Dijk",
+        "age": 58,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zeeland",
+          "city": "Middelburg",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.41,
+          "collectivism_score": 0.54,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.75,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "cda_other",
+            "description": "CDA (Christian-democratic) or SP/BBB voter. CDA: moderate centre-right, Christian values, pro-EU, pro-social policy. SP: left populist, anti-austerity. BBB: rural-agrarian, anti-nitrogen policy. Moderate institutional trust, moderate-to-high religious salience (especially CDA Bible Belt), mixed on EU. Calibrated to CDA+SP+BBB ~11% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gerrit van Dijk",
+        "first_person": "I am Gerrit van Dijk, a 58-year-old from Middelburg."
+      }
+    },
+    {
+      "persona_id": "pg-ne-015",
+      "generated_at": "2026-04-11T19:44:49.329075+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Corrie Boersma",
+        "age": 52,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Gelderland",
+          "city": "Nijmegen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.56,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "cda_other",
+            "description": "CDA (Christian-democratic) or SP/BBB voter. CDA: moderate centre-right, Christian values, pro-EU, pro-social policy. SP: left populist, anti-austerity. BBB: rural-agrarian, anti-nitrogen policy. Moderate institutional trust, moderate-to-high religious salience (especially CDA Bible Belt), mixed on EU. Calibrated to CDA+SP+BBB ~11% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Corrie Boersma",
+        "first_person": "I am Corrie Boersma, a 52-year-old from Nijmegen."
+      }
+    },
+    {
+      "persona_id": "pg-ne-016",
+      "generated_at": "2026-04-11T19:44:49.329107+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Dirk Lammers",
+        "age": 50,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Brabant",
+          "city": "Eindhoven",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.54,
+          "collectivism_score": 0.38,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Dirk Lammers",
+        "first_person": "I am Dirk Lammers, a 50-year-old from Eindhoven."
+      }
+    },
+    {
+      "persona_id": "pg-ne-017",
+      "generated_at": "2026-04-11T19:44:49.329139+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Tineke Hartman",
+        "age": 36,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Rotterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.53,
+          "social_change_pace": 0.58,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.24,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Tineke Hartman",
+        "first_person": "I am Tineke Hartman, a 36-year-old from Rotterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-018",
+      "generated_at": "2026-04-11T19:44:49.329172+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Mohammed Bouazza",
+        "age": 31,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.4,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Mohammed Bouazza",
+        "first_person": "I am Mohammed Bouazza, a 31-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-019",
+      "generated_at": "2026-04-11T19:44:49.329206+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Joke Vermeer",
+        "age": 65,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "The Hague",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.52,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.29,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Joke Vermeer",
+        "first_person": "I am Joke Vermeer, a 65-year-old from The Hague."
+      }
+    },
+    {
+      "persona_id": "pg-ne-020",
+      "generated_at": "2026-04-11T19:44:49.329238+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Bas Hofman",
+        "age": 27,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.55,
+          "social_change_pace": 0.55,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.11,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Bas Hofman",
+        "first_person": "I am Bas Hofman, a 27-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-021",
+      "generated_at": "2026-04-11T19:44:49.329284+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Jan van den Berg",
+        "age": 50,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Rotterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.26,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.65,
+          "religious_salience": 0.27,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Jan van den Berg",
+        "first_person": "I am Jan van den Berg, a 50-year-old from Rotterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-022",
+      "generated_at": "2026-04-11T19:44:49.329328+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ria de Vries",
+        "age": 50,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Gelderland",
+          "city": "Arnhem",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.29,
+          "social_change_pace": 0.23,
+          "collectivism_score": 0.5,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ria de Vries",
+        "first_person": "I am Ria de Vries, a 50-year-old from Arnhem."
+      }
+    },
+    {
+      "persona_id": "pg-ne-023",
+      "generated_at": "2026-04-11T19:44:49.329373+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Henk Bakker",
+        "age": 58,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Brabant",
+          "city": "Tilburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.28,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.71,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Henk Bakker",
+        "first_person": "I am Henk Bakker, a 58-year-old from Tilburg."
+      }
+    },
+    {
+      "persona_id": "pg-ne-024",
+      "generated_at": "2026-04-11T19:44:49.329418+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Wilma Smeets",
+        "age": 44,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Limburg",
+          "city": "Maastricht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.32,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.51,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.3,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Wilma Smeets",
+        "first_person": "I am Wilma Smeets, a 44-year-old from Maastricht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-025",
+      "generated_at": "2026-04-11T19:44:49.329462+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Klaas Mulder",
+        "age": 59,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Netherlands",
+          "region": "Friesland",
+          "city": "Leeuwarden",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.25,
+          "social_change_pace": 0.23,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.71,
+          "religious_salience": 0.34,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "pvv",
+            "description": "PVV (Wilders) voter; anti-Islam, anti-immigration, populist-nationalist. Very low institutional trust in Dutch and EU establishment, traditional values on national identity, moderate-to-low religious attachment (often secular but with anti-Islam cultural stance). Sceptical of EU integration, ambivalent on NATO. Often lower-education, working-class, peripheral regions. Calibrated to PVV ~24% (2023 Dutch elections, Pew Spring 2024)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Klaas Mulder",
+        "first_person": "I am Klaas Mulder, a 59-year-old from Leeuwarden."
+      }
+    },
+    {
+      "persona_id": "pg-ne-026",
+      "generated_at": "2026-04-11T19:44:49.329507+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Pieter Janssen",
+        "age": 46,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.72,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.35,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.2,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Pieter Janssen",
+        "first_person": "I am Pieter Janssen, a 46-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-027",
+      "generated_at": "2026-04-11T19:44:49.329551+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Marieke van Leeuwen",
+        "age": 41,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "The Hague",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.49,
+          "collectivism_score": 0.35,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Marieke van Leeuwen",
+        "first_person": "I am Marieke van Leeuwen, a 41-year-old from The Hague."
+      }
+    },
+    {
+      "persona_id": "pg-ne-028",
+      "generated_at": "2026-04-11T19:44:49.329596+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Bram de Graaf",
+        "age": 53,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "self-employed",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Utrecht",
+          "city": "Utrecht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.72,
+          "social_change_pace": 0.53,
+          "collectivism_score": 0.31,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "vvd_nsc",
+            "description": "VVD (Rutte/Yesilgöz, liberal-conservative) or NSC (Omtzigt, Christian-social) voter. Pro-market, pro-rule-of-law, moderate on immigration. Often middle-class, business or professional. High institutional trust, moderate social values, low-to-moderate religious salience. Firmly pro-NATO, pro-EU (with reform emphasis), strongly anti-Russia. Calibrated to VVD+NSC ~17% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Bram de Graaf",
+        "first_person": "I am Bram de Graaf, a 53-year-old from Utrecht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-029",
+      "generated_at": "2026-04-11T19:44:49.329640+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Emma Vissers",
+        "age": 28,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.8,
+          "social_change_pace": 0.82,
+          "collectivism_score": 0.3,
+          "economic_security_priority": 0.39,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Emma Vissers",
+        "first_person": "I am Emma Vissers, a 28-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-030",
+      "generated_at": "2026-04-11T19:44:49.329685+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Thomas Kuijpers",
+        "age": 31,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.82,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.26,
+          "economic_security_priority": 0.4,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Thomas Kuijpers",
+        "first_person": "I am Thomas Kuijpers, a 31-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-031",
+      "generated_at": "2026-04-11T19:44:49.329728+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Lisa Hendriksen",
+        "age": 36,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Utrecht",
+          "city": "Utrecht",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.8,
+          "social_change_pace": 0.83,
+          "collectivism_score": 0.26,
+          "economic_security_priority": 0.46,
+          "religious_salience": 0.15,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Lisa Hendriksen",
+        "first_person": "I am Lisa Hendriksen, a 36-year-old from Utrecht."
+      }
+    },
+    {
+      "persona_id": "pg-ne-032",
+      "generated_at": "2026-04-11T19:44:49.329773+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sander Wolff",
+        "age": 41,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Delft",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.75,
+          "social_change_pace": 0.84,
+          "collectivism_score": 0.29,
+          "economic_security_priority": 0.45,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sander Wolff",
+        "first_person": "I am Sander Wolff, a 41-year-old from Delft."
+      }
+    },
+    {
+      "persona_id": "pg-ne-033",
+      "generated_at": "2026-04-11T19:44:49.329817+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anke Posthuma",
+        "age": 28,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Groningen",
+          "city": "Groningen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.79,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.28,
+          "economic_security_priority": 0.44,
+          "religious_salience": 0.12,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "d66_gl_pvda",
+            "description": "D66 (progressive liberal) or GroenLinks-PvdA (Green-Labour) voter. Highly educated, urban (Randstad), strongly pro-EU, pro-climate action, progressive on social values (diversity, LGBTQ+, migration). High institutional trust in EU and democratic institutions, very secular or non-religious. Pro-NATO and pro-Ukraine, pro-multilateralism. Calibrated to D66+GL-PvdA ~22% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anke Posthuma",
+        "first_person": "I am Anke Posthuma, a 28-year-old from Groningen."
+      }
+    },
+    {
+      "persona_id": "pg-ne-034",
+      "generated_at": "2026-04-11T19:44:49.329860+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gerrit van Dijk",
+        "age": 56,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zeeland",
+          "city": "Middelburg",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.41,
+          "collectivism_score": 0.54,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.75,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "cda_other",
+            "description": "CDA (Christian-democratic) or SP/BBB voter. CDA: moderate centre-right, Christian values, pro-EU, pro-social policy. SP: left populist, anti-austerity. BBB: rural-agrarian, anti-nitrogen policy. Moderate institutional trust, moderate-to-high religious salience (especially CDA Bible Belt), mixed on EU. Calibrated to CDA+SP+BBB ~11% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gerrit van Dijk",
+        "first_person": "I am Gerrit van Dijk, a 56-year-old from Middelburg."
+      }
+    },
+    {
+      "persona_id": "pg-ne-035",
+      "generated_at": "2026-04-11T19:44:49.329905+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Corrie Boersma",
+        "age": 52,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Gelderland",
+          "city": "Nijmegen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.56,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "cda_other",
+            "description": "CDA (Christian-democratic) or SP/BBB voter. CDA: moderate centre-right, Christian values, pro-EU, pro-social policy. SP: left populist, anti-austerity. BBB: rural-agrarian, anti-nitrogen policy. Moderate institutional trust, moderate-to-high religious salience (especially CDA Bible Belt), mixed on EU. Calibrated to CDA+SP+BBB ~11% (2023 Dutch elections)."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Corrie Boersma",
+        "first_person": "I am Corrie Boersma, a 52-year-old from Nijmegen."
+      }
+    },
+    {
+      "persona_id": "pg-ne-036",
+      "generated_at": "2026-04-11T19:44:49.329949+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Dirk Lammers",
+        "age": 50,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Brabant",
+          "city": "Eindhoven",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.54,
+          "collectivism_score": 0.38,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Dirk Lammers",
+        "first_person": "I am Dirk Lammers, a 50-year-old from Eindhoven."
+      }
+    },
+    {
+      "persona_id": "pg-ne-037",
+      "generated_at": "2026-04-11T19:44:49.329993+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Tineke Hartman",
+        "age": 34,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "Rotterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.53,
+          "social_change_pace": 0.58,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.24,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Tineke Hartman",
+        "first_person": "I am Tineke Hartman, a 34-year-old from Rotterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-038",
+      "generated_at": "2026-04-11T19:44:49.330040+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Mohammed Bouazza",
+        "age": 34,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.4,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Mohammed Bouazza",
+        "first_person": "I am Mohammed Bouazza, a 34-year-old from Amsterdam."
+      }
+    },
+    {
+      "persona_id": "pg-ne-039",
+      "generated_at": "2026-04-11T19:44:49.330087+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Joke Vermeer",
+        "age": 65,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Netherlands",
+          "region": "Zuid-Holland",
+          "city": "The Hague",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.52,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.29,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Joke Vermeer",
+        "first_person": "I am Joke Vermeer, a 65-year-old from The Hague."
+      }
+    },
+    {
+      "persona_id": "pg-ne-040",
+      "generated_at": "2026-04-11T19:44:49.330131+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "netherlands_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Bas Hofman",
+        "age": 28,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Netherlands",
+          "region": "Noord-Holland",
+          "city": "Amsterdam",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.55,
+          "social_change_pace": 0.55,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.11,
+          "political_profile": {
+            "country": "Netherlands",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Dutch voter. Moderate institutional trust, broadly pro-EU and pro-NATO but not strongly engaged. Urban or suburban, pragmatic on immigration. Median Dutch public opinion: socially liberal, economically moderate, largely secular."
+          },
+          "political_era": "PVV-largest-party coalition forming (2024); Schoof PM"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Bas Hofman",
+        "first_person": "I am Bas Hofman, a 28-year-old from Amsterdam."
+      }
+    }
+  ]
+}

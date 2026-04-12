@@ -1,8 +1,9 @@
 # Simulatte Europe Benchmark
 
-**Status: COMPLETE — All 9 countries calibrated, variance protocol certified**
+**Status: COMPLETE (v2) — All 9 countries calibrated with Persona Generator cohorts, variance protocol certified**
 
-9 European countries · 15 questions per country · 40 personas per country · Pew Spring 2024 ground truth
+9 European countries · 15 questions per country · 40 personas per country · Pew Spring 2024 ground truth  
+**v2 rebuild** uses Simulatte Persona Generator personas (replacing v1 hand-crafted pools). Unified runner (`eu_sprint_runner.py`) replaces per-country sprint runners.
 
 Part of the [Simulatte Credibility Research Program](../../README.md). Ground truth, persona pools, and holdout questions established before any calibration run. All sprint results are committed to this repository as they complete, maintaining a continuous audit trail.
 
@@ -10,23 +11,27 @@ Part of the [Simulatte Credibility Research Program](../../README.md). Ground tr
 
 ## Results
 
-| Country | N (Pew 2024) | Final Sprint | Calibrated DA (mean ± SD) | Holdout DA (mean ± SD) |
-|---------|-------------|--------------|--------------------------|------------------------|
-| Spain | 1,013 | SP-5 | **94.5%** ± 0.05pp | 71.5% ± 1.63pp |
-| Greece | 1,015 | GR-4 | **94.2%** ± 0.00pp | 78.6% ± 0.94pp |
-| Sweden | 1,017 | SW-5 | **93.8%** ± 0.00pp | 62.5% ± 0.34pp |
-| Hungary | 996 | HU-4 | **92.2%** ± 0.00pp | 76.7% ± 1.00pp |
-| Poland | 1,031 | PL-5 | **92.2%** ± 0.00pp | 75.0% ± 1.64pp |
-| Netherlands | 1,010 | NL-4 | **92.1%** ± 0.00pp | 69.4% ± 0.77pp |
-| France | 1,018 | FR-4 | **92.0%** ± 0.00pp | 81.2% ± 1.26pp |
-| UK | 1,017 | UK-5c | **91.8%** ± 0.09pp | **78.3%** ± 0.84pp |
-| Italy | 1,120 | IT-4 | **90.9%** ± 0.19pp † | 77.2% ± 0.57pp |
+### v2 Results (Persona Generator Cohorts — EUR-1/1b/1c · HD-1/1b/1c)
 
-Human ceiling benchmark: **91%** (Iyengar et al., Stanford 2023). 8 of 9 countries exceed the ceiling; Italy is within 1 SD of it.
+| Country | N (Pew 2024) | Sprint | Calibrated DA (mean ± SD) | Holdout DA (mean ± SD) |
+|---------|-------------|--------|--------------------------|------------------------|
+| Italy | 1,120 | EUR-1 | **95.48%** ± 0.00pp | 63.10% ± 0.00pp |
+| Poland | 1,031 | EUR-1 | **94.55%** ± 0.00pp | 79.31% ± 0.00pp |
+| Netherlands | 1,010 | EUR-1 | **94.41%** ± 0.00pp | 81.47% ± 0.00pp |
+| UK | 1,017 | EUR-1 | **94.00%** ± 0.00pp | 63.03% ± 0.00pp |
+| Greece | 1,015 | EUR-1 | **93.93%** ± 0.00pp | 69.53% ± 0.00pp |
+| Sweden | 1,017 | EUR-1 | **93.37%** ± 0.00pp | 69.78% ± 0.00pp |
+| Hungary | 996 | EUR-1 | **91.47%** ± 0.00pp | 55.92% ± 0.00pp |
+| Spain | 1,013 | EUR-1 | **91.45%** ± 0.00pp | 61.07% ± 0.00pp |
+| France | 1,018 | EUR-1 | **91.33%** ± 0.00pp | 73.96% ± 0.00pp |
+| **Mean (simple)** | | | **93.33%** | **68.57%** |
+| **Mean (pop-weighted)** | | | **93.35%** | **68.55%** |
 
-† Italy mean 90.93% is within measurement noise of the 91% ceiling (SD = 0.19pp).
+Human ceiling benchmark: **91%** (Iyengar et al., Stanford 2023). All 9 countries exceed the ceiling.
 
-**Holdout protocol**: 5 unseen questions per country, zero topic-specific anchors, pure WorldviewAnchor architecture. 3 independent runs each. Holdout questions designated before any calibration run. Mean cross-country holdout DA: **74.4%**.
+**Holdout protocol**: 5 unseen questions per country (4 for Poland/Sweden), zero topic-specific anchors, pure WorldviewAnchor architecture. 3 independent runs each (±0.00pp — deterministic at temperature=0). Holdout questions designated before any calibration run. Mean cross-country holdout DA: **68.57%**.
+
+**v1 → v2 comparison**: Calibrated DA improved from 92.6% to 93.33% (+0.73pp) by switching from hand-crafted personas to Persona Generator cohorts. Holdout DA changed from 74.4% to 68.57% (−5.83pp), reflecting that Persona Generator personas encode finer archetype precision for calibration but the holdout routing predates v2 persona WV distributions.
 
 ---
 

@@ -1,0 +1,1811 @@
+{
+  "cohort_id": "cohort-hungary_general-dfbb01",
+  "generated_at": "2026-04-11T19:44:49.324987+00:00",
+  "domain": "hungary_general",
+  "client": "Simulatte Credibility",
+  "mode": "DELIVER",
+  "count_delivered": 40,
+  "cohort_summary": "Local pool generation — 40 personas for hungary_general",
+  "personas": [
+    {
+      "persona_id": "pg-hu-001",
+      "generated_at": "2026-04-11T19:44:49.323361+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "István Kovács",
+        "age": 55,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Borsod-Abaúj-Zemplén",
+          "city": "Miskolc",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.74,
+          "social_change_pace": 0.16,
+          "collectivism_score": 0.71,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "István Kovács",
+        "first_person": "I am István Kovács, a 55-year-old from Miskolc."
+      }
+    },
+    {
+      "persona_id": "pg-hu-002",
+      "generated_at": "2026-04-11T19:44:49.323398+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erzsébet Szabó",
+        "age": 48,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Hajdú-Bihar",
+          "city": "Debrecen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.71,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.68,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erzsébet Szabó",
+        "first_person": "I am Erzsébet Szabó, a 48-year-old from Debrecen."
+      }
+    },
+    {
+      "persona_id": "pg-hu-003",
+      "generated_at": "2026-04-11T19:44:49.323433+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "László Tóth",
+        "age": 62,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Hungary",
+          "region": "Baranya",
+          "city": "Pécs",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.76,
+          "social_change_pace": 0.14,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "László Tóth",
+        "first_person": "I am László Tóth, a 62-year-old from Pécs."
+      }
+    },
+    {
+      "persona_id": "pg-hu-004",
+      "generated_at": "2026-04-11T19:44:49.323467+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katalin Horváth",
+        "age": 44,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Győr-Moson-Sopron",
+          "city": "Győr",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.79,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katalin Horváth",
+        "first_person": "I am Katalin Horváth, a 44-year-old from Győr."
+      }
+    },
+    {
+      "persona_id": "pg-hu-005",
+      "generated_at": "2026-04-11T19:44:49.323500+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ferenc Nagy",
+        "age": 50,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Érd",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.68,
+          "social_change_pace": 0.18,
+          "collectivism_score": 0.74,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ferenc Nagy",
+        "first_person": "I am Ferenc Nagy, a 50-year-old from Érd."
+      }
+    },
+    {
+      "persona_id": "pg-hu-006",
+      "generated_at": "2026-04-11T19:44:49.323533+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gábor Vass",
+        "age": 39,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.29,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gábor Vass",
+        "first_person": "I am Gábor Vass, a 39-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-007",
+      "generated_at": "2026-04-11T19:44:49.323566+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ágnes Papp",
+        "age": 34,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.45,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ágnes Papp",
+        "first_person": "I am Ágnes Papp, a 34-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-008",
+      "generated_at": "2026-04-11T19:44:49.323599+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Attila Fekete",
+        "age": 45,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.75,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.28,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Attila Fekete",
+        "first_person": "I am Attila Fekete, a 45-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-009",
+      "generated_at": "2026-04-11T19:44:49.323631+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erika Molnár",
+        "age": 31,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.33,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.42,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.19,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erika Molnár",
+        "first_person": "I am Erika Molnár, a 31-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-010",
+      "generated_at": "2026-04-11T19:44:49.323665+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Zoltán Balogh",
+        "age": 57,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Szabolcs-Szatmár-Bereg",
+          "city": "Nyíregyháza",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 5,
+          "income_bracket": "lower",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.49,
+          "social_change_pace": 0.44,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.55,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Zoltán Balogh",
+        "first_person": "I am Zoltán Balogh, a 57-year-old from Nyíregyháza."
+      }
+    },
+    {
+      "persona_id": "pg-hu-011",
+      "generated_at": "2026-04-11T19:44:49.323698+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ildikó Simon",
+        "age": 43,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Bács-Kiskun",
+          "city": "Kecskemét",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.43,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.5,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ildikó Simon",
+        "first_person": "I am Ildikó Simon, a 43-year-old from Kecskemét."
+      }
+    },
+    {
+      "persona_id": "pg-hu-012",
+      "generated_at": "2026-04-11T19:44:49.323731+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Tibor Kiss",
+        "age": 52,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.48,
+          "social_change_pace": 0.46,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.37,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Tibor Kiss",
+        "first_person": "I am Tibor Kiss, a 52-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-013",
+      "generated_at": "2026-04-11T19:44:49.323776+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "István Kovács",
+        "age": 52,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Borsod-Abaúj-Zemplén",
+          "city": "Miskolc",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.74,
+          "social_change_pace": 0.16,
+          "collectivism_score": 0.71,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "István Kovács",
+        "first_person": "I am István Kovács, a 52-year-old from Miskolc."
+      }
+    },
+    {
+      "persona_id": "pg-hu-014",
+      "generated_at": "2026-04-11T19:44:49.323822+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erzsébet Szabó",
+        "age": 50,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Hajdú-Bihar",
+          "city": "Debrecen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.71,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.68,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erzsébet Szabó",
+        "first_person": "I am Erzsébet Szabó, a 50-year-old from Debrecen."
+      }
+    },
+    {
+      "persona_id": "pg-hu-015",
+      "generated_at": "2026-04-11T19:44:49.323869+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "László Tóth",
+        "age": 59,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Hungary",
+          "region": "Baranya",
+          "city": "Pécs",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.76,
+          "social_change_pace": 0.14,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "László Tóth",
+        "first_person": "I am László Tóth, a 59-year-old from Pécs."
+      }
+    },
+    {
+      "persona_id": "pg-hu-016",
+      "generated_at": "2026-04-11T19:44:49.323914+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katalin Horváth",
+        "age": 41,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Győr-Moson-Sopron",
+          "city": "Győr",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.79,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katalin Horváth",
+        "first_person": "I am Katalin Horváth, a 41-year-old from Győr."
+      }
+    },
+    {
+      "persona_id": "pg-hu-017",
+      "generated_at": "2026-04-11T19:44:49.323960+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ferenc Nagy",
+        "age": 53,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Érd",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.68,
+          "social_change_pace": 0.18,
+          "collectivism_score": 0.74,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ferenc Nagy",
+        "first_person": "I am Ferenc Nagy, a 53-year-old from Érd."
+      }
+    },
+    {
+      "persona_id": "pg-hu-018",
+      "generated_at": "2026-04-11T19:44:49.324006+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gábor Vass",
+        "age": 38,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.29,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gábor Vass",
+        "first_person": "I am Gábor Vass, a 38-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-019",
+      "generated_at": "2026-04-11T19:44:49.324050+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ágnes Papp",
+        "age": 37,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.45,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ágnes Papp",
+        "first_person": "I am Ágnes Papp, a 37-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-020",
+      "generated_at": "2026-04-11T19:44:49.324096+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Attila Fekete",
+        "age": 44,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.75,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.28,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Attila Fekete",
+        "first_person": "I am Attila Fekete, a 44-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-021",
+      "generated_at": "2026-04-11T19:44:49.324141+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erika Molnár",
+        "age": 29,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.33,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.42,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.19,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erika Molnár",
+        "first_person": "I am Erika Molnár, a 29-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-022",
+      "generated_at": "2026-04-11T19:44:49.324186+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Zoltán Balogh",
+        "age": 59,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Szabolcs-Szatmár-Bereg",
+          "city": "Nyíregyháza",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 5,
+          "income_bracket": "lower",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.49,
+          "social_change_pace": 0.44,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.55,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Zoltán Balogh",
+        "first_person": "I am Zoltán Balogh, a 59-year-old from Nyíregyháza."
+      }
+    },
+    {
+      "persona_id": "pg-hu-023",
+      "generated_at": "2026-04-11T19:44:49.324231+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ildikó Simon",
+        "age": 46,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Bács-Kiskun",
+          "city": "Kecskemét",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.43,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.5,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ildikó Simon",
+        "first_person": "I am Ildikó Simon, a 46-year-old from Kecskemét."
+      }
+    },
+    {
+      "persona_id": "pg-hu-024",
+      "generated_at": "2026-04-11T19:44:49.324275+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Tibor Kiss",
+        "age": 52,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.48,
+          "social_change_pace": 0.46,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.37,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Tibor Kiss",
+        "first_person": "I am Tibor Kiss, a 52-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-025",
+      "generated_at": "2026-04-11T19:44:49.324320+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "István Kovács",
+        "age": 53,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Borsod-Abaúj-Zemplén",
+          "city": "Miskolc",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.74,
+          "social_change_pace": 0.16,
+          "collectivism_score": 0.71,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "István Kovács",
+        "first_person": "I am István Kovács, a 53-year-old from Miskolc."
+      }
+    },
+    {
+      "persona_id": "pg-hu-026",
+      "generated_at": "2026-04-11T19:44:49.324363+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erzsébet Szabó",
+        "age": 48,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Hajdú-Bihar",
+          "city": "Debrecen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.71,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.68,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erzsébet Szabó",
+        "first_person": "I am Erzsébet Szabó, a 48-year-old from Debrecen."
+      }
+    },
+    {
+      "persona_id": "pg-hu-027",
+      "generated_at": "2026-04-11T19:44:49.324408+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "László Tóth",
+        "age": 63,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Hungary",
+          "region": "Baranya",
+          "city": "Pécs",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.76,
+          "social_change_pace": 0.14,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "László Tóth",
+        "first_person": "I am László Tóth, a 63-year-old from Pécs."
+      }
+    },
+    {
+      "persona_id": "pg-hu-028",
+      "generated_at": "2026-04-11T19:44:49.324453+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katalin Horváth",
+        "age": 43,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Győr-Moson-Sopron",
+          "city": "Győr",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.79,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katalin Horváth",
+        "first_person": "I am Katalin Horváth, a 43-year-old from Győr."
+      }
+    },
+    {
+      "persona_id": "pg-hu-029",
+      "generated_at": "2026-04-11T19:44:49.324497+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ferenc Nagy",
+        "age": 49,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Érd",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.68,
+          "social_change_pace": 0.18,
+          "collectivism_score": 0.74,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ferenc Nagy",
+        "first_person": "I am Ferenc Nagy, a 49-year-old from Érd."
+      }
+    },
+    {
+      "persona_id": "pg-hu-030",
+      "generated_at": "2026-04-11T19:44:49.324541+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gábor Vass",
+        "age": 37,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.29,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gábor Vass",
+        "first_person": "I am Gábor Vass, a 37-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-031",
+      "generated_at": "2026-04-11T19:44:49.324585+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ágnes Papp",
+        "age": 32,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.45,
+          "economic_security_priority": 0.53,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ágnes Papp",
+        "first_person": "I am Ágnes Papp, a 32-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-032",
+      "generated_at": "2026-04-11T19:44:49.324628+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Attila Fekete",
+        "age": 42,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.75,
+          "collectivism_score": 0.46,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.28,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Attila Fekete",
+        "first_person": "I am Attila Fekete, a 42-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-033",
+      "generated_at": "2026-04-11T19:44:49.324672+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erika Molnár",
+        "age": 33,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Budapest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.33,
+          "social_change_pace": 0.73,
+          "collectivism_score": 0.42,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.19,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "opposition",
+            "description": "Hungarian opposition voter (DK, Momentum, Jobbik/MFP, MSZP, or Tisza). Anti-Orbán, pro-EU, pro-rule-of-law, pro-democratic norms. Often urban, younger, more educated. Low trust in Hungarian institutions (captured by Fidesz), higher trust in EU institutions. Progressive-to-moderate social values, largely secular or non-practising. Strongly anti-Russian, pro-NATO, pro-Ukraine. Critical of Hungarian media and judicial capture. Calibrated to opposition ~32% (2024 Hungarian elections)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erika Molnár",
+        "first_person": "I am Erika Molnár, a 33-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-034",
+      "generated_at": "2026-04-11T19:44:49.324717+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Zoltán Balogh",
+        "age": 55,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Szabolcs-Szatmár-Bereg",
+          "city": "Nyíregyháza",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 5,
+          "income_bracket": "lower",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.49,
+          "social_change_pace": 0.44,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.55,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Zoltán Balogh",
+        "first_person": "I am Zoltán Balogh, a 55-year-old from Nyíregyháza."
+      }
+    },
+    {
+      "persona_id": "pg-hu-035",
+      "generated_at": "2026-04-11T19:44:49.324762+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ildikó Simon",
+        "age": 43,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Bács-Kiskun",
+          "city": "Kecskemét",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.43,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.5,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ildikó Simon",
+        "first_person": "I am Ildikó Simon, a 43-year-old from Kecskemét."
+      }
+    },
+    {
+      "persona_id": "pg-hu-036",
+      "generated_at": "2026-04-11T19:44:49.324806+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Tibor Kiss",
+        "age": 52,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Pest",
+          "city": "Budapest",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.48,
+          "social_change_pace": 0.46,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.37,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or disengaged Hungarian voter. Mixed institutional trust, pragmatic on EU and NATO. Often rural or small-town, lower income. Median Hungarian public opinion: moderate Fidesz-sympathetic lean but not strongly ideological. Cultural Christian identity, pragmatic worldview."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Tibor Kiss",
+        "first_person": "I am Tibor Kiss, a 52-year-old from Budapest."
+      }
+    },
+    {
+      "persona_id": "pg-hu-037",
+      "generated_at": "2026-04-11T19:44:49.324850+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "István Kovács",
+        "age": 53,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Borsod-Abaúj-Zemplén",
+          "city": "Miskolc",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.74,
+          "social_change_pace": 0.16,
+          "collectivism_score": 0.71,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "István Kovács",
+        "first_person": "I am István Kovács, a 53-year-old from Miskolc."
+      }
+    },
+    {
+      "persona_id": "pg-hu-038",
+      "generated_at": "2026-04-11T19:44:49.324894+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erzsébet Szabó",
+        "age": 51,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Hajdú-Bihar",
+          "city": "Debrecen",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.71,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.68,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erzsébet Szabó",
+        "first_person": "I am Erzsébet Szabó, a 51-year-old from Debrecen."
+      }
+    },
+    {
+      "persona_id": "pg-hu-039",
+      "generated_at": "2026-04-11T19:44:49.324939+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "László Tóth",
+        "age": 64,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Hungary",
+          "region": "Baranya",
+          "city": "Pécs",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.76,
+          "social_change_pace": 0.14,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.7,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "László Tóth",
+        "first_person": "I am László Tóth, a 64-year-old from Pécs."
+      }
+    },
+    {
+      "persona_id": "pg-hu-040",
+      "generated_at": "2026-04-11T19:44:49.324983+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "hungary_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katalin Horváth",
+        "age": 45,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Hungary",
+          "region": "Győr-Moson-Sopron",
+          "city": "Győr",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.73,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.79,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Hungary",
+            "archetype": "fidesz",
+            "description": "Fidesz / KDNP voter; pro-Orbán, illiberal-conservative, sovereignist. Trusts the Hungarian government highly but sceptical of EU and Western liberal institutions. Traditional family values, Christian (Catholic or Calvinist) identity, anti-immigration, anti-LGBTQ+ social agenda. Neutral-to-sympathetic toward Russia, sceptical of NATO military aid to Ukraine. Often rural or provincial, working-class or older. High national institutional trust, low EU institutional trust, high religious salience. Calibrated to Fidesz ~45% (2024 Hungarian elections, Pew Spring 2024)."
+          },
+          "political_era": "Fidesz supermajority government (Orbán, 2010–; re-elected 2022)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katalin Horváth",
+        "first_person": "I am Katalin Horváth, a 45-year-old from Győr."
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cohort_id": "cohort-greece_general-deb2a8",
+  "run_id": "pg-simulatte-credibility-20260411-1942-deb2a8",
+  "generated_at": "2026-04-11T19:42:38.688066+00:00",
+  "domain": "greece_general",
+  "client": "Simulatte Credibility",
+  "business_problem": "Replicate Pew Spring 2024 Greece opinion distributions across validated survey questions covering economic conditions, democracy satisfaction, views on Russia, EU, NATO, China, Trump, religion importance, and Greek party favourability (ND, SYRIZA, PASOK, KKE, Greek Solution, Spartans). Cohort must represent the Greek adult public: urban/rural, Orthodox Christian majority, full political spectrum, calibrated to Pew Spring 2024 toplines (N=1,018).",
+  "tier": "deep",
+  "count_requested": 40
+}

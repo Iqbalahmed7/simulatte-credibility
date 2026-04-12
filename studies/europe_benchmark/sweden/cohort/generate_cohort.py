@@ -1,0 +1,36 @@
+"""Generate Sweden General Population cohort via Simulatte Persona Generator."""
+from __future__ import annotations
+import sys
+from pathlib import Path
+
+PERSONA_GEN_DIR = Path("/Users/admin/Documents/Simulatte Projects/Persona Generator")
+if str(PERSONA_GEN_DIR) not in sys.path:
+    sys.path.insert(0, str(PERSONA_GEN_DIR))
+
+from src.orchestrator import invoke_persona_generator_sync
+from src.orchestrator.brief import PersonaGenerationBrief, RunIntent
+
+brief = PersonaGenerationBrief(
+    client="Simulatte Credibility",
+    domain="sweden_general",
+    business_problem=(
+        "Replicate Pew Spring 2024 Sweden opinion distributions across validated "
+        "survey questions covering economic conditions, democracy satisfaction, "
+        "views on Russia (near-universal hostility post-Ukraine), EU, NATO, China, "
+        "Trump, religion importance (highly secular society), and Swedish party "
+        "favourability (SAP, Moderaterna, SD, V, MP). "
+        "Cohort must represent the Swedish adult public: world's most secular society, "
+        "Tidö coalition context, urban/rural, calibrated to Pew Spring 2024 toplines (N=1,017)."
+    ),
+    count=40,
+    run_intent=RunIntent.DELIVER,
+    auto_confirm=True,
+    persona_id_prefix="se",
+    output_dir=str(Path(__file__).parent),
+    emit_pipeline_doc=True,
+    skip_gates=True,
+)
+
+print("Invoking Simulatte Persona Generator — Sweden General Population")
+result = invoke_persona_generator_sync(brief)
+print(f"\n✓ Cohort saved ({result.count_delivered} personas) | {result.summary}")

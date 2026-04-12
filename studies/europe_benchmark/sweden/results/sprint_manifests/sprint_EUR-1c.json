@@ -1,0 +1,242 @@
+{
+  "sprint_id": "EUR-1c",
+  "country": "sweden",
+  "batch_id": "msgbatch_01YPTRPCPJsE9KHao79BFGkT",
+  "generated_at": "2026-04-12T00:30:02.533892+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 93.37,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "sw01": {
+      "question": "How would you describe the current economic situation in Sweden?",
+      "simulated": {
+        "B": 0.55,
+        "A": 0.05,
+        "C": 0.35,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.0209,
+        "B": 0.5633,
+        "C": 0.3589,
+        "D": 0.0568
+      },
+      "da_pct": 97.09
+    },
+    "sw02": {
+      "question": "How satisfied are you with the way democracy is working in Sweden?",
+      "simulated": {
+        "B": 0.7,
+        "A": 0.2,
+        "C": 0.1
+      },
+      "real": {
+        "A": 0.1685,
+        "B": 0.6125,
+        "C": 0.1625,
+        "D": 0.0565
+      },
+      "da_pct": 88.1
+    },
+    "sw03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.8,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.005,
+        "B": 0.0281,
+        "C": 0.1424,
+        "D": 0.8245
+      },
+      "da_pct": 94.24
+    },
+    "sw04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "B": 0.55,
+        "A": 0.2,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.2242,
+        "B": 0.5385,
+        "C": 0.1842,
+        "D": 0.0531
+      },
+      "da_pct": 92.27
+    },
+    "sw05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "B": 0.6,
+        "A": 0.25,
+        "C": 0.15
+      },
+      "real": {
+        "A": 0.2574,
+        "B": 0.5303,
+        "C": 0.1426,
+        "D": 0.0697
+      },
+      "da_pct": 92.29
+    },
+    "sw06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "D": 0.35,
+        "C": 0.55,
+        "B": 0.1
+      },
+      "real": {
+        "A": 0.0053,
+        "B": 0.0969,
+        "C": 0.5532,
+        "D": 0.3446
+      },
+      "da_pct": 99.15
+    },
+    "sw07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "D": 0.8,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.021,
+        "B": 0.0989,
+        "C": 0.1479,
+        "D": 0.7323
+      },
+      "da_pct": 88.02
+    },
+    "sw08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "D": 0.55,
+        "C": 0.3,
+        "B": 0.15
+      },
+      "real": {
+        "A": 0.0694,
+        "B": 0.1516,
+        "C": 0.3171,
+        "D": 0.4618
+      },
+      "da_pct": 91.18
+    },
+    "sw09": {
+      "question": "Do you think Sweden's economic system needs to be reformed?",
+      "simulated": {
+        "B": 0.35,
+        "C": 0.55,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.0605,
+        "B": 0.3094,
+        "C": 0.543,
+        "D": 0.0871
+      },
+      "da_pct": 93.95
+    },
+    "sw10": {
+      "question": "How big a problem is the gap between the rich and the poor in Sweden?",
+      "simulated": {
+        "B": 0.45,
+        "C": 0.25,
+        "D": 0.05,
+        "A": 0.25
+      },
+      "real": {
+        "A": 0.256,
+        "B": 0.4296,
+        "C": 0.2708,
+        "D": 0.0437
+      },
+      "da_pct": 97.32
+    },
+    "sw11": {
+      "question": "Do you have a favorable or unfavorable opinion of the Social Democratic Party (SAP)?",
+      "simulated": {
+        "B": 0.5,
+        "C": 0.3,
+        "D": 0.05,
+        "A": 0.15
+      },
+      "real": {
+        "A": 0.123,
+        "B": 0.5041,
+        "C": 0.2612,
+        "D": 0.1118
+      },
+      "da_pct": 93.42
+    },
+    "sw12": {
+      "question": "Do you have a favorable or unfavorable opinion of the Moderate Party?",
+      "simulated": {
+        "C": 0.35,
+        "B": 0.45,
+        "A": 0.05,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.0738,
+        "B": 0.4467,
+        "C": 0.3422,
+        "D": 0.1373
+      },
+      "da_pct": 97.62
+    },
+    "sw13": {
+      "question": "Do you have a favorable or unfavorable opinion of the Sweden Democrats (SD)?",
+      "simulated": {
+        "D": 0.45,
+        "C": 0.25,
+        "B": 0.25,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.055,
+        "B": 0.2202,
+        "C": 0.2569,
+        "D": 0.4679
+      },
+      "da_pct": 97.02
+    },
+    "sw14": {
+      "question": "When children today in Sweden grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "B": 0.6,
+        "A": 0.4
+      },
+      "real": {
+        "A": 0.3283,
+        "B": 0.576,
+        "C": 0.0957
+      },
+      "da_pct": 90.43
+    },
+    "sw15": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "B": 0.6,
+        "A": 0.2,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.2782,
+        "B": 0.5257,
+        "C": 0.1591,
+        "D": 0.037
+      },
+      "da_pct": 88.48
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "cohort_id": "cohort-uk_general-51f406",
+  "run_id": "pg-simulatte-credibility-20260411-1929-51f406",
+  "generated_at": "2026-04-11T19:29:33.011443+00:00",
+  "domain": "uk_general",
+  "client": "Simulatte Credibility",
+  "business_problem": "Replicate Pew Spring 2024 UK opinion distributions across validated survey questions covering economic conditions, democracy satisfaction, views on Russia, EU, NATO, China, Trump, religion importance, economic reform preferences, income inequality, and UK party favourability (Conservative, Labour, Lib Dems, Reform UK). Cohort must represent the British adult public: England/Scotland/Wales, urban/rural split, full political spectrum from Reform UK to Labour/SNP, calibrated to Pew Spring 2024 toplines (N=1,017).",
+  "tier": "deep",
+  "count_requested": 40
+}

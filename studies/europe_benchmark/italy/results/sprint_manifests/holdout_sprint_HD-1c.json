@@ -1,0 +1,83 @@
+{
+  "sprint_id": "HD-1c",
+  "country": "italy",
+  "batch_id": "msgbatch_01JTfqveD3g15dBxjDVDkoww",
+  "generated_at": "2026-04-12T00:14:14.480013+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": true,
+  "n_personas": 40,
+  "n_questions": 5,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 63.1,
+  "beats_ceiling": false,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hd01": {
+      "question": "Do you have a favorable or unfavorable view of the United States?",
+      "simulated": {
+        "B": 1.0
+      },
+      "real": {
+        "A": 0.0693,
+        "B": 0.4831,
+        "C": 0.3227,
+        "D": 0.1249
+      },
+      "da_pct": 48.31
+    },
+    "hd02": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "B": 1.0
+      },
+      "real": {
+        "A": 0.1485,
+        "B": 0.4904,
+        "C": 0.2466,
+        "D": 0.1146
+      },
+      "da_pct": 49.03
+    },
+    "hd03": {
+      "question": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.85,
+        "C": 0.15
+      },
+      "real": {
+        "A": 0.07,
+        "B": 0.3282,
+        "C": 0.3536,
+        "D": 0.2482
+      },
+      "da_pct": 47.82
+    },
+    "hd04": {
+      "question": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.6,
+        "C": 0.4
+      },
+      "real": {
+        "A": 0.0517,
+        "B": 0.422,
+        "C": 0.3793,
+        "D": 0.147
+      },
+      "da_pct": 80.13
+    },
+    "hd05": {
+      "question": "When children today in Italy grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.1,
+        "B": 0.9
+      },
+      "real": {
+        "A": 0.1832,
+        "B": 0.8023,
+        "C": 0.0144
+      },
+      "da_pct": 90.23
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "sprint_id": "HD-1",
+  "country": "france",
+  "batch_id": "msgbatch_01126oTSUwc5Tn9tqsAqRdt1",
+  "generated_at": "2026-04-11T23:50:58.044407+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": true,
+  "n_personas": 40,
+  "n_questions": 5,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 73.96,
+  "beats_ceiling": false,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hd01": {
+      "question": "Do you have a favorable or unfavorable view of the United States?",
+      "simulated": {
+        "B": 0.675,
+        "C": 0.325
+      },
+      "real": {
+        "A": 0.0495,
+        "B": 0.4454,
+        "C": 0.3887,
+        "D": 0.1165
+      },
+      "da_pct": 77.03
+    },
+    "hd02": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "B": 0.675,
+        "C": 0.325
+      },
+      "real": {
+        "A": 0.0599,
+        "B": 0.5126,
+        "C": 0.3036,
+        "D": 0.1239
+      },
+      "da_pct": 81.62
+    },
+    "hd03": {
+      "question": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.675,
+        "C": 0.325
+      },
+      "real": {
+        "A": 0.0745,
+        "B": 0.4286,
+        "C": 0.2173,
+        "D": 0.2796
+      },
+      "da_pct": 64.59
+    },
+    "hd04": {
+      "question": "When children today in France grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "B": 0.925,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.1636,
+        "B": 0.7998,
+        "C": 0.0366
+      },
+      "da_pct": 87.48
+    },
+    "hd05": {
+      "question": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+      "simulated": {
+        "D": 0.45,
+        "C": 0.475,
+        "B": 0.075
+      },
+      "real": {
+        "A": 0.0461,
+        "B": 0.4379,
+        "C": 0.2435,
+        "D": 0.2725
+      },
+      "da_pct": 59.1
+    }
+  }
+}

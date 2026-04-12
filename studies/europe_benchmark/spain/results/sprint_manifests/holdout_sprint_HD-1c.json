@@ -1,0 +1,87 @@
+{
+  "sprint_id": "HD-1c",
+  "country": "spain",
+  "batch_id": "msgbatch_01DqeokRZ2vBdzmiidStdoRL",
+  "generated_at": "2026-04-12T00:26:29.150941+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": true,
+  "n_personas": 40,
+  "n_questions": 5,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 61.07,
+  "beats_ceiling": false,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hd01": {
+      "question": "Do you have a favorable or unfavorable view of the United States?",
+      "simulated": {
+        "B": 0.75,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.1591,
+        "B": 0.3892,
+        "C": 0.3065,
+        "D": 0.1453
+      },
+      "da_pct": 63.91
+    },
+    "hd02": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "B": 1.0
+      },
+      "real": {
+        "A": 0.1985,
+        "B": 0.3687,
+        "C": 0.2931,
+        "D": 0.1397
+      },
+      "da_pct": 36.87
+    },
+    "hd03": {
+      "question": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.75,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.1612,
+        "B": 0.3622,
+        "C": 0.2949,
+        "D": 0.1816
+      },
+      "da_pct": 61.22
+    },
+    "hd04": {
+      "question": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.75,
+        "C": 0.1,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.0951,
+        "B": 0.4199,
+        "C": 0.332,
+        "D": 0.1531
+      },
+      "da_pct": 66.98
+    },
+    "hd05": {
+      "question": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.25,
+        "C": 0.6,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.0886,
+        "B": 0.3021,
+        "C": 0.3635,
+        "D": 0.2457
+      },
+      "da_pct": 76.35
+    }
+  }
+}

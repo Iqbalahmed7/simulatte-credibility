@@ -1,0 +1,1811 @@
+{
+  "cohort_id": "cohort-greece_general-a5815d",
+  "generated_at": "2026-04-11T19:44:49.322418+00:00",
+  "domain": "greece_general",
+  "client": "Simulatte Credibility",
+  "mode": "DELIVER",
+  "count_delivered": 40,
+  "cohort_summary": "Local pool generation — 40 personas for greece_general",
+  "personas": [
+    {
+      "persona_id": "pg-gr-001",
+      "generated_at": "2026-04-11T19:44:49.320443+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Nikos Papadopoulos",
+        "age": 50,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.69,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Nikos Papadopoulos",
+        "first_person": "I am Nikos Papadopoulos, a 50-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-002",
+      "generated_at": "2026-04-11T19:44:49.320749+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Georgiou",
+        "age": 44,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.59,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Georgiou",
+        "first_person": "I am Maria Georgiou, a 44-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-003",
+      "generated_at": "2026-04-11T19:44:49.320801+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Kostas Alexiou",
+        "age": 58,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Central Macedonia",
+          "city": "Thessaloniki",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.61,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.72,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Kostas Alexiou",
+        "first_person": "I am Kostas Alexiou, a 58-year-old from Thessaloniki."
+      }
+    },
+    {
+      "persona_id": "pg-gr-004",
+      "generated_at": "2026-04-11T19:44:49.320843+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Eleni Nikolaou",
+        "age": 35,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Peloponnese",
+          "city": "Kalamata",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.3,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Eleni Nikolaou",
+        "first_person": "I am Eleni Nikolaou, a 35-year-old from Kalamata."
+      }
+    },
+    {
+      "persona_id": "pg-gr-005",
+      "generated_at": "2026-04-11T19:44:49.320882+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giorgos Stavros",
+        "age": 62,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Greece",
+          "region": "Crete",
+          "city": "Heraklion",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.29,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giorgos Stavros",
+        "first_person": "I am Giorgos Stavros, a 62-year-old from Heraklion."
+      }
+    },
+    {
+      "persona_id": "pg-gr-006",
+      "generated_at": "2026-04-11T19:44:49.320919+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stavroula Papas",
+        "age": 47,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Western Greece",
+          "city": "Patras",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.28,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.74,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stavroula Papas",
+        "first_person": "I am Stavroula Papas, a 47-year-old from Patras."
+      }
+    },
+    {
+      "persona_id": "pg-gr-007",
+      "generated_at": "2026-04-11T19:44:49.320954+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Alexandros Katsaros",
+        "age": 38,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.71,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.72,
+          "religious_salience": 0.38,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Alexandros Katsaros",
+        "first_person": "I am Alexandros Katsaros, a 38-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-008",
+      "generated_at": "2026-04-11T19:44:49.320992+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Dimitra Vassilakis",
+        "age": 32,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.72,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.3,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Dimitra Vassilakis",
+        "first_person": "I am Dimitra Vassilakis, a 32-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-009",
+      "generated_at": "2026-04-11T19:44:49.321032+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Yannis Konstantinos",
+        "age": 55,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Central Macedonia",
+          "city": "Thessaloniki",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.6,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "pasok",
+            "description": "PASOK / social-democratic voter; pro-EU, pro-welfare, pro-labour. Often older, union-affiliated or public-sector, provincial. Moderate institutional trust, moderate social values, cultural Orthodox attachment. Supports EU integration and NATO but emphasises social protection and redistribution. Calibrated to PASOK ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Yannis Konstantinos",
+        "first_person": "I am Yannis Konstantinos, a 55-year-old from Thessaloniki."
+      }
+    },
+    {
+      "persona_id": "pg-gr-010",
+      "generated_at": "2026-04-11T19:44:49.321068+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anna Tsakali",
+        "age": 40,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.47,
+          "social_change_pace": 0.62,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "pasok",
+            "description": "PASOK / social-democratic voter; pro-EU, pro-welfare, pro-labour. Often older, union-affiliated or public-sector, provincial. Moderate institutional trust, moderate social values, cultural Orthodox attachment. Supports EU integration and NATO but emphasises social protection and redistribution. Calibrated to PASOK ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anna Tsakali",
+        "first_person": "I am Anna Tsakali, a 40-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-011",
+      "generated_at": "2026-04-11T19:44:49.321103+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Spyros Michalopoulos",
+        "age": 42,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Piraeus",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.28,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.73,
+          "religious_salience": 0.5,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "kkm_other",
+            "description": "KKE communist or Greek Solution / nationalist voter. KKE: very low institutional trust, strongly anti-EU and anti-NATO, Marxist worldview, secular. Greek Solution: nationalist, Eurosceptic, Orthodox-identitarian. Both reject the establishment consensus; combined ~12% of Greek electorate. Low institutional trust in EU/NATO, traditional or hard-left values. Calibrated to KKE + Greek Solution + Spartans ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Spyros Michalopoulos",
+        "first_person": "I am Spyros Michalopoulos, a 42-year-old from Piraeus."
+      }
+    },
+    {
+      "persona_id": "pg-gr-012",
+      "generated_at": "2026-04-11T19:44:49.321137+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katerina Papagiannis",
+        "age": 30,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.26,
+          "social_change_pace": 0.81,
+          "collectivism_score": 0.68,
+          "economic_security_priority": 0.73,
+          "religious_salience": 0.43,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "kkm_other",
+            "description": "KKE communist or Greek Solution / nationalist voter. KKE: very low institutional trust, strongly anti-EU and anti-NATO, Marxist worldview, secular. Greek Solution: nationalist, Eurosceptic, Orthodox-identitarian. Both reject the establishment consensus; combined ~12% of Greek electorate. Low institutional trust in EU/NATO, traditional or hard-left values. Calibrated to KKE + Greek Solution + Spartans ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katerina Papagiannis",
+        "first_person": "I am Katerina Papagiannis, a 30-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-013",
+      "generated_at": "2026-04-11T19:44:49.321172+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Takis Anastasiou",
+        "age": 65,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Greece",
+          "region": "Crete",
+          "city": "Chania",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.38,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Takis Anastasiou",
+        "first_person": "I am Takis Anastasiou, a 65-year-old from Chania."
+      }
+    },
+    {
+      "persona_id": "pg-gr-014",
+      "generated_at": "2026-04-11T19:44:49.321207+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sofia Theodorakis",
+        "age": 28,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.4,
+          "social_change_pace": 0.57,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.66,
+          "religious_salience": 0.51,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sofia Theodorakis",
+        "first_person": "I am Sofia Theodorakis, a 28-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-015",
+      "generated_at": "2026-04-11T19:44:49.321241+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Manolis Papakonstantinou",
+        "age": 52,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Epirus",
+          "city": "Ioannina",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.41,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.76,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Manolis Papakonstantinou",
+        "first_person": "I am Manolis Papakonstantinou, a 52-year-old from Ioannina."
+      }
+    },
+    {
+      "persona_id": "pg-gr-016",
+      "generated_at": "2026-04-11T19:44:49.321275+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ioanna Karamanlis",
+        "age": 45,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.46,
+          "social_change_pace": 0.53,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ioanna Karamanlis",
+        "first_person": "I am Ioanna Karamanlis, a 45-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-017",
+      "generated_at": "2026-04-11T19:44:49.321325+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Nikos Papadopoulos",
+        "age": 53,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.69,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Nikos Papadopoulos",
+        "first_person": "I am Nikos Papadopoulos, a 53-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-018",
+      "generated_at": "2026-04-11T19:44:49.321373+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Georgiou",
+        "age": 43,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.59,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Georgiou",
+        "first_person": "I am Maria Georgiou, a 43-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-019",
+      "generated_at": "2026-04-11T19:44:49.321425+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Kostas Alexiou",
+        "age": 61,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Central Macedonia",
+          "city": "Thessaloniki",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.61,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.72,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Kostas Alexiou",
+        "first_person": "I am Kostas Alexiou, a 61-year-old from Thessaloniki."
+      }
+    },
+    {
+      "persona_id": "pg-gr-020",
+      "generated_at": "2026-04-11T19:44:49.321476+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Eleni Nikolaou",
+        "age": 34,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Peloponnese",
+          "city": "Kalamata",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.3,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Eleni Nikolaou",
+        "first_person": "I am Eleni Nikolaou, a 34-year-old from Kalamata."
+      }
+    },
+    {
+      "persona_id": "pg-gr-021",
+      "generated_at": "2026-04-11T19:44:49.321524+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giorgos Stavros",
+        "age": 60,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Greece",
+          "region": "Crete",
+          "city": "Heraklion",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.29,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giorgos Stavros",
+        "first_person": "I am Giorgos Stavros, a 60-year-old from Heraklion."
+      }
+    },
+    {
+      "persona_id": "pg-gr-022",
+      "generated_at": "2026-04-11T19:44:49.321570+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stavroula Papas",
+        "age": 49,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Western Greece",
+          "city": "Patras",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.28,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.74,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stavroula Papas",
+        "first_person": "I am Stavroula Papas, a 49-year-old from Patras."
+      }
+    },
+    {
+      "persona_id": "pg-gr-023",
+      "generated_at": "2026-04-11T19:44:49.321626+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Alexandros Katsaros",
+        "age": 41,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.71,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.72,
+          "religious_salience": 0.38,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Alexandros Katsaros",
+        "first_person": "I am Alexandros Katsaros, a 41-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-024",
+      "generated_at": "2026-04-11T19:44:49.321671+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Dimitra Vassilakis",
+        "age": 32,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.72,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.3,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Dimitra Vassilakis",
+        "first_person": "I am Dimitra Vassilakis, a 32-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-025",
+      "generated_at": "2026-04-11T19:44:49.321716+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Yannis Konstantinos",
+        "age": 53,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Central Macedonia",
+          "city": "Thessaloniki",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.5,
+          "social_change_pace": 0.6,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "pasok",
+            "description": "PASOK / social-democratic voter; pro-EU, pro-welfare, pro-labour. Often older, union-affiliated or public-sector, provincial. Moderate institutional trust, moderate social values, cultural Orthodox attachment. Supports EU integration and NATO but emphasises social protection and redistribution. Calibrated to PASOK ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Yannis Konstantinos",
+        "first_person": "I am Yannis Konstantinos, a 53-year-old from Thessaloniki."
+      }
+    },
+    {
+      "persona_id": "pg-gr-026",
+      "generated_at": "2026-04-11T19:44:49.321761+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anna Tsakali",
+        "age": 40,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.47,
+          "social_change_pace": 0.62,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "pasok",
+            "description": "PASOK / social-democratic voter; pro-EU, pro-welfare, pro-labour. Often older, union-affiliated or public-sector, provincial. Moderate institutional trust, moderate social values, cultural Orthodox attachment. Supports EU integration and NATO but emphasises social protection and redistribution. Calibrated to PASOK ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anna Tsakali",
+        "first_person": "I am Anna Tsakali, a 40-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-027",
+      "generated_at": "2026-04-11T19:44:49.321819+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Spyros Michalopoulos",
+        "age": 43,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Piraeus",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.28,
+          "social_change_pace": 0.79,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.73,
+          "religious_salience": 0.5,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "kkm_other",
+            "description": "KKE communist or Greek Solution / nationalist voter. KKE: very low institutional trust, strongly anti-EU and anti-NATO, Marxist worldview, secular. Greek Solution: nationalist, Eurosceptic, Orthodox-identitarian. Both reject the establishment consensus; combined ~12% of Greek electorate. Low institutional trust in EU/NATO, traditional or hard-left values. Calibrated to KKE + Greek Solution + Spartans ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Spyros Michalopoulos",
+        "first_person": "I am Spyros Michalopoulos, a 43-year-old from Piraeus."
+      }
+    },
+    {
+      "persona_id": "pg-gr-028",
+      "generated_at": "2026-04-11T19:44:49.321864+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Katerina Papagiannis",
+        "age": 29,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.26,
+          "social_change_pace": 0.81,
+          "collectivism_score": 0.68,
+          "economic_security_priority": 0.73,
+          "religious_salience": 0.43,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "kkm_other",
+            "description": "KKE communist or Greek Solution / nationalist voter. KKE: very low institutional trust, strongly anti-EU and anti-NATO, Marxist worldview, secular. Greek Solution: nationalist, Eurosceptic, Orthodox-identitarian. Both reject the establishment consensus; combined ~12% of Greek electorate. Low institutional trust in EU/NATO, traditional or hard-left values. Calibrated to KKE + Greek Solution + Spartans ~12% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Katerina Papagiannis",
+        "first_person": "I am Katerina Papagiannis, a 29-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-029",
+      "generated_at": "2026-04-11T19:44:49.321909+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Takis Anastasiou",
+        "age": 64,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Greece",
+          "region": "Crete",
+          "city": "Chania",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.38,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Takis Anastasiou",
+        "first_person": "I am Takis Anastasiou, a 64-year-old from Chania."
+      }
+    },
+    {
+      "persona_id": "pg-gr-030",
+      "generated_at": "2026-04-11T19:44:49.321954+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sofia Theodorakis",
+        "age": 26,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.4,
+          "social_change_pace": 0.57,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.66,
+          "religious_salience": 0.51,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sofia Theodorakis",
+        "first_person": "I am Sofia Theodorakis, a 26-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-031",
+      "generated_at": "2026-04-11T19:44:49.322001+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Manolis Papakonstantinou",
+        "age": 50,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Epirus",
+          "city": "Ioannina",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.41,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.76,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Manolis Papakonstantinou",
+        "first_person": "I am Manolis Papakonstantinou, a 50-year-old from Ioannina."
+      }
+    },
+    {
+      "persona_id": "pg-gr-032",
+      "generated_at": "2026-04-11T19:44:49.322046+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ioanna Karamanlis",
+        "age": 42,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.46,
+          "social_change_pace": 0.53,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.57,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "non_partisan",
+            "description": "Non-aligned or abstaining Greek voter. Disillusioned with major parties after the memorandum crisis. Mixed views on EU, NATO, and economic reform. Median Greek public opinion: moderate institutional scepticism, cultural Orthodox identity, pragmatic on foreign policy."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ioanna Karamanlis",
+        "first_person": "I am Ioanna Karamanlis, a 42-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-033",
+      "generated_at": "2026-04-11T19:44:49.322090+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Nikos Papadopoulos",
+        "age": 52,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.69,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Nikos Papadopoulos",
+        "first_person": "I am Nikos Papadopoulos, a 52-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-034",
+      "generated_at": "2026-04-11T19:44:49.322134+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Georgiou",
+        "age": 42,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.59,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Georgiou",
+        "first_person": "I am Maria Georgiou, a 42-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-035",
+      "generated_at": "2026-04-11T19:44:49.322178+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Kostas Alexiou",
+        "age": 58,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Greece",
+          "region": "Central Macedonia",
+          "city": "Thessaloniki",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.61,
+          "social_change_pace": 0.33,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.6,
+          "religious_salience": 0.72,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Kostas Alexiou",
+        "first_person": "I am Kostas Alexiou, a 58-year-old from Thessaloniki."
+      }
+    },
+    {
+      "persona_id": "pg-gr-036",
+      "generated_at": "2026-04-11T19:44:49.322222+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Eleni Nikolaou",
+        "age": 35,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Peloponnese",
+          "city": "Kalamata",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.3,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Eleni Nikolaou",
+        "first_person": "I am Eleni Nikolaou, a 35-year-old from Kalamata."
+      }
+    },
+    {
+      "persona_id": "pg-gr-037",
+      "generated_at": "2026-04-11T19:44:49.322266+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giorgos Stavros",
+        "age": 60,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Greece",
+          "region": "Crete",
+          "city": "Heraklion",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.29,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.79,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giorgos Stavros",
+        "first_person": "I am Giorgos Stavros, a 60-year-old from Heraklion."
+      }
+    },
+    {
+      "persona_id": "pg-gr-038",
+      "generated_at": "2026-04-11T19:44:49.322310+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stavroula Papas",
+        "age": 50,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "part-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Western Greece",
+          "city": "Patras",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.28,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.74,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "nd",
+            "description": "Nea Dimokratia voter; centre-right, pro-EU, pro-NATO, pro-market reforms. Often educated, professional or business-owning, urban or island. Moderate-to-high institutional trust (in current government and EU), moderately traditional values, Greek Orthodox identity (practicing or cultural). Supports Greece's EU membership, NATO alliance, and Kyriakos Mitsotakis's reform agenda. Calibrated to ND ~37% (2023 Greek elections, Pew Spring 2024)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stavroula Papas",
+        "first_person": "I am Stavroula Papas, a 50-year-old from Patras."
+      }
+    },
+    {
+      "persona_id": "pg-gr-039",
+      "generated_at": "2026-04-11T19:44:49.322361+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Alexandros Katsaros",
+        "age": 40,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.31,
+          "social_change_pace": 0.71,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.72,
+          "religious_salience": 0.38,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Alexandros Katsaros",
+        "first_person": "I am Alexandros Katsaros, a 40-year-old from Athens."
+      }
+    },
+    {
+      "persona_id": "pg-gr-040",
+      "generated_at": "2026-04-11T19:44:49.322406+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "greece_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Dimitra Vassilakis",
+        "age": 33,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Greece",
+          "region": "Attiki",
+          "city": "Athens",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.72,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.3,
+          "political_profile": {
+            "country": "Greece",
+            "archetype": "syriza",
+            "description": "SYRIZA voter; post-austerity left, pro-EU but critical of EU economic orthodoxy, pro-welfare state. Often younger, urban, educated. Low-to-moderate institutional trust (distrustful of current government), progressive social values, largely secular or non-practising Orthodox. Sceptical of NATO military spending priorities, critical of Greek foreign policy under ND. Calibrated to SYRIZA ~15% (2023 Greek elections)."
+          },
+          "political_era": "New Democracy majority government (Mitsotakis, 2023–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Dimitra Vassilakis",
+        "first_person": "I am Dimitra Vassilakis, a 33-year-old from Athens."
+      }
+    }
+  ]
+}

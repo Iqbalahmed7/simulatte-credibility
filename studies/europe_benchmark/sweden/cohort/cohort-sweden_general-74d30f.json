@@ -1,0 +1,1811 @@
+{
+  "cohort_id": "cohort-sweden_general-74d30f",
+  "generated_at": "2026-04-11T19:44:49.337673+00:00",
+  "domain": "sweden_general",
+  "client": "Simulatte Credibility",
+  "mode": "DELIVER",
+  "count_delivered": 40,
+  "cohort_summary": "Local pool generation — 40 personas for sweden_general",
+  "personas": [
+    {
+      "persona_id": "pg-sw-001",
+      "generated_at": "2026-04-11T19:44:49.336149+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erik Lindqvist",
+        "age": 48,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.62,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.64,
+          "economic_security_priority": 0.51,
+          "religious_salience": 0.12,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erik Lindqvist",
+        "first_person": "I am Erik Lindqvist, a 48-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-002",
+      "generated_at": "2026-04-11T19:44:49.336187+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anna Johansson",
+        "age": 42,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.65,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.08,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anna Johansson",
+        "first_person": "I am Anna Johansson, a 42-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-003",
+      "generated_at": "2026-04-11T19:44:49.336221+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Lars Svensson",
+        "age": 57,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Malmö",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.67,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Lars Svensson",
+        "first_person": "I am Lars Svensson, a 57-year-old from Malmö."
+      }
+    },
+    {
+      "persona_id": "pg-sw-004",
+      "generated_at": "2026-04-11T19:44:49.336254+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Kristina Berg",
+        "age": 36,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.64,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Kristina Berg",
+        "first_person": "I am Kristina Berg, a 36-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-005",
+      "generated_at": "2026-04-11T19:44:49.336287+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Johan Andersson",
+        "age": 50,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Norrland",
+          "city": "Sundsvall",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.64,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.17,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Johan Andersson",
+        "first_person": "I am Johan Andersson, a 50-year-old from Sundsvall."
+      }
+    },
+    {
+      "persona_id": "pg-sw-006",
+      "generated_at": "2026-04-11T19:44:49.336320+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Nilsson",
+        "age": 44,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.65,
+          "social_change_pace": 0.66,
+          "collectivism_score": 0.64,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.11,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Nilsson",
+        "first_person": "I am Maria Nilsson, a 44-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-007",
+      "generated_at": "2026-04-11T19:44:49.336352+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Mikael Larsson",
+        "age": 52,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.63,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.5,
+          "religious_salience": 0.13,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Mikael Larsson",
+        "first_person": "I am Mikael Larsson, a 52-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-008",
+      "generated_at": "2026-04-11T19:44:49.336386+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Karin Pettersson",
+        "age": 45,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Helsingborg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.63,
+          "social_change_pace": 0.43,
+          "collectivism_score": 0.41,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.16,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Karin Pettersson",
+        "first_person": "I am Karin Pettersson, a 45-year-old from Helsingborg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-009",
+      "generated_at": "2026-04-11T19:44:49.336419+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stefan Olsson",
+        "age": 58,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Östergötland",
+          "city": "Linköping",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.66,
+          "social_change_pace": 0.42,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stefan Olsson",
+        "first_person": "I am Stefan Olsson, a 58-year-old from Linköping."
+      }
+    },
+    {
+      "persona_id": "pg-sw-010",
+      "generated_at": "2026-04-11T19:44:49.336453+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Annika Persson",
+        "age": 39,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Uppsala",
+          "city": "Uppsala",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.67,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Annika Persson",
+        "first_person": "I am Annika Persson, a 39-year-old from Uppsala."
+      }
+    },
+    {
+      "persona_id": "pg-sw-011",
+      "generated_at": "2026-04-11T19:44:49.336486+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Peter Karlsson",
+        "age": 45,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Kristianstad",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.41,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Peter Karlsson",
+        "first_person": "I am Peter Karlsson, a 45-year-old from Kristianstad."
+      }
+    },
+    {
+      "persona_id": "pg-sw-012",
+      "generated_at": "2026-04-11T19:44:49.336519+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Birgitta Eriksson",
+        "age": 53,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Norrland",
+          "city": "Umeå",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.4,
+          "social_change_pace": 0.17,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Birgitta Eriksson",
+        "first_person": "I am Birgitta Eriksson, a 53-year-old from Umeå."
+      }
+    },
+    {
+      "persona_id": "pg-sw-013",
+      "generated_at": "2026-04-11T19:44:49.336552+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Henrik Gustafsson",
+        "age": 38,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "self-employed",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Dalarna",
+          "city": "Falun",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.44,
+          "social_change_pace": 0.18,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Henrik Gustafsson",
+        "first_person": "I am Henrik Gustafsson, a 38-year-old from Falun."
+      }
+    },
+    {
+      "persona_id": "pg-sw-014",
+      "generated_at": "2026-04-11T19:44:49.336585+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Cecilia Magnusson",
+        "age": 42,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Borås",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.38,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.18,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Cecilia Magnusson",
+        "first_person": "I am Cecilia Magnusson, a 42-year-old from Borås."
+      }
+    },
+    {
+      "persona_id": "pg-sw-015",
+      "generated_at": "2026-04-11T19:44:49.336618+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gunnar Lund",
+        "age": 34,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.59,
+          "social_change_pace": 0.81,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.08,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gunnar Lund",
+        "first_person": "I am Gunnar Lund, a 34-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-016",
+      "generated_at": "2026-04-11T19:44:49.336650+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Astrid Holm",
+        "age": 29,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Uppsala",
+          "city": "Uppsala",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.83,
+          "collectivism_score": 0.54,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.03,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Astrid Holm",
+        "first_person": "I am Astrid Holm, a 29-year-old from Uppsala."
+      }
+    },
+    {
+      "persona_id": "pg-sw-017",
+      "generated_at": "2026-04-11T19:44:49.336683+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ola Bergstrom",
+        "age": 46,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.85,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ola Bergstrom",
+        "first_person": "I am Ola Bergstrom, a 46-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-018",
+      "generated_at": "2026-04-11T19:44:49.336716+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Eva Lindstrom",
+        "age": 55,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.66,
+          "social_change_pace": 0.61,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.15,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Eva Lindstrom",
+        "first_person": "I am Eva Lindstrom, a 55-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-019",
+      "generated_at": "2026-04-11T19:44:49.336748+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anders Henriksson",
+        "age": 61,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Malmö",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.65,
+          "social_change_pace": 0.57,
+          "collectivism_score": 0.41,
+          "economic_security_priority": 0.5,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anders Henriksson",
+        "first_person": "I am Anders Henriksson, a 61-year-old from Malmö."
+      }
+    },
+    {
+      "persona_id": "pg-sw-020",
+      "generated_at": "2026-04-11T19:44:49.336780+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ingrid Wallin",
+        "age": 33,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.68,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.47,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.1,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ingrid Wallin",
+        "first_person": "I am Ingrid Wallin, a 33-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-021",
+      "generated_at": "2026-04-11T19:44:49.336826+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Erik Lindqvist",
+        "age": 46,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.62,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.64,
+          "economic_security_priority": 0.51,
+          "religious_salience": 0.12,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Erik Lindqvist",
+        "first_person": "I am Erik Lindqvist, a 46-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-022",
+      "generated_at": "2026-04-11T19:44:49.336872+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anna Johansson",
+        "age": 44,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.65,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.08,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anna Johansson",
+        "first_person": "I am Anna Johansson, a 44-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-023",
+      "generated_at": "2026-04-11T19:44:49.336917+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Lars Svensson",
+        "age": 60,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Malmö",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.67,
+          "collectivism_score": 0.59,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Lars Svensson",
+        "first_person": "I am Lars Svensson, a 60-year-old from Malmö."
+      }
+    },
+    {
+      "persona_id": "pg-sw-024",
+      "generated_at": "2026-04-11T19:44:49.336962+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Kristina Berg",
+        "age": 36,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.64,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.62,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Kristina Berg",
+        "first_person": "I am Kristina Berg, a 36-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-025",
+      "generated_at": "2026-04-11T19:44:49.337006+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Johan Andersson",
+        "age": 48,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Norrland",
+          "city": "Sundsvall",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.64,
+          "social_change_pace": 0.68,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.17,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Johan Andersson",
+        "first_person": "I am Johan Andersson, a 48-year-old from Sundsvall."
+      }
+    },
+    {
+      "persona_id": "pg-sw-026",
+      "generated_at": "2026-04-11T19:44:49.337051+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Nilsson",
+        "age": 44,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.65,
+          "social_change_pace": 0.66,
+          "collectivism_score": 0.64,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.11,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sap",
+            "description": "Social Democratic voter (SAP); pro-welfare state, pro-union, moderate on immigration (shifted right after 2015), pro-NATO (historic U-turn 2022). Moderate institutional trust, moderate social values, largely secular (post-Lutheran). Supports Swedish model of social equality and public services. Broadly pro-EU, firmly anti-Russia since Ukraine invasion. Calibrated to SAP ~31% (2022 Swedish elections, Pew Spring 2024)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Nilsson",
+        "first_person": "I am Maria Nilsson, a 44-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-027",
+      "generated_at": "2026-04-11T19:44:49.337095+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Mikael Larsson",
+        "age": 53,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.63,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.44,
+          "economic_security_priority": 0.5,
+          "religious_salience": 0.13,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Mikael Larsson",
+        "first_person": "I am Mikael Larsson, a 53-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-028",
+      "generated_at": "2026-04-11T19:44:49.337139+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Karin Pettersson",
+        "age": 44,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Helsingborg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.63,
+          "social_change_pace": 0.43,
+          "collectivism_score": 0.41,
+          "economic_security_priority": 0.48,
+          "religious_salience": 0.16,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Karin Pettersson",
+        "first_person": "I am Karin Pettersson, a 44-year-old from Helsingborg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-029",
+      "generated_at": "2026-04-11T19:44:49.337183+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stefan Olsson",
+        "age": 57,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Östergötland",
+          "city": "Linköping",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.66,
+          "social_change_pace": 0.42,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stefan Olsson",
+        "first_person": "I am Stefan Olsson, a 57-year-old from Linköping."
+      }
+    },
+    {
+      "persona_id": "pg-sw-030",
+      "generated_at": "2026-04-11T19:44:49.337228+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Annika Persson",
+        "age": 37,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Uppsala",
+          "city": "Uppsala",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.67,
+          "social_change_pace": 0.47,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.14,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "m_kristersson",
+            "description": "Moderaterna voter; centre-right, pro-market, pro-NATO, law-and-order. High institutional trust, moderate social values, largely secular. Supports tight immigration controls (convergence with SD), pro-EU, firmly pro-NATO and anti-Russia. Often urban professional, higher income, southern Sweden. Governing party. Calibrated to M ~19% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Annika Persson",
+        "first_person": "I am Annika Persson, a 37-year-old from Uppsala."
+      }
+    },
+    {
+      "persona_id": "pg-sw-031",
+      "generated_at": "2026-04-11T19:44:49.337272+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Peter Karlsson",
+        "age": 43,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Kristianstad",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.41,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.21,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Peter Karlsson",
+        "first_person": "I am Peter Karlsson, a 43-year-old from Kristianstad."
+      }
+    },
+    {
+      "persona_id": "pg-sw-032",
+      "generated_at": "2026-04-11T19:44:49.337316+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Birgitta Eriksson",
+        "age": 50,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Norrland",
+          "city": "Umeå",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.4,
+          "social_change_pace": 0.17,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.25,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Birgitta Eriksson",
+        "first_person": "I am Birgitta Eriksson, a 50-year-old from Umeå."
+      }
+    },
+    {
+      "persona_id": "pg-sw-033",
+      "generated_at": "2026-04-11T19:44:49.337360+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Henrik Gustafsson",
+        "age": 40,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "self-employed",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Dalarna",
+          "city": "Falun",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.44,
+          "social_change_pace": 0.18,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Henrik Gustafsson",
+        "first_person": "I am Henrik Gustafsson, a 40-year-old from Falun."
+      }
+    },
+    {
+      "persona_id": "pg-sw-034",
+      "generated_at": "2026-04-11T19:44:49.337405+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Cecilia Magnusson",
+        "age": 40,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Borås",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.38,
+          "social_change_pace": 0.2,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.18,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "sd",
+            "description": "Sverigedemokraterna voter; nationalist, anti-immigration, culturally conservative. Low-to-moderate institutional trust (distrustful of media, left-wing establishment), traditional values, moderate Lutheran cultural attachment. Now pro-NATO (Ukraine war effect), anti-Russia, but nativist on identity. Often working-class, peripheral Sweden, lower education. Calibrated to SD ~20% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Cecilia Magnusson",
+        "first_person": "I am Cecilia Magnusson, a 40-year-old from Borås."
+      }
+    },
+    {
+      "persona_id": "pg-sw-035",
+      "generated_at": "2026-04-11T19:44:49.337449+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Gunnar Lund",
+        "age": 34,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.59,
+          "social_change_pace": 0.81,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.08,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Gunnar Lund",
+        "first_person": "I am Gunnar Lund, a 34-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-036",
+      "generated_at": "2026-04-11T19:44:49.337493+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Astrid Holm",
+        "age": 29,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Uppsala",
+          "city": "Uppsala",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.83,
+          "collectivism_score": 0.54,
+          "economic_security_priority": 0.59,
+          "religious_salience": 0.03,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Astrid Holm",
+        "first_person": "I am Astrid Holm, a 29-year-old from Uppsala."
+      }
+    },
+    {
+      "persona_id": "pg-sw-037",
+      "generated_at": "2026-04-11T19:44:49.337537+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ola Bergstrom",
+        "age": 44,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.85,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.52,
+          "religious_salience": 0.09,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "left_green",
+            "description": "Vänsterpartiet (V) or Miljöpartiet (MP) voter; left of SAP, anti-NATO (traditional V position, somewhat moderated post-2022), pro-environment, feminist, pro-immigration. Very progressive social values, secular. Moderate institutional trust in EU, critical of NATO's political dimensions while accepting military security necessity. Often urban, highly educated, young. Calibrated to V+MP ~13% (2022 Swedish elections)."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ola Bergstrom",
+        "first_person": "I am Ola Bergstrom, a 44-year-old from Gothenburg."
+      }
+    },
+    {
+      "persona_id": "pg-sw-038",
+      "generated_at": "2026-04-11T19:44:49.337581+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Eva Lindstrom",
+        "age": 58,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Stockholm",
+          "city": "Stockholm",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.66,
+          "social_change_pace": 0.61,
+          "collectivism_score": 0.43,
+          "economic_security_priority": 0.55,
+          "religious_salience": 0.15,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Eva Lindstrom",
+        "first_person": "I am Eva Lindstrom, a 58-year-old from Stockholm."
+      }
+    },
+    {
+      "persona_id": "pg-sw-039",
+      "generated_at": "2026-04-11T19:44:49.337625+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Anders Henriksson",
+        "age": 63,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Skåne",
+          "city": "Malmö",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.65,
+          "social_change_pace": 0.57,
+          "collectivism_score": 0.41,
+          "economic_security_priority": 0.5,
+          "religious_salience": 0.22,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Anders Henriksson",
+        "first_person": "I am Anders Henriksson, a 63-year-old from Malmö."
+      }
+    },
+    {
+      "persona_id": "pg-sw-040",
+      "generated_at": "2026-04-11T19:44:49.337670+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "sweden_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Ingrid Wallin",
+        "age": 34,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Sweden",
+          "region": "Västra Götaland",
+          "city": "Gothenburg",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.68,
+          "social_change_pace": 0.56,
+          "collectivism_score": 0.47,
+          "economic_security_priority": 0.54,
+          "religious_salience": 0.1,
+          "political_profile": {
+            "country": "Sweden",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or small-party Swedish voter (C, KD, L, or non-voter). High secular baseline (Sweden among world's most secular societies). Moderate-to-high institutional trust, broadly pro-EU and pro-NATO, pragmatic on immigration. Median Swedish public opinion: very low religious salience, moderate-progressive social values, high trust in state."
+          },
+          "political_era": "Tidö centre-right coalition (Kristersson PM, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Ingrid Wallin",
+        "first_person": "I am Ingrid Wallin, a 34-year-old from Gothenburg."
+      }
+    }
+  ]
+}

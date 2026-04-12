@@ -1,0 +1,250 @@
+{
+  "sprint_id": "EUR-1",
+  "country": "italy",
+  "batch_id": "msgbatch_01PztVcz5C7YGasm5wRKoqMx",
+  "generated_at": "2026-04-11T23:46:45.839705+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 95.48,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "it01": {
+      "question": "How would you describe the current economic situation in Italy?",
+      "simulated": {
+        "C": 0.5,
+        "B": 0.25,
+        "D": 0.25
+      },
+      "real": {
+        "A": 0.0081,
+        "B": 0.2462,
+        "C": 0.5184,
+        "D": 0.2274
+      },
+      "da_pct": 97.36
+    },
+    "it02": {
+      "question": "How satisfied are you with the way democracy is working in Italy?",
+      "simulated": {
+        "B": 0.3,
+        "A": 0.05,
+        "C": 0.4,
+        "D": 0.25
+      },
+      "real": {
+        "A": 0.043,
+        "B": 0.3133,
+        "C": 0.3984,
+        "D": 0.2453
+      },
+      "da_pct": 98.67
+    },
+    "it03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.55,
+        "C": 0.35,
+        "B": 0.1
+      },
+      "real": {
+        "A": 0.0359,
+        "B": 0.1141,
+        "C": 0.3284,
+        "D": 0.5216
+      },
+      "da_pct": 95.0
+    },
+    "it04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "B": 0.45,
+        "A": 0.2,
+        "C": 0.25,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.1955,
+        "B": 0.455,
+        "C": 0.2288,
+        "D": 0.1207
+      },
+      "da_pct": 97.43
+    },
+    "it05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "B": 0.5,
+        "A": 0.2,
+        "C": 0.15,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.139,
+        "B": 0.488,
+        "C": 0.2376,
+        "D": 0.1354
+      },
+      "da_pct": 91.24
+    },
+    "it06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "C": 0.45,
+        "D": 0.25,
+        "B": 0.3
+      },
+      "real": {
+        "A": 0.039,
+        "B": 0.2876,
+        "C": 0.4351,
+        "D": 0.2384
+      },
+      "da_pct": 96.1
+    },
+    "it07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.1,
+        "A": 0.05,
+        "C": 0.3,
+        "D": 0.55
+      },
+      "real": {
+        "A": 0.0612,
+        "B": 0.1511,
+        "C": 0.2401,
+        "D": 0.5477
+      },
+      "da_pct": 93.77
+    },
+    "it08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "B": 0.3,
+        "A": 0.2,
+        "D": 0.25,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.2324,
+        "B": 0.3003,
+        "C": 0.2654,
+        "D": 0.202
+      },
+      "da_pct": 95.19
+    },
+    "it09": {
+      "question": "Do you think Italy's economic system needs to be reformed?",
+      "simulated": {
+        "B": 0.65,
+        "C": 0.2,
+        "A": 0.15
+      },
+      "real": {
+        "A": 0.1456,
+        "B": 0.6451,
+        "C": 0.1941,
+        "D": 0.0153
+      },
+      "da_pct": 98.47
+    },
+    "it10": {
+      "question": "How big a problem is the gap between the rich and the poor in Italy?",
+      "simulated": {
+        "B": 0.4,
+        "A": 0.5,
+        "C": 0.1
+      },
+      "real": {
+        "A": 0.513,
+        "B": 0.3905,
+        "C": 0.0769,
+        "D": 0.0197
+      },
+      "da_pct": 96.73
+    },
+    "it11": {
+      "question": "Do you have a favorable or unfavorable opinion of Brothers of Italy (Fratelli d'Italia)?",
+      "simulated": {
+        "A": 0.1,
+        "C": 0.3,
+        "D": 0.4,
+        "B": 0.2
+      },
+      "real": {
+        "A": 0.1003,
+        "B": 0.2507,
+        "C": 0.2776,
+        "D": 0.3714
+      },
+      "da_pct": 94.9
+    },
+    "it12": {
+      "question": "Do you have a favorable or unfavorable opinion of the Democratic Party (Partito Democratico)?",
+      "simulated": {
+        "D": 0.3,
+        "B": 0.35,
+        "C": 0.35
+      },
+      "real": {
+        "A": 0.0521,
+        "B": 0.3231,
+        "C": 0.3603,
+        "D": 0.2644
+      },
+      "da_pct": 93.75
+    },
+    "it13": {
+      "question": "Do you have a favorable or unfavorable opinion of the Five Star Movement (Movimento 5 Stelle)?",
+      "simulated": {
+        "D": 0.3,
+        "B": 0.3,
+        "A": 0.05,
+        "C": 0.35
+      },
+      "real": {
+        "A": 0.0629,
+        "B": 0.2636,
+        "C": 0.3488,
+        "D": 0.3247
+      },
+      "da_pct": 96.24
+    },
+    "it14": {
+      "question": "Do you have a favorable or unfavorable opinion of the League (Lega)?",
+      "simulated": {
+        "B": 0.15,
+        "D": 0.55,
+        "C": 0.25,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.0425,
+        "B": 0.183,
+        "C": 0.2634,
+        "D": 0.5111
+      },
+      "da_pct": 95.36
+    },
+    "it15": {
+      "question": "Do you have a favorable or unfavorable opinion of Forza Italia?",
+      "simulated": {
+        "B": 0.25,
+        "C": 0.4,
+        "D": 0.3,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.0774,
+        "B": 0.3022,
+        "C": 0.3358,
+        "D": 0.2845
+      },
+      "da_pct": 92.03
+    }
+  }
+}

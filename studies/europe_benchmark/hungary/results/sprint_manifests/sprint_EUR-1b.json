@@ -1,0 +1,244 @@
+{
+  "sprint_id": "EUR-1b",
+  "country": "hungary",
+  "batch_id": "msgbatch_01PMFCbwxUvEn4HPA2Hqt35r",
+  "generated_at": "2026-04-12T00:11:37.701855+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 91.47,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hu01": {
+      "question": "How would you describe the current economic situation in Hungary?",
+      "simulated": {
+        "B": 0.35,
+        "C": 0.5,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.0394,
+        "B": 0.3768,
+        "C": 0.4313,
+        "D": 0.1525
+      },
+      "da_pct": 93.13
+    },
+    "hu02": {
+      "question": "How satisfied are you with the way democracy is working in Hungary?",
+      "simulated": {
+        "B": 0.375,
+        "C": 0.4,
+        "D": 0.15,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0546,
+        "B": 0.4338,
+        "C": 0.3316,
+        "D": 0.18
+      },
+      "da_pct": 91.12
+    },
+    "hu03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "C": 0.45,
+        "B": 0.175,
+        "D": 0.375
+      },
+      "real": {
+        "A": 0.0266,
+        "B": 0.2104,
+        "C": 0.4076,
+        "D": 0.3555
+      },
+      "da_pct": 93.8
+    },
+    "hu04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "B": 0.475,
+        "C": 0.225,
+        "A": 0.225,
+        "D": 0.075
+      },
+      "real": {
+        "A": 0.1209,
+        "B": 0.4939,
+        "C": 0.2886,
+        "D": 0.0965
+      },
+      "da_pct": 89.59
+    },
+    "hu05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "B": 0.525,
+        "C": 0.25,
+        "A": 0.225
+      },
+      "real": {
+        "A": 0.1217,
+        "B": 0.5369,
+        "C": 0.2768,
+        "D": 0.0645
+      },
+      "da_pct": 89.67
+    },
+    "hu06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "B": 0.35,
+        "C": 0.425,
+        "D": 0.225
+      },
+      "real": {
+        "A": 0.0271,
+        "B": 0.3514,
+        "C": 0.4327,
+        "D": 0.1887
+      },
+      "da_pct": 96.38
+    },
+    "hu07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.3,
+        "C": 0.4,
+        "D": 0.3
+      },
+      "real": {
+        "A": 0.0444,
+        "B": 0.3357,
+        "C": 0.314,
+        "D": 0.3058
+      },
+      "da_pct": 91.41
+    },
+    "hu08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "B": 0.35,
+        "A": 0.2,
+        "D": 0.3,
+        "C": 0.15
+      },
+      "real": {
+        "A": 0.0733,
+        "B": 0.3574,
+        "C": 0.3243,
+        "D": 0.245
+      },
+      "da_pct": 81.83
+    },
+    "hu09": {
+      "question": "Do you think Hungary's economic system needs to be reformed?",
+      "simulated": {
+        "C": 0.2,
+        "B": 0.575,
+        "A": 0.225
+      },
+      "real": {
+        "A": 0.2676,
+        "B": 0.4598,
+        "C": 0.2545,
+        "D": 0.0181
+      },
+      "da_pct": 88.48
+    },
+    "hu10": {
+      "question": "How big a problem is the gap between the rich and the poor in Hungary?",
+      "simulated": {
+        "B": 0.45,
+        "C": 0.175,
+        "A": 0.375
+      },
+      "real": {
+        "A": 0.4291,
+        "B": 0.3829,
+        "C": 0.1618,
+        "D": 0.0261
+      },
+      "da_pct": 91.98
+    },
+    "hu11": {
+      "question": "Do you have a favorable or unfavorable opinion of Fidesz?",
+      "simulated": {
+        "B": 0.375,
+        "A": 0.1,
+        "D": 0.3,
+        "C": 0.225
+      },
+      "real": {
+        "A": 0.1437,
+        "B": 0.3115,
+        "C": 0.2208,
+        "D": 0.324
+      },
+      "da_pct": 93.23
+    },
+    "hu12": {
+      "question": "Do you have a favorable or unfavorable opinion of the Hungarian Socialist Party (MSZP)?",
+      "simulated": {
+        "D": 0.475,
+        "B": 0.225,
+        "C": 0.3
+      },
+      "real": {
+        "A": 0.0115,
+        "B": 0.1559,
+        "C": 0.3828,
+        "D": 0.4498
+      },
+      "da_pct": 90.57
+    },
+    "hu13": {
+      "question": "Do you have a favorable or unfavorable opinion of Jobbik?",
+      "simulated": {
+        "D": 0.375,
+        "C": 0.475,
+        "B": 0.15
+      },
+      "real": {
+        "A": 0.0147,
+        "B": 0.1803,
+        "C": 0.4057,
+        "D": 0.3994
+      },
+      "da_pct": 93.06
+    },
+    "hu14": {
+      "question": "Do you have a favorable or unfavorable opinion of the Democratic Coalition (DK)?",
+      "simulated": {
+        "D": 0.475,
+        "C": 0.375,
+        "B": 0.15
+      },
+      "real": {
+        "A": 0.0303,
+        "B": 0.1818,
+        "C": 0.3386,
+        "D": 0.4493
+      },
+      "da_pct": 93.79
+    },
+    "hu15": {
+      "question": "When children today in Hungary grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.275,
+        "B": 0.5,
+        "C": 0.225
+      },
+      "real": {
+        "A": 0.291,
+        "B": 0.4395,
+        "C": 0.2695
+      },
+      "da_pct": 93.95
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "sprint_id": "HD-1",
+  "country": "netherlands",
+  "batch_id": "msgbatch_013DJwHufhgRoMRivMaWK1Rh",
+  "generated_at": "2026-04-11T23:51:01.433331+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": true,
+  "n_personas": 40,
+  "n_questions": 5,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 81.47,
+  "beats_ceiling": false,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hd01": {
+      "question": "Do you have a favorable or unfavorable view of the United States?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.75
+      },
+      "real": {
+        "A": 0.0557,
+        "B": 0.4448,
+        "C": 0.3728,
+        "D": 0.1266
+      },
+      "da_pct": 69.48
+    },
+    "hd02": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.75
+      },
+      "real": {
+        "A": 0.1955,
+        "B": 0.5461,
+        "C": 0.1884,
+        "D": 0.0699
+      },
+      "da_pct": 73.45
+    },
+    "hd03": {
+      "question": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.55,
+        "A": 0.2
+      },
+      "real": {
+        "A": 0.2455,
+        "B": 0.505,
+        "C": 0.1368,
+        "D": 0.1127
+      },
+      "da_pct": 84.18
+    },
+    "hd04": {
+      "question": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+      "simulated": {
+        "C": 0.25,
+        "B": 0.55,
+        "A": 0.2
+      },
+      "real": {
+        "A": 0.1366,
+        "B": 0.6191,
+        "C": 0.1612,
+        "D": 0.0832
+      },
+      "da_pct": 84.78
+    },
+    "hd05": {
+      "question": "When children today in Netherlands grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "B": 0.7,
+        "A": 0.3
+      },
+      "real": {
+        "A": 0.2659,
+        "B": 0.6888,
+        "C": 0.0453
+      },
+      "da_pct": 95.47
+    }
+  }
+}

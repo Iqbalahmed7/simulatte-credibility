@@ -1,0 +1,74 @@
+{
+  "sprint_id": "HD-1c",
+  "country": "poland",
+  "batch_id": "msgbatch_01Mu3P4qGHUqVYN2EN7P3jM7",
+  "generated_at": "2026-04-12T00:21:54.083164+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": true,
+  "n_personas": 40,
+  "n_questions": 4,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 79.31,
+  "beats_ceiling": false,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "hd01": {
+      "question": "Do you have a favorable or unfavorable view of the United States?",
+      "simulated": {
+        "A": 0.2,
+        "B": 0.8
+      },
+      "real": {
+        "A": 0.2423,
+        "B": 0.6605,
+        "C": 0.0777,
+        "D": 0.0194
+      },
+      "da_pct": 86.05
+    },
+    "hd02": {
+      "question": "How much confidence do you have in Ukrainian President Volodymyr Zelenskyy to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.7,
+        "C": 0.3
+      },
+      "real": {
+        "A": 0.0841,
+        "B": 0.4509,
+        "C": 0.2664,
+        "D": 0.1987
+      },
+      "da_pct": 71.73
+    },
+    "hd03": {
+      "question": "How much confidence do you have in French President Emmanuel Macron to do the right thing regarding world affairs?",
+      "simulated": {
+        "B": 0.6,
+        "C": 0.35,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.0506,
+        "B": 0.4005,
+        "C": 0.3416,
+        "D": 0.2073
+      },
+      "da_pct": 79.21
+    },
+    "hd04": {
+      "question": "How much confidence do you have in U.S. President Joe Biden to do the right thing regarding world affairs?",
+      "simulated": {
+        "A": 0.15,
+        "B": 0.8,
+        "C": 0.05
+      },
+      "real": {
+        "A": 0.1648,
+        "B": 0.6026,
+        "C": 0.1277,
+        "D": 0.1048
+      },
+      "da_pct": 80.27
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sprint_id": "EUR-1b",
+  "country": "uk",
+  "batch_id": "msgbatch_016AoG1bkjR38FqLi5AxQFwr",
+  "generated_at": "2026-04-12T00:00:23.499056+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 94.0,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "uk01": {
+      "question": "How would you describe the current economic situation in the UK?",
+      "simulated": {
+        "B": 0.275,
+        "C": 0.425,
+        "D": 0.3
+      },
+      "real": {
+        "A": 0.0178,
+        "B": 0.1885,
+        "C": 0.4571,
+        "D": 0.3366
+      },
+      "da_pct": 91.35
+    },
+    "uk02": {
+      "question": "How satisfied are you with the way democracy is working in the UK?",
+      "simulated": {
+        "B": 0.35,
+        "C": 0.275,
+        "D": 0.3,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0762,
+        "B": 0.3373,
+        "C": 0.2908,
+        "D": 0.2957
+      },
+      "da_pct": 98.3
+    },
+    "uk03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.625,
+        "C": 0.3,
+        "B": 0.075
+      },
+      "real": {
+        "A": 0.023,
+        "B": 0.0882,
+        "C": 0.2555,
+        "D": 0.6333
+      },
+      "da_pct": 95.55
+    },
+    "uk04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "B": 0.45,
+        "A": 0.25,
+        "C": 0.225,
+        "D": 0.075
+      },
+      "real": {
+        "A": 0.1773,
+        "B": 0.4522,
+        "C": 0.2201,
+        "D": 0.1504
+      },
+      "da_pct": 92.24
+    },
+    "uk05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "B": 0.525,
+        "C": 0.2,
+        "A": 0.2,
+        "D": 0.075
+      },
+      "real": {
+        "A": 0.2434,
+        "B": 0.4908,
+        "C": 0.1759,
+        "D": 0.09
+      },
+      "da_pct": 94.16
+    },
+    "uk06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "C": 0.425,
+        "D": 0.3,
+        "B": 0.275
+      },
+      "real": {
+        "A": 0.026,
+        "B": 0.2292,
+        "C": 0.4324,
+        "D": 0.3123
+      },
+      "da_pct": 95.42
+    },
+    "uk07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "D": 0.625,
+        "C": 0.175,
+        "A": 0.075,
+        "B": 0.125
+      },
+      "real": {
+        "A": 0.0878,
+        "B": 0.1607,
+        "C": 0.1302,
+        "D": 0.6213
+      },
+      "da_pct": 95.15
+    },
+    "uk08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "A": 0.2,
+        "D": 0.45,
+        "C": 0.175,
+        "B": 0.175
+      },
+      "real": {
+        "A": 0.1831,
+        "B": 0.2333,
+        "C": 0.2008,
+        "D": 0.3829
+      },
+      "da_pct": 91.59
+    },
+    "uk09": {
+      "question": "Do you think the UK's economic system needs to be reformed?",
+      "simulated": {
+        "B": 0.5,
+        "C": 0.325,
+        "A": 0.175
+      },
+      "real": {
+        "A": 0.1496,
+        "B": 0.4724,
+        "C": 0.3415,
+        "D": 0.0364
+      },
+      "da_pct": 94.7
+    },
+    "uk10": {
+      "question": "How big a problem is the gap between the rich and the poor in the UK?",
+      "simulated": {
+        "A": 0.625,
+        "B": 0.3,
+        "C": 0.075
+      },
+      "real": {
+        "A": 0.5522,
+        "B": 0.2874,
+        "C": 0.1152,
+        "D": 0.0453
+      },
+      "da_pct": 91.45
+    },
+    "uk11": {
+      "question": "Do you have a favorable or unfavorable opinion of the Conservative Party?",
+      "simulated": {
+        "D": 0.35,
+        "B": 0.25,
+        "C": 0.35,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.0517,
+        "B": 0.2326,
+        "C": 0.2883,
+        "D": 0.4274
+      },
+      "da_pct": 92.09
+    },
+    "uk12": {
+      "question": "Do you have a favorable or unfavorable opinion of the Labour Party?",
+      "simulated": {
+        "B": 0.375,
+        "C": 0.275,
+        "D": 0.275,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.1058,
+        "B": 0.3917,
+        "C": 0.2918,
+        "D": 0.2107
+      },
+      "da_pct": 93.57
+    },
+    "uk13": {
+      "question": "Do you have a favorable or unfavorable opinion of the Liberal Democrats?",
+      "simulated": {
+        "B": 0.375,
+        "C": 0.35,
+        "A": 0.075,
+        "D": 0.2
+      },
+      "real": {
+        "A": 0.0478,
+        "B": 0.409,
+        "C": 0.3418,
+        "D": 0.2014
+      },
+      "da_pct": 96.46
+    },
+    "uk14": {
+      "question": "Do you have a favorable or unfavorable opinion of Reform UK (Brexit Party)?",
+      "simulated": {
+        "D": 0.525,
+        "C": 0.2,
+        "B": 0.2,
+        "A": 0.075
+      },
+      "real": {
+        "A": 0.0875,
+        "B": 0.1833,
+        "C": 0.2286,
+        "D": 0.5005
+      },
+      "da_pct": 95.88
+    },
+    "uk15": {
+      "question": "When children today in the UK grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.275,
+        "B": 0.725
+      },
+      "real": {
+        "A": 0.1966,
+        "B": 0.7934,
+        "C": 0.01
+      },
+      "da_pct": 92.16
+    }
+  }
+}

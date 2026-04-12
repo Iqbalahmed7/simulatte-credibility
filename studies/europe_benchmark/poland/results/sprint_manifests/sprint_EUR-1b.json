@@ -1,0 +1,249 @@
+{
+  "sprint_id": "EUR-1b",
+  "country": "poland",
+  "batch_id": "msgbatch_019QecLnXci7UPsTZxtrkphE",
+  "generated_at": "2026-04-12T00:22:22.097478+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 94.55,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "pl01": {
+      "question": "How would you describe the current economic situation in Poland?",
+      "simulated": {
+        "A": 0.05,
+        "B": 0.45,
+        "C": 0.4,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.0365,
+        "B": 0.5243,
+        "C": 0.3519,
+        "D": 0.0872
+      },
+      "da_pct": 92.56
+    },
+    "pl02": {
+      "question": "How satisfied are you with the way democracy is working in Poland?",
+      "simulated": {
+        "A": 0.15,
+        "B": 0.4,
+        "C": 0.25,
+        "D": 0.2
+      },
+      "real": {
+        "A": 0.0765,
+        "B": 0.5076,
+        "C": 0.3051,
+        "D": 0.1108
+      },
+      "da_pct": 83.73
+    },
+    "pl03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.95,
+        "C": 0.05
+      },
+      "real": {
+        "A": 0.0108,
+        "B": 0.0118,
+        "C": 0.0979,
+        "D": 0.8795
+      },
+      "da_pct": 92.95
+    },
+    "pl04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "A": 0.3,
+        "B": 0.5,
+        "C": 0.15,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.3062,
+        "B": 0.489,
+        "C": 0.1516,
+        "D": 0.0532
+      },
+      "da_pct": 98.9
+    },
+    "pl05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "A": 0.4,
+        "B": 0.55,
+        "C": 0.05
+      },
+      "real": {
+        "A": 0.4018,
+        "B": 0.5408,
+        "C": 0.0433,
+        "D": 0.0141
+      },
+      "da_pct": 98.41
+    },
+    "pl06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "C": 0.4,
+        "D": 0.4,
+        "B": 0.2
+      },
+      "real": {
+        "A": 0.0121,
+        "B": 0.1971,
+        "C": 0.3833,
+        "D": 0.4075
+      },
+      "da_pct": 98.04
+    },
+    "pl07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "D": 0.5,
+        "B": 0.3,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.0397,
+        "B": 0.2804,
+        "C": 0.2759,
+        "D": 0.404
+      },
+      "da_pct": 88.44
+    },
+    "pl08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "C": 0.3,
+        "B": 0.35,
+        "A": 0.25,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.2006,
+        "B": 0.4786,
+        "C": 0.2264,
+        "D": 0.0943
+      },
+      "da_pct": 87.13
+    },
+    "pl09": {
+      "question": "Do you think Poland's economic system needs to be reformed?",
+      "simulated": {
+        "A": 0.1,
+        "B": 0.65,
+        "C": 0.2,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.094,
+        "B": 0.5771,
+        "C": 0.2932,
+        "D": 0.0358
+      },
+      "da_pct": 90.68
+    },
+    "pl10": {
+      "question": "How big a problem is the gap between the rich and the poor in Poland?",
+      "simulated": {
+        "A": 0.25,
+        "B": 0.45,
+        "C": 0.25,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.2533,
+        "B": 0.4685,
+        "C": 0.2412,
+        "D": 0.037
+      },
+      "da_pct": 97.82
+    },
+    "pl11": {
+      "question": "Do you have a favorable or unfavorable opinion of Law and Justice (PiS)?",
+      "simulated": {
+        "D": 0.45,
+        "A": 0.15,
+        "B": 0.15,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.1366,
+        "B": 0.1573,
+        "C": 0.2547,
+        "D": 0.4513
+      },
+      "da_pct": 98.67
+    },
+    "pl12": {
+      "question": "Do you have a favorable or unfavorable opinion of Civic Platform (PO)?",
+      "simulated": {
+        "A": 0.2,
+        "B": 0.4,
+        "D": 0.2,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.207,
+        "B": 0.4023,
+        "C": 0.1996,
+        "D": 0.1911
+      },
+      "da_pct": 99.07
+    },
+    "pl13": {
+      "question": "Do you have a favorable or unfavorable opinion of the Democratic Left Alliance (SLD)?",
+      "simulated": {
+        "B": 0.45,
+        "D": 0.2,
+        "C": 0.25,
+        "A": 0.1
+      },
+      "real": {
+        "A": 0.1081,
+        "B": 0.4236,
+        "C": 0.2598,
+        "D": 0.2085
+      },
+      "da_pct": 97.36
+    },
+    "pl14": {
+      "question": "When children today in Poland grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.45,
+        "B": 0.35,
+        "C": 0.2
+      },
+      "real": {
+        "A": 0.4287,
+        "B": 0.3601,
+        "C": 0.2111
+      },
+      "da_pct": 97.88
+    },
+    "pl15": {
+      "question": "Do you have a favorable or unfavorable view of the United Nations?",
+      "simulated": {
+        "A": 0.3,
+        "B": 0.55,
+        "C": 0.1,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.3075,
+        "B": 0.5758,
+        "C": 0.0742,
+        "D": 0.0424
+      },
+      "da_pct": 96.67
+    }
+  }
+}

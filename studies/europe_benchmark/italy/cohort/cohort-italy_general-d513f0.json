@@ -1,0 +1,1811 @@
+{
+  "cohort_id": "cohort-italy_general-d513f0",
+  "generated_at": "2026-04-11T19:44:49.327796+00:00",
+  "domain": "italy_general",
+  "client": "Simulatte Credibility",
+  "mode": "DELIVER",
+  "count_delivered": 40,
+  "cohort_summary": "Local pool generation — 40 personas for italy_general",
+  "personas": [
+    {
+      "persona_id": "pg-it-001",
+      "generated_at": "2026-04-11T19:44:49.326226+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Marco Ferraro",
+        "age": 50,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.69,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.55,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Marco Ferraro",
+        "first_person": "I am Marco Ferraro, a 50-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-002",
+      "generated_at": "2026-04-11T19:44:49.326281+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Laura Conti",
+        "age": 44,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Naples",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.17,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.59,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Laura Conti",
+        "first_person": "I am Laura Conti, a 44-year-old from Naples."
+      }
+    },
+    {
+      "persona_id": "pg-it-003",
+      "generated_at": "2026-04-11T19:44:49.326319+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giovanni Russo",
+        "age": 58,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Sicilia",
+          "city": "Palermo",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 5,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.66,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giovanni Russo",
+        "first_person": "I am Giovanni Russo, a 58-year-old from Palermo."
+      }
+    },
+    {
+      "persona_id": "pg-it-004",
+      "generated_at": "2026-04-11T19:44:49.326354+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Francesca Gallo",
+        "age": 38,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.66,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Francesca Gallo",
+        "first_person": "I am Francesca Gallo, a 38-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-005",
+      "generated_at": "2026-04-11T19:44:49.326388+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Roberto Mancini",
+        "age": 55,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Calabria",
+          "city": "Reggio Calabria",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.55,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.67,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Roberto Mancini",
+        "first_person": "I am Roberto Mancini, a 55-year-old from Reggio Calabria."
+      }
+    },
+    {
+      "persona_id": "pg-it-006",
+      "generated_at": "2026-04-11T19:44:49.326422+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giulia Ricci",
+        "age": 33,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Toscana",
+          "city": "Florence",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.62,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.31,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giulia Ricci",
+        "first_person": "I am Giulia Ricci, a 33-year-old from Florence."
+      }
+    },
+    {
+      "persona_id": "pg-it-007",
+      "generated_at": "2026-04-11T19:44:49.326455+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Luca Bianchi",
+        "age": 46,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.61,
+          "social_change_pace": 0.74,
+          "collectivism_score": 0.47,
+          "economic_security_priority": 0.65,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Luca Bianchi",
+        "first_person": "I am Luca Bianchi, a 46-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-008",
+      "generated_at": "2026-04-11T19:44:49.326490+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Elena Marino",
+        "age": 39,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Emilia-Romagna",
+          "city": "Bologna",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Elena Marino",
+        "first_person": "I am Elena Marino, a 39-year-old from Bologna."
+      }
+    },
+    {
+      "persona_id": "pg-it-009",
+      "generated_at": "2026-04-11T19:44:49.326523+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stefano Romano",
+        "age": 52,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Piemonte",
+          "city": "Turin",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.76,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.31,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stefano Romano",
+        "first_person": "I am Stefano Romano, a 52-year-old from Turin."
+      }
+    },
+    {
+      "persona_id": "pg-it-010",
+      "generated_at": "2026-04-11T19:44:49.326557+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Esposito",
+        "age": 36,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Naples",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.25,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.75,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Esposito",
+        "first_person": "I am Maria Esposito, a 36-year-old from Naples."
+      }
+    },
+    {
+      "persona_id": "pg-it-011",
+      "generated_at": "2026-04-11T19:44:49.326590+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Antonio Greco",
+        "age": 30,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Sicilia",
+          "city": "Catania",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.23,
+          "social_change_pace": 0.5,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.69,
+          "religious_salience": 0.45,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Antonio Greco",
+        "first_person": "I am Antonio Greco, a 30-year-old from Catania."
+      }
+    },
+    {
+      "persona_id": "pg-it-012",
+      "generated_at": "2026-04-11T19:44:49.326623+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Valentina Bruno",
+        "age": 29,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Puglia",
+          "city": "Bari",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.19,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.46,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Valentina Bruno",
+        "first_person": "I am Valentina Bruno, a 29-year-old from Bari."
+      }
+    },
+    {
+      "persona_id": "pg-it-013",
+      "generated_at": "2026-04-11T19:44:49.326656+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Paolo Ferrari",
+        "age": 54,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "self-employed",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Bergamo",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.49,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Paolo Ferrari",
+        "first_person": "I am Paolo Ferrari, a 54-year-old from Bergamo."
+      }
+    },
+    {
+      "persona_id": "pg-it-014",
+      "generated_at": "2026-04-11T19:44:49.326689+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Chiara Lombardi",
+        "age": 42,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Veneto",
+          "city": "Verona",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.51,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Chiara Lombardi",
+        "first_person": "I am Chiara Lombardi, a 42-year-old from Verona."
+      }
+    },
+    {
+      "persona_id": "pg-it-015",
+      "generated_at": "2026-04-11T19:44:49.326724+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giuseppe Fontana",
+        "age": 60,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.32,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giuseppe Fontana",
+        "first_person": "I am Giuseppe Fontana, a 60-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-016",
+      "generated_at": "2026-04-11T19:44:49.326757+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Martina Pellegrino",
+        "age": 35,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Piemonte",
+          "city": "Turin",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.49,
+          "social_change_pace": 0.28,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.43,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Martina Pellegrino",
+        "first_person": "I am Martina Pellegrino, a 35-year-old from Turin."
+      }
+    },
+    {
+      "persona_id": "pg-it-017",
+      "generated_at": "2026-04-11T19:44:49.326790+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Andrea Costa",
+        "age": 27,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.32,
+          "social_change_pace": 0.49,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.35,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Andrea Costa",
+        "first_person": "I am Andrea Costa, a 27-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-018",
+      "generated_at": "2026-04-11T19:44:49.326823+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sofia Riva",
+        "age": 48,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.45,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.66,
+          "religious_salience": 0.32,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sofia Riva",
+        "first_person": "I am Sofia Riva, a 48-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-019",
+      "generated_at": "2026-04-11T19:44:49.326857+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Matteo Caruso",
+        "age": 65,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Salerno",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.36,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.67,
+          "religious_salience": 0.61,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Matteo Caruso",
+        "first_person": "I am Matteo Caruso, a 65-year-old from Salerno."
+      }
+    },
+    {
+      "persona_id": "pg-it-020",
+      "generated_at": "2026-04-11T19:44:49.326891+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Alessia Marchetti",
+        "age": 31,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Toscana",
+          "city": "Livorno",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.41,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Alessia Marchetti",
+        "first_person": "I am Alessia Marchetti, a 31-year-old from Livorno."
+      }
+    },
+    {
+      "persona_id": "pg-it-021",
+      "generated_at": "2026-04-11T19:44:49.326939+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Marco Ferraro",
+        "age": 48,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.57,
+          "social_change_pace": 0.19,
+          "collectivism_score": 0.69,
+          "economic_security_priority": 0.64,
+          "religious_salience": 0.55,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Marco Ferraro",
+        "first_person": "I am Marco Ferraro, a 48-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-022",
+      "generated_at": "2026-04-11T19:44:49.326984+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Laura Conti",
+        "age": 46,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Naples",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.58,
+          "social_change_pace": 0.17,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.59,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Laura Conti",
+        "first_person": "I am Laura Conti, a 46-year-old from Naples."
+      }
+    },
+    {
+      "persona_id": "pg-it-023",
+      "generated_at": "2026-04-11T19:44:49.327028+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giovanni Russo",
+        "age": 61,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Sicilia",
+          "city": "Palermo",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 5,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.21,
+          "collectivism_score": 0.72,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.66,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giovanni Russo",
+        "first_person": "I am Giovanni Russo, a 61-year-old from Palermo."
+      }
+    },
+    {
+      "persona_id": "pg-it-024",
+      "generated_at": "2026-04-11T19:44:49.327072+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Francesca Gallo",
+        "age": 38,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.56,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.66,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Francesca Gallo",
+        "first_person": "I am Francesca Gallo, a 38-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-025",
+      "generated_at": "2026-04-11T19:44:49.327117+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Roberto Mancini",
+        "age": 53,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Calabria",
+          "city": "Reggio Calabria",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.55,
+          "social_change_pace": 0.22,
+          "collectivism_score": 0.67,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.64,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "fdi",
+            "description": "Fratelli d'Italia voter; post-fascist nationalist right, governing coalition. Proud of Italian sovereignty, sceptical of excessive EU federalism but formally pro-EU and pro-NATO as governing party. Conservative Catholic values, anti-immigration, pro-traditional family. Moderate-to-high institutional trust (in current Meloni government), moderately practising Catholic, southern or central Italy background common. Calibrated to FdI ~28% (2022 Italian elections, Pew Spring 2024)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Roberto Mancini",
+        "first_person": "I am Roberto Mancini, a 53-year-old from Reggio Calabria."
+      }
+    },
+    {
+      "persona_id": "pg-it-026",
+      "generated_at": "2026-04-11T19:44:49.327163+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giulia Ricci",
+        "age": 33,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Toscana",
+          "city": "Florence",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.62,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.48,
+          "economic_security_priority": 0.58,
+          "religious_salience": 0.31,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giulia Ricci",
+        "first_person": "I am Giulia Ricci, a 33-year-old from Florence."
+      }
+    },
+    {
+      "persona_id": "pg-it-027",
+      "generated_at": "2026-04-11T19:44:49.327209+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Luca Bianchi",
+        "age": 47,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.61,
+          "social_change_pace": 0.74,
+          "collectivism_score": 0.47,
+          "economic_security_priority": 0.65,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Luca Bianchi",
+        "first_person": "I am Luca Bianchi, a 47-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-028",
+      "generated_at": "2026-04-11T19:44:49.327254+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Elena Marino",
+        "age": 38,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Emilia-Romagna",
+          "city": "Bologna",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 2,
+          "income_bracket": "middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.7,
+          "collectivism_score": 0.53,
+          "economic_security_priority": 0.63,
+          "religious_salience": 0.26,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Elena Marino",
+        "first_person": "I am Elena Marino, a 38-year-old from Bologna."
+      }
+    },
+    {
+      "persona_id": "pg-it-029",
+      "generated_at": "2026-04-11T19:44:49.327298+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Stefano Romano",
+        "age": 51,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Piemonte",
+          "city": "Turin",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.6,
+          "social_change_pace": 0.76,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.31,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "pd",
+            "description": "Partito Democratico voter; centre-left, pro-EU, pro-welfare, progressive. Often urban, educated, northern or central Italy. High institutional trust in EU and democratic institutions, progressive social values (civil unions, migrants' rights), largely secular or non-practising. Pro-NATO, pro-Ukraine, pro-multilateralism. Critical of Meloni's cultural conservatism. Calibrated to PD ~19% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Stefano Romano",
+        "first_person": "I am Stefano Romano, a 51-year-old from Turin."
+      }
+    },
+    {
+      "persona_id": "pg-it-030",
+      "generated_at": "2026-04-11T19:44:49.327342+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Maria Esposito",
+        "age": 34,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Naples",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.25,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.75,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Maria Esposito",
+        "first_person": "I am Maria Esposito, a 34-year-old from Naples."
+      }
+    },
+    {
+      "persona_id": "pg-it-031",
+      "generated_at": "2026-04-11T19:44:49.327386+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Antonio Greco",
+        "age": 28,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Sicilia",
+          "city": "Catania",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.23,
+          "social_change_pace": 0.5,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.69,
+          "religious_salience": 0.45,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Antonio Greco",
+        "first_person": "I am Antonio Greco, a 28-year-old from Catania."
+      }
+    },
+    {
+      "persona_id": "pg-it-032",
+      "generated_at": "2026-04-11T19:44:49.327430+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Valentina Bruno",
+        "age": 26,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Puglia",
+          "city": "Bari",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.19,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.7,
+          "religious_salience": 0.46,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "m5s",
+            "description": "Movimento 5 Stelle voter; post-ideological populist, anti-establishment. Distrustful of both traditional left and right, critical of EU austerity, sceptical of NATO military escalation. Often southern Italy, lower-income, younger. Very low institutional trust, mixed social values, neither secular nor strongly religious. Pro-welfare and anti-corruption. Calibrated to M5S ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Valentina Bruno",
+        "first_person": "I am Valentina Bruno, a 26-year-old from Bari."
+      }
+    },
+    {
+      "persona_id": "pg-it-033",
+      "generated_at": "2026-04-11T19:44:49.327474+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Paolo Ferrari",
+        "age": 56,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "self-employed",
+        "life_stage": "late-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Bergamo",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 4,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.63,
+          "economic_security_priority": 0.61,
+          "religious_salience": 0.49,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Paolo Ferrari",
+        "first_person": "I am Paolo Ferrari, a 56-year-old from Bergamo."
+      }
+    },
+    {
+      "persona_id": "pg-it-034",
+      "generated_at": "2026-04-11T19:44:49.327518+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Chiara Lombardi",
+        "age": 40,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Veneto",
+          "city": "Verona",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.51,
+          "social_change_pace": 0.27,
+          "collectivism_score": 0.65,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.54,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Chiara Lombardi",
+        "first_person": "I am Chiara Lombardi, a 40-year-old from Verona."
+      }
+    },
+    {
+      "persona_id": "pg-it-035",
+      "generated_at": "2026-04-11T19:44:49.327563+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Giuseppe Fontana",
+        "age": 60,
+        "gender": "male",
+        "education": "undergraduate",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "upper-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.54,
+          "social_change_pace": 0.32,
+          "collectivism_score": 0.61,
+          "economic_security_priority": 0.57,
+          "religious_salience": 0.53,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Giuseppe Fontana",
+        "first_person": "I am Giuseppe Fontana, a 60-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-036",
+      "generated_at": "2026-04-11T19:44:49.327607+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Martina Pellegrino",
+        "age": 35,
+        "gender": "female",
+        "education": "high-school",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Piemonte",
+          "city": "Turin",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.49,
+          "social_change_pace": 0.28,
+          "collectivism_score": 0.58,
+          "economic_security_priority": 0.56,
+          "religious_salience": 0.43,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "lega_fi",
+            "description": "Lega (Salvini) or Forza Italia voter; right-wing nationalist or centre-right liberal-conservative, coalition partners with FdI. Lega: northern Italy autonomist, anti-immigration, economically populist, Russia-sympathetic. FI: pro-business, Atlantic, Berlusconi legacy. Both moderately traditional, moderate-to-high institutional trust in current government, culturally Catholic. Calibrated to Lega+FI ~17% (2022 Italian elections)."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Martina Pellegrino",
+        "first_person": "I am Martina Pellegrino, a 35-year-old from Turin."
+      }
+    },
+    {
+      "persona_id": "pg-it-037",
+      "generated_at": "2026-04-11T19:44:49.327651+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Andrea Costa",
+        "age": 25,
+        "gender": "male",
+        "education": "postgraduate",
+        "employment": "part-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lazio",
+          "city": "Rome",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.32,
+          "social_change_pace": 0.49,
+          "collectivism_score": 0.56,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.35,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Andrea Costa",
+        "first_person": "I am Andrea Costa, a 25-year-old from Rome."
+      }
+    },
+    {
+      "persona_id": "pg-it-038",
+      "generated_at": "2026-04-11T19:44:49.327695+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Sofia Riva",
+        "age": 51,
+        "gender": "female",
+        "education": "postgraduate",
+        "employment": "full-time",
+        "life_stage": "mid-career",
+        "location": {
+          "country": "Italy",
+          "region": "Lombardia",
+          "city": "Milan",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "nuclear",
+          "size": 3,
+          "income_bracket": "upper-middle",
+          "dual_income": true
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.45,
+          "collectivism_score": 0.52,
+          "economic_security_priority": 0.66,
+          "religious_salience": 0.32,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Sofia Riva",
+        "first_person": "I am Sofia Riva, a 51-year-old from Milan."
+      }
+    },
+    {
+      "persona_id": "pg-it-039",
+      "generated_at": "2026-04-11T19:44:49.327740+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Matteo Caruso",
+        "age": 65,
+        "gender": "male",
+        "education": "high-school",
+        "employment": "retired",
+        "life_stage": "retired",
+        "location": {
+          "country": "Italy",
+          "region": "Campania",
+          "city": "Salerno",
+          "urban_tier": "metro"
+        },
+        "household": {
+          "structure": "couple-no-kids",
+          "size": 2,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.36,
+          "social_change_pace": 0.52,
+          "collectivism_score": 0.55,
+          "economic_security_priority": 0.67,
+          "religious_salience": 0.61,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Matteo Caruso",
+        "first_person": "I am Matteo Caruso, a 65-year-old from Salerno."
+      }
+    },
+    {
+      "persona_id": "pg-it-040",
+      "generated_at": "2026-04-11T19:44:49.327785+00:00",
+      "generator_version": "local-pool-v2",
+      "domain": "italy_general",
+      "mode": "DELIVER",
+      "demographic_anchor": {
+        "name": "Alessia Marchetti",
+        "age": 32,
+        "gender": "female",
+        "education": "undergraduate",
+        "employment": "full-time",
+        "life_stage": "early-career",
+        "location": {
+          "country": "Italy",
+          "region": "Toscana",
+          "city": "Livorno",
+          "urban_tier": "tier2"
+        },
+        "household": {
+          "structure": "other",
+          "size": 1,
+          "income_bracket": "lower-middle",
+          "dual_income": false
+        },
+        "worldview": {
+          "institutional_trust": 0.34,
+          "social_change_pace": 0.51,
+          "collectivism_score": 0.57,
+          "economic_security_priority": 0.62,
+          "religious_salience": 0.41,
+          "political_profile": {
+            "country": "Italy",
+            "archetype": "non_partisan",
+            "description": "Non-partisan or abstaining Italian voter. Disillusioned with all parties, often from the South or lower-income. Moderate institutional scepticism, mixed EU views, pragmatic. Cultural Catholic identity but low religious practice. Median Italian public opinion profile."
+          },
+          "political_era": "FdI-led right coalition government (Giorgia Meloni, Oct 2022–)"
+        }
+      },
+      "attributes": {},
+      "narrative": {
+        "display_name": "Alessia Marchetti",
+        "first_person": "I am Alessia Marchetti, a 32-year-old from Livorno."
+      }
+    }
+  ]
+}

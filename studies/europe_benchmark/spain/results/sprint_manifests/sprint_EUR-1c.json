@@ -1,0 +1,247 @@
+{
+  "sprint_id": "EUR-1c",
+  "country": "spain",
+  "batch_id": "msgbatch_01TsxnqZCCWBnMBWnwdq1RzQ",
+  "generated_at": "2026-04-12T00:26:27.651014+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "holdout": false,
+  "n_personas": 40,
+  "n_questions": 15,
+  "parse_errors": 0,
+  "mean_distribution_accuracy_pct": 91.45,
+  "beats_ceiling": true,
+  "human_ceiling_pct": 91.0,
+  "per_question": {
+    "sp01": {
+      "question": "How would you describe the current economic situation in Spain?",
+      "simulated": {
+        "C": 0.35,
+        "D": 0.35,
+        "B": 0.3
+      },
+      "real": {
+        "A": 0.0539,
+        "B": 0.3317,
+        "C": 0.3327,
+        "D": 0.2817
+      },
+      "da_pct": 91.44
+    },
+    "sp02": {
+      "question": "How satisfied are you with the way democracy is working in Spain?",
+      "simulated": {
+        "C": 0.4,
+        "B": 0.3,
+        "D": 0.3
+      },
+      "real": {
+        "A": 0.085,
+        "B": 0.255,
+        "C": 0.355,
+        "D": 0.305
+      },
+      "da_pct": 91.0
+    },
+    "sp03": {
+      "question": "Do you have a favorable or unfavorable view of Russia?",
+      "simulated": {
+        "D": 0.75,
+        "C": 0.25
+      },
+      "real": {
+        "A": 0.0279,
+        "B": 0.0569,
+        "C": 0.3092,
+        "D": 0.606
+      },
+      "da_pct": 85.6
+    },
+    "sp04": {
+      "question": "Do you have a favorable or unfavorable view of the European Union?",
+      "simulated": {
+        "A": 0.25,
+        "B": 0.35,
+        "C": 0.25,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.2482,
+        "B": 0.4171,
+        "C": 0.235,
+        "D": 0.0997
+      },
+      "da_pct": 93.29
+    },
+    "sp05": {
+      "question": "Do you have a favorable or unfavorable view of NATO?",
+      "simulated": {
+        "A": 0.15,
+        "B": 0.4,
+        "C": 0.35,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.161,
+        "B": 0.3899,
+        "C": 0.2738,
+        "D": 0.1752
+      },
+      "da_pct": 91.38
+    },
+    "sp06": {
+      "question": "Do you have a favorable or unfavorable view of China?",
+      "simulated": {
+        "C": 0.4,
+        "D": 0.3,
+        "B": 0.25,
+        "A": 0.05
+      },
+      "real": {
+        "A": 0.1012,
+        "B": 0.2416,
+        "C": 0.4048,
+        "D": 0.2524
+      },
+      "da_pct": 94.4
+    },
+    "sp07": {
+      "question": "How much confidence do you have in U.S. President Donald Trump to do the right thing regarding world affairs?",
+      "simulated": {
+        "C": 0.3,
+        "D": 0.6,
+        "B": 0.1
+      },
+      "real": {
+        "A": 0.0692,
+        "B": 0.1153,
+        "C": 0.2096,
+        "D": 0.6058
+      },
+      "da_pct": 90.96
+    },
+    "sp08": {
+      "question": "How important is religion in your life?",
+      "simulated": {
+        "B": 0.35,
+        "C": 0.2,
+        "D": 0.3,
+        "A": 0.15
+      },
+      "real": {
+        "A": 0.1743,
+        "B": 0.2218,
+        "C": 0.2535,
+        "D": 0.3505
+      },
+      "da_pct": 87.17
+    },
+    "sp09": {
+      "question": "Do you think Spain's economic system needs to be reformed?",
+      "simulated": {
+        "B": 0.55,
+        "C": 0.3,
+        "A": 0.15
+      },
+      "real": {
+        "A": 0.1792,
+        "B": 0.5996,
+        "C": 0.2082,
+        "D": 0.013
+      },
+      "da_pct": 90.82
+    },
+    "sp10": {
+      "question": "How big a problem is the gap between the rich and the poor in Spain?",
+      "simulated": {
+        "B": 0.3,
+        "C": 0.1,
+        "A": 0.45,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.4737,
+        "B": 0.3307,
+        "C": 0.144,
+        "D": 0.0516
+      },
+      "da_pct": 90.16
+    },
+    "sp11": {
+      "question": "Do you have a favorable or unfavorable opinion of the People's Party (PP)?",
+      "simulated": {
+        "A": 0.05,
+        "C": 0.4,
+        "B": 0.2,
+        "D": 0.35
+      },
+      "real": {
+        "A": 0.102,
+        "B": 0.2317,
+        "C": 0.344,
+        "D": 0.3223
+      },
+      "da_pct": 91.63
+    },
+    "sp12": {
+      "question": "Do you have a favorable or unfavorable opinion of the Spanish Socialist Workers' Party (PSOE)?",
+      "simulated": {
+        "C": 0.2,
+        "D": 0.45,
+        "B": 0.25,
+        "A": 0.1
+      },
+      "real": {
+        "A": 0.0972,
+        "B": 0.2549,
+        "C": 0.2723,
+        "D": 0.3756
+      },
+      "da_pct": 92.28
+    },
+    "sp13": {
+      "question": "Do you have a favorable or unfavorable opinion of Podemos?",
+      "simulated": {
+        "B": 0.2,
+        "D": 0.4,
+        "C": 0.3,
+        "A": 0.1
+      },
+      "real": {
+        "A": 0.0669,
+        "B": 0.163,
+        "C": 0.2989,
+        "D": 0.4713
+      },
+      "da_pct": 92.88
+    },
+    "sp14": {
+      "question": "Do you have a favorable or unfavorable opinion of Vox?",
+      "simulated": {
+        "D": 0.65,
+        "C": 0.2,
+        "A": 0.05,
+        "B": 0.1
+      },
+      "real": {
+        "A": 0.0814,
+        "B": 0.1514,
+        "C": 0.2163,
+        "D": 0.551
+      },
+      "da_pct": 90.09
+    },
+    "sp15": {
+      "question": "When children today in Spain grow up, do you think they will be better off or worse off financially than their parents?",
+      "simulated": {
+        "A": 0.2,
+        "B": 0.8
+      },
+      "real": {
+        "A": 0.1982,
+        "B": 0.7886,
+        "C": 0.0133
+      },
+      "da_pct": 98.67
+    }
+  }
+}
