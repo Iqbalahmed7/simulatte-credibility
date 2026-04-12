@@ -135,9 +135,9 @@ simulatte-credibility/
 Each study's `sprint_runner.py` is self-contained and takes a single `--sprint` argument (used as a file label only — no routing logic changes between replications):
 
 ```bash
-# Prerequisites
-pip install anthropic
-echo "ANTHROPIC_API_KEY=sk-ant-..." > studies/pew_usa/.env
+# Prerequisites — install the LLM provider SDK used in this study
+pip install anthropic  # or swap for your preferred provider
+echo "API_KEY=..." > studies/pew_usa/.env
 
 # Dry-run: inspect routing decisions without API calls
 python3 studies/pew_usa/pipeline/sprint_runner.py --sprint USA-1 --model haiku --dry-run
@@ -151,12 +151,11 @@ python3 studies/pew_usa/holdout/holdout_runner.py --run HD-1 --model haiku
 
 **Variance protocol:** Submit the same sprint ID with a suffix (`USA-1b`, `USA-1c`). The runner uses the sprint ID purely as a filename — routing logic is identical. Target: SD < 2pp across 3 replications.
 
-**Verifying a manifest:** Every manifest contains the Anthropic `batch_id`. Retrieve raw results independently:
+**Verifying a manifest:** Every manifest contains a `batch_id`. Retrieve raw results independently via the batch API:
 
 ```python
-import anthropic
-client = anthropic.Anthropic(api_key="...")
-for result in client.beta.messages.batches.results("msgbatch_..."):
+# Example using the Python SDK for the batch provider
+for result in batch_client.results("msgbatch_..."):
     print(result.custom_id, result.result.message.content[0].text)
 ```
 
@@ -165,7 +164,7 @@ for result in client.beta.messages.batches.results("msgbatch_..."):
 ## Audit Trail
 
 Every sprint manifest contains:
-- `batch_id` — Anthropic Batch API identifier (independently retrievable)
+- `batch_id` — Batch API identifier (independently retrievable via the provider SDK)
 - `generated_at` — UTC timestamp
 - `n_personas`, `n_questions`, `n_total_responses`
 - `per_question` — simulated distribution, real distribution, DA%, parseable count
