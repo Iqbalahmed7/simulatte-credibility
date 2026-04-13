@@ -29,19 +29,7 @@ This repository is the public evidence base for that question — every sprint m
 > **Europe mean** (9 countries): calibrated 92.6% simple / 92.3% population-weighted · holdout 74.4% simple / 76.3% population-weighted  
 > **India v2 vs. Human Ceiling**: +6.61pp calibrated / +4.87pp holdout — first study where holdout DA also exceeds the 91% ceiling
 
-**All 12 completed Pew/Europe studies exceed the 91% human replication ceiling on calibrated DA. India v2 is the first study where holdout DA also exceeds the ceiling (95.87%). Studies 4–6 expand the program to non-Pew publishers; the 91% threshold is Pew-derived and not yet validated for Edelman, Reuters Institute, or GlobeScan/Kantar instruments.**
-
----
-
-## Studies 4–6: Non-Pew Publishers (April 2026)
-
-| Study | Geography | Publisher | Personas | DA | Notes |
-|-------|-----------|-----------|:--------:|:--:|-------|
-| STU_004: Edelman Trust Barometer Mirror | USA | Edelman 2024 | 6 | ~61% | Rank order confirmed; distributional variance limited; Pew threshold n/a — see methodology note |
-| STU_005: Reuters Digital News Mirror | USA & UK | Reuters Institute DNR 2024 | 8 | Mean 0.848 | News trust, avoidance, platform use; Pew threshold n/a — see methodology note |
-| STU_006: Consumer Sustainability Attitudes | USA, Germany, Brazil | GlobeScan Radar 2024 + Kantar SSI 2024 | 12 | 92.6% mean | Cleared 91% mean DA; adversarial probes; Amazon framing effect confirmed |
-
-> The 91% DA threshold was originally derived from Pew Research methodology (Iyengar et al. 2023 human replication ceiling). It has not been independently validated for Edelman's annual tracker, Reuters Institute's Digital News Report, or GlobeScan/Kantar's survey instruments. Studies 4 and 5 report DA against their respective ground truths without making a pass/fail claim against the Pew-derived threshold.
+**All 12 completed studies exceed the 91% human replication ceiling on calibrated DA. India v2 is the first study where holdout DA also exceeds the ceiling (95.87%).**
 
 ---
 
@@ -132,29 +120,7 @@ simulatte-credibility/
 │   │
 │   ├── pew_germany/                ← Study 1C · 91.3% calibrated / 76.5% holdout
 │   ├── pew_india/                  ← Study 1B v2 · 97.61% calibrated / 95.87% holdout
-│   ├── llm_comparison/             ← Simulatte vs 10 LLMs · 4.9× better than avg LLM
-│   ├── edelman_trust_usa/          ← STU_004 · Edelman Trust Barometer Mirror USA · DA ~61% (Pew threshold n/a)
-│   │   ├── research_brief.md
-│   │   ├── hypothesis_register.md
-│   │   ├── ASSUMPTIONS_LEDGER.md
-│   │   ├── stimuli.md
-│   │   ├── evidence_synthesis.md
-│   │   ├── deliverables/research_report.md
-│   │   └── probes/                 ← probe_001.md – probe_012.md
-│   ├── reuters_digital_news_usa_uk/ ← STU_005 · Reuters Digital News Mirror USA+UK · Mean DA 0.848 (Pew threshold n/a)
-│   │   ├── research_brief.md
-│   │   ├── hypothesis_register.md
-│   │   ├── stimuli.md
-│   │   ├── evidence_synthesis.md
-│   │   ├── deliverables/research_report.md
-│   │   └── probes/                 ← probe_001.md – probe_016.md
-│   └── sustainability_usa_de_br/   ← STU_006 · Consumer Sustainability Attitudes USA/DE/BR · Mean DA 92.6%
-│       ├── research_brief.md
-│       ├── hypothesis_register.md
-│       ├── stimuli.md
-│       ├── evidence_synthesis.md
-│       ├── deliverables/research_report.md
-│       └── probes/                 ← probe_001.md – probe_022.md
+│   └── llm_comparison/             ← Simulatte vs 10 LLMs · 4.9× better than avg LLM
 │
 └── reports/
     ├── validation_protocol.md      ← Methodology reference document
@@ -261,11 +227,8 @@ Topics covered: DA metric derivation · WorldviewAnchor architecture · Option-V
 | Germany | Pew Global Attitudes Survey, Spring 2023/2024 |
 | India | Pew Global Attitudes Survey 2023 + CSDS-Lokniti NES |
 | Human ceiling | Iyengar et al. (2023), Stanford University |
-| Edelman (STU_004) | Edelman Trust Barometer 2024, USA (n=1,150) |
-| Reuters Digital News (STU_005) | Reuters Institute Digital News Report 2024 (USA n=2,006; UK n=2,015) |
-| Sustainability (STU_006) | GlobeScan Radar 2024 + Kantar Sustainability Sector Index 2024 |
 
-All distributions sourced from published report tables. No survey microdata used.
+All distributions sourced from published Pew report tables. No survey microdata used.
 
 ---
 
