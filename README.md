@@ -1,5 +1,7 @@
 # Simulatte Credibility Research Program
 
+> **Pre-revenue. 12 countries. All above the 91% human test-retest ceiling. Publicly auditable.**
+
 **Can synthetic AI populations replicate real human opinion distributions?**
 
 This repository is the public evidence base for that question — every sprint manifest, question set, holdout result, and audit log from Simulatte's cross-national validation program, structured for independent reproduction.
