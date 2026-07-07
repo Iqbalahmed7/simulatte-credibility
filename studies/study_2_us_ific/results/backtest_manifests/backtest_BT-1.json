@@ -1,0 +1,368 @@
+{
+  "study_id": "ific_2025_backtest",
+  "backtest_run": "BT-1",
+  "generated_at": "2026-07-06T17:29:26.158408+00:00",
+  "model": "claude-sonnet-4-6",
+  "batch_id": "direct",
+  "persona_source": "us_food_health v1 \u2014 food-behavior WorldviewAnchor (HI/DI/FBS/NIT)",
+  "ova_used": false,
+  "n_personas": 36,
+  "n_questions": 20,
+  "estimated_distributions_note": "19/20 real distributions are estimated \u2014 replace with IFIC 2025 exact toplines",
+  "result_summary": {
+    "mean_da_all_pct": 69.7,
+    "mean_da_exact_only_pct": 66.7,
+    "mean_da_estimated_only_pct": 69.9,
+    "sprint_da_pct": 96.1,
+    "sprint_backtest_gap_pp": 26.4
+  },
+  "axis_means": {
+    "HI": 67.9,
+    "FBS": 81.3,
+    "DI": 64.7,
+    "NIT": 64.9,
+    "NIT_reverse": 72.5
+  },
+  "per_question": {
+    "bt_q01": {
+      "axis": "HI",
+      "question": "How important is the healthfulness of a food or beverage to you w",
+      "sim": {
+        "A": 0.2111,
+        "B": 0.3856,
+        "C": 0.4032
+      },
+      "real": {
+        "A": 0.52,
+        "B": 0.35,
+        "C": 0.1,
+        "D": 0.03
+      },
+      "real_source": "estimated",
+      "da_pct": 66.1,
+      "parseable": 36
+    },
+    "bt_q02a": {
+      "axis": "HI+FBS",
+      "question": "When shopping for food and beverages, how much impact does TASTE ",
+      "sim": {
+        "A": 1.0
+      },
+      "real": {
+        "A": 0.85,
+        "B": 0.13,
+        "C": 0.02
+      },
+      "real_source": "estimated",
+      "da_pct": 85.0,
+      "parseable": 36
+    },
+    "bt_q02b": {
+      "axis": "FBS",
+      "question": "When shopping for food and beverages, how much impact does PRICE/",
+      "sim": {
+        "A": 0.5955,
+        "B": 0.1379,
+        "C": 0.2667
+      },
+      "real": {
+        "A": 0.75,
+        "B": 0.2,
+        "C": 0.05
+      },
+      "real_source": "estimated",
+      "da_pct": 78.3,
+      "parseable": 36
+    },
+    "bt_q02c": {
+      "axis": "HI",
+      "question": "When shopping for food and beverages, how much impact does HEALTH",
+      "sim": {
+        "A": 0.2111,
+        "B": 0.7889
+      },
+      "real": {
+        "A": 0.6,
+        "B": 0.3,
+        "C": 0.1
+      },
+      "real_source": "estimated",
+      "da_pct": 51.1,
+      "parseable": 36
+    },
+    "bt_q02d": {
+      "axis": "FBS",
+      "question": "When shopping for food and beverages, how much impact does CONVEN",
+      "sim": {
+        "A": 0.6224,
+        "B": 0.3776
+      },
+      "real": {
+        "A": 0.55,
+        "B": 0.35,
+        "C": 0.1
+      },
+      "real_source": "estimated",
+      "da_pct": 90.0,
+      "parseable": 36
+    },
+    "bt_q02e": {
+      "axis": "HI",
+      "question": "When shopping for food and beverages, how much impact does SUSTAI",
+      "sim": {
+        "B": 0.5682,
+        "C": 0.4318
+      },
+      "real": {
+        "A": 0.28,
+        "B": 0.42,
+        "C": 0.3
+      },
+      "real_source": "estimated",
+      "da_pct": 72.0,
+      "parseable": 36
+    },
+    "bt_q03": {
+      "axis": "DI",
+      "question": "In the past year, have you followed a specific diet or eating pat",
+      "sim": {
+        "A": 0.2111,
+        "B": 0.7889
+      },
+      "real": {
+        "A": 0.52,
+        "B": 0.48
+      },
+      "real_source": "estimated",
+      "da_pct": 69.1,
+      "parseable": 36
+    },
+    "bt_q04a": {
+      "axis": "NIT",
+      "question": "How much do you trust a Registered Dietitian Nutritionist (RDN) a",
+      "sim": {
+        "A": 0.2667,
+        "B": 0.4405,
+        "C": 0.2929
+      },
+      "real": {
+        "A": 0.45,
+        "B": 0.4,
+        "C": 0.12,
+        "D": 0.03
+      },
+      "real_source": "estimated",
+      "da_pct": 78.7,
+      "parseable": 36
+    },
+    "bt_q04b": {
+      "axis": "NIT",
+      "question": "How much do you trust a Doctor or Physician as a source of inform",
+      "sim": {
+        "A": 0.2684,
+        "B": 0.7316
+      },
+      "real": {
+        "A": 0.55,
+        "B": 0.36,
+        "C": 0.07,
+        "D": 0.02
+      },
+      "real_source": "estimated",
+      "da_pct": 62.8,
+      "parseable": 36
+    },
+    "bt_q04c": {
+      "axis": "NIT",
+      "question": "How much do you trust Federal Government Dietary Guidelines as a ",
+      "sim": {
+        "A": 0.1056,
+        "B": 0.1611,
+        "C": 0.7333
+      },
+      "real": {
+        "A": 0.22,
+        "B": 0.45,
+        "C": 0.24,
+        "D": 0.09
+      },
+      "real_source": "estimated",
+      "da_pct": 50.7,
+      "parseable": 36
+    },
+    "bt_q04d": {
+      "axis": "NIT",
+      "question": "How much do you trust Friends and Family as a source of informati",
+      "sim": {
+        "B": 0.7056,
+        "C": 0.2944
+      },
+      "real": {
+        "A": 0.12,
+        "B": 0.42,
+        "C": 0.32,
+        "D": 0.14
+      },
+      "real_source": "estimated",
+      "da_pct": 71.4,
+      "parseable": 36
+    },
+    "bt_q04e": {
+      "axis": "NIT_reverse",
+      "question": "How much do you trust Social Media Influencers or Online Personal",
+      "sim": {
+        "C": 0.7452,
+        "D": 0.2548
+      },
+      "real": {
+        "A": 0.05,
+        "B": 0.22,
+        "C": 0.38,
+        "D": 0.35
+      },
+      "real_source": "estimated",
+      "da_pct": 63.5,
+      "parseable": 36
+    },
+    "bt_q05": {
+      "axis": "DI+NIT",
+      "question": "When purchasing a food or beverage for the first time, how often ",
+      "sim": {
+        "A": 0.2111,
+        "C": 0.3015,
+        "D": 0.4874
+      },
+      "real": {
+        "A": 0.28,
+        "B": 0.26,
+        "C": 0.27,
+        "D": 0.13,
+        "E": 0.06
+      },
+      "real_source": "estimated",
+      "da_pct": 61.1,
+      "parseable": 36
+    },
+    "bt_q06": {
+      "axis": "FBS",
+      "question": "In the past year, food and beverage prices have risen. How much i",
+      "sim": {
+        "A": 0.35,
+        "B": 0.3,
+        "C": 0.0833,
+        "D": 0.2667
+      },
+      "real": {
+        "A": 0.42,
+        "B": 0.34,
+        "C": 0.16,
+        "D": 0.08
+      },
+      "real_source": "estimated",
+      "da_pct": 81.3,
+      "parseable": 36
+    },
+    "bt_q07": {
+      "axis": "DI+HI",
+      "question": "Compared to a year ago, how has your consumption of protein chang",
+      "sim": {
+        "A": 0.0278,
+        "B": 0.9722
+      },
+      "real": {
+        "A": 0.33,
+        "B": 0.53,
+        "C": 0.14
+      },
+      "real_source": "estimated",
+      "da_pct": 55.8,
+      "parseable": 36
+    },
+    "bt_q08": {
+      "axis": "DI",
+      "question": "Are you currently limiting or avoiding sugar in your diet?",
+      "sim": {
+        "A": 0.2111,
+        "B": 0.4402,
+        "C": 0.3487
+      },
+      "real": {
+        "A": 0.58,
+        "B": 0.27,
+        "C": 0.15
+      },
+      "real_source": "estimated",
+      "da_pct": 63.1,
+      "parseable": 36
+    },
+    "bt_q09": {
+      "axis": "HI",
+      "question": "Overall, how would you grade your own diet in terms of healthfuln",
+      "sim": {
+        "B": 0.3222,
+        "C": 0.4706,
+        "D": 0.2071
+      },
+      "real": {
+        "A": 0.13,
+        "B": 0.51,
+        "C": 0.28,
+        "D": 0.06,
+        "E": 0.01
+      },
+      "real_source": "exact (ific10/G3)",
+      "da_pct": 66.7,
+      "parseable": 36
+    },
+    "bt_q10": {
+      "axis": "FBS+HI",
+      "question": "To what extent do you agree or disagree: 'Eating a healthy diet c",
+      "sim": {
+        "A": 0.35,
+        "B": 0.65
+      },
+      "real": {
+        "A": 0.42,
+        "B": 0.37,
+        "C": 0.14,
+        "D": 0.07
+      },
+      "real_source": "estimated",
+      "da_pct": 72.0,
+      "parseable": 36
+    },
+    "bt_q11": {
+      "axis": "NIT_reverse",
+      "question": "In the past year, have you changed what you eat based on informat",
+      "sim": {
+        "A": 0.4058,
+        "B": 0.5942
+      },
+      "real": {
+        "A": 0.22,
+        "B": 0.78
+      },
+      "real_source": "estimated",
+      "da_pct": 81.4,
+      "parseable": 36
+    },
+    "bt_q12": {
+      "axis": "HI+DI",
+      "question": "When buying food and beverages, how actively do you seek out prod",
+      "sim": {
+        "A": 0.2111,
+        "B": 0.2753,
+        "C": 0.5136
+      },
+      "real": {
+        "A": 0.32,
+        "B": 0.42,
+        "C": 0.26
+      },
+      "real_source": "estimated",
+      "da_pct": 74.6,
+      "parseable": 36
+    }
+  },
+  "parse_errors": 0
+}

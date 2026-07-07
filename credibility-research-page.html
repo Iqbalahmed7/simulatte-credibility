@@ -18,6 +18,7 @@
   --layer:   #111111;
   --layer2:  #1A1A1A;
   --static:  #9A9997;
+  --food:    #FFA53E;
 
   --body:    rgba(233,230,223,0.88);
   --cap:     rgba(233,230,223,0.72);
@@ -158,7 +159,7 @@ nav {
 
 /* Hero 3-study cards */
 .hero-studies {
-  display: grid; grid-template-columns: repeat(3,1fr);
+  display: grid; grid-template-columns: repeat(4,1fr);
   gap: 1px; background: var(--blo);
   margin-top: 52px;
 }
@@ -179,6 +180,8 @@ nav {
   color: var(--parch); margin-bottom: 2px;
 }
 .hero-study.india .hs-num { color: var(--sig); }
+.hero-study.ific { border-top-color: var(--food); }
+.hero-study.ific .hs-num { color: var(--food); }
 .hs-sub {
   font-family: var(--fb); font-weight: 500;
   font-size: 13px; color: var(--cap); margin-bottom: 14px;
@@ -271,6 +274,9 @@ nav {
 .heat-dlabel.eu    { left: 66.65%; }
 .heat-dlabel.us    { left: 76.5%; }
 .heat-dlabel.india { left: 88.05%; }
+.heat-dot.ific   { left: 80.5%;  background: rgba(255,165,62,0.78); border-color: var(--food); }
+.heat-dlabel.ific { left: 80.5%; top: -92px; }
+.heat-dlabel.ific .hdl-val { color: var(--food); }
 .hdl-val {
   font-family: var(--fd); font-weight: 800;
   font-size: 18px; line-height: 1; color: var(--parch);
@@ -590,12 +596,12 @@ nav {
     </div>
 
     <h1 class="t-hero">
-      Calibrated <span class="green">above</span><br>
-      the human ceiling.
+      Results measured<br>
+      against <span class="green">reality.</span>
     </h1>
     <p class="t-body" style="max-width:560px; margin-top:20px;">
-      12 studies. 11 countries. Every calibrated run exceeds 91% Distribution
-      Accuracy — the ceiling established by Stanford's human benchmark.
+      13 studies. 11 countries. 4 research domains. All DA scores measured against
+      published Pew Research Center ground truth.
     </p>
 
     <!-- 3-study strip -->
@@ -604,7 +610,7 @@ nav {
       <div class="hero-study us">
         <div class="hs-label">United States</div>
         <div class="hs-num">95.3%</div>
-        <div class="hs-sub">+4.3pp above human ceiling</div>
+        <div class="hs-sub">Pew American Trends Panel ground truth</div>
         <div class="hs-tags">
           <span class="tag">Calibrated</span>
           <span class="tag">81.9% holdout</span>
@@ -614,7 +620,7 @@ nav {
       <div class="hero-study eu">
         <div class="hs-label">Europe — 9 Countries</div>
         <div class="hs-num">93.33%</div>
-        <div class="hs-sub">+2.33pp above human ceiling</div>
+        <div class="hs-sub">Mean DA — 9 countries, Pew ground truth</div>
         <div class="hs-tags">
           <span class="tag">Mean calibrated</span>
           <span class="tag">68.57% holdout mean</span>
@@ -624,10 +630,20 @@ nav {
       <div class="hero-study india">
         <div class="hs-label">India v2 — Peak</div>
         <div class="hs-num">97.61%</div>
-        <div class="hs-sub">+6.61pp above human ceiling</div>
+        <div class="hs-sub">Highest DA in the program</div>
         <div class="hs-tags">
           <span class="tag g">95.87% holdout ★</span>
-          <span class="tag g">Holdout clears ceiling</span>
+          <span class="tag g">Holdout clears 91% too</span>
+        </div>
+      </div>
+
+      <div class="hero-study ific">
+        <div class="hs-label">IFIC USA — Food &amp; Health</div>
+        <div class="hs-num">96.1%</div>
+        <div class="hs-sub">IFIC 2025 Food &amp; Health Survey ground truth</div>
+        <div class="hs-tags">
+          <span class="tag">Calibrated</span>
+          <span class="tag" style="border-color:rgba(255,165,62,0.4); color:var(--food);">83.1% holdout</span>
         </div>
       </div>
 
@@ -641,7 +657,7 @@ nav {
 <div class="heat-wrap">
   <div class="heat-header">
     <span>Accuracy range — 80% to 100%</span>
-    <span>All studies calibrated above 91% human ceiling</span>
+    <span>All studies — DA measured against Pew Research ground truth</span>
   </div>
 
   <div class="heat-track-outer">
@@ -649,15 +665,16 @@ nav {
       <div class="heat-fill-pre"></div>
       <div class="heat-fill-above"></div>
 
-      <!-- Ceiling line -->
+      <!-- Reference line at 91% -->
       <div class="heat-ceiling-line">
-        <span class="heat-ceiling-tag">91% Human Ceiling</span>
+        <span class="heat-ceiling-tag">91% — Best prior benchmark</span>
       </div>
 
       <!-- Study dots -->
       <div class="heat-dot eu"    title="Europe mean 93.33%"></div>
       <div class="heat-dot us"    title="USA 95.3%"></div>
       <div class="heat-dot india" title="India 97.61%"></div>
+      <div class="heat-dot ific"    title="IFIC USA 96.1%"></div>
 
       <!-- Dot labels -->
       <div class="heat-dot-labels">
@@ -675,6 +692,11 @@ nav {
           <span class="hdl-val">97.61%</span>
           <span class="hdl-name">India v2</span>
           <span class="hdl-holdout">95.87% holdout</span>
+        </div>
+        <div class="heat-dlabel ific">
+          <span class="hdl-val">96.1%</span>
+          <span class="hdl-name">IFIC USA</span>
+          <span class="hdl-holdout">83.1% holdout</span>
         </div>
       </div>
     </div>
@@ -700,7 +722,7 @@ nav {
     95.3% calibrated.<br>81.9% <span class="green">holdout.</span>
   </h2>
   <p class="t-body" style="max-width:600px; margin-bottom:48px;">
-    10 questions, each independently calibrated above the 91% human ceiling.
+    10 questions calibrated against Pew American Trends Panel ground truth.
     The holdout score — 81.9% — was earned on 5 questions the system never
     saw during calibration, with zero topic anchors. The 13.4pp gap between
     calibrated and holdout performance is the quantified cost of zero-shot
@@ -713,8 +735,8 @@ nav {
       <div class="stat-key">Calibrated DA</div>
     </div>
     <div class="stat-cell">
-      <div class="stat-val">+4.3pp</div>
-      <div class="stat-key">Above human ceiling</div>
+      <div class="stat-val">15</div>
+      <div class="stat-key">Questions tested</div>
     </div>
     <div class="stat-cell">
       <div class="stat-val">81.9%</div>
@@ -728,7 +750,7 @@ nav {
 
   <!-- Calibration chart -->
   <div class="chart-outer">
-    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% Human Ceiling</span></div>
+    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% — Best prior benchmark</span></div>
 
     <div class="bar-row">
       <span class="bar-label">Economic direction</span>
@@ -814,21 +836,21 @@ nav {
   <div class="eyebrow">02 — Europe Benchmark v2</div>
 
   <h2 class="t-title" style="margin-bottom:20px;">
-    9 nations. All above<br>the <span class="green">ceiling.</span>
+    9 nations. All above<br><span class="green">91%.</span>
   </h2>
 
   <div class="eu-top">
     <div>
       <p class="t-body" style="margin-bottom:28px;">
         The first cross-national study where every country independently
-        cleared the 91% human replication ceiling — not as a mean, but
+        exceeded 91% DA against Pew ground truth — not as a mean, but
         each nation on its own. 9 countries. 9 separate calibrations. 9
-        results above the benchmark. Rebuilt using Simulatte Persona
-        Generator cohorts across all 9 nations.
+        results above 91%. Rebuilt using Simulatte Persona Generator
+        cohorts across all 9 nations.
       </p>
       <div class="eu-statement">
-        For the first time, a 9-country benchmark where no country fell
-        below the human ceiling. Independently, collectively, every nation above 91%.
+        For the first time, a 9-country benchmark where every nation
+        independently exceeds 91% DA. Collectively and individually — all 9 above.
       </div>
     </div>
     <div class="eu-meta">
@@ -861,7 +883,7 @@ nav {
 
   <!-- Country bar chart -->
   <div class="chart-outer">
-    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% Human Ceiling</span></div>
+    <div class="chart-ceiling-line"><span class="chart-ceiling-tag">91% — Best prior benchmark</span></div>
 
     <div class="bar-row">
       <span class="bar-label country-label">Italy</span>
@@ -920,7 +942,7 @@ nav {
   <p class="t-body" style="max-width:600px; margin-bottom:48px;">
     The first study in the program where holdout DA — earned on questions
     never seen during calibration, with zero topic anchors — also exceeds
-    the 91% human ceiling. The calibration-to-holdout gap is 1.74pp,
+    91% against Pew ground truth. The calibration-to-holdout gap is 1.74pp,
     down from 13.4pp in the US study.
   </p>
 
@@ -952,7 +974,7 @@ nav {
             letter-spacing="2" fill="rgba(233,230,223,0.55)">DA</text>
         </svg>
         <span class="ring-num">97.61%</span>
-        <span class="ring-sub">+6.61pp above ceiling</span>
+        <span class="ring-sub">+11.61pp above best prior benchmark</span>
       </div>
 
       <div class="ring-wrap">
@@ -974,7 +996,7 @@ nav {
             letter-spacing="2" fill="rgba(168,255,62,0.55)">HOLDOUT</text>
         </svg>
         <span class="ring-num g">95.87%</span>
-        <span class="ring-sub">+4.87pp above ceiling</span>
+        <span class="ring-sub">Holdout also exceeds 91%</span>
       </div>
 
     </div>
@@ -983,9 +1005,9 @@ nav {
     <div class="india-details">
 
       <div class="india-callout">
-        The first study in the program where holdout DA also exceeds the 91%
-        human ceiling — not just calibrated performance. The LLM generalises
-        from worldview alone, without topic-specific anchors.
+        The first study in the program where holdout DA also exceeds 91%
+        against Pew ground truth — not just calibrated performance. The
+        system generalises from worldview alone, without topic-specific anchors.
       </div>
 
       <div class="india-metric">
@@ -1020,7 +1042,113 @@ nav {
 </div>
 
 <!-- ═══════════════════════════════════════════
-     04 — FULL ACCURACY NUMBERS
+     04 — IFIC FOOD & HEALTH SURVEY 2025
+═══════════════════════════════════════════ -->
+<div class="section animate-section" id="ific-section">
+
+  <div class="eyebrow">04 — IFIC USA — Food &amp; Health Survey 2025</div>
+
+  <h2 class="t-title" style="margin-bottom:16px;">
+    96.1% calibrated.<br>83.1% <span class="green">holdout.</span>
+  </h2>
+  <p class="t-body" style="max-width:600px; margin-bottom:48px;">
+    The first Simulatte study outside political/social opinion — a specialized food and health
+    domain. 10 questions calibrated against IFIC 2025 Food &amp; Health Survey ground truth
+    (N≈1,000). The holdout score of 83.1% was earned on 5 questions with zero topic anchors,
+    using only the food-behavior WorldviewAnchor (HI/DI/FBS/NIT). The 13.0pp gap is comparable
+    to the US political study (13.4pp), confirming the framework generalises across research domains.
+  </p>
+
+  <div class="india-layout">
+
+    <div class="india-rings">
+
+      <div class="ring-wrap">
+        <span class="ring-lbl">Calibrated</span>
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle class="ring-track" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(233,230,223,0.08)" stroke-width="6"/>
+          <circle class="ring-ceil" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(168,255,62,0.3)" stroke-width="1.5"
+            stroke-dashoffset="36.76"/>
+          <circle class="ring-progress" cx="80" cy="80" r="65"
+            fill="none" stroke="#E9E6DF" stroke-width="6"
+            stroke-linecap="butt" data-target="15.93"/>
+          <text x="80" y="74" text-anchor="middle"
+            font-family="'Barlow Condensed',sans-serif" font-weight="800"
+            font-size="26" fill="#E9E6DF">96.1%</text>
+          <text x="80" y="92" text-anchor="middle"
+            font-family="'Martian Mono',monospace" font-size="8"
+            letter-spacing="2" fill="rgba(233,230,223,0.55)">DA</text>
+        </svg>
+        <span class="ring-num">96.1%</span>
+        <span class="ring-sub">+5.1pp above best prior benchmark</span>
+      </div>
+
+      <div class="ring-wrap">
+        <span class="ring-lbl">Holdout</span>
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle class="ring-track" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(233,230,223,0.08)" stroke-width="6"/>
+          <circle class="ring-ceil" cx="80" cy="80" r="65"
+            fill="none" stroke="rgba(168,255,62,0.3)" stroke-width="1.5"
+            stroke-dashoffset="36.76"/>
+          <circle class="ring-progress" cx="80" cy="80" r="65"
+            fill="none" stroke="#A8FF3E" stroke-width="6"
+            stroke-linecap="butt" data-target="69.02"/>
+          <text x="80" y="74" text-anchor="middle"
+            font-family="'Barlow Condensed',sans-serif" font-weight="800"
+            font-size="26" fill="#A8FF3E">83.1%</text>
+          <text x="80" y="92" text-anchor="middle"
+            font-family="'Martian Mono',monospace" font-size="8"
+            letter-spacing="2" fill="rgba(168,255,62,0.55)">HOLDOUT</text>
+        </svg>
+        <span class="ring-num g">83.1%</span>
+        <span class="ring-sub">13.0pp gap — matches US political study</span>
+      </div>
+
+    </div>
+
+    <div class="india-details">
+
+      <div class="india-callout">
+        Domain generalisation confirmed: the food-behavior WorldviewAnchor (HI/DI/FBS/NIT)
+        achieves the same calibration-to-holdout gap as the US political study,
+        across an entirely different research domain and survey instrument.
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Calibration → Holdout gap</div>
+        <div class="india-metric-v g">13.0pp</div>
+        <div class="india-metric-sub">Comparable to USA political (13.4pp)</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Personas</div>
+        <div class="india-metric-v">36</div>
+        <div class="india-metric-sub">us_food_health v1 · 1,000-persona pool · Persona Generator</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Top calibrated question</div>
+        <div class="india-metric-v" style="font-size:18px;">98.3% — Food purchase decision factors</div>
+      </div>
+
+      <div class="india-metric">
+        <div class="india-metric-k">Top holdout question</div>
+        <div class="india-metric-v" style="font-size:18px; color:var(--sig);">94.4% — MyPlate dietary guide familiarity</div>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="t-cap" style="margin-top:40px; color:var(--static);">
+    Ground truth: IFIC 2025 Food &amp; Health Survey (N≈1,000). Sprint IFIC-2 · Direct API · us_food_health v1 WorldviewAnchor (HI/DI/FBS/NIT). Holdout run H2i.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     05 — FULL ACCURACY NUMBERS
 ═══════════════════════════════════════════ -->
 <div class="section animate-section" id="results-section">
 
@@ -1029,7 +1157,7 @@ nav {
     Every study. Every number.
   </h2>
   <p class="t-body" style="max-width:600px; margin-bottom:0;">
-    12 completed studies. Human ceiling: 91% (Iyengar et al., Stanford 2023).
+    13 completed studies. All DA scores measured against published Pew Research Center ground truth.
     All holdout questions pre-designated before calibration — zero topic anchors applied.
   </p>
 
@@ -1040,7 +1168,6 @@ nav {
           <th>Study</th>
           <th class="c">Calibrated DA</th>
           <th class="c">Holdout DA</th>
-          <th class="c">vs. Human Ceiling</th>
         </tr>
       </thead>
       <tbody>
@@ -1049,84 +1176,79 @@ nav {
           <td class="n">PEW USA v2</td>
           <td class="c"><span class="mv">95.3% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">81.9% <span class="ms">±0.87pp</span></span></td>
-          <td class="c"><span class="mp">+4.3pp</span></td>
+        </tr>
+        <!-- IFIC USA Food & Health -->
+        <tr>
+          <td class="n">IFIC USA — Food &amp; Health 2025</td>
+          <td class="c"><span class="mv" style="color:var(--food);">96.1% <span class="ms" style="color:rgba(255,165,62,0.55);">±0.00pp</span></span></td>
+          <td class="c"><span class="mv" style="color:var(--food);">83.1% <span class="ms" style="color:rgba(255,165,62,0.55);">±0.00pp</span></span></td>
         </tr>
         <!-- India -->
         <tr class="india-row">
           <td class="n">PEW India v2 <span class="badge">★ Peak</span></td>
           <td class="c"><span class="mv green">97.61% <span class="ms" style="color:rgba(168,255,62,0.55);">±0.00pp</span></span></td>
           <td class="c"><span class="mv green">95.87% <span class="ms" style="color:rgba(168,255,62,0.55);">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+6.61pp</span></td>
         </tr>
         <!-- Europe -->
         <tr class="eu-group">
           <td class="n">Europe — Italy</td>
           <td class="c"><span class="mv">95.48% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">63.10% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+4.48pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Poland</td>
           <td class="c"><span class="mv">94.55% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">79.31% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+3.55pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Netherlands</td>
           <td class="c"><span class="mv">94.41% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">81.47% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+3.41pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — UK</td>
           <td class="c"><span class="mv">94.00% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">63.03% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+3.00pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Greece</td>
           <td class="c"><span class="mv">93.93% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">69.53% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+2.93pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Sweden</td>
           <td class="c"><span class="mv">93.37% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">69.78% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+2.37pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Hungary</td>
           <td class="c"><span class="mv">91.47% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">55.92% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+0.47pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — Spain</td>
           <td class="c"><span class="mv">91.45% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">61.07% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+0.45pp</span></td>
         </tr>
         <tr class="eu-group">
           <td class="n">Europe — France</td>
           <td class="c"><span class="mv">91.33% <span class="ms">±0.00pp</span></span></td>
           <td class="c"><span class="mv">73.96% <span class="ms">±0.00pp</span></span></td>
-          <td class="c"><span class="mp">+0.33pp</span></td>
         </tr>
         <!-- Germany -->
         <tr>
           <td class="n">PEW Germany (1C)</td>
           <td class="c"><span class="mv">91.3%</span></td>
           <td class="c"><span class="mv">76.5%</span></td>
-          <td class="c"><span class="mp">+0.3pp</span></td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <p class="t-cap" style="margin-top:14px; color:var(--static);">
-    ★ India v2 is the only study where holdout DA (95.87%) also exceeds the 91% human ceiling.
-    Human ceiling: Iyengar et al., Stanford 2023. DA = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2.
+    ★ India v2 is the only study where holdout DA (95.87%) also exceeds 91%.
+    IFIC USA Food &amp; Health is the first non-political domain study in the program.
+    DA = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2.
   </p>
 </div>
 

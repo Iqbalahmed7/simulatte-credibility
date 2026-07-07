@@ -1,0 +1,201 @@
+{
+  "study_id": "ific_2025",
+  "sprint": "IFIC-2",
+  "generated_at": "2026-07-06T07:42:07.224740+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "batch_id": "direct",
+  "persona_source": "us_food_health v1 \u2014 food-behavior WorldviewAnchor (HI/DI/FBS/NIT)",
+  "simulatte_pool_id": "342ef9b7-a988-41f6-ad83-9b4da1d71b48",
+  "n_personas": 36,
+  "n_questions": 10,
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 96.1
+  },
+  "per_question": {
+    "ific01": {
+      "question": "How would you describe your own health, in general?",
+      "sim": {
+        "A": 0.1278,
+        "B": 0.3586,
+        "C": 0.3636,
+        "D": 0.15
+      },
+      "real": {
+        "A": 0.13,
+        "B": 0.35,
+        "C": 0.36,
+        "D": 0.13,
+        "E": 0.02
+      },
+      "da_pct": 97.3,
+      "parseable": 36
+    },
+    "ific02": {
+      "question": "How stressed have you been over the past 6 months?",
+      "sim": {
+        "A": 0.2329,
+        "B": 0.3904,
+        "C": 0.2768,
+        "D": 0.1
+      },
+      "real": {
+        "A": 0.24,
+        "B": 0.4,
+        "C": 0.26,
+        "D": 0.1
+      },
+      "da_pct": 98.3,
+      "parseable": 36
+    },
+    "ific03": {
+      "question": "In the past year, have you noticed a change in the overall c",
+      "sim": {
+        "A": 0.65,
+        "B": 0.2222,
+        "C": 0.1278
+      },
+      "real": {
+        "A": 0.62,
+        "B": 0.25,
+        "C": 0.08,
+        "D": 0.03,
+        "E": 0.02
+      },
+      "da_pct": 92.2,
+      "parseable": 36
+    },
+    "ific04": {
+      "question": "When shopping for foods and beverages, do you consider wheth",
+      "sim": {
+        "A": 0.1,
+        "B": 0.4682,
+        "C": 0.2247,
+        "D": 0.1771,
+        "E": 0.03
+      },
+      "real": {
+        "A": 0.12,
+        "B": 0.46,
+        "C": 0.21,
+        "D": 0.18,
+        "E": 0.02
+      },
+      "da_pct": 97.2,
+      "parseable": 36
+    },
+    "ific05": {
+      "question": "Are you familiar with the term 'ultraprocessed food'?",
+      "sim": {
+        "A": 0.4864,
+        "B": 0.4045,
+        "C": 0.1091
+      },
+      "real": {
+        "A": 0.44,
+        "B": 0.4,
+        "C": 0.16
+      },
+      "da_pct": 94.9,
+      "parseable": 36
+    },
+    "ific06": {
+      "question": "Which of the following best describes your familiarity with ",
+      "sim": {
+        "A": 0.075,
+        "B": 0.3841,
+        "C": 0.4509,
+        "D": 0.09
+      },
+      "real": {
+        "A": 0.07,
+        "B": 0.37,
+        "C": 0.45,
+        "D": 0.11
+      },
+      "da_pct": 98.0,
+      "parseable": 36
+    },
+    "ific07": {
+      "question": "To what extent do you agree or disagree with the following s",
+      "sim": {
+        "A": 0.3201,
+        "B": 0.4965,
+        "C": 0.1333,
+        "D": 0.05
+      },
+      "real": {
+        "A": 0.3,
+        "B": 0.49,
+        "C": 0.15,
+        "D": 0.04,
+        "E": 0.03
+      },
+      "da_pct": 95.8,
+      "parseable": 36
+    },
+    "ific08": {
+      "question": "Do you ever replace traditional meals (breakfast, lunch, din",
+      "sim": {
+        "A": 0.1471,
+        "B": 0.421,
+        "C": 0.1934,
+        "D": 0.2384
+      },
+      "real": {
+        "A": 0.16,
+        "B": 0.46,
+        "C": 0.17,
+        "D": 0.2,
+        "E": 0.01
+      },
+      "da_pct": 93.8,
+      "parseable": 36
+    },
+    "ific09": {
+      "question": "In a typical week, how often do you snack or eat something i",
+      "sim": {
+        "A": 0.12,
+        "B": 0.2845,
+        "C": 0.301,
+        "D": 0.1944,
+        "E": 0.1
+      },
+      "real": {
+        "A": 0.12,
+        "B": 0.28,
+        "C": 0.3,
+        "D": 0.22,
+        "E": 0.06,
+        "F": 0.02
+      },
+      "da_pct": 95.4,
+      "parseable": 36
+    },
+    "ific10": {
+      "question": "Overall, how would you grade your diet in terms of healthful",
+      "sim": {
+        "A": 0.1278,
+        "B": 0.5248,
+        "C": 0.2874,
+        "D": 0.06
+      },
+      "real": {
+        "A": 0.13,
+        "B": 0.51,
+        "C": 0.28,
+        "D": 0.06,
+        "E": 0.01
+      },
+      "da_pct": 98.3,
+      "parseable": 36
+    }
+  },
+  "parse_errors": 0,
+  "segment_weights": {
+    "health_avoider": 15.0,
+    "budget_pragmatist": 20.0,
+    "mainstream_consumer": 30.0,
+    "health_seeker": 25.0,
+    "nutrition_enthusiast": 10.0
+  }
+}

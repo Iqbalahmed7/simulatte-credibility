@@ -10,28 +10,28 @@ This repository is the public evidence base for that question — every sprint m
 
 ## Key Results
 
-| Study | Geography | Calibrated DA | Holdout DA | vs. Human Ceiling |
-|-------|-----------|:-------------:|:----------:|:-----------------:|
-| PEW USA v2 | United States | **95.3%** ± 0.00pp | **81.9%** ± 0.87pp | **+4.3pp** |
-| PEW India v2 | India | **97.61%** ± 0.00pp | **95.87%** ± 0.00pp | **+6.61pp** |
-| Europe v2 — Italy | Italy | **95.48%** ± 0.00pp | 63.10% ± 0.00pp | +4.48pp |
-| Europe v2 — Poland | Poland | **94.55%** ± 0.00pp | 79.31% ± 0.00pp | +3.55pp |
-| Europe v2 — Netherlands | Netherlands | **94.41%** ± 0.00pp | 81.47% ± 0.00pp | +3.41pp |
-| Europe v2 — UK | United Kingdom | **94.00%** ± 0.00pp | 63.03% ± 0.00pp | +3.00pp |
-| Europe v2 — Greece | Greece | **93.93%** ± 0.00pp | 69.53% ± 0.00pp | +2.93pp |
-| Europe v2 — Sweden | Sweden | **93.37%** ± 0.00pp | 69.78% ± 0.00pp | +2.37pp |
-| Europe v2 — Spain | Spain | **91.45%** ± 0.00pp | 61.07% ± 0.00pp | +0.45pp |
-| Europe v2 — Hungary | Hungary | **91.47%** ± 0.00pp | 55.92% ± 0.00pp | +0.47pp |
-| Europe v2 — France | France | **91.33%** ± 0.00pp | 73.96% ± 0.00pp | +0.33pp |
-| PEW Germany (1C) | Germany | **91.3%** | 76.5% | +0.3pp |
+| Study | Geography | Calibrated DA | Holdout DA |
+|-------|-----------|:-------------:|:----------:|
+| PEW USA v2 | United States | **95.3%** ± 0.00pp | **81.9%** ± 0.87pp |
+| PEW India v2 | India | **97.61%** ± 0.00pp | **95.87%** ± 0.00pp |
+| Europe v2 — Italy | Italy | **95.48%** ± 0.00pp | 63.10% ± 0.00pp |
+| Europe v2 — Poland | Poland | **94.55%** ± 0.00pp | 79.31% ± 0.00pp |
+| Europe v2 — Netherlands | Netherlands | **94.41%** ± 0.00pp | 81.47% ± 0.00pp |
+| Europe v2 — UK | United Kingdom | **94.00%** ± 0.00pp | 63.03% ± 0.00pp |
+| Europe v2 — Greece | Greece | **93.93%** ± 0.00pp | 69.53% ± 0.00pp |
+| Europe v2 — Sweden | Sweden | **93.37%** ± 0.00pp | 69.78% ± 0.00pp |
+| Europe v2 — Spain | Spain | **91.45%** ± 0.00pp | 61.07% ± 0.00pp |
+| Europe v2 — Hungary | Hungary | **91.47%** ± 0.00pp | 55.92% ± 0.00pp |
+| Europe v2 — France | France | **91.33%** ± 0.00pp | 73.96% ± 0.00pp |
+| PEW Germany (1C) | Germany | **91.3%** | 76.5% |
 
 > **Distribution Accuracy (DA)** = 1 − TVD = 1 − Σ|realᵢ − simᵢ| / 2  
-> **Human ceiling** = 91% · Iyengar et al., Stanford 2023  
+>
 > **Holdout DA** = accuracy on questions pre-designated before calibration, run with zero topic anchors  
 > **Europe v2 mean** (9 countries, Persona Generator rebuild): calibrated **93.33%** simple / **93.35%** population-weighted · holdout **68.57%** simple / **68.55%** population-weighted  
-> **India v2 vs. Human Ceiling**: +6.61pp calibrated / +4.87pp holdout — first study where holdout DA also exceeds the 91% ceiling
+> **India v2**: holdout DA (95.87%) also exceeds 91% — first in the program
 
-**All 12 completed studies exceed the 91% human replication ceiling on calibrated DA. India v2 is the first study where holdout DA also exceeds the ceiling (95.87%). Europe v2 (Persona Generator rebuild) improves calibrated DA by +0.73pp to 93.33% mean.**
+**All 12 completed studies exceed 91% calibrated DA against Pew Research Center ground truth. India v2 is the first study where holdout DA (95.87%) also exceeds 91%. Europe v2 (Persona Generator rebuild) improves calibrated DA by +0.73pp to 93.33% mean.**
 
 ---
 
@@ -41,7 +41,6 @@ This repository is the public evidence base for that question — every sprint m
 |--------|----|---------|-----------|-----|
 | **Simulatte (this repo)** | **97.61%** (India v2) / **95.3%** (USA) / **93.33%** (Europe mean) | **95.87%** (India v2) / **81.9%** (USA) | 11 countries | this repo |
 | GPT-4o (direct) | ~75% | — | India | [studies/llm_comparison](studies/llm_comparison/) |
-| Human replication ceiling | 91.0% | 91.0% | — | Iyengar et al. 2023 |
 
 ---
 

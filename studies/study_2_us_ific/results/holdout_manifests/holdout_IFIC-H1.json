@@ -1,0 +1,102 @@
+{
+  "study_id": "ific_2025",
+  "run_id": "IFIC-H1",
+  "type": "holdout_validation",
+  "generated_at": "2026-07-06T05:33:23.423253+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "batch_id": "msgbatch_015cBSjJd69jkhGmtt35c5pB",
+  "architecture": "pure_worldview_anchor \u2014 zero topic anchors",
+  "n_personas": 36,
+  "n_questions": 5,
+  "n_total_responses": 180,
+  "result_summary": {
+    "mean_holdout_da_pct": 60.0,
+    "sprint_da_pct": 93.4,
+    "gap_pp": 33.4
+  },
+  "per_question": {
+    "ific_h01": {
+      "question": "How familiar are you, if at all, with the MyPlate graphic? (",
+      "sim": {
+        "B": 0.5375,
+        "C": 0.4625
+      },
+      "real": {
+        "A": 0.17,
+        "B": 0.36,
+        "C": 0.24,
+        "D": 0.21,
+        "E": 0.02
+      },
+      "da_pct": 60.0,
+      "parseable": 36
+    },
+    "ific_h02": {
+      "question": "How, if at all, have you used nutrition information (like ca",
+      "sim": {
+        "B": 0.2531,
+        "C": 0.6219,
+        "D": 0.125
+      },
+      "real": {
+        "A": 0.05,
+        "B": 0.2,
+        "C": 0.32,
+        "D": 0.22,
+        "E": 0.21
+      },
+      "da_pct": 64.5,
+      "parseable": 36
+    },
+    "ific_h03": {
+      "question": "To what extent do you agree or disagree: 'Registered Dietiti",
+      "sim": {
+        "A": 0.2875,
+        "B": 0.2781,
+        "C": 0.1094,
+        "D": 0.3,
+        "E": 0.025
+      },
+      "real": {
+        "A": 0.18,
+        "B": 0.44,
+        "C": 0.3,
+        "D": 0.06,
+        "E": 0.02
+      },
+      "da_pct": 64.8,
+      "parseable": 36
+    },
+    "ific_h04": {
+      "question": "To what extent do you agree or disagree: 'I am more interest",
+      "sim": {
+        "A": 0.225,
+        "B": 0.775
+      },
+      "real": {
+        "A": 0.21,
+        "B": 0.4,
+        "C": 0.3,
+        "D": 0.07,
+        "E": 0.03
+      },
+      "da_pct": 60.5,
+      "parseable": 36
+    },
+    "ific_h05": {
+      "question": "In the past year, have you come across any content about foo",
+      "sim": {
+        "A": 1.0
+      },
+      "real": {
+        "A": 0.5,
+        "B": 0.3,
+        "C": 0.11,
+        "D": 0.09
+      },
+      "da_pct": 50.0,
+      "parseable": 36
+    }
+  },
+  "parse_errors": 0
+}

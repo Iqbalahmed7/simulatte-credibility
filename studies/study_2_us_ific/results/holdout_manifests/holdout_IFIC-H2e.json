@@ -1,0 +1,106 @@
+{
+  "study_id": "ific_2025",
+  "holdout_run": "IFIC-H2e",
+  "generated_at": "2026-07-06T18:03:25.371193+00:00",
+  "model": "claude-sonnet-4-6",
+  "batch_id": "direct",
+  "persona_source": "us_food_health v1 \u2014 food-behavior WorldviewAnchor (HI/DI/FBS/NIT)",
+  "simulatte_pool_id": "342ef9b7-a988-41f6-ad83-9b4da1d71b48",
+  "ova_used": false,
+  "n_personas": 36,
+  "n_questions": 5,
+  "result_summary": {
+    "mean_distribution_accuracy_pct": 70.5,
+    "sprint_da_pct": 96.1,
+    "sprint_holdout_gap_pp": 25.6
+  },
+  "per_question": {
+    "ific_h01": {
+      "question": "How familiar are you, if at all, with the MyPlate graphic? (",
+      "sim": {
+        "A": 0.1278,
+        "B": 0.1389,
+        "C": 0.5576,
+        "D": 0.1757
+      },
+      "real": {
+        "A": 0.17,
+        "B": 0.36,
+        "C": 0.24,
+        "D": 0.21,
+        "E": 0.02
+      },
+      "da_pct": 68.2,
+      "parseable": 36
+    },
+    "ific_h02": {
+      "question": "How, if at all, have you used nutrition information (like ca",
+      "sim": {
+        "B": 0.1556,
+        "C": 0.4126,
+        "D": 0.3432,
+        "E": 0.0886
+      },
+      "real": {
+        "A": 0.05,
+        "B": 0.2,
+        "C": 0.32,
+        "D": 0.22,
+        "E": 0.21
+      },
+      "da_pct": 78.4,
+      "parseable": 36
+    },
+    "ific_h03": {
+      "question": "To what extent do you agree or disagree: 'Registered Dietiti",
+      "sim": {
+        "A": 0.1,
+        "B": 0.25,
+        "C": 0.65
+      },
+      "real": {
+        "A": 0.18,
+        "B": 0.44,
+        "C": 0.3,
+        "D": 0.06,
+        "E": 0.02
+      },
+      "da_pct": 65.0,
+      "parseable": 36
+    },
+    "ific_h04": {
+      "question": "To what extent do you agree or disagree: 'I am more interest",
+      "sim": {
+        "A": 0.41,
+        "B": 0.3857,
+        "C": 0.2043
+      },
+      "real": {
+        "A": 0.21,
+        "B": 0.4,
+        "C": 0.3,
+        "D": 0.07,
+        "E": 0.03
+      },
+      "da_pct": 79.5,
+      "parseable": 36
+    },
+    "ific_h05": {
+      "question": "In the past year, have you come across any content about foo",
+      "sim": {
+        "A": 0.8869,
+        "B": 0.0286,
+        "D": 0.0845
+      },
+      "real": {
+        "A": 0.5,
+        "B": 0.3,
+        "C": 0.11,
+        "D": 0.09
+      },
+      "da_pct": 61.3,
+      "parseable": 36
+    }
+  },
+  "parse_errors": 0
+}

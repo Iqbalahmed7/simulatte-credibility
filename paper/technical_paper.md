@@ -7,7 +7,7 @@
 
 ## Abstract
 
-We present a methodology for replicating population-level survey opinion distributions using synthetic AI persona cohorts, and report accuracy results from 12 completed studies spanning 11 countries and 180 survey questions. Using Distribution Accuracy (DA) — a metric equivalent to 1 minus Total Variation Distance — as our primary measure, we find that calibrated Simulatte cohorts exceed the 91% human replication ceiling (Iyengar et al., Stanford 2023) in all 12 studies. The highest result is 97.61% (India v2, 2026). A pre-registered holdout validation protocol — five questions per study, never seen during calibration, run with zero topic-specific anchors — yields mean holdout DAs of 95.87% for India v2, 81.9% for the US, and 68.57% for the nine-country Europe Benchmark v2 (Persona Generator rebuild). India v2 is the first study in the program where holdout DA also exceeds the 91% ceiling, with a calibration-to-holdout gap of just 1.74pp — the smallest in the program. Europe v2 achieves 93.33% mean calibrated DA across 9 countries (+0.73pp vs. hand-crafted v1), with all 9 countries now exceeding the 91% ceiling. The calibration-to-holdout gap characterizes the generalization cost of zero-shot worldview transfer and is the primary quantity of interest for practitioners evaluating this approach against traditional polling.
+We present a methodology for replicating population-level survey opinion distributions using synthetic AI persona cohorts, and report accuracy results from 12 completed studies spanning 11 countries and 180 survey questions. Using Distribution Accuracy (DA) — a metric equivalent to 1 minus Total Variation Distance — as our primary measure, we find that calibrated Simulatte cohorts exceed 91% DA in all 12 studies, measured against published Pew Research Center ground truth. The highest result is 97.61% (India v2, 2026). A pre-registered holdout validation protocol — five questions per study, never seen during calibration, run with zero topic-specific anchors — yields mean holdout DAs of 95.87% for India v2, 81.9% for the US, and 68.57% for the nine-country Europe Benchmark v2 (Persona Generator rebuild). India v2 is the first study in the program where holdout DA also exceeds 91%, with a calibration-to-holdout gap of just 1.74pp — the smallest in the program. Europe v2 achieves 93.33% mean calibrated DA across 9 countries (+0.73pp vs. hand-crafted v1), with all 9 countries exceeding 91%. The calibration-to-holdout gap characterizes the generalization cost of zero-shot worldview transfer and is the primary quantity of interest for practitioners evaluating this approach against traditional polling.
 
 ---
 
@@ -17,7 +17,7 @@ Survey research faces an accelerating cost and speed crisis. National probabilit
 
 Large language models (LLMs) have attracted attention as a potential proxy for human survey respondents. The core promise: simulate a representative population at near-zero marginal cost and at query time. The core problem: LLMs are not populations. A single LLM call does not represent the distribution of opinion in a given country; it produces a single output shaped by training data, RLHF alignment, and prompt context.
 
-Several approaches have been proposed to bridge this gap. The most direct — prompt the LLM with a demographic identity and record its answer — achieves approximately 60–75% DA on public opinion questions (see Section 6). This underperforms the 91% human replication ceiling by 16–31pp, meaning roughly one in five answer buckets is substantially wrong.
+Several approaches have been proposed to bridge this gap. The most direct — prompt the LLM with a demographic identity and record its answer — achieves approximately 60–75% DA on public opinion questions (see Section 6). Direct-prompting approaches achieve 60–75% DA, meaning roughly one in five answer buckets is substantially wrong.
 
 The **Simulatte approach** differs in two ways:
 
@@ -31,19 +31,17 @@ This paper describes the methodology, reports results across 11 studies, and cha
 
 ## 2. Background and Related Work
 
-### 2.1 The Human Replication Ceiling
+### 2.1 Benchmark Reference Points
 
-Iyengar et al. (Stanford, 2023) established that human panelists re-answering the same survey questions after a short interval agree with their prior answers approximately 91% of the time, measured by TVD-equivalent accuracy. This 91% figure represents the upper bound of replication accuracy achievable even by a perfect population simulator: some fraction of survey responses is inherently stochastic (mood, question order effects, satisficing behavior).
+We use two reference points throughout this paper:
 
-We use 91% as the benchmark ceiling throughout this paper. Exceeding it does not mean the simulation is "better than humans" — it means the simulated distribution is closer to the Pew sample distribution than random human re-answering noise would predict.
+**91% DA threshold.** Survey methodology research consistently finds that approximately 9% of respondents give different answers when re-asked the same question under identical conditions (test-retest self-inconsistency). This natural human variability is baked into any ground-truth dataset. A simulation that achieves 91% DA is matching the Pew sample within the noise floor of the data itself. We treat 91% as a meaningful reference point — not a published ceiling from a single paper, but a threshold implied by the general test-retest literature on opinion survey reliability.
 
 ### 2.2 Prior Work on LLM Survey Simulation
 
 **Argyle et al. (2023)** — "Out of One, Many" — demonstrated that GPT-3 conditioned on demographic characteristics can partially replicate ideological differences in US public opinion. Accuracy was measured by correlation, not distribution accuracy, limiting comparability.
 
 **Santurkar et al. (2023)** — "Whose Opinions Do Language Models Reflect?" — found that LLM outputs skew toward liberal, Western, educated demographics regardless of demographic conditioning. This aligns with our RLHF-bias finding (Section 8.2).
-
-**Artificial Societies (January 2026)** — published a white paper reporting 86.0% distribution accuracy on a 1,000-respondent UC Berkeley survey sample, using an agent-based simulation framework. This is the most direct comparable benchmark. We exceed it by 9.3pp (USA) and 7.33pp (Europe v2 mean) on calibrated DA.
 
 No prior work, to our knowledge, reports holdout DA — accuracy on questions pre-designated before calibration with zero topic-specific prompting. We consider this the more meaningful generalization metric for production use.
 
@@ -68,7 +66,7 @@ DA = 1 − TVD(sim, real)
 
 where `real_i` is the Pew-reported proportion for option *i* and `sim_i` is the weighted proportion of simulated responses for option *i*.
 
-DA ranges from 0 (completely wrong distribution) to 1.0 (perfect match). A score of 0.91 means the simulated distribution differs from the real distribution by 9pp of total variation — the same tolerance as the human replication ceiling.
+DA ranges from 0 (completely wrong distribution) to 1.0 (perfect match). A score of 0.91 means the simulated distribution differs from the real distribution by 9pp of total variation — consistent with the natural test-retest self-inconsistency observed in survey panel research.
 
 **Why TVD?** Total Variation Distance captures the full distributional error across all answer options simultaneously. It is a stricter measure than correlation or mean absolute error on a single option, and it penalizes both over-concentration (all responses to one bucket) and under-coverage (missing a minority option entirely).
 
@@ -448,7 +446,7 @@ The 81.9% holdout DA for the US and 74.4% mean for Europe are the honest general
 
 ### 8.3 The Case for Holdout Reporting
 
-No prior published work on LLM survey simulation, to our knowledge, reports holdout DA. Artificial Societies (Jan 2026) reported only calibrated accuracy. This omission overstates the practical accuracy of any simulation system.
+No prior published work on LLM survey simulation, to our knowledge, reports holdout DA. Prior benchmarks report only calibrated accuracy. This omission overstates the practical accuracy of any simulation system.
 
 We consider holdout reporting a minimum methodological standard for this class of research. The holdout protocol is described in full in Section 3.7 and can be replicated by any researcher using the code in this repository.
 
@@ -481,10 +479,6 @@ https://github.com/Iqbalahmed7/simulatte-credibility
 Ansolabehere, S., & Schaffner, B. F. (2014). Does survey mode still matter? Findings from a 2010 multi-mode comparison. *Political Analysis*, 22(3), 285–303.
 
 Argyle, L. P., et al. (2023). Out of one, many: Using language models to simulate human samples. *Political Analysis*, 31(3), 337–351.
-
-Artificial Societies (2026). *Synthetic population accuracy benchmark: UC Berkeley sample replication.* White paper, January 2026.
-
-Iyengar, S., et al. (2023). *Limits of opinion formation in survey panels: A replication study.* Working paper, Stanford University.
 
 Pew Research Center (2022–2024). *American Trends Panel datasets*, Waves 119–130. pewresearch.org.
 

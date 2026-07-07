@@ -1,0 +1,234 @@
+{
+  "study": "IFIC Food & Health Survey 2025 — US Calibration",
+  "source": "International Food Information Council (IFIC) Food & Health Survey 2025",
+  "methodology": "3,000 US adults ages 18-80, Dynata consumer panel, March 13-27 2025, weighted by age/education/gender/race-ethnicity/region (2024 CPS)",
+  "persona_pool": "us_general v3 — cohort-us_general-4425f7e1 (36 personas)",
+
+  "sprint_questions": [
+    {
+      "id": "ific01",
+      "code": "G1",
+      "text": "How would you describe your own health, in general?",
+      "options": {
+        "A": "Excellent",
+        "B": "Very good",
+        "C": "Good",
+        "D": "Fair",
+        "E": "Poor"
+      },
+      "real_distribution": {"A": 0.13, "B": 0.35, "C": 0.36, "D": 0.13, "E": 0.02},
+      "n": 3000,
+      "trend": "TREND 2006-2025"
+    },
+    {
+      "id": "ific02",
+      "code": "G21",
+      "text": "How stressed have you been over the past 6 months?",
+      "options": {
+        "A": "Very stressed",
+        "B": "Somewhat stressed",
+        "C": "Not too stressed",
+        "D": "Not at all stressed"
+      },
+      "real_distribution": {"A": 0.24, "B": 0.40, "C": 0.26, "D": 0.10},
+      "n": 3000,
+      "trend": "TREND 2022-2025"
+    },
+    {
+      "id": "ific03",
+      "code": "G19",
+      "text": "In the past year, have you noticed a change in the overall cost of food and beverages?",
+      "options": {
+        "A": "Major increase",
+        "B": "Minor increase",
+        "C": "No change in past year",
+        "D": "Minor decrease",
+        "E": "Major decrease"
+      },
+      "real_distribution": {"A": 0.62, "B": 0.25, "C": 0.08, "D": 0.03, "E": 0.02},
+      "n": 3000,
+      "trend": "TREND 2022-2025"
+    },
+    {
+      "id": "ific04",
+      "code": "G14",
+      "text": "When shopping for foods and beverages, do you consider whether the food is processed before purchasing that product?",
+      "options": {
+        "A": "Yes, and I always avoid processed foods",
+        "B": "Yes, and I sometimes avoid processed foods",
+        "C": "Yes, but I don't avoid processed foods",
+        "D": "No, I don't consider it",
+        "E": "I'm not sure what is considered a processed food"
+      },
+      "real_distribution": {"A": 0.12, "B": 0.46, "C": 0.21, "D": 0.18, "E": 0.02},
+      "n": 3000,
+      "trend": "REVISED TREND 2023-2025"
+    },
+    {
+      "id": "ific05",
+      "code": "G15",
+      "text": "Are you familiar with the term 'ultraprocessed food'?",
+      "options": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Not sure"
+      },
+      "real_distribution": {"A": 0.44, "B": 0.40, "C": 0.16},
+      "n": 3000,
+      "trend": "TREND 2024-2025"
+    },
+    {
+      "id": "ific06",
+      "code": "G10",
+      "text": "Which of the following best describes your familiarity with the 'Dietary Guidelines for Americans' (US government-approved food and nutrition guidelines)?",
+      "options": {
+        "A": "I know a lot about them",
+        "B": "I know a fair amount about them",
+        "C": "I have heard of them, but know very little about them",
+        "D": "I have never heard of them"
+      },
+      "real_distribution": {"A": 0.07, "B": 0.37, "C": 0.45, "D": 0.11},
+      "n": 3000,
+      "trend": "TREND 2009-2011/2020-2025"
+    },
+    {
+      "id": "ific07",
+      "code": "G29",
+      "text": "To what extent do you agree or disagree with the following statement: 'Because nutrition information seems to keep changing, it's hard to know what to believe'",
+      "options": {
+        "A": "Strongly agree",
+        "B": "Somewhat agree",
+        "C": "Somewhat disagree",
+        "D": "Strongly disagree",
+        "E": "Not sure"
+      },
+      "real_distribution": {"A": 0.30, "B": 0.49, "C": 0.15, "D": 0.04, "E": 0.03},
+      "n": 3000,
+      "trend": "TREND 2012/2022/2025"
+    },
+    {
+      "id": "ific08",
+      "code": "N2",
+      "text": "Do you ever replace traditional meals (breakfast, lunch, dinner) by snacking or eating smaller meals instead?",
+      "options": {
+        "A": "Yes, I regularly replace meals by snacking/smaller meals",
+        "B": "Yes, I occasionally replace meals by snacking/smaller meals",
+        "C": "No, although sometimes I skip meals entirely",
+        "D": "No, I rarely skip meals",
+        "E": "Not sure"
+      },
+      "real_distribution": {"A": 0.16, "B": 0.46, "C": 0.17, "D": 0.20, "E": 0.01},
+      "n": 3000,
+      "trend": "TREND 2020/2024-2025"
+    },
+    {
+      "id": "ific09",
+      "code": "N1",
+      "text": "In a typical week, how often do you snack or eat something in addition to your main meals?",
+      "options": {
+        "A": "Three or more times a day",
+        "B": "Two times a day",
+        "C": "Once a day",
+        "D": "A few days a week",
+        "E": "Once a week or less",
+        "F": "Never"
+      },
+      "real_distribution": {"A": 0.12, "B": 0.28, "C": 0.30, "D": 0.22, "E": 0.06, "F": 0.02},
+      "n": 3000,
+      "trend": "TREND 2019-2025"
+    },
+    {
+      "id": "ific10",
+      "code": "G3",
+      "text": "Overall, how would you grade your diet in terms of healthfulness? (Give it an overall letter grade)",
+      "options": {
+        "A": "A (Excellent)",
+        "B": "B (Good)",
+        "C": "C (Average)",
+        "D": "D (Below average)",
+        "E": "F (Failing)"
+      },
+      "real_distribution": {"A": 0.13, "B": 0.51, "C": 0.28, "D": 0.06, "E": 0.01},
+      "n": 3000,
+      "note": "Aggregated from A+/A/A- = 13%, B+/B/B- = 51%, C+/C/C- = 28%, D+/D/D- = 6%, F = 1%",
+      "trend": "TREND 2013/2025"
+    }
+  ],
+
+  "holdout_questions": [
+    {
+      "id": "ific_h01",
+      "code": "G11",
+      "text": "How familiar are you, if at all, with the MyPlate graphic? (the US government's food group visual guide)",
+      "options": {
+        "A": "I have seen it and know a lot about it",
+        "B": "I have seen it and know a fair amount about it",
+        "C": "I have seen it, but know very little about it",
+        "D": "I have never seen it before",
+        "E": "Not sure"
+      },
+      "real_distribution": {"A": 0.17, "B": 0.36, "C": 0.24, "D": 0.21, "E": 0.02},
+      "n": 3000,
+      "trend": "TREND 2013-2025"
+    },
+    {
+      "id": "ific_h02",
+      "code": "G9",
+      "text": "How, if at all, have you used nutrition information (like calorie counts, etc.) when eating out at restaurants, cafeterias, etc.?",
+      "options": {
+        "A": "I will not eat something when eating out without first checking the nutritional information",
+        "B": "I will regularly use nutrition information to decide what to have when eating out",
+        "C": "I will sometimes use nutrition information to decide what to have when eating out",
+        "D": "I have noticed nutrition information before, but haven't paid any attention to it",
+        "E": "I have not noticed or seen any nutrition information when eating out at restaurants"
+      },
+      "real_distribution": {"A": 0.05, "B": 0.20, "C": 0.32, "D": 0.22, "E": 0.21},
+      "n": 3000,
+      "trend": "TREND 2014-2017/2025"
+    },
+    {
+      "id": "ific_h03",
+      "code": "G32",
+      "text": "To what extent do you agree or disagree: 'Registered Dietitian Nutritionists are the most qualified experts to provide recommendations on making healthy food choices'",
+      "options": {
+        "A": "Strongly agree",
+        "B": "Somewhat agree",
+        "C": "Neither agree nor disagree",
+        "D": "Somewhat disagree",
+        "E": "Strongly disagree"
+      },
+      "real_distribution": {"A": 0.18, "B": 0.44, "C": 0.30, "D": 0.06, "E": 0.02},
+      "n": 3000,
+      "trend": "NEW 2025"
+    },
+    {
+      "id": "ific_h04",
+      "code": "G28",
+      "text": "To what extent do you agree or disagree: 'I am more interested in hearing about what TO eat, rather than what NOT to eat'",
+      "options": {
+        "A": "Strongly agree",
+        "B": "Somewhat agree",
+        "C": "Neither agree nor disagree",
+        "D": "Somewhat disagree",
+        "E": "Strongly disagree"
+      },
+      "real_distribution": {"A": 0.21, "B": 0.40, "C": 0.30, "D": 0.07, "E": 0.03},
+      "n": 3000,
+      "trend": "REVISED TREND 2009/2011/2013/2015"
+    },
+    {
+      "id": "ific_h05",
+      "code": "G23",
+      "text": "In the past year, have you come across any content about food or nutrition on social media (e.g., Facebook, Instagram, Pinterest, Twitter/X, YouTube, TikTok)?",
+      "options": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Not sure",
+        "D": "I do not use any social media"
+      },
+      "real_distribution": {"A": 0.50, "B": 0.30, "C": 0.11, "D": 0.09},
+      "n": 3000,
+      "trend": "TREND 2023-2025"
+    }
+  ]
+}
